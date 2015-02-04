@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesson 5 - SVA HTML
+    </title>
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Spring 2015">
+    <link rel="stylesheet" href="/css/github.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/flat-ui.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <script src="/js/highlight.pack.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/underscore.js"></script>
+    <script src="/js/global.js"></script>
+  </head>
+  <body class="article-detail">
+    <div class="main-nav">
+      <div class="container">
+        <div role="navigation" class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="brand">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100" height="31" viewBox="0 0 430 133" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,133.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+                  <path d="M3311 1238 c-10 -24 -127 -296 -260 -604 -132 -309 -241 -564 -241 -568 0 -3 40 -6 88 -6 l88 0 259 603 c142 331 260 605 262 610 2 4 -37 7 -87 7 l-91 0 -18 -42z" class="slash"></path>
+                  <path d="M322 839 l-251 -211 96 -82 c53 -44 167 -140 252 -213 l156 -132 58 57 c31 31 57 59 57 63 0 3 -80 72 -177 154 -98 81 -179 150 -180 154 -1 3 79 71 177 151 99 80 178 148 177 152 -2 7 -106 118 -111 118 -1 0 -116 -95 -254 -211z" class="tag"></path>
+                  <path d="M3641 996 c-29 -30 -52 -59 -50 -64 2 -6 76 -69 164 -142 88 -73 168 -140 178 -149 16 -16 8 -25 -163 -165 -99 -82 -180 -151 -180 -155 0 -4 26 -32 58 -63 l57 -56 252 213 252 213 -250 208 c-137 115 -252 210 -257 212 -4 1 -32 -22 -61 -52z" class="tag"></path>
+                  <path d="M1033 990 c-71 -15 -142 -51 -177 -90 -71 -79 -73 -188 -4 -266 39 -45 78 -64 207 -104 106 -32 161 -68 161 -105 0 -9 -13 -30 -29 -46 -29 -28 -32 -29 -128 -28 -88 0 -186 18 -245 43 -16 7 -18 0 -18 -77 l0 -86 58 -12 c31 -7 120 -13 197 -13 124 0 147 3 200 23 115 46 174 135 161 244 -12 102 -63 145 -243 203 -121 39 -149 54 -165 89 -15 33 10 69 58 85 43 15 160 7 242 -14 l53 -14 -3 76 -3 76 -35 8 c-57 13 -242 18 -287 8z" class="letter"></path>
+                  <path d="M2345 985 c-38 -7 -87 -20 -107 -28 l-38 -16 0 -70 c0 -39 1 -71 3 -71 1 0 28 9 60 20 124 44 251 46 312 6 24 -16 45 -69 45 -113 0 -22 -4 -23 -72 -23 -143 0 -276 -37 -336 -93 -92 -85 -87 -259 9 -341 92 -79 253 -72 368 15 l51 39 0 -45 0 -45 80 0 80 0 0 295 c0 322 -3 340 -58 398 -73 77 -222 104 -397 72z m273 -487 c-3 -50 -5 -53 -62 -98 -53 -41 -63 -45 -113 -45 -48 0 -58 4 -79 28 -28 33 -30 66 -8 108 22 44 64 58 172 59 l93 0 -3 -52z" class="letter"></path>
+                  <path d="M1405 943 c8 -21 75 -191 149 -378 l134 -340 109 -3 108 -2 147 377 147 378 -96 3 c-60 2 -99 -1 -103 -8 -4 -6 -49 -130 -101 -275 -52 -146 -96 -265 -99 -265 -3 0 -14 24 -24 53 -10 28 -54 152 -98 275 l-80 222 -104 0-104 0 15 -37z" class="letter"></path>
+                </g>
+              </svg></a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/"><i class="fa fa-home"> Home</i></a>
+                <ul>
+                  <li><a href="/lessons/lesson-1/">Lesson 1</a></li>
+                  <li><a href="/lessons/lesson-2/">Lesson 2</a></li>
+                  <li><a href="/lessons/lesson-3/">Lesson 3</a></li>
+                  <li><a href="/lessons/lesson-4/">Lesson 4</a></li>
+                  <li><a href="/lessons/lesson-5/">Lesson 5</a></li>
+                  <li><a href="/lessons/lesson-6/">Lesson 6</a></li>
+                  <li><a href="/lessons/lesson-7/">Lesson 7</a></li>
+                  <li><a href="/lessons/lesson-8/">Lesson 8</a></li>
+                  <li><a href="/lessons/lesson-9/">Lesson 9</a></li>
+                  <li><a href="/lessons/lesson-10/">Lesson 10</a></li>
+                  <li><a href="/lessons/lesson-11/">Lesson 11</a></li>
+                  <li><a href="/lessons/lesson-12/">Lesson 12</a></li>
+                </ul>
+              </li>
+              <li><a href="/syllabus.html"><i class="fa fa-book"></i> Syllabus</a></li>
+              <li><a href="/notes/tags/index.html"><i class="fa fa-html5"></i> HTML Tag List</a></li>
+              <li><a href="/notes/css/index.html"><i class="fa fa-css3"></i> CSS</a></li>
+              <li><a href="/notes/ascii/index.html"><i class="fa fa-heart"></i> ASCII Codes</a></li>
+              <li><a href="/notes/colors/index.html"><i class="fa fa-paint-brush"></i> Colors</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="main-header">
+      <div class="container">
+        <div class="well small page-title">
+          <h1>Lesson 5</h1>
+          <div class="date"><i class="fa fa-calendar"></i><span class="month">February</span><span class="day">25,</span><span class="year">2015</span></div>
+        </div>
+      </div>
+    </header>
+    <div class="container main-level">
+      <div class="col-md-9 main-content">
+        <article class="article">
+          <section class="content"><p>This week we will talk about Table and all the good and bad that goes with it. <div><span class="label label-default html"><i class="fa fa-html5"></i><span class="caps">HTML</span></span> <span class="label label-default css"><i class="fa fa-css3"></i>css</span></div></p>
+<p><span class="more"></span></p>
+<h1 id="tables">Tables</h1>
+<ul>
+<li><a href="/lessons/lesson-5/">Intro to&nbsp;Tables</a></li>
+<li><a href="/lessons/lesson-5/table-example/index.html">Build a&nbsp;table</a></li>
+<li><a href="/lessons/lesson-5/styles.html">Adding&nbsp;Styles</a></li>
+<li><a href="/lessons/lesson-5/homework.html">Homework</a></li>
+</ul>
+<p><a href="/lessons/lesson-5/week5-notes.zip">Download Notes <i class="icon-download-alt icon-white"></i></a>
+<a href="/lessons/lesson-5/week5.zip">Download Starter Files <i class="icon-download-alt icon-white"></i></a></p>
+<p>Tables are defined with the <code>&lt;table&gt;</code> tag. A table is divided into rows (with the <code>&lt;tr&gt;</code> tag), and each row is divided into data cells (with the <code>&lt;td&gt;</code> tag). The letters td stands for <strong>“table data,”</strong> which is the content of a data cell. A data cell can contain text, images, lists, paragraphs, forms, tables, etc. There is also the <code>&lt;th&gt;</code> or table header to define a header within the table.  <strong><span class="caps">HTML5</span></strong> added two new tags to help better group content within the table.  The <code>&lt;thead&gt;</code> or table header and <code>&lt;tbody&gt;</code> or table body are <strong>optional</strong> tags that can be used to help define areas of the&nbsp;table.</p>
+<pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;row 1, cell 1&lt;/th&gt;
+            &lt;th&gt;row 1, cell 2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;row 2, cell 1&lt;/td&gt;
+            &lt;td&gt;row 2, cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre><table>
+    <thead>
+        <tr>
+            <th>row 1, cell 1</th>
+            <th>row 1, cell 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>row 2, cell 1</td>
+            <td>row 2, cell 2</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="table-tag">Table&nbsp;Tag</h2>
+<p><code>&lt;table&gt;&lt;/table&gt;</code></p>
+<p>The <strong>table</strong> tag defines the starting and stopping points of the table. After the <code>&lt;table&gt;</code> all content that is to be displayed on the screen must be placed between <code>&lt;td&gt;</code> and <code>&lt;/td&gt;</code>. Once a <code>&lt;/table&gt;</code> is indicated all html goes on as&nbsp;normal.</p>
+<pre><code>&lt;table&gt;
+    &lt;!-- add table content --&gt;
+&lt;/table&gt;
+</code></pre><hr>
+<h2 id="table-row">Table&nbsp;Row</h2>
+<p><code>&lt;tr&gt;&lt;/tr&gt;</code></p>
+<p><strong>Table Row</strong> defines the starting and stopping points for a table row. All table data cells must be placed between the <code>&lt;tr&gt;</code> and <code>&lt;/tr&gt;</code>. Because a table might have more than one row you can have more than one <code>&lt;tr&gt;</code> set.</p>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;!-- add table content --&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><hr>
+<h2 id="table-data">Table&nbsp;Data</h2>
+<p><code>&lt;td&gt;&lt;/td&gt;</code></p>
+<p><strong>table data</strong> Defines a cell with a table and must be between <code>&lt;tr&gt;</code> and <code>&lt;/tr&gt;</code>. Because all content must be located in the <code>&lt;td&gt;</code> set you can have more than on <code>&lt;td&gt;</code> set per&nbsp;row.</p>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;!-- add table content --&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><hr>
+<h2 id="table-header">Table&nbsp;Header</h2>
+<p><code>&lt;th&gt;&lt;/th&gt;</code></p>
+<p><strong>table header</strong> Just like the <code>&lt;td&gt;</code> but defines a <strong>header</strong>. The table header is always <em>bold and center</em> although this can be overwritten with&nbsp;<span class="caps">CSS</span>.</p>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&lt;!-- add table content --&gt;&lt;/tg&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><hr>
+<h2 id="table-head">Table&nbsp;Head</h2>
+<p><code>&lt;thead&gt;&lt;/thead&gt;</code></p>
+<p><strong>table head</strong> Defines an <em>optional</em> area within the table as the header of that table. <code>&lt;thead&gt;</code> is descendant of the <code>&lt;table&gt;</code>.</p>
+<pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;&lt;!-- add table content --&gt;&lt;/tg&gt;
+        &lt;/tr&gt;
+    &lt;/head&gt;
+&lt;/table&gt;
+</code></pre><hr>
+<h2 id="table-body">Table&nbsp;Body</h2>
+<p><code>&lt;tbody&gt;&lt;/tbody&gt;</code></p>
+<p> <strong>table body</strong> Defines an <em>optional</em> area within the table as the body of that table. <code>&lt;thead&gt;</code> is descendant of the <code>&lt;table&gt;</code>.</p>
+<pre><code>&lt;table&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;!-- add table content --&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre><hr>
+<h3 id="examples">Examples</h3>
+<p>Normal table with&nbsp;header</p>
+<pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Heading&lt;/th&gt;
+            &lt;th&gt;Another Heading&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;row 1, cell 1&lt;/td&gt;
+            &lt;td&gt;row 1, cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;row 2, cell 1&lt;/td&gt;
+            &lt;td&gt;row 2, cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;tbody&gt;
+&lt;/table&gt;
+</code></pre><table border="1">
+    <thead>
+        <tr>
+            <th>Heading</th>
+            <th>Another Heading</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>row 1, cell 1</td>
+            <td>row 1, cell 2</td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+            <td>row 2, cell 2</td>
+        </tr>
+    <tbody>
+</table>
+
+<h2 id="row-span-and-col-span">Row Span and Col&nbsp;Span</h2>
+<p>The <code>colspan</code> attribute is a way to make on <code>&lt;td&gt;</code> take up the space of two or more columns.  This is very useful when you have a title or other content that need to span over two or more&nbsp;columns.</p>
+<h3 id="table-with-colspan">Table with&nbsp;colspan</h3>
+<pre><code>&lt;table border=&quot;1&quot;&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;row 1, cell 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;row 2, cell 1&lt;/td&gt;
+    &lt;td&gt;row 2, cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><table border="1">
+<tr>
+    <td colspan="2">row 1, cell 1</td>
+</tr>
+<tr>
+    <td>row 2, cell 1</td>
+    <td>row 2, cell 2</td>
+</tr>
+</table>
+
+<p>The <code>rowspan</code> attribute is like the <code>colspan</code> but the cell will span from one row to the&nbsp;next.</p>
+<h3 id="table-with-rowspan">Table with&nbsp;rowspan</h3>
+<pre><code>&lt;table border=&quot;1&quot;&gt;
+&lt;tr&gt;
+    &lt;td rowspan=&quot;2&quot;&gt;row 1, cell 1&lt;/td&gt;
+    &lt;td&gt;row 1, cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;row 2, cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><table border="1">
+<tr>
+    <td rowspan="2">row 1, cell 1</td>
+    <td>row 1, cell 2</td>
+</tr>
+<tr>
+    <td>row 2, cell 2</td>
+</tr>
+</table>
+
+<p><strong>Note:</strong> that you would never put a colspan or rowspan on the last td in the row or&nbsp;column.</p>
+<h2 id="nested-tables">Nested&nbsp;Tables</h2>
+<p>A nested is one table that is coded within another table.   All <span class="caps">HTML</span> elements in a table must be coded within the <td> tag.  Almost all <span class="caps">HTML</span> elements can be code in a table including another&nbsp;table.</p>
+<p>When nesting a table within another table be aware that you will now have a <code>&lt;table&gt;&lt;/table&gt;</code> for each table.  So if you have two tables (one inside the other) you will need to have two sets of table&nbsp;tags.</p>
+<h4 id="adding-a-comment-">Adding a comment <!-- --></h4>
+<p>One way to help organized and limit the number of errors is to add a <span class="caps">HTML</span> comment.  A comment is a snippet of code that is ignored by the browser.  It used to leave a note in the&nbsp;code.</p>
+<pre><code>&lt;!-- comment here --&gt;  (replace comment here with your note)
+</code></pre><p>Anything between the two tags will not seen on the&nbsp;screen.</p>
+<p>Adding comments before and after a nested table helps keep the two table straight and can limit the number of&nbsp;errors.</p>
+<h3 id="setting-up-a-nested-table">Setting up a nested&nbsp;table</h3>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            This cell contains a nested table.
+            &lt;!-- start nested table --&gt;
+            &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Nested table&lt;/td&gt;
+                &lt;td&gt;Nested table&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Nested table&lt;/td&gt;
+                &lt;td&gt;Nested table&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;!-- end nested table --&gt;
+        &lt;/td&gt;
+        &lt;td&gt;No Nested table here.&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><table>
+<tr>
+    <td>
+        This cell contains a nested table.
+        <!-- start nested table -->
+        <table>
+        <tr>
+            <td>Nested table</td>
+            <td>Nested table</td>
+        </tr>
+        <tr>
+            <td>Nested table</td>
+            <td>Nested table</td>
+        </tr>
+        </table>
+        <!-- end nested table -->
+    </td>
+    <td>No Nested table here.</td>
+</tr>
+</table>
+</section>
+        </article>
+      </div>
+      <div class="col-md-3 side-nav">
+        <div class="side-nav-inner"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="content-wrap">
+          <section class="copy">
+            <p>&copy; 2015 Daniel Hahn</p>
+          </section>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-187360-2', 'auto');
+      ga('send', 'pageview');
+      
+    </script>
+  </body>
+</html>

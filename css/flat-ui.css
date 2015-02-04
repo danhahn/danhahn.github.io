@@ -1,0 +1,87 @@
+.navbar {
+  position: relative;
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: #99aeb8;
+}
+.navbar-nav {
+  position: relative;
+  background-color: #607d8b;
+}
+.navbar-nav a {
+  transition: background-color 0.4s, color 0.4s;
+}
+.navbar-nav a:hover {
+  background-color: #99aeb8;
+}
+.navbar-nav > li:hover > a {
+  background-color: #99aeb8;
+}
+.navbar-nav > li:hover ul {
+  display: block;
+  opacity: 0;
+  -webkit-animation: fade-main 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation: fade-main 0.3s;
+  animation-fill-mode: forwards;
+  margin-top: -100px;
+}
+.navbar-nav ul {
+  display: none;
+  position: absolute;
+  background-color: #d5dee2;
+  z-index: -1;
+  border: 1px solid #607d8b;
+  margin-top: -100px;
+}
+.navbar-nav ul li {
+  list-style: none;
+  border-bottom: 1px solid #607d8b;
+}
+.navbar-nav ul li a {
+  display: block;
+  padding: 5px 10px;
+  min-width: 170px;
+}
+.navbar-nav ul li a:hover {
+  text-decoration: none;
+  background-color: #6b8a99;
+  color: #ffffff;
+}
+@keyframes fade-sub {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-main {
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes fade-user {
+  to {
+    opacity: 1;
+    margin-top: 10px;
+  }
+}
+@-webkit-keyframes fade-sub {
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-main {
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@-webkit-keyframes fade-user {
+  to {
+    opacity: 1;
+    margin-top: 10px;
+  }
+}

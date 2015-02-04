@@ -1,0 +1,74 @@
+ul.buckets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.buckets:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+ul.buckets li {
+  color: #fff;
+  background: linear-gradient(90deg, #608b7c, #415e54);
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 30px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  transition: all .1s;
+}
+ul.buckets li:hover {
+  font-weight: bold;
+}
+ul.buckets li:before,
+ul.buckets li:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid black;
+}
+ul.buckets li:before {
+  top: -25px;
+  background: radial-gradient(#364f46 80%, #17211e);
+}
+ul.buckets li:after {
+  bottom: -25px;
+  background: linear-gradient(90deg, #608b7c, #415e54);
+  z-index: -1;
+}
+ul.buckets li.active {
+  background: linear-gradient(90deg, #607d8b, #41545e);
+  font-weight: bold;
+  font-size: 2.5em;
+}
+ul.buckets li.active:before {
+  background: radial-gradient(#36474f 80%, #171e21);
+}
+ul.buckets li.active:after {
+  background: linear-gradient(90deg, #607d8b, #41545e);
+}
+@media screen and (max-width: 360px) {
+  ul.buckets li {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 15px;
+  }
+  ul.buckets li:before,
+  ul.buckets li:after {
+    width: 90px;
+  }
+  ul.buckets li.active {
+    font-size: 15px;
+  }
+}
