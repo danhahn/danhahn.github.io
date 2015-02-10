@@ -61,7 +61,7 @@ article {
   margin-bottom: 1em;
 }
 h2 {
-  color: #e81ee9;
+  color: #e91ea7;
   font-size: 1.8em;
   line-height: 1.8;
   font-weight: 700;
@@ -191,7 +191,7 @@ h3 {
   margin-top: 7px;
 }
 .navbar .brand svg .tag {
-  fill: #e81ee9;
+  fill: #e91ea7;
 }
 .navbar .brand svg .bracket {
   fill: #ffffff;
@@ -246,14 +246,14 @@ p.date {
   overflow: hidden;
 }
 .table th {
-  background-color: #e81ee9;
+  background-color: #e91ea7;
   color: #000;
 }
 .alert-info {
   text-align: left;
-  color: #e81ee9;
+  color: #e91ea7;
   background-color: #ffffff;
-  border-color: #e81ee9;
+  border-color: #e91ea7;
 }
 .scroll-top {
   float: right;
@@ -284,7 +284,7 @@ p.date {
   margin-bottom: .2em;
 }
 .lesson-item .well h2 a {
-  color: #e81ee9;
+  color: #e91ea7;
 }
 .lesson-item .well p {
   text-align: left;
@@ -369,7 +369,7 @@ footer .container p {
 }
 .date {
   font-weight: 100;
-  color: #e81ee9;
+  color: #e91ea7;
   font-size: .75em;
 }
 .date span,
@@ -465,7 +465,7 @@ img[src$="homework.png"] {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:active,
 .navbar-default .navbar-toggle:focus {
-  background-color: #e81ee9;
+  background-color: #e91ea7;
   outline: none;
 }
 .navbar-default .navbar-toggle .icon-bar {
