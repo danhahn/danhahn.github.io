@@ -8,7 +8,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #aa1145;
+  color: #b37300;
 }
 ul,
 ol {
@@ -30,7 +30,7 @@ h1 {
   font-weight: 300;
 }
 a:hover {
-  color: #e91e63;
+  color: #ffa500;
 }
 .caps {
   font-weight: bold;
@@ -40,18 +40,18 @@ a.btn:hover {
   color: white;
 }
 .btn {
-  background-color: #eb3573;
+  background-color: #ffae1a;
 }
 .btn:hover {
-  background-color: #d81557;
+  background-color: #e69500;
 }
 .btn:active,
 .btn.active {
-  background-color: #aa1145;
+  background-color: #b37400;
 }
 code {
-  color: #e91e63;
-  background-color: #fde6ee;
+  color: #ffa500;
+  background-color: #fff2db;
 }
 article {
   padding: 0 20px;
@@ -61,7 +61,7 @@ article {
   margin-bottom: 1em;
 }
 h2 {
-  color: #e91ea7;
+  color: #ff5000;
   font-size: 1.8em;
   line-height: 1.8;
   font-weight: 700;
@@ -92,23 +92,23 @@ h3 {
   background: none;
 }
 .main-nav {
-  background-color: #ee4c83;
+  background-color: #ffb733;
 }
 .main-nav .navbar {
-  background-color: #e91e63;
+  background-color: #ffa500;
   margin-bottom: 0;
   border-radius: 0;
   border: none;
 }
 .main-header {
-  background-color: #f27ba3;
+  background-color: #ffc966;
   margin-bottom: 20px;
 }
 .main-header .well {
   border-radius: 0;
   border: none;
   margin-bottom: 0;
-  background-color: #aa1145;
+  background-color: #b37300;
   padding: 10px 20px;
 }
 .main-header .well.page-title {
@@ -146,7 +146,7 @@ h3 {
   letter-spacing: 1px;
 }
 .side-nav .nav-tabs.nav-stacked > li.active a {
-  background-color: #e91e63;
+  background-color: #ffa500;
   color: #ffffff;
   font-weight: 700;
 }
@@ -191,19 +191,19 @@ h3 {
   margin-top: 7px;
 }
 .navbar .brand svg .tag {
-  fill: #e91ea7;
+  fill: #ff5000;
 }
 .navbar .brand svg .bracket {
   fill: #ffffff;
 }
 .navbar .brand svg .slash {
-  fill: #f27ba3;
+  fill: #ffc966;
 }
 .navbar .brand svg .letter {
   fill: #ffffff;
 }
 .navbar .brand svg .smletter {
-  fill: #f27ba3;
+  fill: #ffc966;
 }
 .navbar .brand svg .dot {
   fill: #ffffff;
@@ -246,14 +246,14 @@ p.date {
   overflow: hidden;
 }
 .table th {
-  background-color: #e91ea7;
+  background-color: #ff5000;
   color: #000;
 }
 .alert-info {
   text-align: left;
-  color: #e91ea7;
+  color: #ff5000;
   background-color: #ffffff;
-  border-color: #e91ea7;
+  border-color: #ff5000;
 }
 .scroll-top {
   float: right;
@@ -284,7 +284,7 @@ p.date {
   margin-bottom: .2em;
 }
 .lesson-item .well h2 a {
-  color: #e91ea7;
+  color: #ff5000;
 }
 .lesson-item .well p {
   text-align: left;
@@ -352,12 +352,12 @@ footer .container p {
   width: 100%;
   position: relative;
   z-index: 100;
-  background-color: #e91e63;
+  background-color: #ffa500;
   color: #ffffff;
   transition: all .3s;
 }
 .overflow {
-  border: 1px solid #aa1145;
+  border: 1px solid #b37300;
   padding: 10px;
   height: 100px;
 }
@@ -369,7 +369,7 @@ footer .container p {
 }
 .date {
   font-weight: 100;
-  color: #e91ea7;
+  color: #ff5000;
   font-size: .75em;
 }
 .date span,
@@ -459,17 +459,17 @@ img[src$="homework.png"] {
   border: 2px solid #FF0000;
 }
 .navbar-default .navbar-toggle {
-  border-color: #aa1145;
-  background-color: #f27ba3;
+  border-color: #b37300;
+  background-color: #ffc966;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:active,
 .navbar-default .navbar-toggle:focus {
-  background-color: #e91ea7;
+  background-color: #ff5000;
   outline: none;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #aa1145;
+  background-color: #b37300;
 }
 .label {
   text-transform: uppercase;
@@ -623,9 +623,9 @@ img[src$="homework.png"] {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  border-left: 2px solid #e91e63;
+  border-left: 2px solid #ffa500;
   background-color: transparent;
-  color: #e91e63;
+  color: #ffa500;
   border-radius: 0;
   font-weight: bold;
 }
@@ -634,7 +634,7 @@ img[src$="homework.png"] {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  border-left: 2px solid #f27ba3;
+  border-left: 2px solid #ffc966;
   background-color: transparent;
   border-radius: 0;
 }
