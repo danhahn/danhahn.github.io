@@ -50,7 +50,7 @@ pre .tag,
 pre .tag .title,
 pre .rules .property,
 pre .django .tag .keyword {
-  color: #ffa500;
+  color: #d2b48c;
   font-weight: normal;
 }
 pre .attribute,
