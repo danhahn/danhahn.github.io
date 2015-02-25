@@ -531,7 +531,8 @@ td .label {margin-right: 4px;cursor: pointer;}
         &amp;lt;/tr&amp;gt;
     &amp;lt;/tbody&amp;gt;
 &amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;table class=&quot;no-style&quot;&gt;
     &lt;thead&gt;
         &lt;tr&gt;
             &lt;th&gt;row 1, cell 1&lt;/th&gt;
@@ -622,7 +623,7 @@ td .label {margin-right: 4px;cursor: pointer;}
         &amp;lt;/tr&amp;gt;
     &amp;lt;tbody&amp;gt;
 &amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;table border=&quot;1&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;table border=&quot;1&quot; class=&quot;no-style&quot;&gt;
     &lt;thead&gt;
         &lt;tr&gt;
             &lt;th&gt;Heading&lt;/th&gt;
@@ -653,7 +654,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     &amp;lt;td&amp;gt;row 2, cell 2&amp;lt;/td&amp;gt;
 &amp;lt;/tr&amp;gt;
 &amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;table border=&quot;1&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;table border=&quot;1&quot; class=&quot;no-style&quot;&gt;
 &lt;tr&gt;
     &lt;td colspan=&quot;2&quot;&gt;row 1, cell 1&lt;/td&gt;
 &lt;/tr&gt;
@@ -674,7 +675,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     &amp;lt;td&amp;gt;row 2, cell 2&amp;lt;/td&amp;gt;
 &amp;lt;/tr&amp;gt;
 &amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;table border=&quot;1&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;table border=&quot;1&quot; class=&quot;no-style&quot;&gt;
 &lt;tr&gt;
     &lt;td rowspan=&quot;2&quot;&gt;row 1, cell 1&lt;/td&gt;
     &lt;td&gt;row 1, cell 2&lt;/td&gt;
@@ -714,7 +715,7 @@ td .label {margin-right: 4px;cursor: pointer;}
         &amp;lt;td&amp;gt;No Nested table here.&amp;lt;/td&amp;gt;
     &amp;lt;/tr&amp;gt;
 &amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;table class=&quot;no-style&quot;&gt;
 &lt;tr&gt;
     &lt;td&gt;
         This cell contains a nested table.

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Roboto+Condensed:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Roboto+Condensed:400,700,300|Oxygen+Mono);
 body {
   font-family: 'Droid Sans', sans-serif;
 }
@@ -245,9 +245,18 @@ p.date {
   border-radius: 4px;
   overflow: hidden;
 }
+.table {
+  border: 1px solid #ddd;
+  background-color: rgba(221, 221, 221, 0.2);
+}
+.table tbody tr td,
+.table thead tr td,
+.table tbody tr th,
+.table thead tr th {
+  padding: .5em 2em;
+}
 .table th {
-  background-color: #e91e85;
-  color: #000;
+  color: #e91e85;
 }
 .alert-info {
   text-align: left;
@@ -438,8 +447,8 @@ img[src$="homework.png"] {
 }
 .homework-view {
   display: flex;
-  border-top: 1px solid #FF0000;
-  border-bottom: 1px solid #FF0000;
+  border-top: 1px solid #e91e85;
+  border-bottom: 1px solid #e91e85;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -456,7 +465,7 @@ img[src$="homework.png"] {
 }
 .homework-view div:first-child img {
   max-width: 100%;
-  border: 2px solid #FF0000;
+  border: 2px solid gray;
 }
 .navbar-default .navbar-toggle {
   border-color: #aa1145;
@@ -492,7 +501,9 @@ img[src$="homework.png"] {
 }
 .tags {
   display: flex;
+  flex-direction: column;
   align-items: baseline;
+  margin-bottom: 10px;
 }
 .tags .data {
   font-size: 1.4em;
@@ -512,6 +523,11 @@ img[src$="homework.png"] {
 }
 .tags ul li:not(:last-child):after {
   content: ',';
+}
+pre {
+  border: none;
+  padding: 0;
+  border-radius: 0;
 }
 @media screen and (max-width: 1200px) {
   .lesson-item .well h2 {
@@ -648,6 +664,19 @@ img[src$="homework.png"] {
   p {
     text-align: left;
   }
+}
+table.no-style {
+  font-family: monospace;
+  border: 1px solid silver;
+  width: auto;
+}
+table.no-style tr th {
+  background-color: transparent;
+  text-align: center;
+}
+table.no-style tr td,
+table.no-style tr th {
+  border: 1px solid silver;
 }
 @media screen and (max-width: 420px) {
   .navbar .brand {
