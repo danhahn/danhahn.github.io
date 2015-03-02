@@ -740,7 +740,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 6</title>
       <link>http://localhost:8080/lessons/lesson-6/</link>
-      <pubDate>Wed, 04 Mar 2015 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 11 Mar 2015 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
