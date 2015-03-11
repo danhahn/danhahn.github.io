@@ -4,7 +4,6 @@ body {
 }
 p {
   line-height: 1.8;
-  text-align: justify;
 }
 a {
   text-decoration: none;
@@ -336,7 +335,11 @@ footer .container p {
 .btn-group {
   margin-left: 0;
 }
+#cntrBoxModel {
+  padding: 0;
+}
 .box-container {
+  box-sizing: content-box;
   margin: 0 0 20px;
   border: 2px solid #d3d3d3;
   padding: 10px 0;
@@ -365,6 +368,7 @@ footer .container p {
   z-index: 0;
 }
 .box-model {
+  box-sizing: content-box;
   width: 100%;
   position: relative;
   z-index: 100;
