@@ -5,20 +5,20 @@
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  background-color: #bcdc97;
+  background-color: #ffeca6;
 }
 .navbar-nav {
   position: relative;
-  background-color: #8bc34a;
+  background-color: #ffd740;
 }
 .navbar-nav a {
   transition: background-color 0.4s, color 0.4s;
 }
 .navbar-nav a:hover {
-  background-color: #bcdc97;
+  background-color: #ffeca6;
 }
 .navbar-nav > li:hover > a {
-  background-color: #bcdc97;
+  background-color: #ffeca6;
 }
 .navbar-nav > li:hover ul {
   display: block;
@@ -32,14 +32,14 @@
 .navbar-nav ul {
   display: none;
   position: absolute;
-  background-color: #edf6e3;
+  background-color: #ffffff;
   z-index: -1;
-  border: 1px solid #8bc34a;
+  border: 1px solid #ffd740;
   margin-top: -100px;
 }
 .navbar-nav ul li {
   list-style: none;
-  border-bottom: 1px solid #8bc34a;
+  border-bottom: 1px solid #ffd740;
 }
 .navbar-nav ul li a {
   display: block;
@@ -48,7 +48,7 @@
 }
 .navbar-nav ul li a:hover {
   text-decoration: none;
-  background-color: #97c95d;
+  background-color: #ffdc5a;
   color: #ffffff;
 }
 @keyframes fade-sub {

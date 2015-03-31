@@ -10,7 +10,7 @@ ul.buckets:after {
 }
 ul.buckets li {
   color: #fff;
-  background: linear-gradient(90deg, #9fc34a, #749130);
+  background: linear-gradient(90deg, #ffb740, #f39700);
   width: 200px;
   line-height: 200px;
   text-align: center;
@@ -39,23 +39,23 @@ ul.buckets li:after {
 }
 ul.buckets li:before {
   top: -25px;
-  background: radial-gradient(#657d2a 80%, #374417);
+  background: radial-gradient(#d98700 80%, #8d5800);
 }
 ul.buckets li:after {
   bottom: -25px;
-  background: linear-gradient(90deg, #9fc34a, #749130);
+  background: linear-gradient(90deg, #ffb740, #f39700);
   z-index: -1;
 }
 ul.buckets li.active {
-  background: linear-gradient(90deg, #8bc34a, #649130);
+  background: linear-gradient(90deg, #ffd740, #f3c000);
   font-weight: bold;
   font-size: 2.5em;
 }
 ul.buckets li.active:before {
-  background: radial-gradient(#577d2a 80%, #2f4417);
+  background: radial-gradient(#d9ac00 80%, #8d6f00);
 }
 ul.buckets li.active:after {
-  background: linear-gradient(90deg, #8bc34a, #649130);
+  background: linear-gradient(90deg, #ffd740, #f3c000);
 }
 @media screen and (max-width: 360px) {
   ul.buckets li {
