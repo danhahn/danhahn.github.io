@@ -1580,7 +1580,115 @@ value|value|Button label.  Default value “reset”&lt;/p&gt;
       <description>&lt;p&gt;This week we will be working on the final project. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;start-to-work-on-final&quot;&gt;Start to work on final&lt;/h1&gt;
-&lt;p&gt;More info to come&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/content.html&quot;&gt;Download Content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/images.html&quot;&gt;Download Images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/view.html&quot;&gt;View&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This week we will start to work on the class final.  The final will pull from all the lessons of this session.  Nothing should be a surprise to you.   You can use your class notes, lesson examples or any other resource you need to finish the final.  The final must be sent to me by the end of the last class at 10:00.&lt;/p&gt;
+&lt;p&gt;You will be responsible for creating all the markup and css for the whole site.   You are free to work any way that you want to complete the project.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;i-would-recommend-working-this-way-&quot;&gt;I would recommend working this way.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Get the basic HTML structure set up.&lt;/li&gt;
+&lt;li&gt;Get a basic css file in place to ensure the links work&lt;/li&gt;
+&lt;li&gt;Get all the all the pages in place and ensure they link together&lt;/li&gt;
+&lt;li&gt;Finish the CSS&lt;/li&gt;
+&lt;li&gt;Fill in the rest of the content&lt;/li&gt;
+&lt;li&gt;Add finishing touches&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I have include everything you will need to build the page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;psd&quot;&gt;PSD&lt;/h2&gt;
+&lt;p&gt;The PSD is a great place to get started.  This can give you all the info you will need to build out the HTML and css.  I like to use the PSD to get the sizes and colors of the different elements.&lt;/p&gt;
+&lt;p&gt;&lt;a href='final.psd' class='btn'&gt;Download PSD&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;colors&quot;&gt;Colors&lt;/h2&gt;
+&lt;p&gt;Below are a list of the colors needed to build the pages.&lt;/p&gt;
+&lt;div style=&quot;display:flex;&quot;&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+    &lt;div class=&quot;mb1&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#e8d1b2&quot;&gt;&lt;/rect&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;h6 break-word&quot;&gt;#e8d1b2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+    &lt;div class=&quot;mb1&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#d0a264&quot;&gt;&lt;/rect&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;h6 break-word&quot;&gt;#d0a264&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+    &lt;div class=&quot;mb1&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#ffffff&quot;&gt;&lt;/rect&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;h6 break-word&quot;&gt;#ffffff&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+    &lt;div class=&quot;mb1&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#c81b00&quot;&gt;&lt;/rect&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;h6 break-word&quot;&gt;#c81b00&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+      &lt;div class=&quot;mb1&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+          &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#4354c7&quot;&gt;&lt;/rect&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;h6 break-word&quot;&gt;#4354c7&lt;/div&gt;
+    &lt;/div&gt;
+
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;sizes&quot;&gt;Sizes&lt;/h2&gt;
+&lt;p&gt;Below are some of the key sizes needed to build the pages.&lt;/p&gt;
+&lt;div class=&quot;&quot;&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:60px&quot;&gt;
+        Font Size 60px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:45px&quot;&gt;
+        Font Size 45px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:25px&quot;&gt;
+        Font Size 25px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:20px&quot;&gt;
+        Font Size 20px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:15px&quot;&gt;
+        Font Size 15px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:12px&quot;&gt;
+        Font Size 12px
+      &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&quot;fonts&quot;&gt;Fonts&lt;/h2&gt;
+&lt;p&gt;Below are the font size and family you will need to use to build the pages.&lt;/p&gt;
+&lt;div class=&quot;h3 bold break-word mb1&quot; style=&quot;font-family:arial&quot;&gt;
+  arial
+&lt;/div&gt;
+&lt;div class=&quot;h3 bold break-word mb1&quot; style=&quot;font-family:'Montserrat', sans-serif&quot;&gt;
+  ‘Montserrat’, sans-serif
+&lt;/div&gt;
+&lt;div class=&quot;h3 bold break-word mb1&quot; style=&quot;font-family:'Homemade Apple', cursive&quot;&gt;
+  ‘Homemade Apple’, cursive
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; you will need to include this at the op of your css file &lt;code&gt;@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     <item>

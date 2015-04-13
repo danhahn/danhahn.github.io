@@ -7,7 +7,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #f3c000;
+  color: #aa8a0a;
 }
 ul,
 ol {
@@ -29,7 +29,7 @@ h1 {
   font-weight: 300;
 }
 a:hover {
-  color: #ffd740;
+  color: #f1c40f;
 }
 .caps {
   font-weight: bold;
@@ -39,18 +39,18 @@ a.btn:hover {
   color: white;
 }
 .btn {
-  background-color: #ffdc5a;
+  background-color: #f2ca27;
 }
 .btn:hover {
-  background-color: #ffd227;
+  background-color: #dab10d;
 }
 .btn:active,
 .btn.active {
-  background-color: #f3c000;
+  background-color: #aa8a0a;
 }
 code {
-  color: #ffd740;
-  background-color: #ffffff;
+  color: #f1c40f;
+  background-color: #fdf7de;
 }
 article {
   padding: 0 20px;
@@ -60,7 +60,7 @@ article {
   margin-bottom: 1em;
 }
 h2 {
-  color: #ffb740;
+  color: #f19e0f;
   font-size: 1.8em;
   line-height: 1.8;
   font-weight: 700;
@@ -98,23 +98,23 @@ h3 {
   background: none;
 }
 .main-nav {
-  background-color: #ffe273;
+  background-color: #f4d03f;
 }
 .main-nav .navbar {
-  background-color: #ffd740;
+  background-color: #f1c40f;
   margin-bottom: 0;
   border-radius: 0;
   border: none;
 }
 .main-header {
-  background-color: #ffeca6;
+  background-color: #f7dc6f;
   margin-bottom: 20px;
 }
 .main-header .well {
   border-radius: 0;
   border: none;
   margin-bottom: 0;
-  background-color: #f3c000;
+  background-color: #aa8a0a;
   padding: 10px 20px;
 }
 .main-header .well.page-title {
@@ -152,7 +152,7 @@ h3 {
   letter-spacing: 1px;
 }
 .side-nav .nav-tabs.nav-stacked > li.active a {
-  background-color: #ffd740;
+  background-color: #f1c40f;
   color: #ffffff;
   font-weight: 700;
 }
@@ -203,13 +203,13 @@ h3 {
   fill: #ffffff;
 }
 .navbar .brand svg .slash {
-  fill: #ffeca6;
+  fill: #f7dc6f;
 }
 .navbar .brand svg .letter {
   fill: #ffffff;
 }
 .navbar .brand svg .smletter {
-  fill: #ffeca6;
+  fill: #f7dc6f;
 }
 .navbar .brand svg .dot {
   fill: #ffffff;
@@ -262,13 +262,13 @@ p.date {
   padding: .5em 2em;
 }
 .table th {
-  color: #ffb740;
+  color: #f19e0f;
 }
 .alert-info {
   text-align: left;
-  color: #ffb740;
+  color: #f19e0f;
   background-color: #ffffff;
-  border-color: #ffb740;
+  border-color: #f19e0f;
 }
 .scroll-top {
   float: right;
@@ -299,7 +299,7 @@ p.date {
   margin-bottom: .2em;
 }
 .lesson-item .well h2 a {
-  color: #ffb740;
+  color: #f19e0f;
 }
 .lesson-item .well p {
   text-align: left;
@@ -372,12 +372,12 @@ footer .container p {
   width: 100%;
   position: relative;
   z-index: 100;
-  background-color: #ffd740;
+  background-color: #f1c40f;
   color: #ffffff;
   transition: all .3s;
 }
 .overflow {
-  border: 1px solid #f3c000;
+  border: 1px solid #aa8a0a;
   padding: 10px;
   height: 100px;
 }
@@ -389,7 +389,7 @@ footer .container p {
 }
 .date {
   font-weight: 100;
-  color: #ffb740;
+  color: #f19e0f;
   font-size: .75em;
 }
 .date span,
@@ -458,8 +458,8 @@ img[src$="homework.png"] {
 }
 .homework-view {
   display: flex;
-  border-top: 1px solid #ffb740;
-  border-bottom: 1px solid #ffb740;
+  border-top: 1px solid #f19e0f;
+  border-bottom: 1px solid #f19e0f;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -479,17 +479,17 @@ img[src$="homework.png"] {
   border: 2px solid gray;
 }
 .navbar-default .navbar-toggle {
-  border-color: #f3c000;
-  background-color: #ffeca6;
+  border-color: #aa8a0a;
+  background-color: #f7dc6f;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:active,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ffb740;
+  background-color: #f19e0f;
   outline: none;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #f3c000;
+  background-color: #aa8a0a;
 }
 .label {
   text-transform: uppercase;
@@ -650,9 +650,9 @@ pre {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  border-left: 2px solid #ffd740;
+  border-left: 2px solid #f1c40f;
   background-color: transparent;
-  color: #ffd740;
+  color: #f1c40f;
   border-radius: 0;
   font-weight: bold;
 }
@@ -661,7 +661,7 @@ pre {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  border-left: 2px solid #ffeca6;
+  border-left: 2px solid #f7dc6f;
   background-color: transparent;
   border-radius: 0;
 }
