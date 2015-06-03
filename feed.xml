@@ -21,7 +21,8 @@
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/editors.html&quot;&gt;Editors&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/template.html&quot;&gt;HTML Template&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/blocklevel.html&quot;&gt;Blocklevel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/block-level.html&quot;&gt;Block-Level&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/inline.html&quot;&gt;Inline&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/classwork.html&quot;&gt;Classwork&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -174,7 +175,7 @@ Examples
 &lt;p&gt;If we had the text &lt;strong&gt;HTML at SVA&lt;/strong&gt; and wanted to link to the web page &lt;em&gt;&lt;a href=&quot;http://www.svahtml.com&quot;&gt;http://www.svahtml.com&lt;/a&gt;&lt;/em&gt; the link would look like this.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;http://www.svahtml.com&amp;quot;&amp;gt;HTML at SVA&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Keep in mind that the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; is an inline element so it can be placed next to other text. &lt;/p&gt;
-&lt;p&gt;If you want a link to be on its own line it would need to wrapped with a blocklevel element like a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you want a link to be on its own line it would need to wrapped with a Block-Level element like a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;linking-to-a-file-in-the-same-folder&quot;&gt;Linking to a file in the same folder&lt;/h2&gt;
 &lt;p&gt;When you link to a file that is in the same folder just add the file name to the HREF attribute.&lt;/p&gt;

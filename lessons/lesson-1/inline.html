@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lesson 4 - SVA HTML
+    <title>Lesson 1 - SVA HTML
     </title>
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2015">
     <link rel="stylesheet" href="/css/github.css">
@@ -64,137 +64,50 @@
     <header class="main-header">
       <div class="container">
         <div class="well small page-title">
-          <h1>Lesson 4</h1>
-          <div class="date"><i class="fa fa-calendar"></i><span class="month">June</span><span class="day">24,</span><span class="year">2015</span></div>
+          <h1>Lesson 1</h1>
+          <div class="date"><i class="fa fa-calendar"></i><span class="month">June</span><span class="day">3,</span><span class="year">2015</span></div>
         </div>
       </div>
     </header>
     <div class="container main-level">
       <div class="col-md-9 main-content">
         <article class="article">
-          <section class="content"><h1 id="text-properties">Text&nbsp;Properties</h1>
+          <section class="content"><h1 id="inline-elements">Inline&nbsp;Elements</h1>
 <ul>
-<li><a href="/lessons/lesson-4/">Font&nbsp;Properties</a></li>
-<li><a href="/lessons/lesson-4/text.html">Text&nbsp;Properties</a></li>
-<li><a href="/lessons/lesson-4/borders.html">Borders</a></li>
-<li><a href="/lessons/lesson-4/padding-margin.html">Padding and&nbsp;Margin</a></li>
-<li><a href="/lessons/lesson-4/homework.html">Homework</a></li>
+<li><a href="/lessons/lesson-1/">Intro</a></li>
+<li><a href="/lessons/lesson-1/editors.html">Editors</a></li>
+<li><a href="/lessons/lesson-1/template.html"><span class="caps">HTML</span>&nbsp;Template</a></li>
+<li><a href="/lessons/lesson-1/block-level.html">Block-Level</a></li>
+<li><a href="/lessons/lesson-1/inline.html">Inline</a></li>
+<li><a href="/lessons/lesson-1/classwork.html">Classwork</a></li>
+<li><a href="/lessons/lesson-1/homework.html">Homework</a></li>
 </ul>
-<p>Text Properties like font properties alter the way fonts display but have more to do with spacing or alignment than the way the font itself&nbsp;displays.</p>
-<h2 id="text-properties">Text&nbsp;Properties</h2>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Possible Values</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>color:</td>
-<td>color</td>
-</tr>
-<tr>
-<td>letter-spacing:</td>
-<td>normal, length</td>
-</tr>
-<tr>
-<td>line-height:</td>
-<td>normal, length, percent</td>
-</tr>
-<tr>
-<td>text-align:</td>
-<td>left, right, center, justify</td>
-</tr>
-<tr>
-<td>text-decoration:</td>
-<td>none, underline,  overline, line-through</td>
-</tr>
-<tr>
-<td>text-indent:</td>
-<td>length, percent</td>
-</tr>
-<tr>
-<td>text-transform:</td>
-<td>none, capitalize, uppercase, lowercase</td>
-</tr>
-<tr>
-<td>white-space:</td>
-<td>normal, pre, nowrap</td>
-</tr>
-<tr>
-<td>word-spacing:</td>
-<td>normal, length</td>
-</tr>
-</tbody>
-</table>
+<p><span class="caps">HTML</span> elements are usually “inline” elements or “block-level” elements. An inline element occupies only the space bounded by the tags that define the inline&nbsp;element.</p>
+<p>In other words inline elements will not format the text to its own line instead the text will remain “inline” with the rest of&nbsp;text.  </p>
+<p><strong>Note:</strong> inline elements always need to be wrapped with a block-level&nbsp;element.  </p>
+<h2 id="here-are-a-few-inline-tags-we-will-use-">Here are a few inline tags we will&nbsp;use.</h2>
+<ul>
+<li><code>&lt;em&gt;</code> - The <span class="caps">HTML</span> Emphasis Element (<code>&lt;em&gt;</code>) marks text that has stress&nbsp;emphasis.</li>
+<li><code>&lt;strong&gt;</code> - The <span class="caps">HTML</span> Strong Element (<code>&lt;strong&gt;</code>) gives text strong importance, and is typically displayed in&nbsp;bold.</li>
+<li><code>&lt;span&gt;</code> - The <span class="caps">HTML</span> <code>&lt;span&gt;</code> element is a generic inline container for phrasing content, which does not inherently represent anything. <em>It should be used only when no other semantic element is&nbsp;appropriate.</em></li>
+<li><code>&lt;code&gt;</code> - The <span class="caps">HTML</span> Code Element (<code>&lt;code&gt;</code>) represents a fragment of computer code. By default, it is displayed in the browser’s default monospace&nbsp;font.</li>
+</ul>
+<h3 id="example">example</h3>
+<p><code>&lt;em&gt;</code></p>
+<pre><code>&lt;p&gt;In HTML 5, what was previously called &lt;em&gt;block-level&lt;/em&gt; content is now called &lt;em&gt;flow&lt;/em&gt; content.&lt;/p&gt;
+</code></pre><p>In <span class="caps">HTML</span> 5, what was previously called <em>block-level</em> content is now called <em>flow</em>&nbsp;content.</p>
 <hr>
-<p><code>color</code> - defines the color of any element that can take a color like text, bullets or&nbsp;borders. </p>
-<h3 id="colors">Colors</h3>
-<table>
-<thead>
-<tr>
-<th>Unit</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>color_name</td>
-<td>A color name (red)</td>
-</tr>
-<tr>
-<td>rgb(x,x,x)</td>
-<td>A rgb value (rgb(255,0,0))</td>
-</tr>
-<tr>
-<td>rgb(y%, y%, y%)</td>
-<td>A rgb percentage value (rgb(100%,0%,0%))</td>
-</tr>
-<tr>
-<td>#rrggbb</td>
-<td>A hex number ( #c0c0c0).</td>
-</tr>
-</tbody>
-</table>
+<p><code>&lt;strong&gt;</code></p>
+<pre><code>&lt;p&gt;When doing x it is &lt;strong&gt;imperative&lt;/strong&gt; to do y before proceeding.&lt;/p&gt;
+</code></pre><p>When doing x it is <strong>imperative</strong> to do y before&nbsp;proceeding.</p>
 <hr>
-<p><code>letter-spacing</code> - this is the space between letters in a word.  The default value is <code>0</code>.  To move the letters apart you would add value of <code>1px</code> or greater.  If you want to bring the letters closer together you can add negative number <code>-1px</code></p>
-<pre><code>letter-spacing: 1px;
-letter-spacing: -1px;
-</code></pre><hr>
-<p><code>line-height</code> - defines the space from the top of one line to the top of the next line within the same element.   By default the line height is 1.2 so if the text is 10px the line height would be&nbsp;12px. </p>
-<pre><code>line-height: 1.5em
-</code></pre><hr>
-<p><code>text-decoration</code> - defines whether or not a text element has an underline.  It can also remove an underlying form a link by setting the value to <code>none</code>.  </p>
-<pre><code>text-decoration: underline;
-text-decoration: none;
-</code></pre><hr>
-<p><code>text-align</code> - defines how the text within an element displays. By default text is aligned to the&nbsp;left.  </p>
-<pre><code>text-align: right;
-text-align: center;
-text-align: justify;
-</code></pre><hr>
-<p><code>text-indent</code> - within a paragraph you are able to indent just the first line.  Values can be both positive and&nbsp;negative. </p>
-<pre><code>text-indent: 10px;
-</code></pre><hr>
-<p><code>text-transform</code> - defines whether the text should be uppercase, lowercase or the first letter of each word should be&nbsp;capital.  </p>
-<pre><code>text-transform: uppercase;
-text-transform: lowercase;
-text-transform: capitalize; 
-</code></pre><hr>
-<p><code>white-space</code> - when the value is <code>nowrap</code> it will prevent that element from wrapping.  This is useful when you have a two word branding that needs to be treated as one&nbsp;work.  </p>
-<pre><code>white-space: nowrap;
-</code></pre><hr>
-<p><code>word-spacing</code> - like <code>letter-spacing</code> but adds space between the word.  The value can be both positive or&nbsp;negative.  </p>
-<pre><code>word-spacing: 10px;
-</code></pre><style>
-table tr td:nth-child(1){width:20%}
-td .label {margin-right: 4px;cursor: pointer;}
-</style>
-
-
-<script src="lesson5.js"></script>
-
+<p><code>&lt;span&gt;</code></p>
+<pre><code>&lt;p&gt;&lt;span&gt;Some text&lt;/span&gt;&lt;/p&gt;
+</code></pre><p>Some&nbsp;text</p>
+<hr>
+<p><code>&lt;code&gt;</code> Example</p>
+<pre><code>&lt;p&gt;Regular text. &lt;code&gt;This is code.&lt;/code&gt; Regular text.&lt;/p&gt;
+</code></pre><p>Regular text. <code>This is code</code>. Regular&nbsp;text.</p>
 </section>
         </article>
       </div>

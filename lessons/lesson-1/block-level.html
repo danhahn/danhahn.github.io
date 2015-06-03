@@ -14,13 +14,11 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" sizes="192x192" href="/images/favicon.png">
     <meta name="theme-color" content="#2980b9">
-    <link rel="stylesheet" href="buckets.css">
     <script src="/js/highlight.pack.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/underscore.js"></script>
     <script src="/js/global.js"></script>
-    <script src="buckets.js"></script>
   </head>
   <body class="article-detail">
     <div class="main-nav">
@@ -74,9 +72,7 @@
     <div class="container main-level">
       <div class="col-md-9 main-content">
         <article class="article">
-          <section class="content"><p>Introduction to <span class="caps">HTML</span>, Web Browsers, Standards <div><span class="label label-default html"><i class="fa fa-html5"></i><span class="caps">HTML</span></span></div></p>
-<p><span class="more"></span></p>
-<h1 id="introduction">Introduction</h1>
+          <section class="content"><h1 id="block-level-elements">Block-Level&nbsp;Elements</h1>
 <ul>
 <li><a href="/lessons/lesson-1/">Intro</a></li>
 <li><a href="/lessons/lesson-1/editors.html">Editors</a></li>
@@ -86,93 +82,141 @@
 <li><a href="/lessons/lesson-1/classwork.html">Classwork</a></li>
 <li><a href="/lessons/lesson-1/homework.html">Homework</a></li>
 </ul>
-<p><a href="/lessons/lesson-1/week1-notes.zip">Download&nbsp;Notes</a></p>
-<h2 id="what-is-html-">What is&nbsp;<span class="caps">HTML</span>?</h2>
-<p><span class="caps">HTML</span> or Hyper Text Markup Language is the building blocks of all web pages.  HTML uses tags to create element that are filled with content like text and images.  The elements are instructions to the web browser how to display the content on the&nbsp;screen.  </p>
-<p>Another way to think about it is <span class="caps">HTML</span> is a series of start and stop commands for the web browser.  The browser then renders that content to the specs of&nbsp;HTML.  </p>
-<h2 id="the-three-buckets">The Three&nbsp;Buckets</h2>
-<p>Modern web development uses the three bucket approach.  Each bucket adds another layer to the display of the&nbsp;page.</p>
-<ul class="buckets">
-  <li><span class="caps">HTML</span></li>
-  <li><span class="caps">CSS</span></li>
-  <li>JavaScript</li>
-</ul>
-
-<ul>
-<li><span class="caps">HTML</span> is the building blocks or scaffolding of the&nbsp;page.  </li>
-<li><span class="caps">CSS</span> or Cascading Style Sheets is the presentation or the look and feel of the&nbsp;page.</li>
-<li>JavaScript is the action layer of the page.  We will not cover any JavaScript in this&nbsp;class.</li>
-</ul>
-<h2 id="the-tag">The&nbsp;Tag</h2>
-<p>There are over 80 different <span class="caps">HTML</span> tags that can be used.  They all have the same basic format.  Most tags have an opening and a closing&nbsp;tag.  </p>
-<pre><code>&lt;tag&gt;content&lt;/tag&gt;
-</code></pre><p>All tags have brackets around them &lt; and &gt; that are used by the browser to know what is a tag and what is content.  Right after the opening bracket <code>&lt;</code> is the tag name like h1 or p then the closing bracket <code>&gt;</code>.</p>
-<pre><code>&lt;tag&gt;
-</code></pre><p>If the tag has a closing tag it will match the opening tag but have an <code>/</code> after the opening bracket.  This is the indication to the browser to close the tag that was opened.  With out it the browser would never know when to&nbsp;stop.  </p>
-<pre><code>&lt;/tag&gt;
-</code></pre><p>There are a few number of tags that do not have a closing tag because they do not wrap any content.  Older versions of <span class="caps">HTML</span> required that all tags be opened and closed.  This is no longer the case although you may still see a self-closing tag <code>&lt;tag /&gt;</code> in code&nbsp;examples.  </p>
-<h2 id="attributes">Attributes</h2>
-<p>Sometimes a tag will need additional information to perform correctly.  Adding an attribute to the tag allows the developer to set the correct information on each&nbsp;tag.  </p>
-<ul>
-<li>Attributes will always go on the opening tag after the tag name.  There must be space between the tag name and the attribute&nbsp;name.</li>
-<li>Attributes do not need to be closed.  In other words when you close a tag you close its entire&nbsp;attribute.  </li>
-<li>If an attribute has a value the value must be quoted and you should use the double quote&nbsp;“</li>
-<li>If an attribute has a value there must be an equal sign = between the attribute name and the&nbsp;value.</li>
-<li>The order of the attribute does not&nbsp;matter.</li>
-<li>The number of attributes that are used has decreased with newer versions of&nbsp;<span class="caps">HTML</span>.</li>
-</ul>
-<h3 id="one-attribute">One&nbsp;Attribute</h3>
-<pre><code>&lt;tag attribute=&quot;value&quot;&gt;content&lt;/tag&gt;
-</code></pre><h3 id="two-attributes">Two&nbsp;Attributes</h3>
-<pre><code>&lt;tag attribute=&quot;value&quot; attribute=&quot;value&quot;&gt;content&lt;/tag&gt;
-</code></pre><h2 id="block-level-vs-inline">Block-level vs&nbsp;inline</h2>
-<p>Most all tags fall in to one of two types of tags, inline or block.  Understanding how an element displays will help you choose the correct tag to&nbsp;use.  </p>
-<p>Block-level elements&nbsp;will</p>
-<ul>
-<li>Fill the full width of the parent&nbsp;element</li>
-<li>Force the content to its own&nbsp;line</li>
-<li>Allows for padding and margin to be set on the top and&nbsp;bottom.</li>
-</ul>
-<h3 id="examples">Examples</h3>
-<p><code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, and <code>&lt;h1&gt;</code>.</p>
-<p>Inline&nbsp;will</p>
-<ul>
-<li>Only take up the space of the&nbsp;content</li>
-<li>Wont force the content two its own line i.e. stay&nbsp;“inline”</li>
-<li>Can’t have padding on the top and&nbsp;bottom</li>
-<li>Can’t have a width or height set
-Examples
-<code>&lt;a&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code> and <code>&lt;code&gt;</code>.</li>
-</ul>
-<p>The block examples are structural elements, while the inline elements are text-based. This is an easy way to remember which is&nbsp;which.</p>
-<p>Generally speaking, you can put any block element inside another block element. You can also put any inline element inside a block element, as well as any inline element inside any other inline element. But you cannot put a block element inside an inline element. The paragraph tags also must be the inner most block element or in other words you cannot have a paragraph tag nested in a paragraph&nbsp;tag.</p>
-<h2 id="nesting-elements">Nesting&nbsp;Elements</h2>
-<p>If we think about html as the building blocks of a webpage we will have to nest elements within in each other to build the page&nbsp;correctly.  </p>
-<p>Think about it this way.  If we were to build a house we might start to build the ground floor.  We might add a kitchen, bathroom and living room all with in the ground floor.  We would not finish the floor until all the rooms are&nbsp;done.  </p>
-<pre><code>House
-    Floor
-        Kitchen
-        Bathroom
-        Living room
-    Floor
-        Bed Room
-        Bed Room
-        Bathroom
-</code></pre><p>If this was <span class="caps">HTML</span> it might look something like&nbsp;this</p>
-<pre><code>&lt;house&gt;
-    &lt;floor&gt;
-        &lt;kitchen&gt;&lt;/kitchen&gt;
-        &lt;bathroom&gt;&lt;/bathroom&gt;
-        &lt;living&gt;&lt;/living&gt;
-    &lt;/floor&gt;
-    &lt;floor&gt;
-        &lt;bed&gt;&lt;/bed&gt;
-        &lt;bed&gt;&lt;/bed&gt;
-        &lt;bathroom&gt;&lt;/bathroom&gt;
-    &lt;/floor&gt;
-&lt;/house&gt;
-</code></pre><p>You can see we open the house tag but do not close it until both floors are&nbsp;done.  </p>
-<p>First in, last out. The first tag you open is the last tag you&nbsp;close.  </p>
+<p>Block-Level elements are used to define the structure of the <span class="caps">HTML</span> page. Block-Level elements will define and area on the page or force content on its own line. Block-Level elements must be the outermost elements but can be nested within each other. The only exception to the rule is the paragraph tag which needs to be the innermost Block-Level&nbsp;elements.</p>
+<h2 id="structure-tags-block-level-elements">Structure Tags - Block-Level&nbsp;Elements</h2>
+<h3 id="paragraph-tag-p-">Paragraph Tag (<code>&lt;p&gt;</code>)</h3>
+<p>Since <span class="caps">HTML</span> will not display line breaks within the HTML source to get that formatting to display within the browser we need to use the paragraph tag.
+<code>&lt;p&gt;&lt;/p&gt;</code>. The paragraph tag is a block-level element. It will add a small amount of space above and below the element.  Paragraph tags should be used for all content that does not fit another&nbsp;case.</p>
+<h4 id="example"><span class="caps">EXAMPLE</span></h4>
+<pre><code>&lt;p&gt;sample text&lt;/p&gt;
+</code></pre><h3 id="section-headers-h1-to-h6-">Section Headers (h1 to&nbsp;h6)</h3>
+<p><span class="caps">HTML</span> provides for up to six levels of headers for your web page. <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>. <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>. Headers are sometime called headlines are block-level elements there for they will always a create new line. In addition they will make the text bold and change the size of it depending on the number next to the <code>&lt;h1&gt;</code> is the largest and <code>&lt;h6&gt;</code> is the&nbsp;smallest.</p>
+<p>Section headers should be used to define the important of the content. So there should only be one H1 on a page but there could be many H2s on a page since they would be viewed as sub header of the H1 and so&nbsp;on.</p>
+<h3 id="example"><span class="caps">EXAMPLE</span></h3>
+<pre><code>&lt;h1&gt;Article Title&lt;/h1&gt;
+&lt;h2&gt;Article Subsection&lt;/h2&gt;
+&lt;h3&gt;SubHeader&lt;/h3&gt;
+&lt;h2&gt;Article Subsection&lt;/h2&gt;
+</code></pre><h3 id="creating-line-break">Creating line&nbsp;break</h3>
+<p>The <code>&lt;br&gt;</code> tag inserts a single line&nbsp;break.</p>
+<h4 id="example"><span class="caps">EXAMPLE</span></h4>
+<pre><code>&lt;p&gt;This example is&lt;br&gt; &lt;span&gt;very important&lt;/span&gt;&lt;/p&gt;
+</code></pre><h3 id="list-ul-ol-li-">List - <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></h3>
+<p>List are built into <span class="caps">HTML</span> and come in two types, ordered and unordered. List are made up of at least two tags the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> and the <code>&lt;li&gt;</code>.</p>
+<p>The <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> will add a margin at the top and the bottom of the list along with indenting the list on the left&nbsp;side.</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;ul&gt;&lt;/ul&gt;</code></td>
+<td>Unordered list – bullets</td>
+</tr>
+<tr>
+<td><code>&lt;ol&gt;&lt;/ol&gt;</code></td>
+<td>Ordered list – numbers</td>
+</tr>
+<tr>
+<td><code>&lt;li&gt;&lt;/li&gt;</code></td>
+<td>List Item.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">example</h3>
+<h2 id="unordered-list">Unordered&nbsp;list</h2>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p>Ordered&nbsp;List</p>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+    &lt;li&gt;List item&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre><h3 id="example">Example</h3>
+<pre><code>&lt;div&gt;
+    &lt;h1&gt; Lorem ipsum dolor sit amet &lt;/h1&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas quis augue ut massa nonummy viverra. &lt;a href=”http://www.lorenipsum.com”&gt;Cras convallis pulvinar&lt;/a&gt; ante. Proin varius velit eget tellus. Duis elit. Quisque lectus velit, consequat sed, nonummy quis, molestie vitae, nisl. Praesent vehicula, odio vitae &lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;List Item&lt;/li&gt;
+        &lt;li&gt;List Item&lt;/li&gt;
+        &lt;li&gt;List Item&lt;/li&gt;
+    &lt;ul&gt;
+&lt;/div&gt;
+</code></pre><h3 id="nested-list-item">Nested List&nbsp;Item</h3>
+<p>You can nest a list with in a list but it must be added to a list&nbsp;item</p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;
+        Item Text
+        &lt;ul&gt;
+            &lt;li&gt;Sub List Item&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;ul&gt;
+</code></pre><h2 id="blockquote">Blockquote</h2>
+<p>A browser inserts white space before and after a blockquote element. It also insert margins for the blockquote&nbsp;element.</p>
+<pre><code>&lt;blockquote&gt;
+    &lt;p&gt;Here is a long quotation here is a long quotation&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre><h3 id="breaking-up-a-page-into-divisions-div-">Breaking up a Page into Divisions (<code>&lt;div&gt;</code>)</h3>
+<p>Breaking the page up into divisions allows you to apply styles to an entire chunk of your page at once. This can also be used to layout your page. The <div> element is a block-level element but has not margin applied like the paragraph&nbsp;tag.</p>
+<p>With the div element you will apply an attribute of class or id to apply a style to&nbsp;it.</p>
+<h4 id="example"><span class="caps">EXAMPLE</span></h4>
+<pre><code>&lt;div&gt;
+    &lt;h2&gt;Article Subsection&lt;/h2&gt;
+    &lt;p&gt;sample text&lt;/p&gt;
+    &lt;p&gt;sample text&lt;/p&gt;
+    &lt;p&gt;sample text&lt;/p&gt;
+&lt;/div&gt;
+</code></pre><h2 id="new-html5-tags">New <span class="caps">HTML5</span>&nbsp;Tags</h2>
+<table>
+<thead>
+<tr>
+<th><span class="caps">TAG</span></th>
+<th><span class="caps">DESCRIPTION</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;article&gt;</code></td>
+<td>Defines an article</td>
+</tr>
+<tr>
+<td><code>&lt;aside&gt;</code></td>
+<td>Defines content aside from the page content</td>
+</tr>
+<tr>
+<td><code>&lt;details&gt;</code></td>
+<td>Defines additional details that the user can view or hide</td>
+</tr>
+<tr>
+<td><code>&lt;figure&gt;</code></td>
+<td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+</tr>
+<tr>
+<td><code>&lt;footer&gt;</code></td>
+<td>Defines a footer for a document or section</td>
+</tr>
+<tr>
+<td><code>&lt;header&gt;</code></td>
+<td>Defines a header for a document or section</td>
+</tr>
+<tr>
+<td><code>&lt;nav&gt;</code></td>
+<td>Defines navigation links</td>
+</tr>
+<tr>
+<td><code>&lt;section&gt;</code></td>
+<td>Defines a section in a document</td>
+</tr>
+</tbody>
+</table>
 </section>
         </article>
       </div>
@@ -181,14 +225,6 @@ Examples
           <div class="tags">
             <div class="data"><span class="html label label-default"><i class="fa fa-html5"></i>html</span></div>
             <ul>
-              <li><code>&lt;html&gt;</code>
-              </li>
-              <li><code>&lt;head&gt;</code>
-              </li>
-              <li><code>&lt;title&gt;</code>
-              </li>
-              <li><code>&lt;body&gt;</code>
-              </li>
               <li><code>&lt;p&gt;</code>
               </li>
               <li><code>&lt;h1&gt;</code>
