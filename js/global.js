@@ -147,7 +147,7 @@ $(function() {
   })
 
   checkHex = function (string) {
-    return (string.length == 7) ? true : false;
+    return ((string.length == 4 || string.length == 7) && string.substring(0, 1) == '#') ? true : false;
   }
 
   buildTemplate = function ($template, hexColor) {
