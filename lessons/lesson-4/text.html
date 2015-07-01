@@ -126,10 +126,14 @@
 <td>word-spacing:</td>
 <td>normal, length</td>
 </tr>
+<tr>
+<td>text-shaow:</td>
+<td>offset, offset, spread, color</td>
+</tr>
 </tbody>
 </table>
 <hr>
-<p><code>color</code> - defines the color of any element that can take a color like text, bullets or&nbsp;borders. </p>
+<p><code>color</code> - defines the color of any element that can take a color like text, bullets or&nbsp;borders.</p>
 <h3 id="colors">Colors</h3>
 <table>
 <thead>
@@ -162,7 +166,7 @@
 <pre><code>letter-spacing: 1px;
 letter-spacing: -1px;
 </code></pre><hr>
-<p><code>line-height</code> - defines the space from the top of one line to the top of the next line within the same element.   By default the line height is 1.2 so if the text is 10px the line height would be&nbsp;12px. </p>
+<p><code>line-height</code> - defines the space from the top of one line to the top of the next line within the same element.   By default the line height is 1.2 so if the text is 10px the line height would be&nbsp;12px.</p>
 <pre><code>line-height: 1.5em
 </code></pre><hr>
 <p><code>text-decoration</code> - defines whether or not a text element has an underline.  It can also remove an underlying form a link by setting the value to <code>none</code>.  </p>
@@ -174,27 +178,36 @@ text-decoration: none;
 text-align: center;
 text-align: justify;
 </code></pre><hr>
-<p><code>text-indent</code> - within a paragraph you are able to indent just the first line.  Values can be both positive and&nbsp;negative. </p>
+<p><code>text-indent</code> - within a paragraph you are able to indent just the first line.  Values can be both positive and&nbsp;negative.</p>
 <pre><code>text-indent: 10px;
 </code></pre><hr>
 <p><code>text-transform</code> - defines whether the text should be uppercase, lowercase or the first letter of each word should be&nbsp;capital.  </p>
 <pre><code>text-transform: uppercase;
 text-transform: lowercase;
-text-transform: capitalize; 
+text-transform: capitalize;
 </code></pre><hr>
 <p><code>white-space</code> - when the value is <code>nowrap</code> it will prevent that element from wrapping.  This is useful when you have a two word branding that needs to be treated as one&nbsp;work.  </p>
 <pre><code>white-space: nowrap;
 </code></pre><hr>
 <p><code>word-spacing</code> - like <code>letter-spacing</code> but adds space between the word.  The value can be both positive or&nbsp;negative.  </p>
 <pre><code>word-spacing: 10px;
-</code></pre><style>
-table tr td:nth-child(1){width:20%}
+</code></pre><hr>
+<p><code>text-shadow</code> - allows you to define a shadow on text.  There are four parts to the&nbsp;shadow.</p>
+<ol>
+<li>offset&nbsp;left/right</li>
+<li>offset&nbsp;top/bottom</li>
+<li>spread of the&nbsp;shadow</li>
+<li>color of&nbsp;shadow</li>
+</ol>
+<pre><code>text-shadow: 1px 5px 10px blue;
+</code></pre><p><strong>Note:</strong> you can apply more than one shadow to an element just sperate each shadow with a&nbsp;comma.</p>
+<style>
+table tr td:nth-child(1){width:40%}
 td .label {margin-right: 4px;cursor: pointer;}
 </style>
 
 
 <script src="lesson5.js"></script>
-
 </section>
         </article>
       </div>
