@@ -514,12 +514,30 @@ img[src$="homework.png"] {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  border: solid silver;
+  border-width: 0 1px;
+  padding: 5px 10px;
+  background-color: #FAFAFA;
+}
+.tags:first-of-type {
+  border-top-width: 1px;
+  border-radius: 5px 5px 0 0;
+  padding-top: 10px;
+}
+.tags:last-of-type {
+  border-bottom-width: 1px;
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 10px;
   margin-bottom: 10px;
+}
+.tags:first-of-type:last-of-type {
+  border-radius: 5px;
 }
 .tags .data {
   font-size: 1.4em;
   white-space: nowrap;
   margin-right: 10px;
+  margin-bottom: 5px;
   min-width: 50px;
 }
 .tags ul {
@@ -545,12 +563,34 @@ pre {
   padding: 0 !important;
   list-style: none;
 }
+.hasSwatches:after {
+  display: block;
+  content: "";
+  clear: both;
+}
 .hasSwatches li {
-  display: inline-block;
+  background-color: #fff;
+  float: left;
+  margin-left: .3em;
+}
+.hasSwatches li:hover .swatch {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.hasSwatches li:hover .swatch .swatchColor {
+  height: 128px;
+  margin-bottom: -34px;
+}
+.hasSwatches li:hover .swatch .swatchLabel {
+  top: -2.8em;
+  font-size: 1.2em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  font-weight: bold;
 }
 .hasSwatches li .swatch {
   border: 1px solid silver;
-  padding: 5px;
+  padding: .3em;
+  transition: all .2s;
 }
 .hasSwatches li .swatch .swatchColor {
   width: 100px;
@@ -558,6 +598,9 @@ pre {
   border: 1px solid silver;
 }
 .hasSwatches li .swatch .swatchLabel {
+  transition: all .1s;
+  position: relative;
+  top: 0;
   margin: 5px 0 0;
   text-align: center;
   font-family: Courier New;
