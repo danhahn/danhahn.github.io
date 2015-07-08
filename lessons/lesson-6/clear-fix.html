@@ -75,6 +75,7 @@
           <section class="content"><h1 id="clear-fix">Clear&nbsp;fix</h1>
 <ul>
 <li><a href="/lessons/lesson-6/">Box&nbsp;Model</a></li>
+<li><a href="/lessons/lesson-6/pseudo.html">Pseudo&nbsp;Class</a></li>
 <li><a href="/lessons/lesson-6/floats.html">Floats</a></li>
 <li><a href="/lessons/lesson-6/clear-fix.html">Clear&nbsp;Fix</a></li>
 <li><a href="/lessons/lesson-6/homework.html">Homework</a></li>
@@ -83,13 +84,13 @@
 <h2 id="adding-height">Adding&nbsp;Height</h2>
 <p>The most basic way to fix the issue is to add a height to the parent&nbsp;element.</p>
 <pre><code>&lt;style&gt;
-    ul {
-        height: 25px;
-    }
-    li {
-        float: left;
-        list-style:none;
-    }
+  ul {
+    height: 25px;
+  }
+  li {
+      float: left;
+      list-style:none;
+  }
 &lt;/style&gt;
 &lt;ul&gt;
     &lt;li&gt;Nav Item 1&lt;/li&gt;
@@ -118,13 +119,13 @@
 <h2 id="overflow">Overflow</h2>
 <p>Adding <code>overflow: hidden</code> or <code>overflow: auto</code> will a adjust the way the content is displayed.  This will force a&nbsp;height.</p>
 <pre><code>&lt;style&gt;
-    ul {
-        overflow: hidden;
-    }
-    li {
-        float: left;
-        list-style:none;
-    }
+  ul {
+    overflow: hidden;
+  }
+  li {
+      float: left;
+      list-style:none;
+  }
 &lt;/style&gt;
 &lt;ul&gt;
     &lt;li&gt;Nav Item 1&lt;/li&gt;
@@ -149,22 +150,22 @@
 <h2 id="extra-div">Extra&nbsp;Div</h2>
 <p>Since we know that adding a <code>clear: both;</code> to an element will stop to clear. We can add a new element after the last floated element and add a clear to it. Since the element is after and cleared it will “pin” the background&nbsp;down.</p>
 <pre><code>&lt;style&gt;
-    li {
-        float: left;
-        list-style:none;
-    }
-    .clear {
-        clear: both;
-    }
+  li {
+      float: left;
+      list-style:none;
+  }
+  .clear {
+      clear: both;
+  }
 &lt;/style&gt;
 &lt;nav&gt;
-    &lt;ul&gt;
-        &lt;li&gt;Nav Item 1&lt;/li&gt;
-        &lt;li&gt;Nav Item 2&lt;/li&gt;
-        &lt;li&gt;Nav Item 3&lt;/li&gt;
-        &lt;li&gt;Nav Item 4&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+  &lt;ul&gt;
+      &lt;li&gt;Nav Item 1&lt;/li&gt;
+      &lt;li&gt;Nav Item 2&lt;/li&gt;
+      &lt;li&gt;Nav Item 3&lt;/li&gt;
+      &lt;li&gt;Nav Item 4&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
 &lt;/nav&gt;
 </code></pre><table>
 <thead>
@@ -182,19 +183,19 @@
 </table>
 <h2 id="clear-fix">Clear&nbsp;Fix</h2>
 <p>The idea of the extra <code>&lt;div&gt;&lt;/div&gt;</code> is a good one the only problem is we do not like to add extra markup that has no content need. <span class="caps">CSS3</span> gives all elements an extra element before and after. By using the <code>:after</code> pseudo element you can add an “element” can clear&nbsp;that.</p>
-<pre><code>&lt;style&gt;
+  <style>
     ul:after {
-        content: &quot;&quot;;
-        display: block;
-        clear: both;
+      content: &#8220;&#8221;;
+      display: block;
+      clear: both;
     }
-    li {
-        float: left;
-        list-style:none;
-    }
-&lt;/style&gt;
+        li {
+            float: left;
+            list-style:none;
+        }
+    </style>
 
-&lt;ul&gt;
+<pre><code>&lt;ul&gt;
     &lt;li&gt;Nav Item 1&lt;/li&gt;
     &lt;li&gt;Nav Item 2&lt;/li&gt;
     &lt;li&gt;Nav Item 3&lt;/li&gt;

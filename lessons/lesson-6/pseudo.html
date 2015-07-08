@@ -72,7 +72,7 @@
     <div class="container main-level">
       <div class="col-md-9 main-content">
         <article class="article">
-          <section class="content"><h1 id="homework">Homework</h1>
+          <section class="content"><h1 id="pseudo-class">Pseudo&nbsp;class</h1>
 <ul>
 <li><a href="/lessons/lesson-6/">Box&nbsp;Model</a></li>
 <li><a href="/lessons/lesson-6/pseudo.html">Pseudo&nbsp;Class</a></li>
@@ -80,38 +80,71 @@
 <li><a href="/lessons/lesson-6/clear-fix.html">Clear&nbsp;Fix</a></li>
 <li><a href="/lessons/lesson-6/homework.html">Homework</a></li>
 </ul>
-<p><a href="/lessons/lesson-6/homework6_yourname.zip">Download Stater&nbsp;File</a></p>
-<p>The point of this homework is to work with floats and the box model to create example of what a homepage of a site might look&nbsp;like.</p>
-<h2 id="getting-started">Getting&nbsp;started</h2>
-<p>Download the starer file and be sure to rename both the folder and file&nbsp;name.</p>
-<p>In this folder you will&nbsp;find</p>
-<ul>
-<li>1 html&nbsp;page</li>
-<li>1 css&nbsp;file</li>
-<li>1 folder of&nbsp;images</li>
-</ul>
-<h2 id="global-nav">global&nbsp;nav</h2>
-<p>For the global nav we need to turn a vertical nav in to a horizontal&nbsp;nav.</p>
-<h2 id="promos">promos</h2>
-<p>In this section we need to “stack” the promo boxes next to each other.  Here there is a small 10px gap between each&nbsp;box.  </p>
-<p>Here you will need to put a margin right on all but the last box.  Keep in mind that we can use <code>:last-child</code> to target the last&nbsp;element.</p>
-<p><strong>Note:</strong> you may need to define a width to get the boxes to align&nbsp;correct.</p>
-<h2 id="more-content">more&nbsp;content</h2>
-<p>Here we need to use the box model get the correct size of each&nbsp;box.  </p>
-<p>So lets figure out the size for each box in this&nbsp;section.  </p>
-<ul>
-<li>total width&nbsp;1000px</li>
-<li>4&nbsp;boxes</li>
-<li>10px of space between each box (not after the&nbsp;last)</li>
-<li>10px of padding on each&nbsp;box</li>
-<li>1px&nbsp;border</li>
-</ul>
-<div class="homework-view" data-lesson="lesson6"></div>
+<p>Pseudo class selectors are <span class="caps">CSS</span> selectors with a colon preceding&nbsp;them.</p>
+<h2 id="link-related-pseudo-class-selectors">Link related pseudo class&nbsp;selectors</h2>
+<p><code>:link</code> - Perhaps the most confusion-causing link-related pseudo selector. Aren’t all <code>&lt;a&gt;</code>‘s links? Well not if they don’t have an href attribute. This selects only those that do, thus is essentially the same as a[href]. This selector will become a lot more useful should any-element linking become&nbsp;reality.</p>
+<p><code>:visited</code> - Selects links that have already been visited by the current&nbsp;browser.</p>
+<p><code>:hover</code> - When the mouse cursor rolls over a link, that link is in it’s hover state and this will select&nbsp;it.</p>
+<p><code>:active</code> - Selects when the link while it is being activated (being clicked on or otherwise activated). For example, for the “pressed” state of a button-style link or to make all links feel more&nbsp;button-like.</p>
+<pre><code>a {
+  color: maroon;
+  text-decoration: none;
+}
+
+a:link {
+ color: teal;
+}
+
+a:visited {
+  color: orangered;
+}
+
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+}
+
+a:active {
+  color: forestgreen;
+  font-style: italic;
+}
+</code></pre><p>While the order does not matter in most cases, here the selector weights are all the same so having <code>:active</code> last means it will override <code>:hover</code> and display when&nbsp;clicked. </p>
+<h2 id="form-pseudo-class">Form pseudo&nbsp;class</h2>
+<p><code>:focus</code> - Applied when a curser is placed within a form&nbsp;element.</p>
+<pre><code>input {
+    border: 2px solid gray;
+    padding: 5px;
+    width: 200px;
+    outline: none;
+    transition: width 1s;
+}
+
+input:focus {
+    width: 400px;
+    border-color: gold;
+    background-color: lightyellow;
+}
+</code></pre><p><strong>Note:</strong> <code>:hover</code> can be applied to any&nbsp;element.</p>
 </section>
         </article>
       </div>
       <div class="col-md-3 side-nav">
         <div class="side-nav-inner">
+          <div class="tags">
+            <div class="data"><span class="css label label-default"><i class="fa fa-css3"></i>css</span></div>
+            <ul>
+              <li><code>:link:&#123;&#125;</code>
+              </li>
+              <li><code>:visited:&#123;&#125;</code>
+              </li>
+              <li><code>:hover:&#123;&#125;</code>
+              </li>
+              <li><code>:active:&#123;&#125;</code>
+              </li>
+              <li><code>:focus:&#123;&#125;</code>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

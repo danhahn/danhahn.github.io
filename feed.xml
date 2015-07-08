@@ -749,6 +749,7 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;h1 id=&quot;css-box-model&quot;&gt;CSS Box Model&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/&quot;&gt;Box Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/pseudo.html&quot;&gt;Pseudo Class&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/floats.html&quot;&gt;Floats&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/clear-fix.html&quot;&gt;Clear Fix&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
@@ -760,24 +761,25 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;p&gt;To set the width of an element you take the desired width and subtract the &lt;code&gt;padding-left&lt;/code&gt;, &lt;code&gt;padding-right&lt;/code&gt;, &lt;code&gt;border-left-width&lt;/code&gt; and &lt;code&gt;border-right-width&lt;/code&gt;.  If you need to maintain the &lt;code&gt;margin&lt;/code&gt; you will need to subtract the &lt;code&gt;margin-left&lt;/code&gt; and &lt;code&gt;margin-right&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
 &lt;p&gt;If we have an element that needs to fit in to a space that is &lt;code&gt;400px&lt;/code&gt; and it has &lt;code&gt;padding: 20px&lt;/code&gt; and &lt;code&gt;border: 5px solid black&lt;/code&gt; the calulation to find the size would look like this.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;400px - 20px -20px - 5px - 5px = 350px
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;p&gt;  400px - 20px -20px - 5px - 5px = 350px&lt;/p&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
 &lt;button id=&quot;fixWidth&quot; class=&quot;btn&quot; style=&quot;float: right;&quot;&gt;Fix Width&lt;/button&gt;
 
 &lt;ul id=&quot;cntrBoxModel&quot; class=&quot;btn-group&quot;&gt;
-    &lt;li class=&quot;btn&quot; data-total=&quot;400&quot; id=&quot;total&quot;&gt;width: 400px;&lt;/li&gt;
-    &lt;li class=&quot;btn&quot; data-size=&quot;20&quot;&gt;padding: 20px;&lt;/li&gt;
-    &lt;li class=&quot;btn&quot; data-size=&quot;10&quot;&gt;border: 10px solid #1abc9c;&lt;/li&gt;
-    &lt;li class=&quot;btn&quot; data-size=&quot;30&quot;&gt;margin: 30px;&lt;/li&gt;
+  &lt;li class=&quot;btn&quot; data-total=&quot;400&quot; id=&quot;total&quot;&gt;width: 400px;&lt;/li&gt;
+  &lt;li class=&quot;btn&quot; data-size=&quot;20&quot;&gt;padding: 20px;&lt;/li&gt;
+  &lt;li class=&quot;btn&quot; data-size=&quot;10&quot;&gt;border: 10px solid #1abc9c;&lt;/li&gt;
+  &lt;li class=&quot;btn&quot; data-size=&quot;30&quot;&gt;margin: 30px;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div id=&quot;displayBoxModel&quot; class=&quot;box-container&quot;&gt;
-    &lt;div class=&quot;box-model&quot;&gt;
-        Box Model Element.
-    &lt;/div&gt;
+  &lt;div class=&quot;box-model&quot;&gt;
+    Box Model Element.
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;script src=&quot;lesson-6.js&quot;&gt;&lt;/script&gt;</description>
+&lt;script src=&quot;lesson-6.js&quot;&gt;&lt;/script&gt;
+</description>
     </item>
     <item>
       <title>Lesson 7</title>
