@@ -380,6 +380,8 @@ footer .container p {
   border: 1px solid #962020;
   padding: 10px;
   height: 100px;
+  background-color: silver;
+  margin-bottom: 20px;
 }
 .bs-sidenav {
   margin-top: 0;

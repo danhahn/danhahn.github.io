@@ -792,8 +792,8 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;h1 id=&quot;basic-layouts&quot;&gt;Basic Layouts&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/&quot;&gt;Basic Layouts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/pseudo.html&quot;&gt;Pseudo Class&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/overflow.html&quot;&gt;Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/responsive.html&quot;&gt;Responsive&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&quot;/lessons/lesson-7/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a href=&quot;/lessons/lesson-7/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
@@ -810,48 +810,46 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;h2 id=&quot;add-wrapper&quot;&gt;Add Wrapper&lt;/h2&gt;
 &lt;p&gt;The other option is to wrap all the element with an other element like a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. This will allow you to define a &lt;code&gt;width&lt;/code&gt; on it.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;
-    &amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;
-    &amp;lt;nav&amp;gt;&amp;lt;/nav&amp;gt;
-    &amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;
-    &amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt;
+  &amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;
+  &amp;lt;nav&amp;gt;&amp;lt;/nav&amp;gt;
+  &amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;
+  &amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt;
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;adding-ids&quot;&gt;Adding IDs&lt;/h2&gt;
+&lt;h2 id=&quot;adding-class&quot;&gt;Adding class&lt;/h2&gt;
 &lt;p&gt;While the structure is correct at this point we want to add an id or class to help identify this &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; from any other &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; that may be on the page.&lt;/p&gt;
 &lt;p&gt;There are some who say you should never use an id because they are too specific. I disagree with this. I feel that a well place id can help identify which element you are targeting.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
-    &amp;lt;header id=&amp;quot;globalHeader&amp;quot;&amp;gt;&amp;lt;/header&amp;gt;
-    &amp;lt;nav id=&amp;quot;globalNav&amp;quot;&amp;gt;&amp;lt;/nav&amp;gt;
-    &amp;lt;article id=&amp;quot;contentArea&amp;quot;&amp;gt;&amp;lt;/article&amp;gt;
-    &amp;lt;footer id=&amp;quot;gloablFooter&amp;quot;&amp;gt;&amp;lt;/footer&amp;gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+  &amp;lt;header class=&amp;quot;globalHeader&amp;quot;&amp;gt;&amp;lt;/header&amp;gt;
+  &amp;lt;nav class=&amp;quot;globalNav&amp;quot;&amp;gt;&amp;lt;/nav&amp;gt;
+  &amp;lt;article class=&amp;quot;contentArea&amp;quot;&amp;gt;&amp;lt;/article&amp;gt;
+  &amp;lt;footer class=&amp;quot;gloablFooter&amp;quot;&amp;gt;&amp;lt;/footer&amp;gt;
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&quot;styles&quot;&gt;Styles&lt;/h2&gt;
 &lt;p&gt;Now that we have the structure in place we need to write the &lt;code&gt;css&lt;/code&gt; to support the markup.&lt;/p&gt;
 &lt;h3 id=&quot;fixed-width&quot;&gt;Fixed width&lt;/h3&gt;
 &lt;p&gt;In this example we are setting up a page that is a fixed width of &lt;code&gt;800px&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;style&amp;gt;
-    #container {
-        width: 800px;
-    }
+&lt;pre&gt;&lt;code&gt;.container {
+  width: 800px;
+}
 
-    #gloablNav, #contentArea {
-         float: left;
-    }
+.gloablNav, .contentArea {
+   float: left;
+}
 
-    #gloablNav {
-        width: 200px;
-    }
+.gloablNav {
+  width: 200px;
+}
 
-    #contentArea {
-         width: 600px;
-    }
+.contentArea {
+   width: 600px;
+}
 
-    #footer {
-         clear: both;
-    }
-&amp;lt;/style&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a fixed two column layout. The width can be adjusted any value just note that the &lt;code&gt;#globalNav&lt;/code&gt; and &lt;code&gt;#contentArea&lt;/code&gt; must add up to the width of the &lt;code&gt;#container&lt;/code&gt;.&lt;/p&gt;
+.footer {
+   clear: both;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a fixed two column layout. The width can be adjusted any value just note that the &lt;code&gt;.globalNav&lt;/code&gt; and &lt;code&gt;.contentArea&lt;/code&gt; must add up to the width of the &lt;code&gt;.container&lt;/code&gt;.&lt;/p&gt;
 </description>
     </item>
     <item>

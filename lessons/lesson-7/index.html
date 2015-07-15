@@ -77,8 +77,8 @@
 <h1 id="basic-layouts">Basic&nbsp;Layouts</h1>
 <ul>
 <li><a href="/lessons/lesson-7/">Basic&nbsp;Layouts</a></li>
-<li><a href="/lessons/lesson-7/pseudo.html">Pseudo&nbsp;Class</a></li>
 <li><a href="/lessons/lesson-7/overflow.html">Overflow</a></li>
+<li><a href="/lessons/lesson-7/responsive.html">Responsive</a></li>
 </ul>
 <p><a href="/lessons/lesson-7/week7-notes.zip">Download Notes  <i class="icon-download-alt icon-white"></i></a>
 <a href="/lessons/lesson-7/week7.zip">Download Starter File  <i class="icon-download-alt icon-white"></i></a></p>
@@ -95,48 +95,46 @@
 <h2 id="add-wrapper">Add&nbsp;Wrapper</h2>
 <p>The other option is to wrap all the element with an other element like a <code>&lt;div&gt;</code>. This will allow you to define a <code>width</code> on&nbsp;it.</p>
 <pre><code>&lt;div&gt;
-    &lt;header&gt;&lt;/header&gt;
-    &lt;nav&gt;&lt;/nav&gt;
-    &lt;article&gt;&lt;/article&gt;
-    &lt;footer&gt;&lt;/footer&gt;
+  &lt;header&gt;&lt;/header&gt;
+  &lt;nav&gt;&lt;/nav&gt;
+  &lt;article&gt;&lt;/article&gt;
+  &lt;footer&gt;&lt;/footer&gt;
 &lt;/div&gt;
 </code></pre><hr>
-<h2 id="adding-ids">Adding&nbsp;IDs</h2>
+<h2 id="adding-class">Adding&nbsp;class</h2>
 <p>While the structure is correct at this point we want to add an id or class to help identify this <code>&lt;header&gt;</code> from any other <code>&lt;header&gt;</code> that may be on the&nbsp;page.</p>
 <p>There are some who say you should never use an id because they are too specific. I disagree with this. I feel that a well place id can help identify which element you are&nbsp;targeting.</p>
-<pre><code>&lt;div id=&quot;container&quot;&gt;
-    &lt;header id=&quot;globalHeader&quot;&gt;&lt;/header&gt;
-    &lt;nav id=&quot;globalNav&quot;&gt;&lt;/nav&gt;
-    &lt;article id=&quot;contentArea&quot;&gt;&lt;/article&gt;
-    &lt;footer id=&quot;gloablFooter&quot;&gt;&lt;/footer&gt;
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;header class=&quot;globalHeader&quot;&gt;&lt;/header&gt;
+  &lt;nav class=&quot;globalNav&quot;&gt;&lt;/nav&gt;
+  &lt;article class=&quot;contentArea&quot;&gt;&lt;/article&gt;
+  &lt;footer class=&quot;gloablFooter&quot;&gt;&lt;/footer&gt;
 &lt;/div&gt;
 </code></pre><hr>
 <h2 id="styles">Styles</h2>
 <p>Now that we have the structure in place we need to write the <code>css</code> to support the&nbsp;markup.</p>
 <h3 id="fixed-width">Fixed&nbsp;width</h3>
 <p>In this example we are setting up a page that is a fixed width of <code>800px</code>.</p>
-<pre><code>&lt;style&gt;
-    #container {
-        width: 800px;
-    }
+<pre><code>.container {
+  width: 800px;
+}
 
-    #gloablNav, #contentArea {
-         float: left;
-    }
+.gloablNav, .contentArea {
+   float: left;
+}
 
-    #gloablNav {
-        width: 200px;
-    }
+.gloablNav {
+  width: 200px;
+}
 
-    #contentArea {
-         width: 600px;
-    }
+.contentArea {
+   width: 600px;
+}
 
-    #footer {
-         clear: both;
-    }
-&lt;/style&gt;
-</code></pre><p>This will create a fixed two column layout. The width can be adjusted any value just note that the <code>#globalNav</code> and <code>#contentArea</code> must add up to the width of the <code>#container</code>.</p>
+.footer {
+   clear: both;
+}
+</code></pre><p>This will create a fixed two column layout. The width can be adjusted any value just note that the <code>.globalNav</code> and <code>.contentArea</code> must add up to the width of the <code>.container</code>.</p>
 </section>
         </article>
       </div>
@@ -161,7 +159,6 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-187360-2', 'auto');
       ga('send', 'pageview');
-      
     </script>
   </body>
 </html>
