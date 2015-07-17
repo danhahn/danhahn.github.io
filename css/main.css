@@ -564,7 +564,10 @@ pre {
   margin: 0;
   padding: 0 !important;
   list-style: none;
-  height: 150px;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 .hasSwatches:after {
   display: block;
@@ -573,40 +576,48 @@ pre {
 }
 .hasSwatches li {
   background-color: #fff;
-  float: left;
   margin-left: .3em;
+  margin-bottom: .3em;
 }
-.hasSwatches li:hover .swatch {
-  transform: scale(1.1);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+.hasSwatches li .swatchWrapper {
+  height: 140px;
 }
-.hasSwatches li:hover .swatch .swatchColor {
-  height: 128px;
-  margin-bottom: -34px;
-}
-.hasSwatches li:hover .swatch .swatchLabel {
-  top: -2.8em;
-  font-size: 1.2em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-  font-weight: bold;
-}
-.hasSwatches li .swatch {
-  border: 1px solid silver;
-  padding: .3em;
-  transition: all .2s;
-}
-.hasSwatches li .swatch .swatchColor {
+.hasSwatches li .swatchWrapper .swatchColor {
   width: 100px;
   height: 100px;
   border: 1px solid silver;
 }
-.hasSwatches li .swatch .swatchLabel {
+.hasSwatches li .swatchWrapper .swatchLabel {
   transition: all .1s;
   position: relative;
   top: 0;
   margin: 5px 0 0;
   text-align: center;
   font-family: Courier New;
+}
+.hasSwatches li .swatchWrapper:hover .swatch {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.hasSwatches li .swatchWrapper:hover .swatch .swatchColor {
+  height: 128px;
+  margin-bottom: -34px;
+}
+.hasSwatches li .swatchWrapper:hover .swatch .swatchLabel {
+  top: -2.8em;
+  font-size: 1.2em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+}
+.hasSwatches li .swatch {
+  background-color: #fff;
+  border: 1px solid silver;
+  padding: .3em;
+  transition: all .2s;
+}
+.hasSwatches li .smSwatch .swatchColor {
+  width: 20px;
+  height: 20px;
 }
 @media screen and (max-width: 1200px) {
   .lesson-item .well h2 {

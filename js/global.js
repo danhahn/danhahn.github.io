@@ -59,6 +59,10 @@ $(function() {
       el.attr("target", "_blank");
       el.addClass("btn move-item");
     }
+    else if(url.indexOf(".psd") > -1) {
+      el.attr("target", "_blank");
+      el.addClass("btn move-item");
+    }
     else if (url.indexOf("homework.html") > -1) {
       //el.addClass("btn");
       el.append(' <i class="fa fa-download"></i>');
@@ -151,24 +155,33 @@ $(function() {
   }
 
   buildTemplate = function ($template, hexColor) {
-     $template.find('.swatchColor').css('background-color', hexColor);
-   $template.find('.swatchLabel').text(hexColor);
+    $template.find('.swatchColor').css('background-color', hexColor);
+    $template.find('.swatchLabel').text(hexColor);
     return $template;
   }
 
-  $template = $('<div class="swatch"><div class="swatchColor"></div><p class="swatchLabel"></p></div>');
+  $lgSwatch = $('<div class="swatchWrapper"><div class="swatch"><div class="swatchColor"></div><p class="swatchLabel"></p></div></div>');
+  $smSwatch = $('<div class="smSwatch"><div class="swatch" data-toggle="tooltip" data-placement="top"><div class="swatchColor"></div></div>')
 
+  var buildSwatch = function($selector, $template, hasTitle) {
+    $($selector).each(function() {
+      $(this).find('li').each(function() {
+        var liText = $(this).text();
+        if(checkHex(liText)) {
+          $(this).parent().addClass('hasSwatches');
+          var $newSwatch = $template.clone();
+          if(hasTitle) {
+            $newSwatch.find('.swatch').attr('title', liText);
+          };
+          $(this).html(buildTemplate($newSwatch, liText));
+        };
+      })
+    });
+  };
 
-  $('.content #colors + ul').each(function() {
-    $(this).find('li').each(function() {
-      var liText = $(this).text();
-      if(checkHex(liText)) {
-        $(this).parent().addClass('hasSwatches');
-        var $newSwatch = $template.clone();
-        $(this).html(buildTemplate($newSwatch, liText));
-      };
-    })
-  });
+  buildSwatch('.content #colors + ul', $lgSwatch, false);
+  buildSwatch('.content h6#swatches + ul', $smSwatch, true);
 
+  $('[data-toggle="tooltip"]').tooltip();
 
 });
