@@ -4,14 +4,14 @@
     <title>SVA HTML</title>
     <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://localhost:8080</link>
-    <description>Summer 2015</description>
-    <pubDate>Wed, 03 Jun 2015 15:00:00 -0400</pubDate>
+    <description>Fall 2015</description>
+    <pubDate>Wed, 30 Sep 2015 15:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Lesson 1</title>
       <link>http://localhost:8080/lessons/lesson-1/</link>
-      <pubDate>Wed, 03 Jun 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 30 Sep 2015 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-1/</guid>
       <author></author>
       <description>&lt;p&gt;Introduction to HTML, Web Browsers, Standards &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -118,7 +118,7 @@ Examples
     <item>
       <title>Lesson 2</title>
       <link>http://localhost:8080/lessons/lesson-2/</link>
-      <pubDate>Wed, 10 Jun 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 07 Oct 2015 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-2/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will talk about how to create links and embed images. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -208,7 +208,7 @@ table tr td:nth-child(1){width:20%}
     <item>
       <title>Lesson 3</title>
       <link>http://localhost:8080/lessons/lesson-3/</link>
-      <pubDate>Wed, 17 Jun 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 14 Oct 2015 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-3/</guid>
       <author></author>
       <description>&lt;p&gt;This week we start to talk about CSS. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -233,37 +233,37 @@ table tr td:nth-child(1){width:20%}
 &lt;li&gt;Multiple style definitions will cascade into one&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;locations-of-styles&quot;&gt;Locations of Styles&lt;/h2&gt;
-&lt;p&gt;Styles can be written in 3 different location.  Where they style is defined will impact how an element will be displayed. &lt;/p&gt;
+&lt;p&gt;Styles can be written in 3 different location.  Where they style is defined will impact how an element will be displayed.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;External file include within the HTML file&lt;/li&gt;
 &lt;li&gt;Embedded or Internal style sheet local to HTML file&lt;/li&gt;
 &lt;li&gt;Inline style that is added directly to an HTML element&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;weight-of-locations&quot;&gt;Weight of locations&lt;/h2&gt;
-&lt;p&gt;The location impacts the presentation of the HTML element. &lt;/p&gt;
+&lt;p&gt;The location impacts the presentation of the HTML element.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Default browser setting&lt;/li&gt;
 &lt;li&gt;External style sheet.  Last one included on the page has most weight&lt;/li&gt;
 &lt;li&gt;Embedded on the page - Last style defended will be displayed.&lt;/li&gt;
 &lt;li&gt;Inline Style&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;In the case where two elements have the same style applied the more specific the style the more weight it has.  An inline style has the most weight because it is applied directly to an element. In internal style sheet has more weight than an external because it applied only to that on page. &lt;/p&gt;
+&lt;p&gt;In the case where two elements have the same style applied the more specific the style the more weight it has.  An inline style has the most weight because it is applied directly to an element. In internal style sheet has more weight than an external because it applied only to that on page.&lt;/p&gt;
 &lt;p&gt;The efficiency of a style often time is the opposed of how specific it is.  This is because you often want to reuse a style across may elements or page with in your site.&lt;/p&gt;
 &lt;h2 id=&quot;selectors&quot;&gt;Selectors&lt;/h2&gt;
 &lt;p&gt;In CSS, selectors are used to declare which of the markup elements a style applies to, a kind of match expression.  In other words it is the instruction to the CSS on what HTML elements should be styled but not how they should be styled.  &lt;/p&gt;
 &lt;p&gt;There are 3 basic selectors each has its own weight that defines how an element will look when there are conflicting styles.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Tag Name Selector&lt;/li&gt;
-&lt;li&gt;Class Name Selector &lt;/li&gt;
+&lt;li&gt;Class Name Selector&lt;/li&gt;
 &lt;li&gt;ID Name Selector&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;tag-name-selector&quot;&gt;Tag Name Selector&lt;/h2&gt;
 &lt;p&gt;Because HTML has a standard set of tags use CSS can use there names to connect the HTML and CSS.  A tag name selector will apply the style to all elements on a page that match that tag name.  &lt;/p&gt;
-&lt;p&gt;For example if a html page use the paragraph tag CSS can style all P tags on the page to look the same way.  This is very efficient to style a large number of elements at one time.  Because the HTML tag is the reference there is no need to add any addiction mark up. &lt;/p&gt;
+&lt;p&gt;For example if a html page use the paragraph tag CSS can style all P tags on the page to look the same way.  This is very efficient to style a large number of elements at one time.  Because the HTML tag is the reference there is no need to add any addiction mark up.&lt;/p&gt;
 &lt;h2 id=&quot;class-name-selectors&quot;&gt;Class Name Selectors&lt;/h2&gt;
 &lt;p&gt;Often times a style will need to be applied to one or more elements on a page but not all elements.  To allow of a style to be applied to one more more elements on a page a class is created and added to the HTML element.  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A class selectors must have a name given to it. &lt;/li&gt;
+&lt;li&gt;A class selectors must have a name given to it.&lt;/li&gt;
 &lt;li&gt;A class name can be applied to one or more elements with in a document.  &lt;/li&gt;
 &lt;li&gt;A class attribute must be added to an HTML element.  &lt;code&gt;class=”className”&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Class names are case sensitive&lt;/li&gt;
@@ -278,17 +278,17 @@ table tr td:nth-child(1){width:20%}
 &lt;/ul&gt;
 &lt;h2 id=&quot;weight-of-selectors&quot;&gt;Weight of selectors&lt;/h2&gt;
 &lt;p&gt;The more specific a selector is the more weight it has.  An ID has the the most weight because it is used on a page only once.  A class has more weight than a tag selector because it defines what elements it is applied to.&lt;/p&gt;
-&lt;p&gt;Any time you put effort in to connecting the HTML and the CSS it will have more weight than if you do nothing to the HTML. &lt;/p&gt;
+&lt;p&gt;Any time you put effort in to connecting the HTML and the CSS it will have more weight than if you do nothing to the HTML.&lt;/p&gt;
 &lt;h3 id=&quot;order-of-weight&quot;&gt;Order of weight&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;ID Name &lt;/li&gt;
+&lt;li&gt;ID Name&lt;/li&gt;
 &lt;li&gt;Class Name&lt;/li&gt;
 &lt;li&gt;Tag Name&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&quot;inline-styles&quot;&gt;Inline Styles&lt;/h3&gt;
 &lt;p&gt;Inline style are effect way of applying a style to one element.  The down side is that it is not reusable.  If you where apply that style a second time you would need to create that style a second time.  &lt;/p&gt;
 &lt;h3 id=&quot;how-to-use&quot;&gt;How to use&lt;/h3&gt;
-&lt;p&gt;Inline styles are applied to an HTML element with an attribute of style.  The attribute is HTML but the value is CSS. &lt;/p&gt;
+&lt;p&gt;Inline styles are applied to an HTML element with an attribute of style.  The attribute is HTML but the value is CSS.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;h1 style=”property:value;”&amp;gt;HTML Text&amp;lt;/h1&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;internal-and-external-styles&quot;&gt;Internal and External Styles&lt;/h2&gt;
 &lt;p&gt;The more common way to use CSS is to add the style to an external file or internal style block.  This creates a clear separation between the HTML and the CSS.  If the CSS is written in an external file that file can used on many pages with in your site and if a change needs to be made it is made in once place an applied to all pages at the same time.  &lt;/p&gt;
@@ -298,7 +298,7 @@ table tr td:nth-child(1){width:20%}
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; that class name can be anything you want it it be.  The example below use a generic className but it could be almost anything.  The same thing goes for the ID name.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;h1 class=”className”&amp;gt;HTML Text&amp;lt;/h1&amp;gt;
 &amp;lt;p class=”className”&amp;gt;HTML Text&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or &lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;div id=”idName”&amp;gt;
     &amp;lt;p&amp;gt;HTML Text&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
@@ -330,8 +330,8 @@ table tr td:nth-child(1){width:20%}
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Inline style - when using an inline style you will only use the property and value.&lt;/p&gt;
 &lt;h3 id=&quot;basic-format&quot;&gt;Basic format&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;selector {
-    property: value;    
-} 
+    property: value;
+}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;More than one property - declarations can have many properties defined&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;selector {
     property1: value;
@@ -342,7 +342,7 @@ table tr td:nth-child(1){width:20%}
     <item>
       <title>Lesson 4</title>
       <link>http://localhost:8080/lessons/lesson-4/</link>
-      <pubDate>Wed, 24 Jun 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 21 Oct 2015 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-4/</guid>
       <author></author>
       <description>&lt;p&gt;This week We will dive back into CSS and talk about test, font, borders, margin and padding. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -503,7 +503,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 5</title>
       <link>http://localhost:8080/lessons/lesson-5/</link>
-      <pubDate>Wed, 01 Jul 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 28 Oct 2015 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-5/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will talk about Table and all the good and bad that goes with it. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -741,7 +741,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 6</title>
       <link>http://localhost:8080/lessons/lesson-6/</link>
-      <pubDate>Wed, 08 Jul 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 04 Nov 2015 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -784,7 +784,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 7</title>
       <link>http://localhost:8080/lessons/lesson-7/</link>
-      <pubDate>Wed, 15 Jul 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 11 Nov 2015 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about CSS Layouts.  How to build them without tables. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -855,7 +855,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 8</title>
       <link>http://localhost:8080/lessons/lesson-8/</link>
-      <pubDate>Wed, 22 Jul 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 18 Nov 2015 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
       <author></author>
       <description>&lt;p&gt;This week we work on the in class final.  &lt;/p&gt;
@@ -959,6 +959,782 @@ Density - 416.42/sq mi&lt;/p&gt;
 &lt;li&gt;#ffffff&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;© 2015 SVA HTML&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 9</title>
+      <link>http://localhost:8080/lessons/lesson-9/</link>
+      <pubDate>Wed, 25 Nov 2015 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will be talking about how to use HTML forms. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default js&quot;&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;JavaScript&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;html-forms&quot;&gt;HTML Forms&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/&quot;&gt;HTML Forms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/classwork.html&quot;&gt;Class Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/javascript.html&quot;&gt;Intro to JS and Jquery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-9/week9-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-9/week9.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Modern browser try to be helpful with form and store values entered in to the form.  To see a clean version of the page (non cached) hold down the SHIFT key and click the RELOAD button on the browser tool bar.  The page will reload and not longer have values entered in the form files.&lt;/p&gt;
+&lt;p&gt;Note: The display of form elements vary from browser to browser and operating system to operating system.  Very little style changes can applied to form elements.&lt;/p&gt;
+&lt;h2 id=&quot;form-tag-form-form-&quot;&gt;form Tag - &lt;code&gt;&amp;lt;form&amp;gt;&amp;lt;/form&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag is used to create an HTML form for user input.&lt;/p&gt;
+&lt;h3 id=&quot;required-attributes&quot;&gt;Required Attributes&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;action&lt;/td&gt;
+&lt;td&gt;URL&lt;/td&gt;
+&lt;td&gt;A URL that defines where to send the data when the submit button is pushed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;optional-attributes&quot;&gt;Optional Attributes&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;method&lt;/td&gt;
+&lt;td&gt;get&lt;br&gt;post&lt;/td&gt;
+&lt;td&gt;The HTTP method for sending data to the action URL. Default is get.method=”get”: This method sends the form contents in the URL: URL?name=value&amp;amp;name=value.Note: If the form values contains non-ASCII characters or exceeds 100 characters you MUST use method=”post”.method=”post”: This method sends the form contents in the body of the request.Note: Most browsers are unable to bookmark post requests.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;form_name&lt;/td&gt;
+&lt;td&gt;Defines a unique name for the form&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form action=&amp;quot;/contact/form.jsp&amp;quot; method=&amp;quot;get&amp;quot; name=&amp;quot;contactUs&amp;quot;&amp;gt;
+    Content and form elements
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Content and form elements
+Input - &lt;code&gt;&amp;lt;imput&amp;gt;&lt;/code&gt;
+The &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; tag is used to select user information.&lt;/p&gt;
+&lt;p&gt;An input field can vary in many ways, depending on the type attribute. An input field can be a text field, a checkbox, a password field, a radio button, a button, and more.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;type&lt;/td&gt;
+&lt;td&gt;button&lt;br&gt;checkbox&lt;br&gt;file&lt;br&gt;hidden&lt;br&gt;password&lt;br&gt;radio&lt;br&gt;reset&lt;br&gt;submit&lt;br&gt;text&lt;/td&gt;
+&lt;td&gt;Indicates the type of the input element. The default value is “text”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;field_name&lt;/td&gt;
+&lt;td&gt;Defines a unique name for the input element.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This attribute is required with type=”button”, type=”checkbox”, type=”file”, type=”hidden”, type=”image”, type=”password”, type=”text”, and type=”radio”
+type=”text”&lt;/p&gt;
+&lt;p&gt;Defines a standard one line form element&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;Disables the input element when it first loads so that the user can not write text in it, or select it. Note: Cannot be used with type=”hidden”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;maxlength&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;Defines the maximum number of characters allowed in an input field. Note: Only used with type=”text” or type=”password”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;readonly&lt;/td&gt;
+&lt;td&gt;readonly&lt;/td&gt;
+&lt;td&gt;Indicates that the value of this field cannot be modified. Note: Only used with type=”text” or type=”password”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;size&lt;/td&gt;
+&lt;td&gt;number_of_char&lt;/td&gt;
+&lt;td&gt;Defines the size of the input element. Note: Cannot be used with type=”hidden”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;Defines the default value of the element.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&quot;example&quot;&gt;Example&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;name&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;name&amp;quot; value=&amp;quot;value&amp;quot; maxlength=&amp;quot;10&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;value&quot; maxlength=&quot;10&quot;&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;name&amp;quot; readonly=&amp;quot;readonly&amp;quot; value=&amp;quot;value&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot; readonly=&quot;readonly&quot; value=&quot;value&quot;&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;name&amp;quot; disabled=&amp;quot;disabled&amp;quot; value=&amp;quot;value&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot; disabled=&quot;disabled&quot; value=&quot;value&quot;&gt;
+
+&lt;h2 id=&quot;type-password-&quot;&gt;type=”password”&lt;/h2&gt;
+&lt;p&gt;Defines a password element&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;Disables the input element when it first loads so that the user can not write text in it, or select it. Note: Cannot be used with type=”hidden”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;maxlength&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;Defines the maximum number of characters allowed in an input field. Note: Only used with type=”text” or type=”password”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;readonly&lt;/td&gt;
+&lt;td&gt;readonly&lt;/td&gt;
+&lt;td&gt;Indicates that the value of this field cannot be modified. Note: Only used with type=”text” or type=”password”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;size&lt;/td&gt;
+&lt;td&gt;number_of_char&lt;/td&gt;
+&lt;td&gt;Defines the size of the input element. Note: Cannot be used with type=”hidden”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;Defines the default value of the element.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&quot;example&quot;&gt;Example&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;password&amp;quot; name=&amp;quot;name&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;password&quot; name=&quot;name&quot;&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;password&amp;quot; name=&amp;quot;name&amp;quot; value=&amp;quot;value&amp;quot; maxlength=&amp;quot;10&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;password&quot; name=&quot;name&quot; value=&quot;value&quot; maxlength=&quot;10&quot;&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;password&amp;quot; name=&amp;quot;name&amp;quot; readonly=&amp;quot;readonly&amp;quot; value=&amp;quot;value&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;password&quot; name=&quot;name&quot; readonly=&quot;readonly&quot; value=&quot;value&quot;&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;password&amp;quot; name=&amp;quot;name&amp;quot; disabled=&amp;quot;disabled&amp;quot; value=&amp;quot;value&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;password&quot; name=&quot;name&quot; disabled=&quot;disabled&quot; value=&quot;value&quot;&gt;
+
+
+&lt;h2 id=&quot;type-radio-radio-buttons-&quot;&gt;type=”radio” (Radio Buttons)&lt;/h2&gt;
+&lt;p&gt;Radio Buttons are used when you want the user to select one of a limited number of choices.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;field_name&lt;/td&gt;
+&lt;td&gt;Defines a unique name for the input element.Value groups radio buttons by having the same name.Note: This attribute is required with type=”button”, type=”checkbox”, type=”file”, type=”hidden”, type=”image”, type=”password”, type=”text”, and type=”radio”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;For checkboxes and radio buttons: Defines the result of the input element when clicked. The result is sent to the form’s action URL.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute Optional&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;checked&lt;/td&gt;
+&lt;td&gt;checked&lt;/td&gt;
+&lt;td&gt;Indicates that the input element should be checked when it first loads (only used with type=”checkbox” and type=”radio”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;disabledDisables the input element when it first loads so that the user can not write text in it, or select it (cannot be used with type=”hidden”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&quot;example&quot;&gt;Example&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sex&amp;quot; value=&amp;quot;male&amp;quot;&amp;gt; Male&amp;lt;br&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sex&amp;quot; value=&amp;quot;female&amp;quot;&amp;gt; Female
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;form&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;&gt; Male&lt;br&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt; Female
+&lt;/form&gt;
+
+&lt;h2 id=&quot;type-checkbox-checkbox-&quot;&gt;type=”checkbox” - (Checkbox)&lt;/h2&gt;
+&lt;p&gt;Checkboxes are used when you want the user to select one or more options of a limited number of choices.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;field_name&lt;/td&gt;
+&lt;td&gt;Defines a unique name for the input element. Value groups radio buttons by having the same name. Note: This attribute is required with type=”button”, type=”checkbox”, type=”file”, type=”hidden”, type=”image”, type=”password”, type=”text”, and type=”radio”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;For checkboxes and radio buttons: Defines the result of the input element when clicked. The result is sent to the form’s action URL.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Attribute Optional&lt;/td&gt;
+&lt;td&gt;Value&lt;/td&gt;
+&lt;td&gt;Description&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;—-&lt;/td&gt;
+&lt;td&gt;—-&lt;/td&gt;
+&lt;td&gt;—-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;checked&lt;/td&gt;
+&lt;td&gt;checked&lt;/td&gt;
+&lt;td&gt;Indicates that the input element should be checked when it first loads (only used with type=”checkbox” and type=”radio”)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;Disables the input element when it first loads so that the user can not write text in it, or select it (cannot be used with type=”hidden”)Note: Attributes are the same of both checkbox and radio buttons&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;button-tag&quot;&gt;Button Tag&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt; tag defines a push button.  The button tag creates a button displayed on the page.  It is a standard HTML tag so the value of the button is wrapped with the button tag.&lt;/p&gt;
+&lt;p&gt;The button tag can be used in place of the INPUT type button/reset/submit.&lt;/p&gt;
+&lt;p&gt;If a button in in a valid form the default type will be submit otherwise it will be button.  &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;Specifies that a button should be disabled&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;Specifies the name for a button&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;type&lt;/td&gt;
+&lt;td&gt;button&lt;/td&gt;
+&lt;td&gt;reset&lt;br&gt;submit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Specifies the type of a button&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;button&amp;gt;Go!&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;button type=&quot;submit&quot;&gt;GO!&lt;/button&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Definition&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;submit&lt;/td&gt;
+&lt;td&gt;form is submitted to the url in the action&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;reset&lt;/td&gt;
+&lt;td&gt;form is change back to the default values when page loaded&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;button&lt;/td&gt;
+&lt;td&gt;when clicked nothing happens often used for javascript&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;type-submit-&quot;&gt;type=”submit”&lt;/h2&gt;
+&lt;p&gt;When the user clicks on the “Submit” button, the content of the form is sent to the server. The form’s action attribute defines the name of the file to send the content to. The file defined in the action attribute usually does something with the received input.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;Button label.  Default value “submit” or “submit query” based on the browser.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;submit&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;submit&quot;&gt;
+
+&lt;h2 id=&quot;type-reset-reset-button-&quot;&gt;type=”reset” - (reset button)&lt;/h2&gt;
+&lt;p&gt;When the user clicks on the “Reset” button, the content in the form is reloaded to the values they had when the page loaded.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;value&lt;/td&gt;
+&lt;td&gt;Button label.  Default value “reset”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;reset&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;reset&quot;&gt;
+
+&lt;h2 id=&quot;type-file-&quot;&gt;type=”file”&lt;/h2&gt;
+&lt;p&gt;Used to create a form element to update a file.  There needs to back end support for uploading the file.  We will not cover the back end support.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;file&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;file&quot;&gt;
+
+&lt;h2 id=&quot;type-button-&quot;&gt;type=”button”&lt;/h2&gt;
+&lt;p&gt;Just alike a submit or reset but when the user clicks nothing happens&lt;/p&gt;
+&lt;p&gt;Attribute|Value|Description
+value|value|Button label.  Default value “reset”&lt;/p&gt;
+&lt;h2 id=&quot;type-hidden-&quot;&gt;type=”hidden”&lt;/h2&gt;
+&lt;p&gt;Used to set a value of a form element that needs to be passed along with out making it viewable to the end user. An example of this would be setting the users language on the page the user cannot change it but it needed by the next page to handle the information.  &lt;/p&gt;
+&lt;h2 id=&quot;select-box-select-option-&quot;&gt;Select Box - (&lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt;)&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; tag is used to create a select list (drop-down list).&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; tags inside the select element define the available options in the list.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Defines the select container.  Must add option tag&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;pecifies that a drop-down list should be disabled&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;multiple&lt;/td&gt;
+&lt;td&gt;multiple&lt;/td&gt;
+&lt;td&gt;Specifies that multiple options can be selected&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;name*&lt;/td&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;Specifies the name of a drop-down list&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;size&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;Specifies the number of visible options in a drop-down list&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;*required&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Option tag add items to the select box.  Option tag will always be a child of the select tag.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;Specifies that an option should be disabled&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;label&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;Specifies a shorter label for an option&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;selected&lt;/td&gt;
+&lt;td&gt;selected&lt;/td&gt;
+&lt;td&gt;Specifies that an option should be selected by default&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;value*&lt;/td&gt;
+&lt;td&gt;text&lt;/td&gt;
+&lt;td&gt;Specifies the value to be sent to a server when a form is submitted&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;*required&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;example&quot;&gt;Example&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;select name=&amp;quot;cars&amp;quot;&amp;gt;
+  &amp;lt;option value=&amp;quot;Volvo&amp;quot;&amp;gt;Volvo&amp;lt;/option&amp;gt;
+  &amp;lt;option value=&amp;quot;Saab&amp;quot;&amp;gt;Saab&amp;lt;/option&amp;gt;
+  &amp;lt;option value=&amp;quot;Mercedes&amp;quot;&amp;gt;Mercedes&amp;lt;/option&amp;gt;
+  &amp;lt;option value=&amp;quot;Audi&amp;quot;&amp;gt;Audi&amp;lt;/option&amp;gt;
+&amp;lt;/select&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;select name=&quot;cars&quot;&gt;
+  &lt;option value=&quot;Volvo&quot;&gt;Volvo&lt;/option&gt;
+  &lt;option value=&quot;Saab&quot;&gt;Saab&lt;/option&gt;
+  &lt;option value=&quot;Mercedes&quot;&gt;Mercedes&lt;/option&gt;
+  &lt;option value=&quot;Audi&quot;&gt;Audi&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;h2 id=&quot;textarea-textarea-textarea-&quot;&gt;Textarea - &lt;code&gt;&amp;lt;textarea&amp;gt;``&amp;lt;/textarea&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Defines a text-area (a multi-line text input control)&lt;/p&gt;
+&lt;p&gt;Unlike other form elements text area does not have a value attribute instead the value or text would be wrapped with the text area.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;cols&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;Specifies the visible width of a text-area&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rows&lt;/td&gt;
+&lt;td&gt;number&lt;/td&gt;
+&lt;td&gt;Specifies the visible number of rows in a text-area&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;name&lt;/td&gt;
+&lt;td&gt;Specifies that a text-area should be disabled&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute Optional&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;disabled&lt;/td&gt;
+&lt;td&gt;Specifies that a text-area should be disabled&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;readonly&lt;/td&gt;
+&lt;td&gt;readonly&lt;/td&gt;
+&lt;td&gt;Specifies that a text-area should be read-only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&quot;example&quot;&gt;Example&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;textarea name=&amp;quot;message&amp;quot; rows=&amp;quot;2&amp;quot; cols=&amp;quot;30&amp;quot;&amp;gt;`With test inside&amp;lt;/textarea&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;textarea name=&quot;message&quot; rows=&quot;2&quot; cols=&quot;30&quot;&gt;`With test inside&lt;/textarea&gt;
+
+&lt;h2 id=&quot;label-label-label-&quot;&gt;Label - &lt;code&gt;&amp;lt;label&amp;gt;``&amp;lt;/label&amp;gt;&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Defines the text form element.  Label is an option inline that can be used to help organize the text with the form element.&lt;/p&gt;
+&lt;p&gt;When using label tag  you can replace the NAME with an ID for each element but the name will work just fine.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attribute&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;for&lt;/td&gt;
+&lt;td&gt;element_id&lt;/td&gt;
+&lt;td&gt;Specifies which form element a label is bound to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form&amp;gt;
+    &amp;lt;label for=&amp;quot;male&amp;quot;&amp;gt;Male&amp;lt;/label&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sex&amp;quot; id=&amp;quot;male&amp;quot; &amp;gt;
+    &amp;lt;br &amp;gt;
+    &amp;lt;label for=&amp;quot;female&amp;quot;&amp;gt;Female&amp;lt;/label&amp;gt;
+    &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;sex&amp;quot; id=&amp;quot;female&amp;quot; &amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;form&gt;
+    &lt;label for=&quot;male&quot;&gt;Male&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;male&quot; &gt;
+    &lt;br &gt;
+    &lt;label for=&quot;female&quot;&gt;Female&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;sex&quot; id=&quot;female&quot; &gt;
+&lt;/form&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 10</title>
+      <link>http://localhost:8080/lessons/lesson-10/</link>
+      <pubDate>Wed, 02 Dec 2015 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-10/</guid>
+      <author></author>
+      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;understanding-the-index-html&quot;&gt;Understanding the Index.html&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/&quot;&gt;Understanding index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/hosting.html&quot;&gt;Setting up your site&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-10/week10-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-10/week10.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The magic of the index.html&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When building a site that is hosted on a web server there needs to be a default file to serve. In most cases this is  &lt;strong&gt;index.html&lt;/strong&gt;. When you have a folder and put only one file in that folder it should be index.html since it will be served by just requesting the site or any subfolder of that site.&lt;/p&gt;
+&lt;p&gt;For example you may go to a site named &lt;a href=&quot;http://www.svahtml.com&quot;&gt;http://www.svahtml.com&lt;/a&gt; but you just ask for the site you never say what file you want. The server knows to give you the default file, index.html. to make life easy it just gives you it and the file is never displayed in the URL. But what happens when you go to a sub folder like? Again you are not saying what file you want so the server needs to give you the default file which is index.html.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;36&quot; src=&quot;images/image04.png&quot; width=&quot;624&quot;&gt;&lt;/p&gt;
+&lt;p&gt;So far we have two files in two folders each named &lt;strong&gt;index.html&lt;/strong&gt;. For every folder that we have on the site it will have it&amp;#39;s own index.html. As you might imagine there could be a lot of index.htmls.&lt;/p&gt;
+&lt;p&gt;Because of this we need to be very careful about the file we are working on. One way to help keep track of the file that you are editing it is very useful to update the for each page on your site. It might be something like this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For you homepage - Site Name | Home&lt;/li&gt;
+&lt;li&gt;A sub folder for your gallery might be - Site Name | Gallery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This way you can look at the markup to know what page you are on.&lt;/p&gt;
+&lt;p&gt;It should also be noted that you can not replace one index with an other since all the links where set for that page and the content would be wrong.&lt;/p&gt;
+&lt;h2 id=&quot;your-site-might-be-something-like-this&quot;&gt;Your site might be something like this&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Homepage
+- News
+- Sport
+- Weather
+- Gallery
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Every subsection on your site should be broken into its own folder.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/index.html
+/news/index.html
+/sports/index.html
+/weather/index.html
+/gallery/index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We have 5 index.html files.&lt;/p&gt;
+&lt;h2 id=&quot;but-what-if-we-have-to-have-more-than-one-file-in-a-folder-&quot;&gt;But what if we have to have more than one file In a folder?&lt;/h2&gt;
+&lt;p&gt;In that case any other file can be named whatever you want. It would be linked to from the index.html using the link tag &lt;strong&gt;(href=&amp;rdquo;filename.html&amp;rdquo;)&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;for-example&quot;&gt;For example&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;/news/index.html
+/news/yesterday.html
+/news/breakingnews.html
+/news/fun-stories.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example we have four files all in the &lt;strong&gt;/news/&lt;/strong&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;354&quot; src=&quot;images/image00.png&quot; width=&quot;624&quot;&gt;&lt;/p&gt;
+&lt;p&gt;When you have your files on a web server you are able to use absolute paths to make the paths from one section or folder to another.&lt;/p&gt;
+&lt;p&gt;If you wanted to link from the news page to the weather page there are two ways to do this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use a relative path. &lt;strong&gt;../weather/&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Use an absolute path &lt;strong&gt;/weather/&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The reason option 2 is better is because it will be the same path for all files on the site regardless of where you are.&lt;/p&gt;
+&lt;h2 id=&quot;dev-local&quot;&gt;Dev Local&lt;/h2&gt;
+&lt;p&gt;The big problem with this way is it will not work when viewing your files from a local directory.&lt;/p&gt;
+&lt;p&gt;If you want to still develop locally you will need to set up a local server. One great one is MAMP. it is very easy to setup and use and will allow you to have the same setup as your web server.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;345&quot; src=&quot;images/image01.png&quot; width=&quot;427&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You just need to set the &amp;ldquo;Document Root&amp;rdquo; by clicking the Preferences button then clicking Apache.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;349&quot; src=&quot;images/image05.png&quot; width=&quot;432&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Then set the folder of your project and click OK.&lt;/p&gt;
+&lt;p&gt;Once that is done you need to click Start Servers. It may ask you to enter your username and password. In almost all cases this will be the same as when you logged in to the computer.&lt;/p&gt;
+&lt;p&gt;if everything works your app will have two green lights&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;348&quot; src=&quot;images/image03.png&quot; width=&quot;430&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Then you need to go to &lt;a href=&quot;http://localhost:8888/&quot;&gt;http://localhost:8888/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This will act as a real web server but you can continue to develop locally.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 11</title>
+      <link>http://localhost:8080/lessons/lesson-11/</link>
+      <pubDate>Wed, 09 Dec 2015 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-11/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will be working on the final project. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;start-to-work-on-final&quot;&gt;Start to work on final&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/content.html&quot;&gt;Download Content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/images.html&quot;&gt;Download Images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/view.html&quot;&gt;View&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This week we will start to work on the class final.  The final will pull from all the lessons of this session.  Nothing should be a surprise to you.   You can use your class notes, lesson examples or any other resource you need to finish the final.  The final must be sent to me by the end of the last class at 10:00.&lt;/p&gt;
+&lt;p&gt;You will be responsible for creating all the markup and css for the whole site.   You are free to work any way that you want to complete the project.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;i-would-recommend-working-this-way-&quot;&gt;I would recommend working this way.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Get the basic HTML structure set up.&lt;/li&gt;
+&lt;li&gt;Get a basic css file in place to ensure the links work&lt;/li&gt;
+&lt;li&gt;Get all the all the pages in place and ensure they link together&lt;/li&gt;
+&lt;li&gt;Finish the CSS&lt;/li&gt;
+&lt;li&gt;Fill in the rest of the content&lt;/li&gt;
+&lt;li&gt;Add finishing touches&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I have include everything you will need to build the page.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;psd&quot;&gt;PSD&lt;/h2&gt;
+&lt;p&gt;The PSD is a great place to get started.  This can give you all the info you will need to build out the HTML and css.  I like to use the PSD to get the sizes and colors of the different elements.&lt;/p&gt;
+&lt;p&gt;&lt;a href='final.psd' class='btn'&gt;Download PSD&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;colors&quot;&gt;Colors&lt;/h2&gt;
+&lt;p&gt;Below are a list of the colors needed to build the pages.&lt;/p&gt;
+&lt;div style=&quot;display:flex;&quot;&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+    &lt;div class=&quot;mb1&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#c81b00&quot;&gt;&lt;/rect&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;h6 break-word&quot;&gt;#c81b00&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+    &lt;div class=&quot;mb1&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#fcca75&quot;&gt;&lt;/rect&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;h6 break-word&quot;&gt;#fcca75&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+    &lt;div class=&quot;mb1&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#002a86&quot;&gt;&lt;/rect&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;h6 break-word&quot;&gt;#002a86&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+    &lt;div class=&quot;mb1&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#4354c7&quot;&gt;&lt;/rect&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;h6 break-word&quot;&gt;#4354c7&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
+      &lt;div class=&quot;mb1&quot;&gt;
+        &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
+          &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#fb2200&quot;&gt;&lt;/rect&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;h6 break-word&quot;&gt;#fb2200&lt;/div&gt;
+    &lt;/div&gt;
+
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;sizes&quot;&gt;Sizes&lt;/h2&gt;
+&lt;p&gt;Below are some of the key sizes needed to build the pages.&lt;/p&gt;
+&lt;div class=&quot;&quot;&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:60px&quot;&gt;
+        Font Size 60px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:45px&quot;&gt;
+        Font Size 45px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:25px&quot;&gt;
+        Font Size 25px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:20px&quot;&gt;
+        Font Size 20px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:15px&quot;&gt;
+        Font Size 15px
+      &lt;/div&gt;
+      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:12px&quot;&gt;
+        Font Size 12px
+      &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&quot;fonts&quot;&gt;Fonts&lt;/h2&gt;
+&lt;p&gt;Below are the font size and family you will need to use to build the pages.&lt;/p&gt;
+&lt;div class=&quot;h3 bold break-word mb1&quot; style=&quot;font-family:arial&quot;&gt;
+  arial
+&lt;/div&gt;
+&lt;div class=&quot;h3 bold break-word mb1&quot; style=&quot;font-family:'Montserrat', sans-serif&quot;&gt;
+  ‘Montserrat’, sans-serif
+&lt;/div&gt;
+&lt;div class=&quot;h3 bold break-word mb1&quot; style=&quot;font-family:'Homemade Apple', cursive&quot;&gt;
+  ‘Homemade Apple’, cursive
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; you will need to include this at the op of your css file &lt;code&gt;@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 12</title>
+      <link>http://localhost:8080/lessons/lesson-12/</link>
+      <pubDate>Wed, 16 Dec 2015 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
+      <author></author>
+      <description>&lt;p&gt;Continure to work on final &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;continue-to-work-on-final&quot;&gt;Continue to work on final&lt;/h1&gt;
+&lt;p&gt;Final is due at the end of this class.  If you are not able to make it to this class your final is still due at this time.&lt;/p&gt;
 </description>
     </item>
   </channel>

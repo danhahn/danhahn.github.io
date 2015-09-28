@@ -7,7 +7,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #962020;
+  color: #006ad1;
 }
 ul,
 ol {
@@ -29,7 +29,7 @@ h1 {
   font-weight: 300;
 }
 a:hover {
-  color: #d32f2f;
+  color: #1e90ff;
 }
 .caps {
   font-weight: bold;
@@ -39,18 +39,18 @@ a.btn:hover {
   color: white;
 }
 .btn {
-  background-color: #d74444;
+  background-color: #389dff;
 }
 .btn:hover {
-  background-color: #c02929;
+  background-color: #0583ff;
 }
 .btn:active,
 .btn.active {
-  background-color: #962020;
+  background-color: #006ad1;
 }
 code {
-  color: #d32f2f;
-  background-color: #f9e4e4;
+  color: #1e90ff;
+  background-color: #f9fcff;
 }
 article {
   padding: 0 20px;
@@ -60,7 +60,7 @@ article {
   margin-bottom: 1em;
 }
 h2 {
-  color: #d32f4a;
+  color: #1eb6ff;
   font-size: 1.8em;
   line-height: 1.8;
   font-weight: 700;
@@ -98,23 +98,23 @@ h3 {
   background: none;
 }
 .main-nav {
-  background-color: #dc5959;
+  background-color: #51a9ff;
 }
 .main-nav .navbar {
-  background-color: #d32f2f;
+  background-color: #1e90ff;
   margin-bottom: 0;
   border-radius: 0;
   border: none;
 }
 .main-header {
-  background-color: #e58383;
+  background-color: #84c2ff;
   margin-bottom: 20px;
 }
 .main-header .well {
   border-radius: 0;
   border: none;
   margin-bottom: 0;
-  background-color: #962020;
+  background-color: #006ad1;
   padding: 10px 20px;
 }
 .main-header .well.page-title {
@@ -152,7 +152,7 @@ h3 {
   letter-spacing: 1px;
 }
 .side-nav .nav-tabs.nav-stacked > li.active a {
-  background-color: #d32f2f;
+  background-color: #1e90ff;
   color: #ffffff;
   font-weight: 700;
 }
@@ -203,13 +203,13 @@ h3 {
   fill: #ffffff;
 }
 .navbar .brand svg .slash {
-  fill: #e58383;
+  fill: #84c2ff;
 }
 .navbar .brand svg .letter {
   fill: #ffffff;
 }
 .navbar .brand svg .smletter {
-  fill: #e58383;
+  fill: #84c2ff;
 }
 .navbar .brand svg .dot {
   fill: #ffffff;
@@ -262,13 +262,13 @@ p.date {
   padding: .5em 2em;
 }
 .table th {
-  color: #d32f4a;
+  color: #1eb6ff;
 }
 .alert-info {
   text-align: left;
-  color: #d32f4a;
+  color: #1eb6ff;
   background-color: #ffffff;
-  border-color: #d32f4a;
+  border-color: #1eb6ff;
 }
 .scroll-top {
   float: right;
@@ -299,7 +299,7 @@ p.date {
   margin-bottom: .2em;
 }
 .lesson-item .well h2 a {
-  color: #d32f4a;
+  color: #1eb6ff;
 }
 .lesson-item .well p {
   text-align: left;
@@ -372,12 +372,12 @@ footer .container p {
   width: 100%;
   position: relative;
   z-index: 100;
-  background-color: #d32f2f;
+  background-color: #1e90ff;
   color: #ffffff;
   transition: all .3s;
 }
 .overflow {
-  border: 1px solid #962020;
+  border: 1px solid #006ad1;
   padding: 10px;
   height: 100px;
   background-color: silver;
@@ -391,7 +391,7 @@ footer .container p {
 }
 .date {
   font-weight: 100;
-  color: #d32f4a;
+  color: #1eb6ff;
   font-size: .75em;
 }
 .date span,
@@ -460,8 +460,8 @@ img[src$="homework.png"] {
 }
 .homework-view {
   display: flex;
-  border-top: 1px solid #d32f4a;
-  border-bottom: 1px solid #d32f4a;
+  border-top: 1px solid #1eb6ff;
+  border-bottom: 1px solid #1eb6ff;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -481,17 +481,17 @@ img[src$="homework.png"] {
   border: 2px solid gray;
 }
 .navbar-default .navbar-toggle {
-  border-color: #962020;
-  background-color: #e58383;
+  border-color: #006ad1;
+  background-color: #84c2ff;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:active,
 .navbar-default .navbar-toggle:focus {
-  background-color: #d32f4a;
+  background-color: #1eb6ff;
   outline: none;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #962020;
+  background-color: #006ad1;
 }
 .label {
   text-transform: uppercase;
@@ -729,9 +729,9 @@ pre {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  border-left: 2px solid #d32f2f;
+  border-left: 2px solid #1e90ff;
   background-color: transparent;
-  color: #d32f2f;
+  color: #1e90ff;
   border-radius: 0;
   font-weight: bold;
 }
@@ -740,7 +740,7 @@ pre {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  border-left: 2px solid #e58383;
+  border-left: 2px solid #84c2ff;
   background-color: transparent;
   border-radius: 0;
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lesson 3 - SVA HTML
     </title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2015">
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Fall 2015">
     <link rel="stylesheet" href="/css/github.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
@@ -49,6 +49,10 @@
                   <li><a href="/lessons/lesson-6/">Lesson 6</a></li>
                   <li><a href="/lessons/lesson-7/">Lesson 7</a></li>
                   <li><a href="/lessons/lesson-8/">Lesson 8</a></li>
+                  <li><a href="/lessons/lesson-9/">Lesson 9</a></li>
+                  <li><a href="/lessons/lesson-10/">Lesson 10</a></li>
+                  <li><a href="/lessons/lesson-11/">Lesson 11</a></li>
+                  <li><a href="/lessons/lesson-12/">Lesson 12</a></li>
                 </ul>
               </li>
               <li><a href="/syllabus.html"><i class="fa fa-book"></i> Syllabus</a></li>
@@ -65,7 +69,7 @@
       <div class="container">
         <div class="well small page-title">
           <h1>Lesson 3</h1>
-          <div class="date"><i class="fa fa-calendar"></i><span class="month">June</span><span class="day">17,</span><span class="year">2015</span></div>
+          <div class="date"><i class="fa fa-calendar"></i><span class="month">October</span><span class="day">14,</span><span class="year">2015</span></div>
         </div>
       </div>
     </header>
@@ -94,37 +98,37 @@
 <li>Multiple style definitions will cascade into&nbsp;one</li>
 </ul>
 <h2 id="locations-of-styles">Locations of&nbsp;Styles</h2>
-<p>Styles can be written in 3 different location.  Where they style is defined will impact how an element will be&nbsp;displayed. </p>
+<p>Styles can be written in 3 different location.  Where they style is defined will impact how an element will be&nbsp;displayed.</p>
 <ol>
 <li>External file include within the <span class="caps">HTML</span>&nbsp;file</li>
 <li>Embedded or Internal style sheet local to <span class="caps">HTML</span>&nbsp;file</li>
 <li>Inline style that is added directly to an <span class="caps">HTML</span>&nbsp;element</li>
 </ol>
 <h2 id="weight-of-locations">Weight of&nbsp;locations</h2>
-<p>The location impacts the presentation of the <span class="caps">HTML</span>&nbsp;element. </p>
+<p>The location impacts the presentation of the <span class="caps">HTML</span>&nbsp;element.</p>
 <ol>
 <li>Default browser&nbsp;setting</li>
 <li>External style sheet.  Last one included on the page has most&nbsp;weight</li>
 <li>Embedded on the page - Last style defended will be&nbsp;displayed.</li>
 <li>Inline&nbsp;Style</li>
 </ol>
-<p>In the case where two elements have the same style applied the more specific the style the more weight it has.  An inline style has the most weight because it is applied directly to an element. In internal style sheet has more weight than an external because it applied only to that on&nbsp;page. </p>
+<p>In the case where two elements have the same style applied the more specific the style the more weight it has.  An inline style has the most weight because it is applied directly to an element. In internal style sheet has more weight than an external because it applied only to that on&nbsp;page.</p>
 <p>The efficiency of a style often time is the opposed of how specific it is.  This is because you often want to reuse a style across may elements or page with in your&nbsp;site.</p>
 <h2 id="selectors">Selectors</h2>
 <p>In <span class="caps">CSS</span>, selectors are used to declare which of the markup elements a style applies to, a kind of match expression.  In other words it is the instruction to the CSS on what HTML elements should be styled but not how they should be&nbsp;styled.  </p>
 <p>There are 3 basic selectors each has its own weight that defines how an element will look when there are conflicting&nbsp;styles.</p>
 <ol>
 <li>Tag Name&nbsp;Selector</li>
-<li>Class Name&nbsp;Selector </li>
+<li>Class Name&nbsp;Selector</li>
 <li><span class="caps">ID</span> Name&nbsp;Selector</li>
 </ol>
 <h2 id="tag-name-selector">Tag Name&nbsp;Selector</h2>
 <p>Because <span class="caps">HTML</span> has a standard set of tags use CSS can use there names to connect the HTML and CSS.  A tag name selector will apply the style to all elements on a page that match that tag&nbsp;name.  </p>
-<p>For example if a html page use the paragraph tag <span class="caps">CSS</span> can style all P tags on the page to look the same way.  This is very efficient to style a large number of elements at one time.  Because the HTML tag is the reference there is no need to add any addiction mark&nbsp;up. </p>
+<p>For example if a html page use the paragraph tag <span class="caps">CSS</span> can style all P tags on the page to look the same way.  This is very efficient to style a large number of elements at one time.  Because the HTML tag is the reference there is no need to add any addiction mark&nbsp;up.</p>
 <h2 id="class-name-selectors">Class Name&nbsp;Selectors</h2>
 <p>Often times a style will need to be applied to one or more elements on a page but not all elements.  To allow of a style to be applied to one more more elements on a page a class is created and added to the <span class="caps">HTML</span>&nbsp;element.  </p>
 <ul>
-<li>A class selectors must have a name given to&nbsp;it. </li>
+<li>A class selectors must have a name given to&nbsp;it.</li>
 <li>A class name can be applied to one or more elements with in a&nbsp;document.  </li>
 <li>A class attribute must be added to an <span class="caps">HTML</span> element.  <code>class=”className”</code></li>
 <li>Class names are case&nbsp;sensitive</li>
@@ -139,17 +143,17 @@
 </ul>
 <h2 id="weight-of-selectors">Weight of&nbsp;selectors</h2>
 <p>The more specific a selector is the more weight it has.  An <span class="caps">ID</span> has the the most weight because it is used on a page only once.  A class has more weight than a tag selector because it defines what elements it is applied&nbsp;to.</p>
-<p>Any time you put effort in to connecting the <span class="caps">HTML</span> and the CSS it will have more weight than if you do nothing to the&nbsp;HTML. </p>
+<p>Any time you put effort in to connecting the <span class="caps">HTML</span> and the CSS it will have more weight than if you do nothing to the&nbsp;HTML.</p>
 <h3 id="order-of-weight">Order of&nbsp;weight</h3>
 <ol>
-<li><span class="caps">ID</span>&nbsp;Name </li>
+<li><span class="caps">ID</span>&nbsp;Name</li>
 <li>Class&nbsp;Name</li>
 <li>Tag&nbsp;Name</li>
 </ol>
 <h3 id="inline-styles">Inline&nbsp;Styles</h3>
 <p>Inline style are effect way of applying a style to one element.  The down side is that it is not reusable.  If you where apply that style a second time you would need to create that style a second&nbsp;time.  </p>
 <h3 id="how-to-use">How to&nbsp;use</h3>
-<p>Inline styles are applied to an <span class="caps">HTML</span> element with an attribute of style.  The attribute is HTML but the value is&nbsp;CSS. </p>
+<p>Inline styles are applied to an <span class="caps">HTML</span> element with an attribute of style.  The attribute is HTML but the value is&nbsp;CSS.</p>
 <pre><code>&lt;h1 style=”property:value;”&gt;HTML Text&lt;/h1&gt;
 </code></pre><h2 id="internal-and-external-styles">Internal and External&nbsp;Styles</h2>
 <p>The more common way to use <span class="caps">CSS</span> is to add the style to an external file or internal style block.  This creates a clear separation between the HTML and the CSS.  If the CSS is written in an external file that file can used on many pages with in your site and if a change needs to be made it is made in once place an applied to all pages at the same&nbsp;time.  </p>
@@ -159,7 +163,7 @@
 <p><strong>Note:</strong> that class name can be anything you want it it be.  The example below use a generic className but it could be almost anything.  The same thing goes for the <span class="caps">ID</span>&nbsp;name.</p>
 <pre><code>&lt;h1 class=”className”&gt;HTML Text&lt;/h1&gt;
 &lt;p class=”className”&gt;HTML Text&lt;/p&gt;
-</code></pre><p>or </p>
+</code></pre><p>or</p>
 <pre><code>&lt;div id=”idName”&gt;
     &lt;p&gt;HTML Text&lt;/p&gt;
 &lt;/div&gt;
@@ -191,8 +195,8 @@
 <p><strong>Note:</strong> Inline style - when using an inline style you will only use the property and&nbsp;value.</p>
 <h3 id="basic-format">Basic&nbsp;format</h3>
 <pre><code>selector {
-    property: value;    
-} 
+    property: value;
+}
 </code></pre><p>More than one property - declarations can have many properties&nbsp;defined</p>
 <pre><code>selector {
     property1: value;
