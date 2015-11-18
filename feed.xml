@@ -866,7 +866,8 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/&quot;&gt;Javascript&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/jquery.html&quot;&gt;Jquery&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/week6.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-8/week8-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-8/week8.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;/lessons/lesson-8/lesson/index.html&quot;&gt;Slide Show&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;blockquote class=&quot;fragment&quot; cite=&quot;http://en.wikipedia.org/wiki/JavaScript#CITEREFFlanaganFerguson2006&quot;&gt;
 &amp;ldquo;JavaScript (JS) is an interpreted computer programming language.  It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.&amp;rdquo;
