@@ -1805,118 +1805,93 @@ value|value|Button label.  Default value “reset”&lt;/p&gt;
       <pubDate>Wed, 09 Dec 2015 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-11/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will be working on the final project. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we work on the in class final.  &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;start-to-work-on-final&quot;&gt;Start to work on final&lt;/h1&gt;
+&lt;h1 id=&quot;final-project&quot;&gt;Final Project&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/content.html&quot;&gt;Download Content&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/images.html&quot;&gt;Download Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/view.html&quot;&gt;View&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/&quot;&gt;Final Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/full.html&quot;&gt;Full Image&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This week we will start to work on the class final.  The final will pull from all the lessons of this session.  Nothing should be a surprise to you.   You can use your class notes, lesson examples or any other resource you need to finish the final.  The final must be sent to me by the end of the last class at 10:00.&lt;/p&gt;
-&lt;p&gt;You will be responsible for creating all the markup and css for the whole site.   You are free to work any way that you want to complete the project.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;i-would-recommend-working-this-way-&quot;&gt;I would recommend working this way.&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Get the basic HTML structure set up.&lt;/li&gt;
-&lt;li&gt;Get a basic css file in place to ensure the links work&lt;/li&gt;
-&lt;li&gt;Get all the all the pages in place and ensure they link together&lt;/li&gt;
-&lt;li&gt;Finish the CSS&lt;/li&gt;
-&lt;li&gt;Fill in the rest of the content&lt;/li&gt;
-&lt;li&gt;Add finishing touches&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I have include everything you will need to build the page.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;psd&quot;&gt;PSD&lt;/h2&gt;
-&lt;p&gt;The PSD is a great place to get started.  This can give you all the info you will need to build out the HTML and css.  I like to use the PSD to get the sizes and colors of the different elements.&lt;/p&gt;
-&lt;p&gt;&lt;a href='final.psd' class='btn'&gt;Download PSD&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
+&lt;p&gt;The final is due at the end of class on December 16, 2015.  Please email me at dan@svahtml.com with a zip file that has all the files needed to complete the final.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;Final.psd&quot; class=&quot;btn&quot;&gt;Download PSD&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;colors&quot;&gt;Colors&lt;/h2&gt;
-&lt;p&gt;Below are a list of the colors needed to build the pages.&lt;/p&gt;
-&lt;div style=&quot;display:flex;&quot;&gt;
-  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
-    &lt;div class=&quot;mb1&quot;&gt;
-      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
-        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#c81b00&quot;&gt;&lt;/rect&gt;
-      &lt;/svg&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;h6 break-word&quot;&gt;#c81b00&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
-    &lt;div class=&quot;mb1&quot;&gt;
-      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
-        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#fcca75&quot;&gt;&lt;/rect&gt;
-      &lt;/svg&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;h6 break-word&quot;&gt;#fcca75&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
-    &lt;div class=&quot;mb1&quot;&gt;
-      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
-        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#002a86&quot;&gt;&lt;/rect&gt;
-      &lt;/svg&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;h6 break-word&quot;&gt;#002a86&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
-    &lt;div class=&quot;mb1&quot;&gt;
-      &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
-        &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#4354c7&quot;&gt;&lt;/rect&gt;
-      &lt;/svg&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;h6 break-word&quot;&gt;#4354c7&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-4 sm-col-3 lg-col-2 p2&quot; style=&quot;width: 75px;&quot;&gt;
-      &lt;div class=&quot;mb1&quot;&gt;
-        &lt;svg viewBox=&quot;0 0 64 64&quot; width=&quot;64&quot; height=&quot;64&quot; style=&quot;display:block;width:100%;height:auto&quot;&gt;
-          &lt;rect width=&quot;64&quot; height=&quot;64&quot; fill=&quot;#fb2200&quot;&gt;&lt;/rect&gt;
-        &lt;/svg&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;h6 break-word&quot;&gt;#fb2200&lt;/div&gt;
-    &lt;/div&gt;
-
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;sizes&quot;&gt;Sizes&lt;/h2&gt;
-&lt;p&gt;Below are some of the key sizes needed to build the pages.&lt;/p&gt;
-&lt;div class=&quot;&quot;&gt;
-      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:60px&quot;&gt;
-        Font Size 60px
-      &lt;/div&gt;
-      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:45px&quot;&gt;
-        Font Size 45px
-      &lt;/div&gt;
-      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:25px&quot;&gt;
-        Font Size 25px
-      &lt;/div&gt;
-      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:20px&quot;&gt;
-        Font Size 20px
-      &lt;/div&gt;
-      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:15px&quot;&gt;
-        Font Size 15px
-      &lt;/div&gt;
-      &lt;div class=&quot;bold truncate mb1&quot; style=&quot;font-size:12px&quot;&gt;
-        Font Size 12px
-      &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;hr&gt;
-&lt;h2 id=&quot;fonts&quot;&gt;Fonts&lt;/h2&gt;
-&lt;p&gt;Below are the font size and family you will need to use to build the pages.&lt;/p&gt;
-&lt;div class=&quot;h3 bold break-word mb1&quot; style=&quot;font-family:arial&quot;&gt;
-  arial
-&lt;/div&gt;
-&lt;div class=&quot;h3 bold break-word mb1&quot; style=&quot;font-family:'Montserrat', sans-serif&quot;&gt;
-  ‘Montserrat’, sans-serif
-&lt;/div&gt;
-&lt;div class=&quot;h3 bold break-word mb1&quot; style=&quot;font-family:'Homemade Apple', cursive&quot;&gt;
-  ‘Homemade Apple’, cursive
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; you will need to include this at the op of your css file &lt;code&gt;@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;#333333&lt;/li&gt;
+&lt;li&gt;#808080&lt;/li&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;li&gt;#000000&lt;/li&gt;
+&lt;li&gt;#50b7f1&lt;/li&gt;
+&lt;li&gt;#ffe11a&lt;/li&gt;
+&lt;li&gt;#004358&lt;/li&gt;
+&lt;li&gt;#ff951a&lt;/li&gt;
+&lt;li&gt;#c0c0c0&lt;/li&gt;
+&lt;li&gt;#181e47&lt;/li&gt;
+&lt;li&gt;#7fcaf5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;fonts&quot;&gt;fonts&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
+font-family: &amp;#39;Montserrat&amp;#39;, sans-serif;
+font-family: &amp;#39;Homemade Apple&amp;#39;, cursive;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;header&quot;&gt;header&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#50b7f1&lt;/li&gt;
+&lt;li&gt;#ffe11a&lt;/li&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;New York State {font size 60px}&lt;br&gt;
+The Empire State {font size 20px}&lt;/p&gt;
+&lt;h2 id=&quot;nav&quot;&gt;Nav&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#ffe11a&lt;/li&gt;
+&lt;li&gt;#ff951a&lt;/li&gt;
+&lt;li&gt;#000000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;nav-items&quot;&gt;Nav Items&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Home(index.html)&lt;/li&gt;
+&lt;li&gt;History(history/index.html)&lt;/li&gt;
+&lt;li&gt;Geography(geography/index.html)&lt;/li&gt;
+&lt;li&gt;Major cities(cities/index.html)&lt;/li&gt;
+&lt;li&gt;Demographics(demographics/index.html)&lt;/li&gt;
+&lt;li&gt;Transportation(transportation/index.html)&lt;/li&gt;
+&lt;li&gt;Sports(sports/index.html)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;content&quot;&gt;Content&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;li&gt;#50b7f1&lt;/li&gt;
+&lt;li&gt;#004358&lt;/li&gt;
+&lt;li&gt;#b7b7b7&lt;/li&gt;
+&lt;li&gt;#333333&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;background-images&quot;&gt;Background Images&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;ny-seal.png
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;pdfs.zip&quot; class=&quot;btn&quot;&gt;Download all the PDF here &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;United States[1] -&amp;gt; &lt;a href=&quot;http://www.whitehouse.gov&quot;&gt;http://www.whitehouse.gov&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New York City[2] -&amp;gt; &lt;a href=&quot;http://www.nyc.gov&quot;&gt;http://www.nyc.gov&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;images&quot;&gt;images&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;images.zip&quot; class=&quot;btn&quot;&gt;Download images&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;side-bar&quot;&gt;Side Bar&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#004358&lt;/li&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;li&gt;#50b7f1&lt;/li&gt;
+&lt;li&gt;#b7b7b7&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;footer&quot;&gt;Footer&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#7fcaf5&lt;/li&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;© 2015 SVA HTML&lt;/p&gt;
 </description>
     </item>
     <item>
