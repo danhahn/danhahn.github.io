@@ -4,14 +4,14 @@
     <title>SVA HTML</title>
     <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://localhost:8080</link>
-    <description>Fall 2015</description>
-    <pubDate>Wed, 30 Sep 2015 15:00:00 -0400</pubDate>
+    <description>Spring 2016</description>
+    <pubDate>Wed, 27 Jan 2016 15:00:00 -0500</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Lesson 1</title>
       <link>http://localhost:8080/lessons/lesson-1/</link>
-      <pubDate>Wed, 30 Sep 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 27 Jan 2016 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-1/</guid>
       <author></author>
       <description>&lt;p&gt;Introduction to HTML, Web Browsers, Standards &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -118,7 +118,7 @@ Examples
     <item>
       <title>Lesson 2</title>
       <link>http://localhost:8080/lessons/lesson-2/</link>
-      <pubDate>Wed, 07 Oct 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 03 Feb 2016 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-2/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will talk about how to create links and embed images. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -133,8 +133,8 @@ Examples
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&quot;/lessons/lesson-2/week2-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;/lessons/lesson-2/week2.zip&quot;&gt;Download Stater File &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The anchor tag or the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag is most commonly used to create a link to an other file or page.  The anchor tag by default will not act as a link without the &lt;code&gt;href&lt;/code&gt; attribute.  &lt;/p&gt;
-&lt;p&gt;The anchor tag can also be used to set a point on a page where the page can be linked to.  You might see this on an FAQ page where you have a list of questions at the top and the answers at the bottom. &lt;/p&gt;
-&lt;p&gt;Please note there is not a link tag.  If someone askes you to create a link they are talking about the anchor tag. &lt;/p&gt;
+&lt;p&gt;The anchor tag can also be used to set a point on a page where the page can be linked to.  You might see this on an FAQ page where you have a list of questions at the top and the answers at the bottom.&lt;/p&gt;
+&lt;p&gt;Please note there is not a link tag.  If someone askes you to create a link they are talking about the anchor tag.&lt;/p&gt;
 &lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;a href=”http://www.sva.edu”&amp;gt;http://www.sva.edu&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;or&lt;/strong&gt;&lt;/p&gt;
@@ -171,10 +171,10 @@ Examples
 &lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;location/of/file.html&amp;quot;&amp;gt;Clickable text&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&quot;breaking-it-down&quot;&gt;Breaking it down&lt;/h4&gt;
-&lt;p&gt;Lets start with the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; which is added to create the anchor.  Next we need to add the &lt;code&gt;href&lt;/code&gt; &lt;strong&gt;attribute&lt;/strong&gt; to make the anchor act as a &lt;em&gt;link&lt;/em&gt;. Then we wrap the text we want the user to click on with the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;. Last we add the location of the page we want to link to. &lt;/p&gt;
+&lt;p&gt;Lets start with the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; which is added to create the anchor.  Next we need to add the &lt;code&gt;href&lt;/code&gt; &lt;strong&gt;attribute&lt;/strong&gt; to make the anchor act as a &lt;em&gt;link&lt;/em&gt;. Then we wrap the text we want the user to click on with the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;. Last we add the location of the page we want to link to.&lt;/p&gt;
 &lt;p&gt;If we had the text &lt;strong&gt;HTML at SVA&lt;/strong&gt; and wanted to link to the web page &lt;em&gt;&lt;a href=&quot;http://www.svahtml.com&quot;&gt;http://www.svahtml.com&lt;/a&gt;&lt;/em&gt; the link would look like this.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;http://www.svahtml.com&amp;quot;&amp;gt;HTML at SVA&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Keep in mind that the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; is an inline element so it can be placed next to other text. &lt;/p&gt;
+&lt;p&gt;Keep in mind that the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; is an inline element so it can be placed next to other text.&lt;/p&gt;
 &lt;p&gt;If you want a link to be on its own line it would need to wrapped with a Block-Level element like a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;linking-to-a-file-in-the-same-folder&quot;&gt;Linking to a file in the same folder&lt;/h2&gt;
@@ -203,12 +203,13 @@ Examples
 &lt;p&gt;&lt;a href=&quot;http://css-tricks.com/use-target_blank/&quot;&gt;Read More&lt;/a&gt; about when you should use &lt;code&gt;target&lt;/code&gt;&lt;/p&gt;
 &lt;style&gt;
 table tr td:nth-child(1){width:20%}
-&lt;/style&gt;</description>
+&lt;/style&gt;
+</description>
     </item>
     <item>
       <title>Lesson 3</title>
       <link>http://localhost:8080/lessons/lesson-3/</link>
-      <pubDate>Wed, 14 Oct 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 10 Feb 2016 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-3/</guid>
       <author></author>
       <description>&lt;p&gt;This week we start to talk about CSS. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -342,7 +343,7 @@ table tr td:nth-child(1){width:20%}
     <item>
       <title>Lesson 4</title>
       <link>http://localhost:8080/lessons/lesson-4/</link>
-      <pubDate>Wed, 21 Oct 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 17 Feb 2016 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-4/</guid>
       <author></author>
       <description>&lt;p&gt;This week We will dive back into CSS and talk about test, font, borders, margin and padding. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -503,7 +504,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 5</title>
       <link>http://localhost:8080/lessons/lesson-5/</link>
-      <pubDate>Wed, 28 Oct 2015 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 24 Feb 2016 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-5/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will talk about Table and all the good and bad that goes with it. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -741,7 +742,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 6</title>
       <link>http://localhost:8080/lessons/lesson-6/</link>
-      <pubDate>Wed, 04 Nov 2015 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 02 Mar 2016 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -784,7 +785,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 7</title>
       <link>http://localhost:8080/lessons/lesson-7/</link>
-      <pubDate>Wed, 11 Nov 2015 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 16 Mar 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about CSS Layouts.  How to build them without tables. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -855,7 +856,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 8</title>
       <link>http://localhost:8080/lessons/lesson-8/</link>
-      <pubDate>Wed, 18 Nov 2015 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 23 Mar 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will have an introduction to JavaScript and JQuery. &lt;div&gt;&lt;span class=&quot;label label-default js&quot;&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;JavaScript&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -1158,7 +1159,7 @@ paragraph_fragment.addClass(‘red-border’);
     <item>
       <title>Lesson 9</title>
       <link>http://localhost:8080/lessons/lesson-9/</link>
-      <pubDate>Wed, 25 Nov 2015 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 30 Mar 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about how to use HTML forms. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default js&quot;&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;JavaScript&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -1282,7 +1283,7 @@ The &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; tag is used to select user in
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h4 id=&quot;example&quot;&gt;Example&lt;/h4&gt;
+&lt;p&gt;####Example&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;name&amp;quot;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;
 
@@ -1427,9 +1428,9 @@ The &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; tag is used to select user in
 &lt;td&gt;Description&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;—-&lt;/td&gt;
-&lt;td&gt;—-&lt;/td&gt;
-&lt;td&gt;—-&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;checked&lt;/td&gt;
@@ -1731,7 +1732,7 @@ value|value|Button label.  Default value “reset”&lt;/p&gt;
     <item>
       <title>Lesson 10</title>
       <link>http://localhost:8080/lessons/lesson-10/</link>
-      <pubDate>Wed, 02 Dec 2015 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 06 Apr 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-10/</guid>
       <author></author>
       <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -1802,7 +1803,7 @@ value|value|Button label.  Default value “reset”&lt;/p&gt;
     <item>
       <title>Lesson 11</title>
       <link>http://localhost:8080/lessons/lesson-11/</link>
-      <pubDate>Wed, 09 Dec 2015 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 13 Apr 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-11/</guid>
       <author></author>
       <description>&lt;p&gt;This week we work on the in class final.  &lt;/p&gt;
@@ -1897,7 +1898,7 @@ The Empire State {font size 20px}&lt;/p&gt;
     <item>
       <title>Lesson 12</title>
       <link>http://localhost:8080/lessons/lesson-12/</link>
-      <pubDate>Wed, 16 Dec 2015 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 20 Apr 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
       <author></author>
       <description>&lt;p&gt;Continure to work on final &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
