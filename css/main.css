@@ -339,7 +339,7 @@ p.date {
 .lesson-item .well h2 {
   font-size: 4em;
   line-height: 1em;
-  margin-bottom: .2em;
+  margin-bottom: 0;
 }
 .lesson-item .well h2 a {
   color: #e91e85;
@@ -429,7 +429,7 @@ footer .container p {
 .date {
   font-weight: 100;
   color: #e91e85;
-  font-size: .75em;
+  font-size: .85em;
 }
 .date span,
 .date i {
@@ -729,6 +729,10 @@ pre {
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
     max-width: 100%;
+  }
+  .lesson-item {
+    display: flex;
+    flex-wrap: wrap;
   }
   .lesson-item .well {
     min-height: 250px;

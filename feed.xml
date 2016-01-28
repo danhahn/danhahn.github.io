@@ -1806,7 +1806,7 @@ value|value|Button label.  Default value “reset”&lt;/p&gt;
       <pubDate>Wed, 13 Apr 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-11/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we work on the in class final.  &lt;/p&gt;
+      <description>&lt;p&gt;This week we work on the in class final.  &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;final-project&quot;&gt;Final Project&lt;/h1&gt;
 &lt;ul&gt;
