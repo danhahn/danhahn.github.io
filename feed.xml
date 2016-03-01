@@ -1283,7 +1283,7 @@ The &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; tag is used to select user in
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;####Example&lt;/p&gt;
+&lt;h4 id=&quot;example&quot;&gt;Example&lt;/h4&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;name&amp;quot;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;
 
@@ -1428,9 +1428,9 @@ The &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; tag is used to select user in
 &lt;td&gt;Description&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
-&lt;td&gt;—&lt;/td&gt;
+&lt;td&gt;—-&lt;/td&gt;
+&lt;td&gt;—-&lt;/td&gt;
+&lt;td&gt;—-&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;checked&lt;/td&gt;
