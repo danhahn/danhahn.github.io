@@ -784,6 +784,226 @@ td .label {margin-right: 4px;cursor: pointer;}
     </item>
     <item>
       <title>Lesson 7</title>
+      <link>http://localhost:8080/lessons/lesson-8/</link>
+      <pubDate>Wed, 09 Mar 2016 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will have an introduction to JavaScript and JQuery. &lt;div&gt;&lt;span class=&quot;label label-default js&quot;&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;JavaScript&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;What is JavaScript?&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/&quot;&gt;Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/jquery.html&quot;&gt;Jquery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-8/week8-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-8/week8.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-8/lesson/index.html&quot;&gt;Slide Show&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;JavaScript (JS) is an interpreted computer programming language.  It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;what-does-that-mean-&quot;&gt;What does that mean?&lt;/h2&gt;
+&lt;p&gt;JavaScript gives life to web pages by way of the interpreter in a web browser.  The JavaScript interpreter translates a given script in order to manipulate elements within the page.
+Without it web sites would be fairly static.&lt;/p&gt;
+&lt;h2 id=&quot;history-of-javascript&quot;&gt;History of JavaScript&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li class=&quot;fragment&quot;&gt;Created by Brendan Eich (Mozilla CTO) &lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;Shipped in Netscape Navigator 2.0 in 1995&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;Originally Called &lt;i&gt;LiveScript&lt;/i&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;Partially inspired by and shares superficial similarities to Java, but intended to appeal to non-programmers, similar to Microsoft’s Visual Basic&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;Microsoft quickly adopted to gain footing with IE 3 in 1996&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;Netscape submitted it to to The European Computer Manufacturers Association (ECMA) in 1996 for standardization. The standardized spec for this language is ECMAscript&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;Now the working language of the web, for better or worse&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+&lt;h2 id=&quot;what-is-it-used-for-&quot;&gt;What is it used for?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li class=&quot;fragment&quot;&gt;Adding dynamic behavior to web pages&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;Manipulating and scripting elements on web pages&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;Requesting data from a different source (we won’t cover this)&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;Processing data outside of the web with frameworks like Node.js (we won’t cover this)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
+&lt;h3&gt;Gmail&lt;/h3&gt;
+check out the sweet hover menu!
+
+&lt;h3&gt;&lt;b style=&quot;color: gray&quot;&gt;color&lt;/b&gt; a color matching game&lt;/h3&gt;
+
+&lt;p&gt;Using a markup language called SVG, JavaScript brings interactive graphics to create a rich experience&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://color.method.ac/&quot;&gt;http://color.method.ac&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;h3&gt;reveal.js&lt;/h3&gt;
+This presentation is using a JavaScript library.  Requires no JS knowledge on my part,  but automagically adds razzle &amp;amp; dazzle.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot;&gt;http://lab.hakim.se/reveal-js/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;What does it look like?&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
+&amp;lt;script&amp;gt;
+function sayHello(name) {
+    alert(&amp;quot;Hello &amp;quot; + name + &amp;quot;!&amp;quot;);
+}
+&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Similar to stylesheets, to keep your code clean &amp;amp; organized, best practice is to include external script&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
+&amp;lt;link href=&amp;quot;path/to/mystylesheet.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;&amp;lt;/link&amp;gt;
+&amp;lt;script src=&amp;quot;path/to/myjavascript.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In most cases stylesheets should precede script tags so that the browser can immediately render layout as intended, whereas scripts adding interactive behavior can take considerable time to load&lt;/p&gt;
+&lt;h2&gt;Lets dive in&lt;/h2&gt;
+
+&lt;p&gt;Variable assignment: numbers, booleans, strings&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var myNumber = 5;
+var myBoolean = true;
+var myString = &amp;quot;Hello World!&amp;quot;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Variable assignment: arrays, objects&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var myNumberArray = [1,2,3];
+var myCircleObject = { color: &amp;quot;red&amp;quot;, radius: 2};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Take note how variable declarations begin with the &lt;b&gt;var&lt;/b&gt; keyword&lt;/p&gt;
+&lt;h2&gt;Control Flow&lt;/h2&gt;
+
+&lt;p&gt;&lt;b&gt;if&lt;/b&gt; statements are used to control the flow of logic in your script. The expression within the parenthesis following the &lt;code&gt;if&lt;/code&gt; keyword must evaluate to a boolean value: &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; in order to evaluate&lt;/p&gt;
+&lt;p&gt;var myGrade = 92;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if (myGrade &amp;gt;= 85) {
+alert(&amp;#39;You are doing really well in this class!&amp;#39;);
+} else {
+alert(&amp;#39;You might want to study up.&amp;#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The expression in the parenthesis is checking that &lt;b&gt;myGrade&lt;/b&gt; is greater than or equal to 85.  &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt;, &lt;code&gt;==&lt;/code&gt; are all logical operators used to compare values.&lt;/p&gt;
+&lt;h2&gt;Arithmetic Expressions&lt;/h2&gt;
+
+&lt;p&gt;We can perform arithmetic operations on numbers in JavaScript.  +, -, /, * are standard operators.  Take note on the 8th line that when we add a number to a string (a series of characters), JavaScript coerces the number to a string &amp;amp; appends it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var exam1 = 92;
+var exam2 = 85;
+var exam3 = 90;
+
+var average = (exam1 + exam2 + exam3) / 3;
+
+if (average &amp;gt;= 85) {
+alert(&amp;#39;You are doing really well in this class!&amp;#39;);
+} else {
+alert(&amp;#39;You might want to study up. Your average is &amp;#39; + average + &amp;#39;.&amp;#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;JavaScript also features a &lt;b&gt;Math&lt;/b&gt; namespace of advanced operations including &lt;code&gt;sqrt()&lt;/code&gt;, &lt;code&gt;pow()&lt;/code&gt; and &lt;code&gt;abs()&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Objects&lt;/h2&gt;
+
+&lt;p&gt;Objects are a structured set of primitive values.  Let’s declare an object named circle with
+a color and radius property.  Then we’ll calculate the circumference and update the object with a new property that we can access later.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var pi = 3.14;
+
+var circle = {
+color: &amp;quot;red&amp;quot;,
+radius: 5
+};
+
+circle.circumference = 2 * pi * circle.radius;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that we’ve declared a variable called pi for convenience and readability.&lt;/p&gt;
+&lt;h2&gt;Arrays &amp;amp; Iteration&lt;/h2&gt;
+An array is a collection of things.  They could be basic values, such as numbers, or more complex data structures such as objects.
+
+Let’s declare an array of objects representing report cards. We can access the length of the array. The first element of an array starts at 0 and the last one is at the position of length - 1
+&lt;pre&gt;&lt;code data-trim contenteditable&gt;
+var ReportCards = [
+{ name: “Dan”, Exam1: 85, Exam2: 90, Exam3: 75 },
+{ name: “Elijah”, Exam1: 65, Exam2: 80, Exam3: 75 },
+{ name: “Jennifer”, Exam1: 95, Exam2: 80, Exam3: 100 }
+];
+
+//Access the 1st element
+ReportCards[0];
+
+//Access the name of the 2nd element
+ReportCards[1].name;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+Now Let’s iterate over our ReportCards array and calculate the average final score for each student.
+A &lt;b&gt;for&lt;/b&gt; loop is composed of multiple statements: the initial position of the iterator (in this case we are using the variable i), the terminating position &amp;amp; finally the incrementor.  In most for loops it is only needed to increment by one using the operator i++.  This is equivalent to i = i + 1.
+&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
+for (var i = 0; i &amp;lt; ReportCards.length; i++) {
+var card = ReportCards[i];
+card.final = (card.Exam1 + card.Exam2 + card.Exam3) / 3;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+&lt;h2&gt;Functions&lt;/h2&gt;
+
+&lt;p&gt;Functions encapsulate a series of statements to represent a particular behavior. Functions become a critical mechanism when working with a large code base because they allow behaviors to be reusable.&lt;/p&gt;
+&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
+function calculateAverage(numbers) {
+var aggregate = 0;
+
+for (var i = 0; i &lt; numbers.length; i++) {
+aggregate = aggregate + numbers[i];
+}
+
+return aggregate / numbers.length;
+}
+
+var set_of_numbers = [5, 10, 15];
+
+calculateAverage(set_of_numbers);
+
+var another_set_of_numbers = [100, 130, 150, 170, 200];
+
+calculateAverage(another_set_of_numbers);
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+
+&lt;p&gt;&lt;img src=&quot;img/jquery_hosting.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;h1&gt;jQuery&lt;/h1&gt;
+
+
+
+&lt;p&gt;&lt;h2&gt;What is jQuery?&lt;/h2&gt;
+jQuery is a cross-browser JavaScript library originally developed by John Resig.  It simplifies DOM (Document Object Model) manipulation and standardizes the API between different browser environments. jQuery has gained incredible popularity for its ease of use and expressive syntax.&lt;/p&gt;
+&lt;p&gt;Note: The DOM just means HTML accessible by JavaScript. Its effectively a snooty way of saying HTML when its live and programmable in a web browser. An API just stands for Application Programming Interface.  It means ‘The way something can be programmatically accessed.’&lt;/p&gt;
+&lt;p&gt;&lt;h2&gt;Selectors&lt;/h2&gt;
+jQuery offers an especially convenient way to select HTML elements by way of CSS selectors, as well as creating HTML fragments on the fly.&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
+//select all divs with the class button
+$(‘div.button’);&lt;/p&gt;
+&lt;p&gt;//select all table data cells whose parents are a table row with class even
+$(‘tr.even &amp;gt; td’);&lt;/p&gt;
+&lt;p&gt;//select by id (should only return one element)
+$(‘#reportcards’);
+&lt;/code&gt;&lt;/pre&gt;
+$() is jQuery’s magic function.  jQuery sacrifices verbose syntax in favor of short, expressive statements.  One of the jQuery framework’s design decisions is to have a magic $() function that is context aware to the arguments being passed in.  In this case we are passing in a string representing a CSS selector, so jQuery knows to look for elements in our web page.&lt;/p&gt;
+&lt;p&gt;&lt;h2&gt;DOM Fragments&lt;/h2&gt;
+Let’s create a document fragment composed of an HTML string.  We will then use
+jQuery’s append() method to add it to our document body.&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
+var paragraph_fragment = $(‘Hello World!’);&lt;/p&gt;
+&lt;p&gt;$(‘#paragraph-container’).append(paragraph_fragment);
+&lt;/code&gt;&lt;/pre&gt;
+jQuery’s magic $() function recognized that our string represents HTML instead of a CSS selector, so it knows to create a document object which we can further manipulate.&lt;/p&gt;
+&lt;p&gt;&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
+paragraph_fragment.addClass(‘red-border’);
+&lt;/code&gt;&lt;/pre&gt;
+We added the class ‘red-border’ to our paragraph tag.&lt;/p&gt;
+&lt;p&gt;&lt;h2&gt;Expand your knowledge&lt;/h2&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;fragment&quot;&gt;Code Academy: &lt;a href=&quot;http://www.codecademy.com/tracks/javascript&quot;&gt;http://www.codecademy.com/tracks/javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;JavaScript the Good Parts: &lt;a href=&quot;http://shop.oreilly.com/product/9780596517748.do&quot;&gt;http://shop.oreilly.com/product/9780596517748.do&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;fragment&quot;&gt;jQuery Documentation: &lt;a href=&quot;http://api.jquery.com/&quot;&gt;http://api.jquery.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;h2&gt;Happy Scripting&lt;/h2&gt;
+Elijah Meerson, Software Engineer at AppNexus.  &lt;a href=&quot;https://twitter.com/elimeerson&quot;&gt;@elimeerson&lt;/a&gt;
+Also I’m on Google+&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 8</title>
       <link>http://localhost:8080/lessons/lesson-7/</link>
       <pubDate>Wed, 16 Mar 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
@@ -854,312 +1074,9 @@ td .label {margin-right: 4px;cursor: pointer;}
 </description>
     </item>
     <item>
-      <title>Lesson 8</title>
-      <link>http://localhost:8080/lessons/lesson-8/</link>
-      <pubDate>Wed, 23 Mar 2016 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
-      <author></author>
-      <description>&lt;p&gt;This week we will have an introduction to JavaScript and JQuery. &lt;div&gt;&lt;span class=&quot;label label-default js&quot;&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;JavaScript&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;What is JavaScript?&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/&quot;&gt;Javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/jquery.html&quot;&gt;Jquery&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-8/week8-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-8/week8.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-8/lesson/index.html&quot;&gt;Slide Show&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;blockquote class=&quot;fragment&quot; cite=&quot;http://en.wikipedia.org/wiki/JavaScript#CITEREFFlanaganFerguson2006&quot;&gt;
-&amp;ldquo;JavaScript (JS) is an interpreted computer programming language.  It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.&amp;rdquo;
-&lt;/blockquote&gt;&lt;/p&gt;
-&lt;p class=&quot;fragment&quot;&gt;(From Wikipedia)&lt;/p&gt;
-
-
-&lt;h2&gt;What does that mean?&lt;/h2&gt;
-&lt;p class=&quot;fragment&quot;&gt;JavaScript gives life to web pages by way of the interpreter in a web browser.  The JavaScript interpreter translates a given script in order to manipulate elements within the page. &lt;/p&gt;
-&lt;p class=&quot;fragment&quot;&gt;Without it web sites would be fairly static.&lt;/p&gt;
-
-
-
-
-&lt;h1&gt;History of JavaScript&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li class=&quot;fragment&quot;&gt;Created by Brendan Eich (Mozilla CTO) &lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Shipped in Netscape Navigator 2.0 in 1995&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Originally Called &lt;i&gt;LiveScript&lt;/i&gt;&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Partially inspired by and shares superficial similarities to Java, but intended to appeal to non-programmers, similar to Microsoft’s Visual Basic&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Microsoft quickly adopted to gain footing with IE 3 in 1996&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Netscape submitted it to to The European Computer Manufacturers Association (ECMA) in 1996 for standardization. The standardized spec for this language is ECMAscript&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Now the working language of the web, for better or worse&lt;/li&gt;
-&lt;/ol&gt;
-
-
-
-
-&lt;h1&gt;What is it used for?&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li class=&quot;fragment&quot;&gt;Adding dynamic behavior to web pages&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Manipulating and scripting elements on web pages&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Requesting data from a different source (we won’t cover this)&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Processing data outside of the web with frameworks like Node.js (we won’t cover this)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 class=&quot;fragment&quot; style=&quot;margin-top: 60px;&quot;&gt;Examples: &lt;/h2&gt;
-
-
-&lt;p&gt;&lt;h3&gt;Gmail&lt;/h3&gt;&lt;/p&gt;
-&lt;div class=&quot;fragment&quot;&gt;
-&lt;p&gt;check out the sweet hover menu!&lt;/p&gt;
-&lt;img src=&quot;img/gmail-menu.png&quot;/&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;&lt;h3&gt;&lt;b style=&quot;color: gray&quot;&gt;color&lt;/b&gt; a color matching game&lt;/h3&gt;&lt;/p&gt;
-&lt;div class=&quot;fragment&quot;&gt;
-&lt;p&gt;Using a markup language called SVG, JavaScript brings interactive graphics to create a rich experience&lt;/p&gt;
-&lt;img src=&quot;img/color-matching-game.png&quot;/&gt;
-&lt;a href=&quot;http://color.method.ac/&quot;&gt;http://color.method.ac&lt;/a&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;&lt;h3&gt;reveal.js&lt;/h3&gt;&lt;/p&gt;
-&lt;p&gt;This presentation is using a JavaScript library.  Requires no JS knowledge on my part,  but automagically adds razzle &amp;amp; dazzle.
-&lt;/p&gt;
-&lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot;&gt;http://lab.hakim.se/reveal-js/&lt;/a&gt;
-
-
-
-
-
-&lt;h2&gt;What does it look like?&lt;/h2&gt;
-&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-&amp;lt;head&amp;gt;
-&amp;lt;script&amp;gt;
-function sayHello(name) {
-alert(“Hello “ + name + “!”);
-}
-&amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;p&gt;Similar to stylesheets, to keep your code clean &amp;amp; organized, best practice is to include external script&lt;/p&gt;
-&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-&amp;lt;head&amp;gt;
-&amp;lt;link href=”path/to/mystylesheet.css” rel=”stylesheet” type=”text/css”&amp;gt;&amp;lt;/link&amp;gt;
-&amp;lt;script src=”path/to/myjavascript.js”&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p class=&quot;fragment&quot;&gt;In most cases stylesheets should precede script tags so that the browser can immediately render layout as intended, whereas scripts adding interactive behavior can take considerable time to load&lt;/p&gt;
-
-
-
-
-&lt;p&gt;&lt;h2&gt;Lets dive in&lt;/h2&gt;&lt;/p&gt;
-&lt;div class=&quot;fragment&quot;&gt;
-&lt;p&gt;Variable assignment: numbers, booleans, strings&lt;/p&gt;
-&lt;pre&gt;&lt;code data-trim contenteditable&gt;
-var myNumber = 5;
-var myBoolean = true;
-var myString = “Hello World!”;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;fragment&quot;&gt;
-&lt;p&gt;Variable assignment: arrays, objects &lt;/p&gt;
-&lt;pre&gt;&lt;code data-trim contenteditable&gt;
-var myNumberArray = [1,2,3];
-var myCircleObject = { color: “red”, radius: 2};
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p class=&quot;fragment&quot;&gt;Take note how variable declarations begin with the &lt;b&gt;var&lt;/b&gt; keyword&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-&lt;p&gt;&lt;h2&gt;Control Flow&lt;/h2&gt;&lt;/p&gt;
-&lt;div class=&quot;fragment&quot;&gt;
-&lt;p&gt;&lt;b&gt;if&lt;/b&gt; statements are used to control the flow of logic in your script. The expression within the parenthesis following the &lt;b&gt;if&lt;/b&gt; keyword must evaluate to a boolean value: &lt;b&gt;true&lt;/b&gt; or &lt;b&gt;false&lt;/b&gt; in order to evaluate
-&lt;/p&gt;
-&lt;pre&gt;&lt;code data-trim contenteditable&gt;
-var myGrade = 92;
-
-if (myGrade &amp;gt;= 85) {
-alert(‘You are doing really well in this class!’);
-} else {
-alert(‘You might want to study up.’);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p class=&quot;fragment&quot;&gt;The expression in the parenthesis is checking that &lt;b&gt;myGrade&lt;/b&gt; is greater than or equal to 85.  &amp;amp;gt, &amp;amp;gt=, &amp;amp;lt, &amp;amp;lt=, == are all logical operators used to compare values.&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-&lt;p&gt;&lt;h2&gt;Arithmetic Expressions&lt;/h2&gt;&lt;/p&gt;
-&lt;div class=&quot;fragment&quot;&gt;
-&lt;p&gt;We can perform arithmetic operations on numbers in JavaScript.  +, -, /, * are standard operators.  Take note on the 8th line that when we add a number to a string (a series of characters), JavaScript coerces the number to a string &amp;amp; appends it.
-&lt;/p&gt;
-&lt;pre&gt;&lt;code data-trim contenteditable&gt;
-var exam1 = 92;
-var exam2 = 85;
-var exam3 = 90;
-
-var average = (exam1 + exam2 + exam3) / 3;
-
-if (average &amp;gt;= 85) {
-alert(‘You are doing really well in this class!’);
-} else {
-alert(‘You might want to study up. Your average is ‘ + average + ‘.’);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p class=&quot;fragment&quot;&gt;JavaScript also features a &lt;b&gt;Math&lt;/b&gt; namespace of advanced operations including sqrt(), pow() and abs().&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-&lt;p&gt;&lt;h2&gt;Objects&lt;/h2&gt;&lt;/p&gt;
-&lt;div class=&quot;fragment&quot;&gt;
-&lt;p&gt;Objects are a structured set of primitive values.  Let’s declare an object named circle with
-a color and radius property.  Then we’ll calculate the circumference and update the object with a new property that we can access later.
-&lt;pre&gt;&lt;code data-trim contenteditable&gt;
-var pi = 3.14;
-
-var circle = {
-color: “red”,
-radius: 5
-};
-
-circle.circumference = 2 &lt;em&gt; pi &lt;/em&gt; circle.radius;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p class=&quot;fragment&quot;&gt;Note that we’ve declared a variable called pi for convenience and readability.
-&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-
-&lt;p&gt;&lt;h2&gt;Arrays &amp;amp; Iteration&lt;/h2&gt;&lt;/p&gt;
-&lt;p&gt;An array is a collection of things.  They could be basic values, such as numbers, or more complex data structures such as objects. &lt;/p&gt;
-&lt;div class=&quot;fragment&quot;&gt;
-&lt;p&gt;Let’s declare an array of objects representing report cards. We can access the length of the array. The first element of an array starts at 0 and the last one is at the position of length - 1&lt;/p&gt;
-&lt;pre&gt;&lt;code data-trim contenteditable&gt;
-var ReportCards = [
-{ name: “Dan”, Exam1: 85, Exam2: 90, Exam3: 75 },
-{ name: “Elijah”, Exam1: 65, Exam2: 80, Exam3: 75 },
-{ name: “Jennifer”, Exam1: 95, Exam2: 80, Exam3: 100 }
-];
-
-//Access the 1st element
-ReportCards[0];
-
-//Access the name of the 2nd element
-ReportCards[1].name;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;Now Let’s iterate over our ReportCards array and calculate the average final score for each student.&lt;/p&gt;
-&lt;p class=&quot;fragment&quot;&gt;A &lt;b&gt;for&lt;/b&gt; loop is composed of multiple statements: the initial position of the iterator (in this case we are using the variable i), the terminating position &amp;amp; finally the incrementor.  In most for loops it is only needed to increment by one using the operator i++.  This is equivalent to i = i + 1.&lt;/p&gt;
-&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-for (var i = 0; i &amp;lt; ReportCards.length; i++) {
-var card = ReportCards[i];
-card.final = (card.Exam1 + card.Exam2 + card.Exam3) / 3;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-
-
-
-&lt;h2&gt;Functions&lt;/h2&gt;
-&lt;p class=&quot;fragment&quot;&gt;
-Functions encapsulate a series of statements to represent a particular behavior. Functions become a critical mechanism when working with a large code base because they allow behaviors to be reusable.
-&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-function calculateAverage(numbers) {
-var aggregate = 0;
-
-for (var i = 0; i &amp;lt; numbers.length; i++) {
-aggregate = aggregate + numbers[i];
-}
-
-return aggregate / numbers.length;
-}
-
-var set_of_numbers = [5, 10, 15];
-
-calculateAverage(set_of_numbers);
-
-var another_set_of_numbers = [100, 130, 150, 170, 200];
-
-calculateAverage(another_set_of_numbers);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;img src=&quot;img/jquery_hosting.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;h1&gt;jQuery&lt;/h1&gt;
-
-
-
-&lt;p&gt;&lt;h2&gt;What is jQuery?&lt;/h2&gt;&lt;/p&gt;
-&lt;p class=&quot;fragment&quot;&gt;jQuery is a cross-browser JavaScript library originally developed by John Resig.  It simplifies DOM (Document Object Model) manipulation and standardizes the API between different browser environments. jQuery has gained incredible popularity for its ease of use and expressive syntax. &lt;/p&gt;
-
-&lt;p class=&quot;fragment&quot;&gt;Note: The DOM just means HTML accessible by JavaScript. Its effectively a snooty way of saying HTML when its live and programmable in a web browser. An API just stands for Application Programming Interface.  It means ‘The way something can be programmatically accessed.’&lt;p&gt;
-
-
-
-&lt;h2&gt;Selectors&lt;/h2&gt;
-&lt;p class=&quot;fragment&quot;&gt;jQuery offers an especially convenient way to select HTML elements by way of CSS selectors, as well as creating HTML fragments on the fly. &lt;/p&gt;
-&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-//select all divs with the class button
-$(‘div.button’);
-
-//select all table data cells whose parents are a table row with class even
-$(‘tr.even &amp;gt; td’);
-
-//select by id (should only return one element)
-$(‘#reportcards’);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p class=&quot;fragment&quot;&gt;$() is jQuery’s magic function.  jQuery sacrifices verbose syntax in favor of short, expressive statements.  One of the jQuery framework’s design decisions is to have a magic $() function that is context aware to the arguments being passed in.  In this case we are passing in a string representing a CSS selector, so jQuery knows to look for elements in our web page.&lt;/p&gt;
-
-
-
-&lt;p&gt;&lt;h2&gt;DOM Fragments&lt;/h2&gt;&lt;/p&gt;
-&lt;p class=&quot;fragment&quot;&gt;Let’s create a document fragment composed of an HTML string.  We will then use
-jQuery’s append() method to add it to our document body.&lt;/p&gt;
-&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-var paragraph_fragment = $(‘&lt;p&gt;Hello World!&lt;/p&gt;‘);
-
-$(‘#paragraph-container’).append(paragraph_fragment);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p class=&quot;fragment&quot;&gt;jQuery’s magic $() function recognized that our string represents HTML instead of a CSS selector, so it knows to create a document object which we can further manipulate.&lt;/p&gt;
-&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-paragraph_fragment.addClass(‘red-border’);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p class=&quot;fragment&quot;&gt;We added the class ‘red-border’ to our paragraph tag.&lt;/p&gt;
-
-
-
-
-
-
-&lt;p&gt;&lt;h2&gt;Expand your knowledge&lt;/h2&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li class=&quot;fragment&quot;&gt;Code Academy: &lt;a href=&quot;http://www.codecademy.com/tracks/javascript&quot;&gt;http://www.codecademy.com/tracks/javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;JavaScript the Good Parts: &lt;a href=&quot;http://shop.oreilly.com/product/9780596517748.do&quot;&gt;http://shop.oreilly.com/product/9780596517748.do&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;jQuery Documentation: &lt;a href=&quot;http://api.jquery.com/&quot;&gt;http://api.jquery.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;&lt;h2&gt;Happy Scripting&lt;/h2&gt;&lt;/p&gt;
-&lt;p&gt;Elijah Meerson, Software Engineer at AppNexus.  &lt;a href=&quot;https://twitter.com/elimeerson&quot;&gt;@elimeerson&lt;/a&gt;&lt;/p&gt;
-&lt;p class=&quot;fragment&quot;&gt;Also I’m on Google+&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Lesson 9</title>
       <link>http://localhost:8080/lessons/lesson-9/</link>
-      <pubDate>Wed, 30 Mar 2016 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 23 Mar 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about how to use HTML forms. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default js&quot;&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;JavaScript&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -1901,7 +1818,7 @@ The Empire State {font size 20px}&lt;/p&gt;
       <pubDate>Wed, 20 Apr 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
       <author></author>
-      <description>&lt;p&gt;Continure to work on final &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Continue to work on final &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;continue-to-work-on-final&quot;&gt;Continue to work on final&lt;/h1&gt;
 &lt;p&gt;Final is due at the end of this class.  If you are not able to make it to this class your final is still due at this time.&lt;/p&gt;

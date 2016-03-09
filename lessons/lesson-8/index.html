@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lesson 8 - SVA HTML
+    <title>Lesson 7 - SVA HTML
     </title>
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Spring 2016">
     <link rel="stylesheet" href="/css/github.css">
@@ -68,15 +68,15 @@
     <header class="main-header">
       <div class="container">
         <div class="well small page-title">
-          <h1>Lesson 8</h1>
-          <div class="date"><i class="fa fa-calendar"></i><span class="month">March</span><span class="day">23,</span><span class="year">2016</span></div>
+          <h1>Lesson 7</h1>
+          <div class="date"><i class="fa fa-calendar"></i><span class="month">March</span><span class="day">9,</span><span class="year">2016</span></div>
         </div>
       </div>
     </header>
     <div class="container main-level">
       <div class="col-md-9 main-content">
         <article class="article">
-          <section class="content"><p>This week we will have an introduction to JavaScript and JQuery. <div><span class="label label-default js"><i class="fa fa-laptop"></i>JavaScript</span></div></p>
+          <section class="content"><p>This week we will have an introduction to JavaScript and JQuery. <div><span class="label label-default js"><i class="fa fa-laptop"></i>JavaScript</span></p>
 <p><span class="more"></span></p>
 <h1>What is&nbsp;JavaScript?</h1>
 
@@ -87,20 +87,13 @@
 <p><a href="/lessons/lesson-8/week8-notes.zip">Download Notes  <i class="icon-download-alt icon-white"></i></a>
 <a href="/lessons/lesson-8/week8.zip">Download Starter File  <i class="icon-download-alt icon-white"></i></a></p>
 <p><a href="/lessons/lesson-8/lesson/index.html">Slide&nbsp;Show</a></p>
-<p><blockquote class="fragment" cite="http://en.wikipedia.org/wiki/JavaScript#CITEREFFlanaganFerguson2006">
-<span class="dquo">&ldquo;</span>JavaScript (<span class="caps">JS</span>) is an interpreted computer programming language.  It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.&rdquo;
-</blockquote></p>
-<p class="fragment">(From&nbsp;Wikipedia)</p>
-
-
-<h2>What does that&nbsp;mean?</h2>
-<p class="fragment">JavaScript gives life to web pages by way of the interpreter in a web browser.  The JavaScript interpreter translates a given script in order to manipulate elements within the&nbsp;page. </p>
-<p class="fragment">Without it web sites would be fairly&nbsp;static.</p>
-
-
-
-
-<h1>History of&nbsp;JavaScript</h1>
+<blockquote>
+<p>JavaScript (<span class="caps">JS</span>) is an interpreted computer programming language.  It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop&nbsp;applications.</p>
+</blockquote>
+<h2 id="what-does-that-mean-">What does that&nbsp;mean?</h2>
+<p>JavaScript gives life to web pages by way of the interpreter in a web browser.  The JavaScript interpreter translates a given script in order to manipulate elements within the page.
+Without it web sites would be fairly&nbsp;static.</p>
+<h2 id="history-of-javascript">History of&nbsp;JavaScript</h2>
 <ol>
 <li class="fragment">Created by Brendan Eich (Mozilla&nbsp;<span class="caps">CTO</span>) </li>
 <li class="fragment">Shipped in Netscape Navigator 2.0 in&nbsp;1995</li>
@@ -114,149 +107,92 @@
 
 
 
-<h1>What is it used&nbsp;for?</h1>
+<h2 id="what-is-it-used-for-">What is it used&nbsp;for?</h2>
 <ol>
 <li class="fragment">Adding dynamic behavior to web&nbsp;pages</li>
 <li class="fragment">Manipulating and scripting elements on web&nbsp;pages</li>
 <li class="fragment">Requesting data from a different source (we won’t cover&nbsp;this)</li>
 <li class="fragment">Processing data outside of the web with frameworks like Node.js (we won’t cover&nbsp;this)</li>
 </ol>
-<h2 class="fragment" style="margin-top: 60px;">Examples: </h2>
 
+<h3 id="examples">Examples</h3>
+<h3>Gmail</h3>
+check out the sweet hover menu!
 
-<p><h3>Gmail</h3></p>
-<div class="fragment">
-<p>check out the sweet hover&nbsp;menu!</p>
-<img src="img/gmail-menu.png"/>
-</div>
+<h3><b style="color: gray">color</b> a color matching&nbsp;game</h3>
 
-
-<p><h3><b style="color: gray">color</b> a color matching&nbsp;game</h3></p>
-<div class="fragment">
 <p>Using a markup language called <span class="caps">SVG</span>, JavaScript brings interactive graphics to create a rich&nbsp;experience</p>
-<img src="img/color-matching-game.png"/>
-<a href="http://color.method.ac/">http://color.method.ac</a>
-</div>
-
-
-<p><h3>reveal.js</h3></p>
-<p>This presentation is using a JavaScript library.  Requires no <span class="caps">JS</span> knowledge on my part,  but automagically adds razzle <span class="amp">&amp;</span>&nbsp;dazzle.
-</p>
-<a href="http://lab.hakim.se/reveal-js/">http://lab.hakim.se/reveal-js/</a>
-
-
-
-
-
+<p><a href="http://color.method.ac/">http://color.method.ac</a></p>
+<p><h3>reveal.js</h3>
+This presentation is using a JavaScript library.  Requires no <span class="caps">JS</span> knowledge on my part,  but automagically adds razzle <span class="amp">&amp;</span>&nbsp;dazzle.</p>
+<p><a href="http://lab.hakim.se/reveal-js/">http://lab.hakim.se/reveal-js/</a></p>
 <h2>What does it look&nbsp;like?</h2>
-<pre class="fragment"><code data-trim contenteditable>
-&lt;head&gt;
+
+<pre><code>&lt;head&gt;
 &lt;script&gt;
 function sayHello(name) {
-alert(“Hello “ + name + “!”);
+    alert(&quot;Hello &quot; + name + &quot;!&quot;);
 }
 &lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
-
-
-<p>Similar to stylesheets, to keep your code clean <span class="amp">&amp;</span> organized, best practice is to include external&nbsp;script</p>
-<pre class="fragment"><code data-trim contenteditable>
-&lt;head&gt;
-&lt;link href=”path/to/mystylesheet.css” rel=”stylesheet” type=”text/css”&gt;&lt;/link&gt;
-&lt;script src=”path/to/myjavascript.js”&gt;&lt;/script&gt;
+</code></pre><p>Similar to stylesheets, to keep your code clean <span class="amp">&amp;</span> organized, best practice is to include external&nbsp;script</p>
+<pre><code>&lt;head&gt;
+&lt;link href=&quot;path/to/mystylesheet.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;&lt;/link&gt;
+&lt;script src=&quot;path/to/myjavascript.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
-</code></pre>
-<p class="fragment">In most cases stylesheets should precede script tags so that the browser can immediately render layout as intended, whereas scripts adding interactive behavior can take considerable time to&nbsp;load</p>
+</code></pre><p>In most cases stylesheets should precede script tags so that the browser can immediately render layout as intended, whereas scripts adding interactive behavior can take considerable time to&nbsp;load</p>
+<h2>Lets dive&nbsp;in</h2>
 
-
-
-
-<p><h2>Lets dive&nbsp;in</h2></p>
-<div class="fragment">
 <p>Variable assignment: numbers, booleans,&nbsp;strings</p>
-<pre><code data-trim contenteditable>
-var myNumber = 5;
+<pre><code>var myNumber = 5;
 var myBoolean = true;
-var myString = “Hello World!”;
-</code></pre>
-</div>
-<div class="fragment">
-<p>Variable assignment: arrays,&nbsp;objects </p>
-<pre><code data-trim contenteditable>
-var myNumberArray = [1,2,3];
-var myCircleObject = { color: “red”, radius: 2};
-</code></pre>
-<p class="fragment">Take note how variable declarations begin with the <b>var</b>&nbsp;keyword</p>
-</div>
+var myString = &quot;Hello World!&quot;;
+</code></pre><p>Variable assignment: arrays,&nbsp;objects</p>
+<pre><code>var myNumberArray = [1,2,3];
+var myCircleObject = { color: &quot;red&quot;, radius: 2};
+</code></pre><p>Take note how variable declarations begin with the <b>var</b>&nbsp;keyword</p>
+<h2>Control&nbsp;Flow</h2>
 
-
-
-<p><h2>Control&nbsp;Flow</h2></p>
-<div class="fragment">
-<p><b>if</b> statements are used to control the flow of logic in your script. The expression within the parenthesis following the <b>if</b> keyword must evaluate to a boolean value: <b>true</b> or <b>false</b> in order to&nbsp;evaluate
-</p>
-<pre><code data-trim contenteditable>
-var myGrade = 92;
-
-if (myGrade &gt;= 85) {
-alert(‘You are doing really well in this class!’);
+<p><b>if</b> statements are used to control the flow of logic in your script. The expression within the parenthesis following the <code>if</code> keyword must evaluate to a boolean value: <code>true</code> or <code>false</code> in order to&nbsp;evaluate</p>
+<p>var myGrade =&nbsp;92;</p>
+<pre><code>if (myGrade &gt;= 85) {
+alert(&#39;You are doing really well in this class!&#39;);
 } else {
-alert(‘You might want to study up.’);
+alert(&#39;You might want to study up.&#39;);
 }
-</code></pre>
-<p class="fragment">The expression in the parenthesis is checking that <b>myGrade</b> is greater than or equal to 85.  &amp;gt, &amp;gt=, &amp;lt, &amp;lt=, == are all logical operators used to compare&nbsp;values.</p>
-</div>
+</code></pre><p>The expression in the parenthesis is checking that <b>myGrade</b> is greater than or equal to 85.  <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>==</code> are all logical operators used to compare&nbsp;values.</p>
+<h2>Arithmetic&nbsp;Expressions</h2>
 
-
-
-<p><h2>Arithmetic&nbsp;Expressions</h2></p>
-<div class="fragment">
-<p>We can perform arithmetic operations on numbers in JavaScript.  +, -, /, * are standard operators.  Take note on the 8<span class="ord">th</span> line that when we add a number to a string (a series of characters), JavaScript coerces the number to a string <span class="amp">&amp;</span> appends&nbsp;it.
-</p>
-<pre><code data-trim contenteditable>
-var exam1 = 92;
+<p>We can perform arithmetic operations on numbers in JavaScript.  +, -, /, * are standard operators.  Take note on the 8<span class="ord">th</span> line that when we add a number to a string (a series of characters), JavaScript coerces the number to a string <span class="amp">&amp;</span> appends&nbsp;it.</p>
+<pre><code>var exam1 = 92;
 var exam2 = 85;
 var exam3 = 90;
 
 var average = (exam1 + exam2 + exam3) / 3;
 
 if (average &gt;= 85) {
-alert(‘You are doing really well in this class!’);
+alert(&#39;You are doing really well in this class!&#39;);
 } else {
-alert(‘You might want to study up. Your average is ‘ + average + ‘.’);
+alert(&#39;You might want to study up. Your average is &#39; + average + &#39;.&#39;);
 }
-</code></pre>
-<p class="fragment">JavaScript also features a <b>Math</b> namespace of advanced operations including sqrt(), pow() and&nbsp;abs().</p>
-</div>
+</code></pre><p>JavaScript also features a <b>Math</b> namespace of advanced operations including <code>sqrt()</code>, <code>pow()</code> and <code>abs()</code>.</p>
+<h2>Objects</h2>
 
-
-
-<p><h2>Objects</h2></p>
-<div class="fragment">
 <p>Objects are a structured set of primitive values.  Let’s declare an object named circle with
-a color and radius property.  Then we’ll calculate the circumference and update the object with a new property that we can access later.
-<pre><code data-trim contenteditable>
-var pi = 3.14;
+a color and radius property.  Then we’ll calculate the circumference and update the object with a new property that we can access&nbsp;later.</p>
+<pre><code>var pi = 3.14;
 
 var circle = {
-color: “red”,
+color: &quot;red&quot;,
 radius: 5
 };
 
-circle.circumference = 2 <em> pi </em> circle.radius;
-</code></pre>
-<p class="fragment">Note that we’ve declared a variable called pi for convenience and&nbsp;readability.
-</p>
-</div>
+circle.circumference = 2 * pi * circle.radius;
+</code></pre><p>Note that we’ve declared a variable called pi for convenience and&nbsp;readability.</p>
+<h2>Arrays <span class="amp">&amp;</span>&nbsp;Iteration</h2>
+An array is a collection of things.  They could be basic values, such as numbers, or more complex data structures such as objects.
 
-
-
-
-<p><h2>Arrays <span class="amp">&amp;</span>&nbsp;Iteration</h2></p>
-<p>An array is a collection of things.  They could be basic values, such as numbers, or more complex data structures such as&nbsp;objects. </p>
-<div class="fragment">
-<p>Let’s declare an array of objects representing report cards. We can access the length of the array. The first element of an array starts at 0 and the last one is at the position of length -&nbsp;1</p>
+Let’s declare an array of objects representing report cards. We can access the length of the array. The first element of an array starts at 0 and the last one is at the position of length - 1
 <pre><code data-trim contenteditable>
 var ReportCards = [
 { name: “Dan”, Exam1: 85, Exam2: 90, Exam3: 75 },
@@ -270,11 +206,11 @@ ReportCards[0];
 //Access the name of the 2<span class="ord">nd</span> element
 ReportCards[1].name;
 </code></pre>
-</div>
 
 
-<p>Now Let’s iterate over our ReportCards array and calculate the average final score for each&nbsp;student.</p>
-<p class="fragment">A <b>for</b> loop is composed of multiple statements: the initial position of the iterator (in this case we are using the variable i), the terminating position <span class="amp">&amp;</span> finally the incrementor.  In most for loops it is only needed to increment by one using the operator i++.  This is equivalent to i = i +&nbsp;1.</p>
+
+Now Let’s iterate over our ReportCards array and calculate the average final score for each student.
+A <b>for</b> loop is composed of multiple statements: the initial position of the iterator (in this case we are using the variable i), the terminating position <span class="amp">&amp;</span> finally the incrementor.  In most for loops it is only needed to increment by one using the operator i++.  This is equivalent to i = i + 1.
 <pre class="fragment"><code data-trim contenteditable>
 for (var i = 0; i &lt; ReportCards.length; i++) {
 var card = ReportCards[i];
@@ -286,13 +222,13 @@ card.final = (card.Exam1 + card.Exam2 + card.Exam3) / 3;
 
 
 <h2>Functions</h2>
-<p class="fragment">
-Functions encapsulate a series of statements to represent a particular behavior. Functions become a critical mechanism when working with a large code base because they allow behaviors to be reusable.
+
+<p>Functions encapsulate a series of statements to represent a particular behavior. Functions become a critical mechanism when working with a large code base because they allow behaviors to be&nbsp;reusable.</p>
 <pre class="fragment"><code data-trim contenteditable>
 function calculateAverage(numbers) {
 var aggregate = 0;
 
-for (var i = 0; i &lt; numbers.length; i++) {
+for (var i = 0; i < numbers.length; i++) {
 aggregate = aggregate + numbers[i];
 }
 
@@ -307,7 +243,7 @@ var another_set_of_numbers = [100, 130, 150, 170, 200];
 
 calculateAverage(another_set_of_numbers);
 </code></pre>
-</p>
+
 
 
 
@@ -316,48 +252,31 @@ calculateAverage(another_set_of_numbers);
 
 
 
-<p><h2>What is&nbsp;jQuery?</h2></p>
-<p class="fragment">jQuery is a cross-browser JavaScript library originally developed by John Resig.  It simplifies <span class="caps">DOM</span> (Document Object Model) manipulation and standardizes the API between different browser environments. jQuery has gained incredible popularity for its ease of use and expressive&nbsp;syntax. </p>
-
-<p class="fragment">Note: The <span class="caps">DOM</span> just means HTML accessible by JavaScript. Its effectively a snooty way of saying HTML when its live and programmable in a web browser. An API just stands for Application Programming Interface.  It means ‘The way something can be programmatically accessed.’<p>
-
-
-
-<h2>Selectors</h2>
-<p class="fragment">jQuery offers an especially convenient way to select <span class="caps">HTML</span> elements by way of CSS selectors, as well as creating HTML fragments on the&nbsp;fly. </p>
-<pre class="fragment"><code data-trim contenteditable>
-//select all divs with the class button
-$(‘div.button’);
-
-//select all table data cells whose parents are a table row with class even
-$(‘tr.even &gt; td’);
-
-//select by id (should only return one element)
+<p><h2>What is&nbsp;jQuery?</h2>
+jQuery is a cross-browser JavaScript library originally developed by John Resig.  It simplifies <span class="caps">DOM</span> (Document Object Model) manipulation and standardizes the API between different browser environments. jQuery has gained incredible popularity for its ease of use and expressive&nbsp;syntax.</p>
+<p>Note: The <span class="caps">DOM</span> just means HTML accessible by JavaScript. Its effectively a snooty way of saying HTML when its live and programmable in a web browser. An API just stands for Application Programming Interface.  It means ‘The way something can be programmatically&nbsp;accessed.’</p>
+<p><h2>Selectors</h2>
+jQuery offers an especially convenient way to select <span class="caps">HTML</span> elements by way of CSS selectors, as well as creating HTML fragments on the&nbsp;fly.</p>
+<p><pre class="fragment"><code data-trim contenteditable>
+//select all divs with the class button&nbsp;$(‘div.button’);</p>
+<p>//select all table data cells whose parents are a table row with class even
+$(‘tr.even &gt;&nbsp;td’);</p>
+<p>//select by id (should only return one element)
 $(‘#reportcards’);
 </code></pre>
-<p class="fragment">$() is jQuery’s magic function.  jQuery sacrifices verbose syntax in favor of short, expressive statements.  One of the jQuery framework’s design decisions is to have a magic $() function that is context aware to the arguments being passed in.  In this case we are passing in a string representing a <span class="caps">CSS</span> selector, so jQuery knows to look for elements in our web&nbsp;page.</p>
-
-
-
-<p><h2><span class="caps">DOM</span>&nbsp;Fragments</h2></p>
-<p class="fragment">Let’s create a document fragment composed of an <span class="caps">HTML</span> string.  We will then use
+$() is jQuery’s magic function.  jQuery sacrifices verbose syntax in favor of short, expressive statements.  One of the jQuery framework’s design decisions is to have a magic $() function that is context aware to the arguments being passed in.  In this case we are passing in a string representing a <span class="caps">CSS</span> selector, so jQuery knows to look for elements in our web&nbsp;page.</p>
+<p><h2><span class="caps">DOM</span>&nbsp;Fragments</h2>
+Let’s create a document fragment composed of an <span class="caps">HTML</span> string.  We will then use
 jQuery’s append() method to add it to our document&nbsp;body.</p>
-<pre class="fragment"><code data-trim contenteditable>
-var paragraph_fragment = $(‘<p>Hello&nbsp;World!</p>‘);
-
-$(‘#paragraph-container’).append(paragraph_fragment);
+<p><pre class="fragment"><code data-trim contenteditable>
+var paragraph_fragment = $(‘Hello&nbsp;World!’);</p>
+<p>$(‘#paragraph-container’).append(paragraph_fragment);
 </code></pre>
-<p class="fragment">jQuery’s magic $() function recognized that our string represents <span class="caps">HTML</span> instead of a CSS selector, so it knows to create a document object which we can further&nbsp;manipulate.</p>
-<pre class="fragment"><code data-trim contenteditable>
+jQuery’s magic $() function recognized that our string represents <span class="caps">HTML</span> instead of a CSS selector, so it knows to create a document object which we can further&nbsp;manipulate.</p>
+<p><pre class="fragment"><code data-trim contenteditable>
 paragraph_fragment.addClass(‘red-border’);
 </code></pre>
-<p class="fragment">We added the class ‘red-border’ to our paragraph&nbsp;tag.</p>
-
-
-
-
-
-
+We added the class ‘red-border’ to our paragraph&nbsp;tag.</p>
 <p><h2>Expand your&nbsp;knowledge</h2></p>
 <ul>
 <li class="fragment">Code Academy: <a href="http://www.codecademy.com/tracks/javascript">http://www.codecademy.com/tracks/javascript</a></li>
@@ -365,12 +284,9 @@ paragraph_fragment.addClass(‘red-border’);
 <li class="fragment">jQuery Documentation: <a href="http://api.jquery.com/">http://api.jquery.com/</a></li>
 </ul>
 
-
-<p><h2>Happy&nbsp;Scripting</h2></p>
-<p>Elijah Meerson, Software Engineer at AppNexus.  <a href="https://twitter.com/elimeerson">@elimeerson</a></p>
-<p class="fragment">Also I’m on&nbsp;Google+</p>
-
-<p></div></p>
+<p><h2>Happy&nbsp;Scripting</h2>
+Elijah Meerson, Software Engineer at AppNexus.  <a href="https://twitter.com/elimeerson">@elimeerson</a>
+Also I’m on&nbsp;Google+</p>
 </section>
         </article>
       </div>
