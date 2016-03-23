@@ -730,10 +730,6 @@ pre {
   .navbar-fixed-bottom .container {
     max-width: 100%;
   }
-  .lesson-item {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .lesson-item .well {
     min-height: 250px;
   }
