@@ -5,82 +5,9 @@
     <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://localhost:8080</link>
     <description>Spring 2016</description>
-    <pubDate>Mon, 23 Mar 2015 15:00:00 -0400</pubDate>
+    <pubDate>Wed, 27 Jan 2016 15:00:00 -0500</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
-    <item>
-      <title>Lesson 8</title>
-      <link>http://localhost:8080/lessons/lesson-9/</link>
-      <pubDate>Mon, 23 Mar 2015 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
-      <author></author>
-      <description>&lt;p&gt;This week we will be talking about applying a background image with CSS and HTML forms &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;backgrounds&quot;&gt;Backgrounds&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/&quot;&gt;Backgrounds&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/lessons/lesson-9/forms.html&quot;&gt;Forms&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-9/week9-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-9/week9.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
-&lt;h3 id=&quot;background-color&quot;&gt;Background Color&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;background-color: color name | RGB Value | Hex Value;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the background.&lt;/p&gt;
-&lt;h3 id=&quot;background-image&quot;&gt;Background Image&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;background-image: url(&amp;lt;image path&amp;gt;);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left corner.&lt;/p&gt;
-&lt;h3 id=&quot;background-repeat&quot;&gt;Background Repeat&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;background-repeat: repeat | no-repeat | repeat-x | repeat-y
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When applying a background image it will tile in all directions by default.&lt;/p&gt;
-&lt;p&gt;You can control the way the image will tile by using &lt;code&gt;background-repeat&lt;/code&gt;.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Repeat&lt;/th&gt;
-&lt;th&gt;Direction&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;repeat (default)&lt;/td&gt;
-&lt;td&gt;tiles in all directions&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;no-repeat&lt;/td&gt;
-&lt;td&gt;the image will appear one time.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;repeat-x&lt;/td&gt;
-&lt;td&gt;repeat along the x axis&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;repeat-y&lt;/td&gt;
-&lt;td&gt;repeat along the x axis&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;background-attachment&quot;&gt;Background Attachment&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;background-attachment: scroll | fixed;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the BODY tag and that background image should not move when the page is scrolled.&lt;/p&gt;
-&lt;h4 id=&quot;background-position&quot;&gt;Background Position&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;background-position: (left, right or center) (top, center or bottom);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that point.&lt;/p&gt;
-&lt;p&gt;If you want the image to be position the center both vertical and horizontal than you need only define the value of center.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-position: center;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or percentages.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-position: 100px 300px;
-background-position: 50% 80%;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;background-shorthand&quot;&gt;Background Shorthand&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;background: image repeat attachment position color;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Like many CSS properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default value.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background: #fff url(images/side-bar.png) repeat-y right top;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example attachment is not defined so it will be set to the default which in this case is scroll.&lt;/p&gt;
-&lt;p&gt;In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to none.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background: none;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You are setting the &lt;code&gt;background-image&lt;/code&gt; to none and by default setting the &lt;code&gt;background-color&lt;/code&gt; to transparent.&lt;/p&gt;
-</description>
-    </item>
     <item>
       <title>Lesson 1</title>
       <link>http://localhost:8080/lessons/lesson-1/</link>
@@ -1144,6 +1071,79 @@ Also I’m on Google+&lt;/p&gt;
    clear: both;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a fixed two column layout. The width can be adjusted any value just note that the &lt;code&gt;.globalNav&lt;/code&gt; and &lt;code&gt;.contentArea&lt;/code&gt; must add up to the width of the &lt;code&gt;.container&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 9</title>
+      <link>http://localhost:8080/lessons/lesson-9/</link>
+      <pubDate>Wed, 23 Mar 2016 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will be talking about applying a background image with CSS and HTML forms &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;backgrounds&quot;&gt;Backgrounds&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/&quot;&gt;Backgrounds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/lessons/lesson-9/forms.html&quot;&gt;Forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-9/week9-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-9/week9.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
+&lt;h3 id=&quot;background-color&quot;&gt;Background Color&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;background-color: color name | RGB Value | Hex Value;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the background.&lt;/p&gt;
+&lt;h3 id=&quot;background-image&quot;&gt;Background Image&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;background-image: url(&amp;lt;image path&amp;gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left corner.&lt;/p&gt;
+&lt;h3 id=&quot;background-repeat&quot;&gt;Background Repeat&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;background-repeat: repeat | no-repeat | repeat-x | repeat-y
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When applying a background image it will tile in all directions by default.&lt;/p&gt;
+&lt;p&gt;You can control the way the image will tile by using &lt;code&gt;background-repeat&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Repeat&lt;/th&gt;
+&lt;th&gt;Direction&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat (default)&lt;/td&gt;
+&lt;td&gt;tiles in all directions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;no-repeat&lt;/td&gt;
+&lt;td&gt;the image will appear one time.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat-x&lt;/td&gt;
+&lt;td&gt;repeat along the x axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat-y&lt;/td&gt;
+&lt;td&gt;repeat along the x axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;background-attachment&quot;&gt;Background Attachment&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;background-attachment: scroll | fixed;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the BODY tag and that background image should not move when the page is scrolled.&lt;/p&gt;
+&lt;h4 id=&quot;background-position&quot;&gt;Background Position&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;background-position: (left, right or center) (top, center or bottom);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that point.&lt;/p&gt;
+&lt;p&gt;If you want the image to be position the center both vertical and horizontal than you need only define the value of center.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background-position: center;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or percentages.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background-position: 100px 300px;
+background-position: 50% 80%;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;background-shorthand&quot;&gt;Background Shorthand&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;background: image repeat attachment position color;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Like many CSS properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default value.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background: #fff url(images/side-bar.png) repeat-y right top;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example attachment is not defined so it will be set to the default which in this case is scroll.&lt;/p&gt;
+&lt;p&gt;In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to none.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background: none;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You are setting the &lt;code&gt;background-image&lt;/code&gt; to none and by default setting the &lt;code&gt;background-color&lt;/code&gt; to transparent.&lt;/p&gt;
 </description>
     </item>
     <item>
