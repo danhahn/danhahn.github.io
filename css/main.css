@@ -7,7 +7,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #649130;
+  color: #aa8a0a;
 }
 ul,
 ol {
@@ -29,7 +29,7 @@ h1 {
   font-weight: 300;
 }
 a:hover {
-  color: #8bc34a;
+  color: #f1c40f;
 }
 .caps {
   font-weight: bold;
@@ -39,18 +39,18 @@ a.btn:hover {
   color: white;
 }
 .btn {
-  background-color: #97c95d;
+  background-color: #f2ca27;
 }
 .btn:hover {
-  background-color: #7eb73d;
+  background-color: #dab10d;
 }
 .btn:active,
 .btn.active {
-  background-color: #649130;
+  background-color: #aa8a0a;
 }
 code {
-  color: #8bc34a;
-  background-color: #f5faef;
+  color: #f1c40f;
+  background-color: #fdf7de;
 }
 article {
   padding: 0 20px;
@@ -60,7 +60,7 @@ article {
   margin-bottom: 1em;
 }
 h2 {
-  color: #9fc34a;
+  color: #f19e0f;
   font-size: 1.8em;
   line-height: 1.8;
   font-weight: 700;
@@ -98,23 +98,23 @@ h3 {
   background: none;
 }
 .main-nav {
-  background-color: #a4d070;
+  background-color: #f4d03f;
 }
 .main-nav .navbar {
-  background-color: #8bc34a;
+  background-color: #f1c40f;
   margin-bottom: 0;
   border-radius: 0;
   border: none;
 }
 .main-header {
-  background-color: #bcdc97;
+  background-color: #f7dc6f;
   margin-bottom: 20px;
 }
 .main-header .well {
   border-radius: 0;
   border: none;
   margin-bottom: 0;
-  background-color: #649130;
+  background-color: #aa8a0a;
   padding: 10px 20px;
   display: -webkit-flex;
   display: flex;
@@ -158,7 +158,7 @@ h3 {
   letter-spacing: 1px;
 }
 .side-nav .nav-tabs.nav-stacked > li.active a {
-  background-color: #8bc34a;
+  background-color: #f1c40f;
   color: #ffffff;
   font-weight: 700;
 }
@@ -209,13 +209,13 @@ h3 {
   fill: #ffffff;
 }
 .navbar .brand svg .slash {
-  fill: #bcdc97;
+  fill: #f7dc6f;
 }
 .navbar .brand svg .letter {
   fill: #ffffff;
 }
 .navbar .brand svg .smletter {
-  fill: #bcdc97;
+  fill: #f7dc6f;
 }
 .navbar .brand svg .dot {
   fill: #ffffff;
@@ -268,13 +268,13 @@ p.date {
   padding: .5em 2em;
 }
 .table th {
-  color: #9fc34a;
+  color: #f19e0f;
 }
 .alert-info {
   text-align: left;
-  color: #9fc34a;
+  color: #f19e0f;
   background-color: #ffffff;
-  border-color: #9fc34a;
+  border-color: #f19e0f;
 }
 .scroll-top {
   float: right;
@@ -342,7 +342,7 @@ p.date {
   margin-bottom: 0;
 }
 .lesson-item .well h2 a {
-  color: #9fc34a;
+  color: #f19e0f;
 }
 .lesson-item .well p {
   text-align: left;
@@ -409,12 +409,12 @@ footer .container p {
   width: 100%;
   position: relative;
   z-index: 100;
-  background-color: #8bc34a;
+  background-color: #f1c40f;
   color: #ffffff;
   transition: all .3s;
 }
 .overflow {
-  border: 1px solid #649130;
+  border: 1px solid #aa8a0a;
   padding: 10px;
   height: 100px;
   background-color: silver;
@@ -428,7 +428,7 @@ footer .container p {
 }
 .date {
   font-weight: 100;
-  color: #9fc34a;
+  color: #f19e0f;
   font-size: .85em;
 }
 .date span,
@@ -497,8 +497,8 @@ img[src$="homework.png"] {
 }
 .homework-view {
   display: flex;
-  border-top: 1px solid #9fc34a;
-  border-bottom: 1px solid #9fc34a;
+  border-top: 1px solid #f19e0f;
+  border-bottom: 1px solid #f19e0f;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -518,17 +518,17 @@ img[src$="homework.png"] {
   border: 2px solid gray;
 }
 .navbar-default .navbar-toggle {
-  border-color: #649130;
-  background-color: #bcdc97;
+  border-color: #aa8a0a;
+  background-color: #f7dc6f;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:active,
 .navbar-default .navbar-toggle:focus {
-  background-color: #9fc34a;
+  background-color: #f19e0f;
   outline: none;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #649130;
+  background-color: #aa8a0a;
 }
 .label {
   text-transform: uppercase;
@@ -768,9 +768,9 @@ pre {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  border-left: 2px solid #8bc34a;
+  border-left: 2px solid #f1c40f;
   background-color: transparent;
-  color: #8bc34a;
+  color: #f1c40f;
   border-radius: 0;
   font-weight: bold;
 }
@@ -779,7 +779,7 @@ pre {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  border-left: 2px solid #bcdc97;
+  border-left: 2px solid #f7dc6f;
   background-color: transparent;
   border-radius: 0;
 }
