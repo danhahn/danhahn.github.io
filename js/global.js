@@ -170,7 +170,7 @@ $(function() {
         if(checkHex(liText)) {
           $(this).parent().addClass('hasSwatches');
           var $newSwatch = $template.clone();
-          $newSwatch.data('clipboard-text', liText);
+          $newSwatch.attr('data-clipboard-text', liText);
           if(hasTitle) {
             $newSwatch.find('.swatch').attr('title', liText);
           };
