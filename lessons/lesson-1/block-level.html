@@ -75,151 +75,265 @@
     <div class="container main-level">
       <div class="col-md-9 main-content">
         <article class="article">
-          <section class="content"><h1 id="block-level-elements">Block-Level&nbsp;Elements</h1>
+          <section class="content"><h1 id="block-elements">Block&nbsp;Elements</h1>
 <ul>
 <li><a href="/lessons/lesson-1/">Intro</a></li>
 <li><a href="/lessons/lesson-1/editors.html">Editors</a></li>
 <li><a href="/lessons/lesson-1/template.html"><span class="caps">HTML</span>&nbsp;Template</a></li>
-<li><a href="/lessons/lesson-1/block-level.html">Block-Level</a></li>
+<li><a href="/lessons/lesson-1/block-level.html">Block&nbsp;Elements</a></li>
 <li><a href="/lessons/lesson-1/inline.html">Inline</a></li>
 <li><a href="/lessons/lesson-1/classwork.html">Classwork</a></li>
 <li><a href="/lessons/lesson-1/homework.html">Homework</a></li>
 </ul>
-<p>Block-Level elements are used to define the structure of the <span class="caps">HTML</span> page. Block-Level elements will define and area on the page or force content on its own line. Block-Level elements must be the outermost elements but can be nested within each other. The only exception to the rule is the paragraph tag which needs to be the innermost Block-Level&nbsp;elements.</p>
-<h2 id="structure-tags-block-level-elements">Structure Tags - Block-Level&nbsp;Elements</h2>
-<h3 id="paragraph-tag-p-">Paragraph Tag (<code>&lt;p&gt;</code>)</h3>
-<p>Since <span class="caps">HTML</span> will not display line breaks within the HTML source to get that formatting to display within the browser we need to use the paragraph tag.
-<code>&lt;p&gt;&lt;/p&gt;</code>. The paragraph tag is a block-level element. It will add a small amount of space above and below the element.  Paragraph tags should be used for all content that does not fit another&nbsp;case.</p>
-<h4 id="example"><span class="caps">EXAMPLE</span></h4>
-<pre><code>&lt;p&gt;sample text&lt;/p&gt;
-</code></pre><h3 id="section-headers-h1-to-h6-">Section Headers (h1 to&nbsp;h6)</h3>
-<p><span class="caps">HTML</span> provides for up to six levels of headers for your web page. <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>. <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>. Headers are sometime called headlines are block-level elements there for they will always a create new line. In addition they will make the text bold and change the size of it depending on the number next to the <code>&lt;h1&gt;</code> is the largest and <code>&lt;h6&gt;</code> is the&nbsp;smallest.</p>
-<p>Section headers should be used to define the important of the content. So there should only be one H1 on a page but there could be many H2s on a page since they would be viewed as sub header of the H1 and so&nbsp;on.</p>
-<h3 id="example"><span class="caps">EXAMPLE</span></h3>
-<pre><code>&lt;h1&gt;Article Title&lt;/h1&gt;
-&lt;h2&gt;Article Subsection&lt;/h2&gt;
-&lt;h3&gt;SubHeader&lt;/h3&gt;
-&lt;h2&gt;Article Subsection&lt;/h2&gt;
-</code></pre><h3 id="creating-line-break">Creating line&nbsp;break</h3>
-<p>The <code>&lt;br&gt;</code> tag inserts a single line&nbsp;break.</p>
-<h4 id="example"><span class="caps">EXAMPLE</span></h4>
-<pre><code>&lt;p&gt;This example is&lt;br&gt; &lt;span&gt;very important&lt;/span&gt;&lt;/p&gt;
-</code></pre><h3 id="list-ul-ol-li-">List - <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></h3>
-<p>List are built into <span class="caps">HTML</span> and come in two types, ordered and unordered. List are made up of at least two tags the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> and the <code>&lt;li&gt;</code>.</p>
-<p>The <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> will add a margin at the top and the bottom of the list along with indenting the list on the left&nbsp;side.</p>
-<table>
-<thead>
-<tr>
-<th>Tag</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;ul&gt;&lt;/ul&gt;</code></td>
-<td>Unordered list – bullets</td>
-</tr>
-<tr>
-<td><code>&lt;ol&gt;&lt;/ol&gt;</code></td>
-<td>Ordered list – numbers</td>
-</tr>
-<tr>
-<td><code>&lt;li&gt;&lt;/li&gt;</code></td>
-<td>List Item.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="example">example</h3>
-<h2 id="unordered-list">Unordered&nbsp;list</h2>
-<pre><code>&lt;ul&gt;
-    &lt;li&gt;List item&lt;/li&gt;
-    &lt;li&gt;List item&lt;/li&gt;
-    &lt;li&gt;List item&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre><p>Ordered&nbsp;List</p>
-<pre><code>&lt;ol&gt;
-    &lt;li&gt;List item&lt;/li&gt;
-    &lt;li&gt;List item&lt;/li&gt;
-    &lt;li&gt;List item&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre><h3 id="example">Example</h3>
-<pre><code>&lt;div&gt;
-    &lt;h1&gt; Lorem ipsum dolor sit amet &lt;/h1&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas quis augue ut massa nonummy viverra. &lt;a href=”http://www.lorenipsum.com”&gt;Cras convallis pulvinar&lt;/a&gt; ante. Proin varius velit eget tellus. Duis elit. Quisque lectus velit, consequat sed, nonummy quis, molestie vitae, nisl. Praesent vehicula, odio vitae &lt;/p&gt;
-    &lt;ul&gt;
-        &lt;li&gt;List Item&lt;/li&gt;
-        &lt;li&gt;List Item&lt;/li&gt;
-        &lt;li&gt;List Item&lt;/li&gt;
-    &lt;ul&gt;
-&lt;/div&gt;
-</code></pre><h3 id="nested-list-item">Nested List&nbsp;Item</h3>
-<p>You can nest a list with in a list but it must be added to a list&nbsp;item</p>
-<pre><code>&lt;ul&gt;
-    &lt;li&gt;
-        Item Text
-        &lt;ul&gt;
-            &lt;li&gt;Sub List Item&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-&lt;ul&gt;
-</code></pre><h2 id="blockquote">Blockquote</h2>
-<p>A browser inserts white space before and after a blockquote element. It also insert margins for the blockquote&nbsp;element.</p>
-<pre><code>&lt;blockquote&gt;
-    &lt;p&gt;Here is a long quotation here is a long quotation&lt;/p&gt;
-&lt;/blockquote&gt;
-</code></pre><h3 id="breaking-up-a-page-into-divisions-div-">Breaking up a Page into Divisions (<code>&lt;div&gt;</code>)</h3>
-<p>Breaking the page up into divisions allows you to apply styles to an entire chunk of your page at once. This can also be used to layout your page. The <div> element is a block-level element but has not margin applied like the paragraph&nbsp;tag.</p>
-<p>With the div element you will apply an attribute of class or id to apply a style to&nbsp;it.</p>
-<h4 id="example"><span class="caps">EXAMPLE</span></h4>
-<pre><code>&lt;div&gt;
-    &lt;h2&gt;Article Subsection&lt;/h2&gt;
-    &lt;p&gt;sample text&lt;/p&gt;
-    &lt;p&gt;sample text&lt;/p&gt;
-    &lt;p&gt;sample text&lt;/p&gt;
-&lt;/div&gt;
-</code></pre><h2 id="new-html5-tags">New <span class="caps">HTML5</span>&nbsp;Tags</h2>
-<table>
-<thead>
-<tr>
-<th><span class="caps">TAG</span></th>
-<th><span class="caps">DESCRIPTION</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>&lt;article&gt;</code></td>
-<td>Defines an article</td>
-</tr>
-<tr>
-<td><code>&lt;aside&gt;</code></td>
-<td>Defines content aside from the page content</td>
-</tr>
-<tr>
-<td><code>&lt;details&gt;</code></td>
-<td>Defines additional details that the user can view or hide</td>
-</tr>
-<tr>
-<td><code>&lt;figure&gt;</code></td>
-<td>Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
-</tr>
-<tr>
-<td><code>&lt;footer&gt;</code></td>
-<td>Defines a footer for a document or section</td>
-</tr>
-<tr>
-<td><code>&lt;header&gt;</code></td>
-<td>Defines a header for a document or section</td>
-</tr>
-<tr>
-<td><code>&lt;nav&gt;</code></td>
-<td>Defines navigation links</td>
-</tr>
-<tr>
-<td><code>&lt;section&gt;</code></td>
-<td>Defines a section in a document</td>
-</tr>
-</tbody>
-</table>
+<p>In this lesson we will be talking about block elements. A block element is any element that when rapping content is content will be displayed on his online.  Block elements are able to display padding on the top and the bottom, have a width set on&nbsp;them.</p>
+<p>Block elements may also have additional styles based on the tag&nbsp;type.</p>
+<h2 id="paragraph">Paragraph</h2>
+<p>The <code>&lt;p&gt;</code> element (or <span class="caps">HTML</span> Paragraph Element) represents a paragraph of text. Paragraphs are usually represented in visual media as blocks of text that are separated from adjacent blocks by vertical blank space.  Paragraphs can contain one or more sentences of&nbsp;content.</p>
+<h3 id="example">Example</h3>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">p</span>&gt;</span>Example content.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre>
+<p>Example&nbsp;content.</p>
+
+<h3 id="usage">Usage</h3>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">p</span>&gt;</span>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisit.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre>
+<h2 id="headings">Headings</h2>
+<p>Heading elements implement six levels of document headings, <code>&lt;h1&gt;</code> is the most important and <code>&lt;h6&gt;</code> is the least. A heading element briefly describes the topic of the section it introduces. Heading information may be used by user agents, for example, to construct a table of contents for a document automatically( just like the fixed sider bar of this page on the&nbsp;right).</p>
+<p><strong>Usage&nbsp;note:</strong></p>
+<ul>
+<li>Do not use lower levels to decrease heading font size: use the <span class="caps">CSS</span> font-size property&nbsp;instead.</li>
+<li>Avoid skipping heading levels: always start from <code>&lt;h1&gt;</code>, next use <code>&lt;h2&gt;</code> and so&nbsp;on.</li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">h1</span>&gt;</span>Heading level 1<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
+<span class="tag">&lt;<span class="title">h2</span>&gt;</span>Heading level 2<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+<span class="tag">&lt;<span class="title">h3</span>&gt;</span>Heading level 3<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
+<span class="tag">&lt;<span class="title">h4</span>&gt;</span>Heading level 4<span class="tag">&lt;/<span class="title">h4</span>&gt;</span>
+<span class="tag">&lt;<span class="title">h5</span>&gt;</span>Heading level 5<span class="tag">&lt;/<span class="title">h5</span>&gt;</span>
+<span class="tag">&lt;<span class="title">h6</span>&gt;</span>Heading level 6<span class="tag">&lt;/<span class="title">h6</span>&gt;</span>
+</code></pre>
+<p><h1 style="all: initial;font-size: 2em; font-weight: bold;">Heading level&nbsp;1</h1></p>
+<p><h2 style="all: initial;font-size: 1.5em; font-weight: bold;">Heading level&nbsp;2</h2></p>
+<p><h3 style="all: initial;font-size: 1.17em; font-weight: bold;">Heading level&nbsp;3</h3></p>
+<p><h4 style="all: initial;font-size: 1em; font-weight: bold;">Heading level&nbsp;4</h4></p>
+<p><h5 style="all: initial;font-size: .83em; font-weight: bold;">Heading level&nbsp;5</h5></p>
+<h6 style="all: initial;font-size: .67em; font-weight: bold;">Heading level&nbsp;6</h6>
+
+<h3 id="usage">Usage</h3>
+<pre><code>&lt;h1&gt;Heading elements&lt;/h1&gt;
+&lt;h2&gt;Summary&lt;/h2&gt;
+&lt;p&gt;Some text here...&lt;/p&gt;
+
+&lt;h2&gt;Examples&lt;/h2&gt;
+&lt;h3&gt;Example 1&lt;/h3&gt;
+&lt;p&gt;Some text here...&lt;/p&gt;
+
+&lt;h3&gt;Example 2&lt;/h3&gt;
+&lt;p&gt;Some text here...&lt;/p&gt;
+
+&lt;h2&gt;See also&lt;/h2&gt;
+&lt;p&gt;Some text here...&lt;/p&gt;
+</code></pre><h3 id="line-break">Line&nbsp;break</h3>
+<p>The <span class="caps">HTML</span> element line break <code>&lt;br&gt;</code> produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is&nbsp;significant.</p>
+<p>Do not use <code>&lt;br&gt;</code> to increase the gap between lines of text; use the <span class="caps">CSS</span> <code>margin</code> property or the <code>&lt;p&gt;</code> element.</p>
+<h3 id="example">Example</h3>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">p</span>&gt;</span>111 5<span class="ord">th</span> Ave<span class="tag">&lt;<span class="title">br</span>&gt;</span>New York, <span class="caps">NY</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre>
+<p>111 5<span class="ord">th</span> Ave<br>New York,&nbsp;<span class="caps">NY</span></p>
+
+<p><strong>Note:</strong> older versions of html it was required to close all tags so you might see a break tag displayed like this <code>&lt;br /&gt;</code>.  </p>
+<h3 id="usage">Usage</h3>
+<pre><code>&lt;p&gt;
+By Sam Jones&lt;br&gt;
+June 30, 2004
+&lt;/p&gt;
+</code></pre><h2 id="lists">Lists</h2>
+<p>The <code>&lt;ol&gt;</code> Element (or Ordered List) represents an ordered list of items. Typically, ordered-list items are displayed with a preceding numbering, which can be of any form, like numerals, letters or Romans numerals or even simple&nbsp;bullets.</p>
+<p><strong>Ordered&nbsp;List</strong></p>
+<h3 id="example">Example</h3>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">ol</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span>item 1<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">li</span>&gt;</span>item 2<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ol</span>&gt;</span>
+</code></pre>
+<ol>
+<li>item&nbsp;1</li>
+<li>item&nbsp;2</li>
+</ol>
+<p><strong>Unordered&nbsp;List</strong></p>
+<p>The <code>&lt;ul&gt;</code> element (or Unordered List) represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is&nbsp;meaningless.</p>
+<h3 id="example">Example</h3>
+<ul>
+  <li>item&nbsp;1</li>
+  <li>item&nbsp;2</li>
+</ul>
+
+<ul>
+<li>item&nbsp;1</li>
+<li>item&nbsp;2</li>
+</ul>
+<p><strong>Note:</strong> This style of the bullets or numbers is not defined in the <span class="caps">HTML</span> description of the page, but in its associated CSS, using the <code>list-style-type</code> property.</p>
+<p>The <code>&lt;li&gt;</code> element (List Item) is used to represent an item in a&nbsp;list.</p>
+<p>There is no limitation to the depth and overlap of lists defined with the <code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code> elements.</p>
+<h3 id="usage">Usage</h3>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>Red<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>Blue
+        <span class="tag">&lt;<span class="title">ol</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>Light Blue<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>Dark Blue<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>Blue Green<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ol</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">li</span>&gt;</span>Green<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+</code></pre>
+<h2 id="blockquote">Blockquote</h2>
+<p>The <code>&lt;blockquote&gt;</code> Element (or <span class="caps">HTML</span> Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by&nbsp;indentation.</p>
+<h3 id="example">Example</h3>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">blockquote</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">p</span>&gt;</span>I like to read, especially nonfiction. I love learning, so I study languages, cook, learn basic <span class="caps">HTML</span>, and enjoy other activities that stimulate communication and the dark recesses of my musician's brain.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">blockquote</span>&gt;</span>
+</code></pre>
+<blockquote>
+    <p>I like to read, especially nonfiction. I love learning, so I study languages, cook, learn basic <span class="caps">HTML</span>, and enjoy other activities that stimulate communication and the dark recesses of my musician’s&nbsp;brain.</p>
+</blockquote>
+
+<h3 id="usage">Usage</h3>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">p</span>&gt;</span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">blockquote</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>In '93 to '94, every browser had its own flavor of <span class="caps">HTML</span>. So it was very difficult to know what you could put in a Web page and reliably have most of your readership see it.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">blockquote</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+</code></pre>
+<h2 id="page-divisions">Page&nbsp;divisions</h2>
+<p>The <code>&lt;div&gt;</code> element (or Document Division Element) is the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <code>&lt;article&gt;</code> or <code>&lt;nav&gt;</code>) is&nbsp;appropriate.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">div</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Section Title<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">p</span>&gt;</span>Section Content.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">p</span>&gt;</span>Section Content.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">p</span>&gt;</span>Section Content.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre>
+<div>
+    <h2>Section&nbsp;Title</h2>
+    <p>Section&nbsp;Content.</p>
+    <p>Section&nbsp;Content.</p>
+    <p>Section&nbsp;Content.</p>
+</div>
+
+<p><strong>Note:</strong> The <code>&lt;div&gt;</code> does not have any visual changes.  All changes will be applied in the&nbsp;css.</p>
+<h3 id="example">Example</h3>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Lorem ipsum dolor.<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Lorem ipsum dolor.<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, a.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>Sequi, rerum ratione ducimus unde porro quibusdam veritatis vitae iure?<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>Impedit quas debitis, non, ratione quisquam sequi ipsa adipisci? Incidunt.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">h2</span>&gt;</span>A, rerum, debitis.<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, cumque.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>Accusantium expedita quae nostrum delectus sapiente debitis perspiciatis veniam officia.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>Numquam perspiciatis culpa porro atque sint officia illo, qui eos?<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</code></pre>
+<h2 id="div-like-elements">Div like&nbsp;elements</h2>
+<p>With <span class="caps">HTML</span> 5 there are a number of new elements that are designed to help better semantically lay out the page. These tags act the same as the <code>&lt;div&gt;</code> tag but have better naming to help define sections within the page. Well these elements behave the same as a <code>&lt;div&gt;</code>  they make it easy for others to come in and understand the&nbsp;code.</p>
+<h3 id="section">section</h3>
+<p>The <code>&lt;section&gt;</code> element represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading. Each <code>&lt;section&gt;</code> should be identified, typically by including a heading (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> element) as a child of the <code>&lt;section&gt;</code> element.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">section</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Heading<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>Bunch of awesome content<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+</code></pre>
+<h3 id="header">header</h3>
+<p>The <code>&lt;header&gt;</code> element represents a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, wrapped section’s header, a search form, and so&nbsp;on.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">header</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Lorem ipsum.<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">header</span>&gt;</span>
+</code></pre>
+<h3 id="nav">nav</h3>
+<p>The <code>&lt;nav&gt;</code> element  Navigation Element) represents a section of a page that links to other pages or to parts within the page: a section with navigation&nbsp;links.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">nav</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Home<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>About<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</span>Contact<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">nav</span>&gt;</span>
+</code></pre>
+<h3 id="footer">footer</h3>
+<p>The <code>&lt;footer&gt;</code> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related&nbsp;documents.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">footer</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>&amp;copy; 2001 Some Website<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">footer</span>&gt;</span>
+</code></pre>
+<h3 id="article">article</h3>
+<p>The <code>&lt;article&gt;</code> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). This could be a forum post, a magazine or newspaper article, a blog entry, an object, or any other independent item of content. Each <code>&lt;article&gt;</code> should be identified, typically by including a heading (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> element) as a child of the <code>&lt;article&gt;</code> element.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">article</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Lorem ipsum.<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officiis?<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">p</span>&gt;</span>Deserunt, laudantium amet hic ex unde id rem cum nemo.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">article</span>&gt;</span>
+</code></pre>
+<h3 id="aside">aside</h3>
+<p>The <span class="caps">HTML</span> <code>&lt;aside&gt;</code> element represents a section of the page with content connected tangentially to the rest, which could be considered separate from that content. These sections are often represented as sidebars or inserts. They often contain the definitions on the sidebars, such as definitions from the glossary; there may also be other types of information, such as related advertisements; the biography of the author; web applications; profile&nbsp;information.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">section</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">article</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Lorem ipsum.<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, deserunt?<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>Quod vitae laborum, perferendis praesentium vel neque nisi consequatur illum.<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">article</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">aside</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>Lorem ipsum.<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>Dicta, sed!<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">li</span>&gt;</span>Eaque, tempore.<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">aside</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+</code></pre>
+<h2 id="page-layout">Page&nbsp;Layout</h2>
+<p>You can mix and match the element in any way that works for your design.  Most of the visual changes will be handled with your&nbsp;<span class="caps">CSS</span>.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="title">section</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">header</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Polar vortex<span class="tag">&lt;/<span class="title">h1</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">header</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">nav</span>&gt;</span>
+        Navigation goes here!
+    <span class="tag">&lt;/<span class="title">nav</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">section</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">article</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>
+                By Dan Hahn<span class="tag">&lt;<span class="title">br</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">span</span>&gt;</span>January 27, 2016<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>A <span class="tag">&lt;<span class="title">strong</span>&gt;</span>polar vortex<span class="tag">&lt;/<span class="title">strong</span>&gt;</span> (<span class="tag">&lt;<span class="title">em</span>&gt;</span>also known as a polar cyclone, polar low, or a circumpolar whirl<span class="tag">&lt;/<span class="title">em</span>&gt;</span>) <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>The Arctic vortex in the Northern Hemisphere has two centers, one near Baffin Island and the other over <span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">h2</span>&gt;</span>Contents<span class="tag">&lt;/<span class="title">h2</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">article</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">aside</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>History<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Identification<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Duration and power<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Climate change<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">li</span>&gt;</span>Ozone depletion<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">aside</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">footer</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">p</span>&gt;</span>&amp;copy; 2013 My site<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">footer</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+</code></pre>
 </section>
         </article>
       </div>

@@ -75,50 +75,64 @@
     <div class="container main-level">
       <div class="col-md-9 main-content">
         <article class="article">
-          <section class="content"><h1 id="setting-up-the-html-template">Setting up the <span class="caps">HTML</span>&nbsp;template</h1>
+          <section class="content"><h1 id="building-a-html-template">Building a <span class="caps">HTML</span>&nbsp;template</h1>
 <ul>
 <li><a href="/lessons/lesson-1/">Intro</a></li>
 <li><a href="/lessons/lesson-1/editors.html">Editors</a></li>
 <li><a href="/lessons/lesson-1/template.html"><span class="caps">HTML</span>&nbsp;Template</a></li>
-<li><a href="/lessons/lesson-1/block-level.html">Block-Level</a></li>
+<li><a href="/lessons/lesson-1/block-level.html">Block&nbsp;Elements</a></li>
+<li><a href="/lessons/lesson-1/inline.html">Inline</a></li>
 <li><a href="/lessons/lesson-1/classwork.html">Classwork</a></li>
 <li><a href="/lessons/lesson-1/homework.html">Homework</a></li>
 </ul>
-<p>All <span class="caps">HTML</span> pages are based on the same HTML template that will be used to create every HTML going&nbsp;forward.</p>
-<p>As we talked about earlier we can nest tag within one another and we will be doing that&nbsp;here.</p>
-<h2 id="version-of-html">Version of&nbsp;<span class="caps">HTML</span></h2>
-<p>Over the years there have been many different versions of <span class="caps">HTML</span>.  Starting with HTML 1 we are now on HTML 5.  To use any version of HTML you need to tell the browser by setting the&nbsp;DOCTYPE.</p>
-<p>The <span class="caps">DOCTYPE</span> will be the very first line of your HTML document and tells the browser.  In fact the DOCTYPE is not part of HTML at&nbsp;all.</p>
-<p>In the past a <span class="caps">DOCTYPE</span> was very complicated and could take up to two lines of code to define everything.  With HTML5 the DOCTYPE was simplified greatly to just one very simple&nbsp;line.</p>
-<p><code>&lt;!DOCTYPE html&gt;</code> or <code>&lt;!doctype html&gt;</code></p>
-<p>The two are the same and can either can be&nbsp;used.</p>
-<h2 id="html-template"><span class="caps">HTML</span>&nbsp;Template</h2>
-<p>Once the version of <span class="caps">HTML</span> is set we need to build the&nbsp;template.</p>
-<p><code>&lt;html&gt;</code> - defines the start and stop of <span class="caps">HTML</span>.  All other HTML tags will be nested within the <code>&lt;html&gt;</code> tag.</p>
-<p><code>&lt;head&gt;</code> - defines the start and stop of the head&nbsp;section.</p>
-<p><strong>Notes about the <code>&lt;head&gt;</code></strong></p>
-<ul>
-<li><code>&lt;title&gt;</code> - defines the title of the document that appears in the toolbar or tab and should be child of the <code>&lt;head&gt;</code></li>
-<li>Head is used to define information for the page but not the content of the&nbsp;page.</li>
-<li>All <span class="caps">CSS</span> and JavaScript should be placed within the <code>&lt;head&gt;</code>.</li>
-</ul>
-<p><code>&lt;body&gt;</code> - defines the start and stop of the body&nbsp;section.</p>
-<p><strong>Notes about the <code>&lt;body&gt;</code></strong></p>
-<ul>
-<li>All page content should be placed within the <code>&lt;body&gt;</code></li>
-<li>Make sure you put the content in the body sometimes people mistakenly put the content between the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>.  The content my display but may not be styled or function&nbsp;correctly.</li>
-</ul>
-<h2 id="the-template">The&nbsp;Template</h2>
-<pre><code>&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
+<p>We want to build a template to once so we do not have to write it every&nbsp;time.  </p>
+<h2 id="saving">Saving</h2>
+<p>To create any <code>html</code> file you need to <code>save as</code> <code>.html</code> to make the file in to an html&nbsp;file.</p>
+<h3 id="steps">Steps</h3>
+<ol>
+<li><code>File</code> &gt; <code>New File</code></li>
+<li><code>File</code> &gt; <code>Save As...</code></li>
+<li>Enter <code>template.html</code> in the <code>Save As</code> box.</li>
+<li>Select location to save (in our case <strong>Documents/your_name</strong>).</li>
+<li>Add the code&nbsp;below.</li>
+<li>Click <code>Save</code> Button</li>
+</ol>
+<pre><code class="lang-html"><span class="doctype">&lt;!<span class="caps">DOCTYPE</span> html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"<span class="caps">UTF</span>-8"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
 
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p><a href="/lessons/lesson-1/template.txt">Download a copy of the&nbsp;template</a></p>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</code></pre>
+<p>We will use this as our starting point for all <code>html</code> files that we need to create going&nbsp;forward.  </p>
+<h2 id="using-the-template">Using the&nbsp;template</h2>
+<p>Now what we have the template created we just need to save a copy of&nbsp;it.</p>
+<h3 id="steps">Steps</h3>
+<ol>
+<li><code>File</code> &gt; <code>Open...</code></li>
+<li><code>File</code> &gt; <code>Save As...</code></li>
+<li>Enter a name for your file in the <code>Save As</code> box.  </li>
+<li>Ensure that the name has no spaces, is all lowercase and has <code>.html</code> as an&nbsp;extension.</li>
+<li>Select location to&nbsp;save.</li>
+<li>Click <code>Save</code> button</li>
+</ol>
+<h2 id="parts-of-the-template">Parts of the&nbsp;template</h2>
+<h3 id="doctype"><span class="caps">DOCTYPE</span></h3>
+<p><code>&lt;!DOCTYPE&gt;</code> informs the browser which version of <span class="caps">HTML</span> you used to write the document. Doctype is a declaration, not a&nbsp;tag.</p>
+<h3 id="html">html</h3>
+<p>The <code>&lt;html&gt;</code> element (or <span class="caps">HTML</span> root element) represents the root of an HTML document. All other elements must be descendants of this&nbsp;element.</p>
+<p>It may have an attribute of <code>lang=&quot;en&quot;</code> to define the language that is used on the page. In our case we are sending it to&nbsp;english.</p>
+<h3 id="head">head</h3>
+<p>The <code>&lt;head&gt;</code> element provides general information (metadata) about the document, including its title and links to/definitions of scripts and style sheets. The <code>&lt;head&gt;</code> is a child of <code>&lt;html&gt;</code>.</p>
+<h3 id="body">body</h3>
+<p>The <code>&lt;body&gt;</code> element represents the content of an <span class="caps">HTML</span> document. There can be only one <body> element in a document. The <code>&lt;body&gt;</code> is a child of <code>&lt;html&gt;</code>.</p>
+<h3 id="title">title</h3>
+<p>The <code>&lt;title&gt;</code> element defines the title of the document, shown in a browser’s title bar or on the page’s tab. It can only contain text, and any contained tags are ignored.  The <code>&lt;title&gt;</code> is a child of <code>&lt;head&gt;</code>.</p>
+<p><a href="/lessons/lesson-1/template.txt">Download a copy of the&nbsp;template</a></p>
 </section>
         </article>
       </div>

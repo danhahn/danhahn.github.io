@@ -80,37 +80,34 @@
 <li><a href="/lessons/lesson-1/">Intro</a></li>
 <li><a href="/lessons/lesson-1/editors.html">Editors</a></li>
 <li><a href="/lessons/lesson-1/template.html"><span class="caps">HTML</span>&nbsp;Template</a></li>
-<li><a href="/lessons/lesson-1/block-level.html">Block-Level</a></li>
+<li><a href="/lessons/lesson-1/block-level.html">Block&nbsp;Elements</a></li>
 <li><a href="/lessons/lesson-1/inline.html">Inline</a></li>
 <li><a href="/lessons/lesson-1/classwork.html">Classwork</a></li>
 <li><a href="/lessons/lesson-1/homework.html">Homework</a></li>
 </ul>
-<p><span class="caps">HTML</span> elements are usually “inline” elements or “block-level” elements. An inline element occupies only the space bounded by the tags that define the inline&nbsp;element.</p>
-<p>In other words inline elements will not format the text to its own line instead the text will remain “inline” with the rest of&nbsp;text.  </p>
-<p><strong>Note:</strong> inline elements always need to be wrapped with a block-level&nbsp;element.  </p>
-<h2 id="here-are-a-few-inline-tags-we-will-use-">Here are a few inline tags we will&nbsp;use.</h2>
-<ul>
-<li><code>&lt;em&gt;</code> - The <span class="caps">HTML</span> Emphasis Element (<code>&lt;em&gt;</code>) marks text that has stress&nbsp;emphasis.</li>
-<li><code>&lt;strong&gt;</code> - The <span class="caps">HTML</span> Strong Element (<code>&lt;strong&gt;</code>) gives text strong importance, and is typically displayed in&nbsp;bold.</li>
-<li><code>&lt;span&gt;</code> - The <span class="caps">HTML</span> <code>&lt;span&gt;</code> element is a generic inline container for phrasing content, which does not inherently represent anything. <em>It should be used only when no other semantic element is&nbsp;appropriate.</em></li>
-<li><code>&lt;code&gt;</code> - The <span class="caps">HTML</span> Code Element (<code>&lt;code&gt;</code>) represents a fragment of computer code. By default, it is displayed in the browser’s default monospace&nbsp;font.</li>
-</ul>
-<h3 id="example">example</h3>
-<p><code>&lt;em&gt;</code></p>
+<p>An inline element is an element that when the content is wrapped with that tag does not display on its own&nbsp;line.</p>
+<p>Inline elements must be wrapped with a block element or can not be a child of another inline&nbsp;elements.</p>
+<h2 id="strong">strong</h2>
+<p>The <span class="caps">HTML</span> Strong Element <code>&lt;strong&gt;</code> gives text strong importance, and is typically displayed in&nbsp;bold.</p>
+<h3 id="example">Example</h3>
+<pre><code>&lt;p&gt;A &lt;strong&gt;polar vortex&lt;/strong&gt; also known as a polar cyclone, polar low, or a circumpolar whirl.&lt;/p&gt;
+</code></pre><p>A <strong>polar vortex</strong> also known as a polar cyclone, polar low, or a circumpolar&nbsp;whirl.</p>
+
+<h2 id="em">em</h2>
+<p>The <span class="caps">HTML</span> element emphasis  <code>&lt;em&gt;</code> marks text that has stress&nbsp;emphasis.</p>
+<h3 id="example">Example</h3>
 <pre><code>&lt;p&gt;In HTML 5, what was previously called &lt;em&gt;block-level&lt;/em&gt; content is now called &lt;em&gt;flow&lt;/em&gt; content.&lt;/p&gt;
 </code></pre><p>In <span class="caps">HTML</span> 5, what was previously called <em>block-level</em> content is now called <em>flow</em>&nbsp;content.</p>
-<hr>
-<p><code>&lt;strong&gt;</code></p>
-<pre><code>&lt;p&gt;When doing x it is &lt;strong&gt;imperative&lt;/strong&gt; to do y before proceeding.&lt;/p&gt;
-</code></pre><p>When doing x it is <strong>imperative</strong> to do y before&nbsp;proceeding.</p>
-<hr>
-<p><code>&lt;span&gt;</code></p>
-<pre><code>&lt;p&gt;&lt;span&gt;Some text&lt;/span&gt;&lt;/p&gt;
-</code></pre><p>Some&nbsp;text</p>
-<hr>
-<p><code>&lt;code&gt;</code> Example</p>
-<pre><code>&lt;p&gt;Regular text. &lt;code&gt;This is code.&lt;/code&gt; Regular text.&lt;/p&gt;
-</code></pre><p>Regular text. <code>This is code</code>. Regular&nbsp;text.</p>
+
+<h2 id="code">code</h2>
+<p>The <span class="caps">HTML</span> Code Element (<code>&lt;code&gt;</code>) represents a fragment of computer code. By default, it is displayed in the browser’s default monospace&nbsp;font.</p>
+<pre><code>&lt;p&gt;This is how we would show an &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; tag to a reader of this article.&lt;/p&gt;
+</code></pre><p>This is how we would show an <code>&lt;html&gt;</code> tag to a reader of this&nbsp;article.</p>
+
+<h2 id="span">span</h2>
+<p>The <span class="caps">HTML</span> <code>&lt;span&gt;</code> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <code>&lt;span&gt;</code> is very much like a <code>&lt;div&gt;</code> element, but <code>&lt;div&gt;</code> is a block-level element whereas a <code>&lt;span&gt;</code> is an inline&nbsp;element.</p>
+<pre><code>&lt;p&gt;We can use a &lt;span&gt;span to wrap&lt;/span&gt; text&lt;/p&gt;
+</code></pre><p>We can use a <span>span to wrap</span>&nbsp;text</p>
 </section>
         </article>
       </div>
