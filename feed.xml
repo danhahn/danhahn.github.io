@@ -4,14 +4,14 @@
     <title>SVA HTML</title>
     <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://localhost:8080</link>
-    <description>Spring 2016</description>
-    <pubDate>Wed, 27 Jan 2016 15:00:00 -0500</pubDate>
+    <description>Summer 2016</description>
+    <pubDate>Wed, 08 Jun 2016 15:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Lesson 1</title>
       <link>http://localhost:8080/lessons/lesson-1/</link>
-      <pubDate>Wed, 27 Jan 2016 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 08 Jun 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-1/</guid>
       <author></author>
       <description>&lt;p&gt;Introduction to HTML, Web Browsers, Standards &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -118,7 +118,7 @@ Examples
     <item>
       <title>Lesson 2</title>
       <link>http://localhost:8080/lessons/lesson-2/</link>
-      <pubDate>Wed, 03 Feb 2016 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 15 Jun 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-2/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will talk about how to create links and embed images. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -209,7 +209,7 @@ table tr td:nth-child(1){width:20%}
     <item>
       <title>Lesson 3</title>
       <link>http://localhost:8080/lessons/lesson-3/</link>
-      <pubDate>Wed, 10 Feb 2016 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 22 Jun 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-3/</guid>
       <author></author>
       <description>&lt;p&gt;This week we start to talk about CSS. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -343,10 +343,10 @@ table tr td:nth-child(1){width:20%}
     <item>
       <title>Lesson 4</title>
       <link>http://localhost:8080/lessons/lesson-4/</link>
-      <pubDate>Wed, 17 Feb 2016 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 29 Jun 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-4/</guid>
       <author></author>
-      <description>&lt;p&gt;This week We will dive back into CSS and talk about test, font, borders, margin and padding. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week We will dive back into CSS and talk about text, font, borders, margin and padding. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;basic-style-properties&quot;&gt;Basic Style Properties&lt;/h1&gt;
 &lt;ul&gt;
@@ -504,20 +504,236 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 5</title>
       <link>http://localhost:8080/lessons/lesson-5/</link>
-      <pubDate>Wed, 24 Feb 2016 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 06 Jul 2016 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-5/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;css-box-model&quot;&gt;CSS Box Model&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/&quot;&gt;Box Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/pseudo.html&quot;&gt;Pseudo Class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/floats.html&quot;&gt;Floats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/clear-fix.html&quot;&gt;Clear Fix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/week6-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/week6.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since Everything on in web design is a rectangular box we need to know how to size that box.  The way that CSS calculates the size of a box is not what you expect.  Rather than set the size of the box based on the outter most elements &lt;code&gt;border&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; the widht is set baed on the content.&lt;/p&gt;
+&lt;h3 id=&quot;setting-a-width&quot;&gt;Setting a width&lt;/h3&gt;
+&lt;p&gt;To set the width of an element you take the desired width and subtract the &lt;code&gt;padding-left&lt;/code&gt;, &lt;code&gt;padding-right&lt;/code&gt;, &lt;code&gt;border-left-width&lt;/code&gt; and &lt;code&gt;border-right-width&lt;/code&gt;.  If you need to maintain the &lt;code&gt;margin&lt;/code&gt; you will need to subtract the &lt;code&gt;margin-left&lt;/code&gt; and &lt;code&gt;margin-right&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;p&gt;If we have an element that needs to fit in to a space that is &lt;code&gt;400px&lt;/code&gt; and it has &lt;code&gt;padding: 20px&lt;/code&gt; and &lt;code&gt;border: 5px solid black&lt;/code&gt; the calulation to find the size would look like this.&lt;/p&gt;
+&lt;p&gt;  400px - 20px -20px - 5px - 5px = 350px&lt;/p&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;button id=&quot;fixWidth&quot; class=&quot;btn&quot; style=&quot;float: right;&quot;&gt;Fix Width&lt;/button&gt;
+
+&lt;ul id=&quot;cntrBoxModel&quot; class=&quot;btn-group&quot;&gt;
+  &lt;li class=&quot;btn&quot; data-total=&quot;400&quot; id=&quot;total&quot;&gt;width: 400px;&lt;/li&gt;
+  &lt;li class=&quot;btn&quot; data-size=&quot;20&quot;&gt;padding: 20px;&lt;/li&gt;
+  &lt;li class=&quot;btn&quot; data-size=&quot;10&quot;&gt;border: 10px solid #1abc9c;&lt;/li&gt;
+  &lt;li class=&quot;btn&quot; data-size=&quot;30&quot;&gt;margin: 30px;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&quot;displayBoxModel&quot; class=&quot;box-container&quot;&gt;
+  &lt;div class=&quot;box-model&quot;&gt;
+    Box Model Element.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;lesson-6.js&quot;&gt;&lt;/script&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 6</title>
+      <link>http://localhost:8080/lessons/lesson-6/</link>
+      <pubDate>Wed, 13 Jul 2016 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will talk about the new CSS3 flexbox layout. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;intro-to-flexbox&quot;&gt;Intro to Flexbox&lt;/h1&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 7</title>
+      <link>http://localhost:8080/lessons/lesson-7/</link>
+      <pubDate>Wed, 20 Jul 2016 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will be talking about CSS Layouts.  How to build them without tables. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;basic-layouts&quot;&gt;Basic Layouts&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/&quot;&gt;Basic Layouts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/overflow.html&quot;&gt;Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/responsive.html&quot;&gt;Responsive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-7/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-7/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CSS layouts have changed the way that we are able to design websites. At one time all layouts were done with the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;. This was both slow and hard to manage.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Table free&lt;/em&gt; layouts have been used for almost a decade now while they are an improvement over the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; they have flaws.&lt;/p&gt;
+&lt;h2 id=&quot;structure&quot;&gt;Structure&lt;/h2&gt;
+&lt;p&gt;In this example we are looking the the most basic layout. Assume that this page is a standard content page that has a &lt;code&gt;header&lt;/code&gt;, &lt;code&gt;navigation&lt;/code&gt;, &lt;code&gt;content&lt;/code&gt; area and &lt;code&gt;footer&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;
+&amp;lt;nav&amp;gt;&amp;lt;/nav&amp;gt;
+&amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;
+&amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The issue now is that we have no way to limit the width of the elements. One option would be with set the width on each element there are some issue that come along with that. The box model kicks in when a width is set.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;add-wrapper&quot;&gt;Add Wrapper&lt;/h2&gt;
+&lt;p&gt;The other option is to wrap all the element with an other element like a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. This will allow you to define a &lt;code&gt;width&lt;/code&gt; on it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;
+  &amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;
+  &amp;lt;nav&amp;gt;&amp;lt;/nav&amp;gt;
+  &amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;
+  &amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;adding-class&quot;&gt;Adding class&lt;/h2&gt;
+&lt;p&gt;While the structure is correct at this point we want to add an id or class to help identify this &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; from any other &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; that may be on the page.&lt;/p&gt;
+&lt;p&gt;There are some who say you should never use an id because they are too specific. I disagree with this. I feel that a well place id can help identify which element you are targeting.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+  &amp;lt;header class=&amp;quot;globalHeader&amp;quot;&amp;gt;&amp;lt;/header&amp;gt;
+  &amp;lt;nav class=&amp;quot;globalNav&amp;quot;&amp;gt;&amp;lt;/nav&amp;gt;
+  &amp;lt;article class=&amp;quot;contentArea&amp;quot;&amp;gt;&amp;lt;/article&amp;gt;
+  &amp;lt;footer class=&amp;quot;gloablFooter&amp;quot;&amp;gt;&amp;lt;/footer&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;styles&quot;&gt;Styles&lt;/h2&gt;
+&lt;p&gt;Now that we have the structure in place we need to write the &lt;code&gt;css&lt;/code&gt; to support the markup.&lt;/p&gt;
+&lt;h3 id=&quot;fixed-width&quot;&gt;Fixed width&lt;/h3&gt;
+&lt;p&gt;In this example we are setting up a page that is a fixed width of &lt;code&gt;800px&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.container {
+  width: 800px;
+}
+
+.gloablNav, .contentArea {
+   float: left;
+}
+
+.gloablNav {
+  width: 200px;
+}
+
+.contentArea {
+   width: 600px;
+}
+
+.footer {
+   clear: both;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a fixed two column layout. The width can be adjusted any value just note that the &lt;code&gt;.globalNav&lt;/code&gt; and &lt;code&gt;.contentArea&lt;/code&gt; must add up to the width of the &lt;code&gt;.container&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 8</title>
+      <link>http://localhost:8080/lessons/lesson-8/</link>
+      <pubDate>Wed, 27 Jul 2016 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we work on the in class final.  &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;final-project&quot;&gt;Final Project&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/&quot;&gt;Final Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/pages.html&quot;&gt;Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/lessons/lesson-8/final-content.pdf&quot;&gt;Copy for pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The final is due at the end of class on April 20, 2016.  Please email me at dan@svahtml.com with a zip file that has all the files needed to complete the final.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;final.psd&quot; class=&quot;btn&quot;&gt;Download PSD&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;colors&quot;&gt;Colors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;li&gt;#c0c0c0&lt;/li&gt;
+&lt;li&gt;#808080&lt;/li&gt;
+&lt;li&gt;#333333&lt;/li&gt;
+&lt;li&gt;#000000&lt;/li&gt;
+&lt;li&gt;#004358&lt;/li&gt;
+&lt;li&gt;#181e47&lt;/li&gt;
+&lt;li&gt;#ffe11a&lt;/li&gt;
+&lt;li&gt;#ff951a&lt;/li&gt;
+&lt;li&gt;#7fcaf5&lt;/li&gt;
+&lt;li&gt;#50b7f1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;fonts&quot;&gt;fonts&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
+font-family: &amp;#39;Montserrat&amp;#39;, sans-serif;
+font-family: &amp;#39;Homemade Apple&amp;#39;, cursive;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;header&quot;&gt;header&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#50b7f1&lt;/li&gt;
+&lt;li&gt;#ffe11a&lt;/li&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;New York State {font size 60px}&lt;br&gt;
+The Empire State {font size 20px}&lt;/p&gt;
+&lt;h2 id=&quot;nav&quot;&gt;Nav&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#ffe11a&lt;/li&gt;
+&lt;li&gt;#ff951a&lt;/li&gt;
+&lt;li&gt;#000000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;nav-items&quot;&gt;Nav Items&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Home(index.html)&lt;/li&gt;
+&lt;li&gt;History(history/index.html)&lt;/li&gt;
+&lt;li&gt;Geography(geography/index.html)&lt;/li&gt;
+&lt;li&gt;Major cities(cities/index.html)&lt;/li&gt;
+&lt;li&gt;Demographics(demographics/index.html)&lt;/li&gt;
+&lt;li&gt;Transportation(transportation/index.html)&lt;/li&gt;
+&lt;li&gt;Sports(sports/index.html)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;content&quot;&gt;Content&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;li&gt;#50b7f1&lt;/li&gt;
+&lt;li&gt;#004358&lt;/li&gt;
+&lt;li&gt;#b7b7b7&lt;/li&gt;
+&lt;li&gt;#333333&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;background-images&quot;&gt;Background Images&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;ny-seal.png
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+&lt;p&gt;Download the image on the right.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;images.zip&quot; class=&quot;btn&quot;&gt;Download images&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;side-bar&quot;&gt;Side Bar&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#004358&lt;/li&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;li&gt;#50b7f1&lt;/li&gt;
+&lt;li&gt;#b7b7b7&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;footer&quot;&gt;Footer&lt;/h2&gt;
+&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;#7fcaf5&lt;/li&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;© 2015 SVA HTML&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 5</title>
+      <link>http://localhost:8080/lessons/lesson-B/</link>
+      <pubDate>Mon, 24 Feb 2020 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-B/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will talk about Table and all the good and bad that goes with it. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;tables&quot;&gt;Tables&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/&quot;&gt;Intro to Tables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/lessons/lesson-5/table-example/index.html&quot;&gt;Build a table&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/styles.html&quot;&gt;Adding Styles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-B/&quot;&gt;Intro to Tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/lessons/lesson-B/table-example/index.html&quot;&gt;Build a table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-B/styles.html&quot;&gt;Adding Styles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-B/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-5/week5-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-5/week5.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-B/week5-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-B/week5.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Tables are defined with the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; tag. A table is divided into rows (with the &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; tag), and each row is divided into data cells (with the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; tag). The letters td stands for &lt;strong&gt;“table data,”&lt;/strong&gt; which is the content of a data cell. A data cell can contain text, images, lists, paragraphs, forms, tables, etc. There is also the &lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt; or table header to define a header within the table.  &lt;strong&gt;HTML5&lt;/strong&gt; added two new tags to help better group content within the table.  The &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt; or table header and &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; or table body are &lt;strong&gt;optional&lt;/strong&gt; tags that can be used to help define areas of the table.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
     &amp;lt;thead&amp;gt;
@@ -740,65 +956,22 @@ td .label {margin-right: 4px;cursor: pointer;}
 </description>
     </item>
     <item>
-      <title>Lesson 6</title>
-      <link>http://localhost:8080/lessons/lesson-6/</link>
-      <pubDate>Wed, 02 Mar 2016 15:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
-      <author></author>
-      <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;css-box-model&quot;&gt;CSS Box Model&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/&quot;&gt;Box Model&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/pseudo.html&quot;&gt;Pseudo Class&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/floats.html&quot;&gt;Floats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/clear-fix.html&quot;&gt;Clear Fix&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-6/week6-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-6/week6.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Since Everything on in web design is a rectangular box we need to know how to size that box.  The way that CSS calculates the size of a box is not what you expect.  Rather than set the size of the box based on the outter most elements &lt;code&gt;border&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; the widht is set baed on the content.&lt;/p&gt;
-&lt;h3 id=&quot;setting-a-width&quot;&gt;Setting a width&lt;/h3&gt;
-&lt;p&gt;To set the width of an element you take the desired width and subtract the &lt;code&gt;padding-left&lt;/code&gt;, &lt;code&gt;padding-right&lt;/code&gt;, &lt;code&gt;border-left-width&lt;/code&gt; and &lt;code&gt;border-right-width&lt;/code&gt;.  If you need to maintain the &lt;code&gt;margin&lt;/code&gt; you will need to subtract the &lt;code&gt;margin-left&lt;/code&gt; and &lt;code&gt;margin-right&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
-&lt;p&gt;If we have an element that needs to fit in to a space that is &lt;code&gt;400px&lt;/code&gt; and it has &lt;code&gt;padding: 20px&lt;/code&gt; and &lt;code&gt;border: 5px solid black&lt;/code&gt; the calulation to find the size would look like this.&lt;/p&gt;
-&lt;p&gt;  400px - 20px -20px - 5px - 5px = 350px&lt;/p&gt;
-&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
-&lt;button id=&quot;fixWidth&quot; class=&quot;btn&quot; style=&quot;float: right;&quot;&gt;Fix Width&lt;/button&gt;
-
-&lt;ul id=&quot;cntrBoxModel&quot; class=&quot;btn-group&quot;&gt;
-  &lt;li class=&quot;btn&quot; data-total=&quot;400&quot; id=&quot;total&quot;&gt;width: 400px;&lt;/li&gt;
-  &lt;li class=&quot;btn&quot; data-size=&quot;20&quot;&gt;padding: 20px;&lt;/li&gt;
-  &lt;li class=&quot;btn&quot; data-size=&quot;10&quot;&gt;border: 10px solid #1abc9c;&lt;/li&gt;
-  &lt;li class=&quot;btn&quot; data-size=&quot;30&quot;&gt;margin: 30px;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div id=&quot;displayBoxModel&quot; class=&quot;box-container&quot;&gt;
-  &lt;div class=&quot;box-model&quot;&gt;
-    Box Model Element.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script src=&quot;lesson-6.js&quot;&gt;&lt;/script&gt;
-</description>
-    </item>
-    <item>
       <title>Lesson 7</title>
-      <link>http://localhost:8080/lessons/lesson-8/</link>
-      <pubDate>Wed, 09 Mar 2016 15:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
+      <link>http://localhost:8080/lessons/lesson-A/</link>
+      <pubDate>Mon, 09 Mar 2020 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-A/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will have an introduction to JavaScript and JQuery. &lt;div&gt;&lt;span class=&quot;label label-default js&quot;&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;JavaScript&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;What is JavaScript?&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/&quot;&gt;Javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/jquery.html&quot;&gt;Jquery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-A/&quot;&gt;Javascript&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-A/jquery.html&quot;&gt;Jquery&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-8/week8-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-8/week8.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-8/lesson/index.html&quot;&gt;Slide Show&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-A/week8-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-A/week8.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-A/lesson/index.html&quot;&gt;Slide Show&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;JavaScript (JS) is an interpreted computer programming language.  It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1003,80 +1176,9 @@ Also I’m on Google+&lt;/p&gt;
 </description>
     </item>
     <item>
-      <title>Lesson 8</title>
-      <link>http://localhost:8080/lessons/lesson-7/</link>
-      <pubDate>Wed, 16 Mar 2016 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
-      <author></author>
-      <description>&lt;p&gt;This week we will be talking about CSS Layouts.  How to build them without tables. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;basic-layouts&quot;&gt;Basic Layouts&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/&quot;&gt;Basic Layouts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/overflow.html&quot;&gt;Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/responsive.html&quot;&gt;Responsive&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-7/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-7/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;CSS layouts have changed the way that we are able to design websites. At one time all layouts were done with the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;. This was both slow and hard to manage.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Table free&lt;/em&gt; layouts have been used for almost a decade now while they are an improvement over the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; they have flaws.&lt;/p&gt;
-&lt;h2 id=&quot;structure&quot;&gt;Structure&lt;/h2&gt;
-&lt;p&gt;In this example we are looking the the most basic layout. Assume that this page is a standard content page that has a &lt;code&gt;header&lt;/code&gt;, &lt;code&gt;navigation&lt;/code&gt;, &lt;code&gt;content&lt;/code&gt; area and &lt;code&gt;footer&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;
-&amp;lt;nav&amp;gt;&amp;lt;/nav&amp;gt;
-&amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;
-&amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The issue now is that we have no way to limit the width of the elements. One option would be with set the width on each element there are some issue that come along with that. The box model kicks in when a width is set.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;add-wrapper&quot;&gt;Add Wrapper&lt;/h2&gt;
-&lt;p&gt;The other option is to wrap all the element with an other element like a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. This will allow you to define a &lt;code&gt;width&lt;/code&gt; on it.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;
-  &amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;
-  &amp;lt;nav&amp;gt;&amp;lt;/nav&amp;gt;
-  &amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;
-  &amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;adding-class&quot;&gt;Adding class&lt;/h2&gt;
-&lt;p&gt;While the structure is correct at this point we want to add an id or class to help identify this &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; from any other &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; that may be on the page.&lt;/p&gt;
-&lt;p&gt;There are some who say you should never use an id because they are too specific. I disagree with this. I feel that a well place id can help identify which element you are targeting.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
-  &amp;lt;header class=&amp;quot;globalHeader&amp;quot;&amp;gt;&amp;lt;/header&amp;gt;
-  &amp;lt;nav class=&amp;quot;globalNav&amp;quot;&amp;gt;&amp;lt;/nav&amp;gt;
-  &amp;lt;article class=&amp;quot;contentArea&amp;quot;&amp;gt;&amp;lt;/article&amp;gt;
-  &amp;lt;footer class=&amp;quot;gloablFooter&amp;quot;&amp;gt;&amp;lt;/footer&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;styles&quot;&gt;Styles&lt;/h2&gt;
-&lt;p&gt;Now that we have the structure in place we need to write the &lt;code&gt;css&lt;/code&gt; to support the markup.&lt;/p&gt;
-&lt;h3 id=&quot;fixed-width&quot;&gt;Fixed width&lt;/h3&gt;
-&lt;p&gt;In this example we are setting up a page that is a fixed width of &lt;code&gt;800px&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.container {
-  width: 800px;
-}
-
-.gloablNav, .contentArea {
-   float: left;
-}
-
-.gloablNav {
-  width: 200px;
-}
-
-.contentArea {
-   width: 600px;
-}
-
-.footer {
-   clear: both;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a fixed two column layout. The width can be adjusted any value just note that the &lt;code&gt;.globalNav&lt;/code&gt; and &lt;code&gt;.contentArea&lt;/code&gt; must add up to the width of the &lt;code&gt;.container&lt;/code&gt;.&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Lesson 9</title>
       <link>http://localhost:8080/lessons/lesson-9/</link>
-      <pubDate>Wed, 23 Mar 2016 15:00:00 -0400</pubDate>
+      <pubDate>Mon, 23 Mar 2020 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about applying a background image with CSS and HTML forms &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -1149,7 +1251,7 @@ background-position: 50% 80%;
     <item>
       <title>Lesson 10</title>
       <link>http://localhost:8080/lessons/lesson-10/</link>
-      <pubDate>Wed, 06 Apr 2016 15:00:00 -0400</pubDate>
+      <pubDate>Mon, 06 Apr 2020 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-10/</guid>
       <author></author>
       <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -1218,100 +1320,9 @@ background-position: 50% 80%;
 </description>
     </item>
     <item>
-      <title>Lesson 11</title>
-      <link>http://localhost:8080/lessons/lesson-11/</link>
-      <pubDate>Wed, 13 Apr 2016 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-11/</guid>
-      <author></author>
-      <description>&lt;p&gt;This week we work on the in class final.  &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;final-project&quot;&gt;Final Project&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/&quot;&gt;Final Project&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/pages.html&quot;&gt;Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/lessons/lesson-11/final-content.pdf&quot;&gt;Copy for pages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The final is due at the end of class on April 20, 2016.  Please email me at dan@svahtml.com with a zip file that has all the files needed to complete the final.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;final.psd&quot; class=&quot;btn&quot;&gt;Download PSD&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;colors&quot;&gt;Colors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;li&gt;#c0c0c0&lt;/li&gt;
-&lt;li&gt;#808080&lt;/li&gt;
-&lt;li&gt;#333333&lt;/li&gt;
-&lt;li&gt;#000000&lt;/li&gt;
-&lt;li&gt;#004358&lt;/li&gt;
-&lt;li&gt;#181e47&lt;/li&gt;
-&lt;li&gt;#ffe11a&lt;/li&gt;
-&lt;li&gt;#ff951a&lt;/li&gt;
-&lt;li&gt;#7fcaf5&lt;/li&gt;
-&lt;li&gt;#50b7f1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;fonts&quot;&gt;fonts&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
-font-family: &amp;#39;Montserrat&amp;#39;, sans-serif;
-font-family: &amp;#39;Homemade Apple&amp;#39;, cursive;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;header&quot;&gt;header&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#50b7f1&lt;/li&gt;
-&lt;li&gt;#ffe11a&lt;/li&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;New York State {font size 60px}&lt;br&gt;
-The Empire State {font size 20px}&lt;/p&gt;
-&lt;h2 id=&quot;nav&quot;&gt;Nav&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#ffe11a&lt;/li&gt;
-&lt;li&gt;#ff951a&lt;/li&gt;
-&lt;li&gt;#000000&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;nav-items&quot;&gt;Nav Items&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Home(index.html)&lt;/li&gt;
-&lt;li&gt;History(history/index.html)&lt;/li&gt;
-&lt;li&gt;Geography(geography/index.html)&lt;/li&gt;
-&lt;li&gt;Major cities(cities/index.html)&lt;/li&gt;
-&lt;li&gt;Demographics(demographics/index.html)&lt;/li&gt;
-&lt;li&gt;Transportation(transportation/index.html)&lt;/li&gt;
-&lt;li&gt;Sports(sports/index.html)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;content&quot;&gt;Content&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;li&gt;#50b7f1&lt;/li&gt;
-&lt;li&gt;#004358&lt;/li&gt;
-&lt;li&gt;#b7b7b7&lt;/li&gt;
-&lt;li&gt;#333333&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;background-images&quot;&gt;Background Images&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;ny-seal.png
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
-&lt;p&gt;Download the image on the right.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;images.zip&quot; class=&quot;btn&quot;&gt;Download images&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;side-bar&quot;&gt;Side Bar&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#004358&lt;/li&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;li&gt;#50b7f1&lt;/li&gt;
-&lt;li&gt;#b7b7b7&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;footer&quot;&gt;Footer&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#7fcaf5&lt;/li&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;© 2015 SVA HTML&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Lesson 12</title>
       <link>http://localhost:8080/lessons/lesson-12/</link>
-      <pubDate>Wed, 20 Apr 2016 15:00:00 -0400</pubDate>
+      <pubDate>Mon, 20 Apr 2020 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
       <author></author>
       <description>&lt;p&gt;Continue to work on final &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;

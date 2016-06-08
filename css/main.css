@@ -7,7 +7,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #aa8a0a;
+  color: #19703e;
 }
 ul,
 ol {
@@ -29,7 +29,7 @@ h1 {
   font-weight: 300;
 }
 a:hover {
-  color: #f1c40f;
+  color: #27ae60;
 }
 .caps {
   font-weight: bold;
@@ -39,18 +39,18 @@ a.btn:hover {
   color: white;
 }
 .btn {
-  background-color: #f2ca27;
+  background-color: #2cc36b;
 }
 .btn:hover {
-  background-color: #dab10d;
+  background-color: #229955;
 }
 .btn:active,
 .btn.active {
-  background-color: #aa8a0a;
+  background-color: #19703e;
 }
 code {
-  color: #f1c40f;
-  background-color: #fdf7de;
+  color: #27ae60;
+  background-color: #c0f1d4;
 }
 article {
   padding: 0 20px;
@@ -60,7 +60,7 @@ article {
   margin-bottom: 1em;
 }
 h2 {
-  color: #f19e0f;
+  color: #27ae4a;
   font-size: 1.8em;
   line-height: 1.8;
   font-weight: 700;
@@ -98,23 +98,23 @@ h3 {
   background: none;
 }
 .main-nav {
-  background-color: #f4d03f;
+  background-color: #36d278;
 }
 .main-nav .navbar {
-  background-color: #f1c40f;
+  background-color: #27ae60;
   margin-bottom: 0;
   border-radius: 0;
   border: none;
 }
 .main-header {
-  background-color: #f7dc6f;
+  background-color: #60db94;
   margin-bottom: 20px;
 }
 .main-header .well {
   border-radius: 0;
   border: none;
   margin-bottom: 0;
-  background-color: #aa8a0a;
+  background-color: #19703e;
   padding: 10px 20px;
   display: -webkit-flex;
   display: flex;
@@ -158,7 +158,7 @@ h3 {
   letter-spacing: 1px;
 }
 .side-nav .nav-tabs.nav-stacked > li.active a {
-  background-color: #f1c40f;
+  background-color: #27ae60;
   color: #ffffff;
   font-weight: 700;
 }
@@ -209,13 +209,13 @@ h3 {
   fill: #ffffff;
 }
 .navbar .brand svg .slash {
-  fill: #f7dc6f;
+  fill: #60db94;
 }
 .navbar .brand svg .letter {
   fill: #ffffff;
 }
 .navbar .brand svg .smletter {
-  fill: #f7dc6f;
+  fill: #60db94;
 }
 .navbar .brand svg .dot {
   fill: #ffffff;
@@ -268,13 +268,13 @@ p.date {
   padding: .5em 2em;
 }
 .table th {
-  color: #f19e0f;
+  color: #27ae4a;
 }
 .alert-info {
   text-align: left;
-  color: #f19e0f;
-  background-color: #ffffff;
-  border-color: #f19e0f;
+  color: #27ae4a;
+  background-color: #ddf7e3;
+  border-color: #27ae4a;
 }
 .scroll-top {
   float: right;
@@ -342,7 +342,7 @@ p.date {
   margin-bottom: 0;
 }
 .lesson-item .well h2 a {
-  color: #f19e0f;
+  color: #27ae4a;
 }
 .lesson-item .well p {
   text-align: left;
@@ -409,12 +409,12 @@ footer .container p {
   width: 100%;
   position: relative;
   z-index: 100;
-  background-color: #f1c40f;
+  background-color: #27ae60;
   color: #ffffff;
   transition: all .3s;
 }
 .overflow {
-  border: 1px solid #aa8a0a;
+  border: 1px solid #19703e;
   padding: 10px;
   height: 100px;
   background-color: silver;
@@ -428,7 +428,7 @@ footer .container p {
 }
 .date {
   font-weight: 100;
-  color: #f19e0f;
+  color: #27ae4a;
   font-size: .85em;
 }
 .date span,
@@ -497,8 +497,8 @@ img[src$="homework.png"] {
 }
 .homework-view {
   display: flex;
-  border-top: 1px solid #f19e0f;
-  border-bottom: 1px solid #f19e0f;
+  border-top: 1px solid #27ae4a;
+  border-bottom: 1px solid #27ae4a;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -518,17 +518,17 @@ img[src$="homework.png"] {
   border: 2px solid gray;
 }
 .navbar-default .navbar-toggle {
-  border-color: #aa8a0a;
-  background-color: #f7dc6f;
+  border-color: #19703e;
+  background-color: #60db94;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:active,
 .navbar-default .navbar-toggle:focus {
-  background-color: #f19e0f;
+  background-color: #27ae4a;
   outline: none;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #aa8a0a;
+  background-color: #19703e;
 }
 .label {
   text-transform: uppercase;
@@ -768,9 +768,9 @@ pre {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  border-left: 2px solid #f1c40f;
+  border-left: 2px solid #27ae60;
   background-color: transparent;
-  color: #f1c40f;
+  color: #27ae60;
   border-radius: 0;
   font-weight: bold;
 }
@@ -779,7 +779,7 @@ pre {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  border-left: 2px solid #f7dc6f;
+  border-left: 2px solid #60db94;
   background-color: transparent;
   border-radius: 0;
 }
