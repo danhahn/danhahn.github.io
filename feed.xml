@@ -517,13 +517,13 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/clear-fix.html&quot;&gt;Clear Fix&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/week6-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/week6.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Since Everything on in web design is a rectangular box we need to know how to size that box.  The way that CSS calculates the size of a box is not what you expect.  Rather than set the size of the box based on the outter most elements &lt;code&gt;border&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; the widht is set baed on the content.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-5/week5-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-5/week5.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since Everything on in web design is a rectangular box we need to know how to size that box.  The way that CSS calculates the size of a box is not what you expect.  Rather than set the size of the box based on the outer most elements &lt;code&gt;border&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; the width is set baed on the content.&lt;/p&gt;
 &lt;h3 id=&quot;setting-a-width&quot;&gt;Setting a width&lt;/h3&gt;
 &lt;p&gt;To set the width of an element you take the desired width and subtract the &lt;code&gt;padding-left&lt;/code&gt;, &lt;code&gt;padding-right&lt;/code&gt;, &lt;code&gt;border-left-width&lt;/code&gt; and &lt;code&gt;border-right-width&lt;/code&gt;.  If you need to maintain the &lt;code&gt;margin&lt;/code&gt; you will need to subtract the &lt;code&gt;margin-left&lt;/code&gt; and &lt;code&gt;margin-right&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
-&lt;p&gt;If we have an element that needs to fit in to a space that is &lt;code&gt;400px&lt;/code&gt; and it has &lt;code&gt;padding: 20px&lt;/code&gt; and &lt;code&gt;border: 5px solid black&lt;/code&gt; the calulation to find the size would look like this.&lt;/p&gt;
+&lt;p&gt;If we have an element that needs to fit in to a space that is &lt;code&gt;400px&lt;/code&gt; and it has &lt;code&gt;padding: 20px&lt;/code&gt; and &lt;code&gt;border: 5px solid black&lt;/code&gt; the calculation to find the size would look like this.&lt;/p&gt;
 &lt;p&gt;  400px - 20px -20px - 5px - 5px = 350px&lt;/p&gt;
 &lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
 &lt;button id=&quot;fixWidth&quot; class=&quot;btn&quot; style=&quot;float: right;&quot;&gt;Fix Width&lt;/button&gt;
@@ -541,7 +541,7 @@ td .label {margin-right: 4px;cursor: pointer;}
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;script src=&quot;lesson-6.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;lesson-5.js&quot;&gt;&lt;/script&gt;
 </description>
     </item>
     <item>
