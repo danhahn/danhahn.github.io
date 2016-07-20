@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SVA HTML
+    <title>Lesson 7 - SVA HTML
     </title>
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2016">
     <link rel="stylesheet" href="/css/github.css">
@@ -19,7 +19,7 @@
     <script src="/js/underscore-min.js"></script>
     <script src="/js/global.js"></script>
   </head>
-  <body class="homepage">
+  <body class="article-detail">
     <div class="main-nav">
       <div class="container">
         <div role="navigation" class="navbar navbar-default">
@@ -62,68 +62,135 @@
     </div>
     <header class="main-header">
       <div class="container">
-        <div class="well small">
-          <h1>Summer 2016</h1>
-          <h2>June 8, 2016 to July 27, 2016</h2>
+        <div class="well small page-title">
+          <h1>Lesson 7</h1>
+          <div class="date"><i class="fa fa-calendar"></i><span class="month">July</span><span class="day">20,</span><span class="year">2016</span></div>
         </div>
       </div>
     </header>
     <div class="container main-level">
-      <article class="lesson-item col-md-6">
-        <div class="well">
-          <header>
-            <h2><a href="/lessons/lesson-8/">Lesson 8</a></h2>
-            <div class="date"><i class="fa fa-calendar"></i><span class="month">July</span><span class="day">27,</span><span class="year">2016</span></div>
-          </header>
-          <section class="content"><p>This week we work on the in class final.  <div><span class="label label-default html"><i class="fa fa-html5"></i><span class="caps">HTML</span></span> <span class="label label-default css"><i class="fa fa-css3"></i>css</span></div></p>
-<p><a href="/lessons/lesson-8/" class="more btn">View Lesson</a>
-          </section>
+      <div class="col-md-9 main-content">
+        <article class="article">
+          <section class="content"><h1 id="responsive-web-pages">Responsive web&nbsp;pages</h1>
+<ul>
+<li><a href="/lessons/lesson-C/">Basic&nbsp;Layouts</a></li>
+<li><a href="/lessons/lesson-C/overflow.html">Overflow</a></li>
+<li><a href="/lessons/lesson-C/responsive.html">Responsive</a></li>
+</ul>
+<p>What is responsive web design?  We think of this as changing the <span class="caps">CSS</span> based on the size of the viewable&nbsp;screen.  </p>
+<p>So we might want to change the way a page laysout at smaller screen&nbsp;size.  </p>
+<h2 id="media-query">Media&nbsp;query</h2>
+<p>A media query is bit of css code that can look that the screen size and if that check is true display different&nbsp;css.</p>
+<pre><code>body {
+  background-color: blue;
+}
+
+@media screen and (max-width: 200px) {
+  body{
+    background-color: red;
+  }
+}
+</code></pre><p>In this example the body background-color will change to red when the screen width is less than&nbsp;200px.</p>
+<p>With this the selector in the <code>@media</code> selector is no more specific than the selector before it.  The only reason it turns red is the order of the&nbsp;<span class="caps">CSS</span>.</p>
+<h2 id="responsive-layouts">Responsive&nbsp;layouts</h2>
+<p>Because we may want to view a page on screens that vary in size we can use <code>@meida</code> to set <strong>break points</strong> that will change the view of the&nbsp;page.</p>
+<pre><code>.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+article, aside {
+  float: left;
+}
+
+article {
+  width: 800px;
+  background-color: yellow;
+}
+
+aside {
+  width: 200px;
+  background-color: yellowgreen;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 800px;
+  }
+
+  article {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 600px;
+  }
+
+  article {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: auto;
+  }
+
+  article {
+    width: auto;
+    float: none;
+  }
+
+  aside {
+    width: auto;
+    float: none;
+  }
+}
+</code></pre><p><p data-height="268" data-theme-id="16874" data-slug-hash="QbxYdx" data-default-tab="result" data-user="danhahn" class='codepen'>See the Pen <a href='http://codepen.io/danhahn/pen/QbxYdx/'>QbxYdx</a> by danhahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+<p>In this example we set a number of <strong>Break&nbsp;Points</strong></p>
+<ul>
+<li>1000px;</li>
+<li>800px;</li>
+<li>600px;</li>
+</ul>
+<p>So if the screen is wider than 1000px the default styles will be&nbsp;applied.</p>
+<p>If the screen is less than 1000px but greater than 800px the wrapper width changes from 1000px to&nbsp;800px</p>
+<p>When the screen gets less than 600px we remove the float and remove the defined widths on all the elements by setting the value to <code>auto</code>.</p>
+<h2 id="responsive-but-not-mobile-ready">Responsive but not mobile&nbsp;ready</h2>
+<p>At this point the page will respond to the different widths but if you view it mobile device it might not look correct.  This has to do with the way screens calculate size.  It will try to shrink the full page to fit in the browser window.  To fix this issue we need to add a <code>meta</code> tags to the <code>head</code></p>
+<pre><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+</code></pre><p>This means that the browser will render the width of the page at the width of its own screen. So if that screen is 320px wide, the browser window will be 320px wide, rather than way zoomed out and showing 960px (or whatever that device does by default, in lieu of a responsive meta&nbsp;tag).</p>
+<table>
+<thead>
+<tr>
+<th>without <code>viewport</code></th>
+<th>with <code>viewport</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/lessons/lesson-C/images/bad.png" alt=""></td>
+<td><img src="/lessons/lesson-C/images/good.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<style>
+  td img {
+    max-width: 100%;
+  }
+</style>
+</section>
+        </article>
+      </div>
+      <div class="col-md-3 side-nav">
+        <div class="side-nav-inner">
         </div>
-      </article>
-      <article class="lesson-item col-md-6">
-        <div class="well">
-          <header>
-            <h2><a href="/lessons/lesson-B/">Lesson 5</a></h2>
-            <div class="date"><i class="fa fa-calendar"></i><span class="month">February</span><span class="day">24,</span><span class="year">2020</span></div>
-          </header>
-          <section class="content"><p>This week we will talk about Table and all the good and bad that goes with it. <div><span class="label label-default html"><i class="fa fa-html5"></i><span class="caps">HTML</span></span> <span class="label label-default css"><i class="fa fa-css3"></i>css</span></div></p>
-<p><a href="/lessons/lesson-B/" class="more btn">View Lesson</a>
-          </section>
-        </div>
-      </article>
-      <article class="lesson-item col-md-6">
-        <div class="well">
-          <header>
-            <h2><a href="/lessons/lesson-A/">Lesson 7</a></h2>
-            <div class="date"><i class="fa fa-calendar"></i><span class="month">March</span><span class="day">9,</span><span class="year">2020</span></div>
-          </header>
-          <section class="content"><p>This week we will have an introduction to JavaScript and JQuery. <div><span class="label label-default js"><i class="fa fa-laptop"></i>JavaScript</span></div></p>
-<p><a href="/lessons/lesson-A/" class="more btn">View Lesson</a>
-          </section>
-        </div>
-      </article>
-      <article class="lesson-item col-md-6">
-        <div class="well">
-          <header>
-            <h2><a href="/lessons/lesson-9/">Lesson 9</a></h2>
-            <div class="date"><i class="fa fa-calendar"></i><span class="month">March</span><span class="day">23,</span><span class="year">2020</span></div>
-          </header>
-          <section class="content"><p>This week we will be talking about applying a background image with <span class="caps">CSS</span> and HTML forms <div><span class="label label-default css"><i class="fa fa-css3"></i>css</span></div></p>
-<p><a href="/lessons/lesson-9/" class="more btn">View Lesson</a>
-          </section>
-        </div>
-      </article>
-      <article class="lesson-item col-md-6">
-        <div class="well">
-          <header>
-            <h2><a href="/lessons/lesson-12/">Lesson 12</a></h2>
-            <div class="date"><i class="fa fa-calendar"></i><span class="month">April</span><span class="day">20,</span><span class="year">2020</span></div>
-          </header>
-          <section class="content"><p>Continue to work on final <div><span class="label label-default html"><i class="fa fa-html5"></i><span class="caps">HTML</span></span> <span class="label label-default css"><i class="fa fa-css3"></i>css</span></div></p>
-<p><a href="/lessons/lesson-12/" class="more btn">View Lesson</a>
-          </section>
-        </div>
-      </article>
+      </div>
     </div>
     <footer>
       <div class="container">

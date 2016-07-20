@@ -669,20 +669,20 @@ td .label {margin-right: 4px;cursor: pointer;}
     </item>
     <item>
       <title>Lesson 7</title>
-      <link>http://localhost:8080/lessons/lesson-7/</link>
+      <link>http://localhost:8080/lessons/lesson-C/</link>
       <pubDate>Wed, 20 Jul 2016 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-C/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about CSS Layouts.  How to build them without tables. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;basic-layouts&quot;&gt;Basic Layouts&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/&quot;&gt;Basic Layouts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/overflow.html&quot;&gt;Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/responsive.html&quot;&gt;Responsive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-C/&quot;&gt;Basic Layouts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-C/overflow.html&quot;&gt;Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-C/responsive.html&quot;&gt;Responsive&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-7/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-7/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-C/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-C/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;CSS layouts have changed the way that we are able to design websites. At one time all layouts were done with the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;. This was both slow and hard to manage.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Table free&lt;/em&gt; layouts have been used for almost a decade now while they are an improvement over the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; they have flaws.&lt;/p&gt;
 &lt;h2 id=&quot;structure&quot;&gt;Structure&lt;/h2&gt;
@@ -736,6 +736,77 @@ td .label {margin-right: 4px;cursor: pointer;}
    clear: both;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a fixed two column layout. The width can be adjusted any value just note that the &lt;code&gt;.globalNav&lt;/code&gt; and &lt;code&gt;.contentArea&lt;/code&gt; must add up to the width of the &lt;code&gt;.container&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 7</title>
+      <link>http://localhost:8080/lessons/lesson-7/</link>
+      <pubDate>Wed, 20 Jul 2016 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
+      <author></author>
+      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;understanding-the-index-html&quot;&gt;Understanding the Index.html&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/&quot;&gt;Understanding index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/hosting.html&quot;&gt;Setting up your site&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-7/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;The magic of the index.html&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When building a site that is hosted on a web server there needs to be a default file to serve. In most cases this is  &lt;strong&gt;index.html&lt;/strong&gt;. When you have a folder and put only one file in that folder it should be index.html since it will be served by just requesting the site or any subfolder of that site.&lt;/p&gt;
+&lt;p&gt;For example you may go to a site named &lt;a href=&quot;http://www.svahtml.com&quot;&gt;http://www.svahtml.com&lt;/a&gt; but you just ask for the site you never say what file you want. The server knows to give you the default file, index.html. to make life easy it just gives you it and the file is never displayed in the URL. But what happens when you go to a sub folder like? Again you are not saying what file you want so the server needs to give you the default file which is index.html.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;36&quot; src=&quot;images/image04.png&quot; width=&quot;624&quot;&gt;&lt;/p&gt;
+&lt;p&gt;So far we have two files in two folders each named &lt;strong&gt;index.html&lt;/strong&gt;. For every folder that we have on the site it will have it&amp;#39;s own index.html. As you might imagine there could be a lot of index.htmls.&lt;/p&gt;
+&lt;p&gt;Because of this we need to be very careful about the file we are working on. One way to help keep track of the file that you are editing it is very useful to update the for each page on your site. It might be something like this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For you homepage - Site Name | Home&lt;/li&gt;
+&lt;li&gt;A sub folder for your gallery might be - Site Name | Gallery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This way you can look at the markup to know what page you are on.&lt;/p&gt;
+&lt;p&gt;It should also be noted that you can not replace one index with an other since all the links where set for that page and the content would be wrong.&lt;/p&gt;
+&lt;h2 id=&quot;your-site-might-be-something-like-this&quot;&gt;Your site might be something like this&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Homepage
+- News
+- Sport
+- Weather
+- Gallery
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Every subsection on your site should be broken into its own folder.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/index.html
+/news/index.html
+/sports/index.html
+/weather/index.html
+/gallery/index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We have 5 index.html files.&lt;/p&gt;
+&lt;h2 id=&quot;but-what-if-we-have-to-have-more-than-one-file-in-a-folder-&quot;&gt;But what if we have to have more than one file In a folder?&lt;/h2&gt;
+&lt;p&gt;In that case any other file can be named whatever you want. It would be linked to from the index.html using the link tag &lt;strong&gt;(href=&amp;rdquo;filename.html&amp;rdquo;)&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;for-example&quot;&gt;For example&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;/news/index.html
+/news/yesterday.html
+/news/breakingnews.html
+/news/fun-stories.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example we have four files all in the &lt;strong&gt;/news/&lt;/strong&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;354&quot; src=&quot;images/image00.png&quot; width=&quot;624&quot;&gt;&lt;/p&gt;
+&lt;p&gt;When you have your files on a web server you are able to use absolute paths to make the paths from one section or folder to another.&lt;/p&gt;
+&lt;p&gt;If you wanted to link from the news page to the weather page there are two ways to do this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use a relative path. &lt;strong&gt;../weather/&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Use an absolute path &lt;strong&gt;/weather/&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The reason option 2 is better is because it will be the same path for all files on the site regardless of where you are.&lt;/p&gt;
+&lt;h2 id=&quot;dev-local&quot;&gt;Dev Local&lt;/h2&gt;
+&lt;p&gt;The big problem with this way is it will not work when viewing your files from a local directory.&lt;/p&gt;
+&lt;p&gt;If you want to still develop locally you will need to set up a local server. One great one is MAMP. it is very easy to setup and use and will allow you to have the same setup as your web server.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;345&quot; src=&quot;images/image01.png&quot; width=&quot;427&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You just need to set the &amp;ldquo;Document Root&amp;rdquo; by clicking the Preferences button then clicking Apache.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;349&quot; src=&quot;images/image05.png&quot; width=&quot;432&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Then set the folder of your project and click OK.&lt;/p&gt;
+&lt;p&gt;Once that is done you need to click Start Servers. It may ask you to enter your username and password. In almost all cases this will be the same as when you logged in to the computer.&lt;/p&gt;
+&lt;p&gt;if everything works your app will have two green lights&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;348&quot; src=&quot;images/image03.png&quot; width=&quot;430&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Then you need to go to &lt;a href=&quot;http://localhost:8888/&quot;&gt;http://localhost:8888/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This will act as a real web server but you can continue to develop locally.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1358,77 +1429,6 @@ background-position: 50% 80%;
 &lt;p&gt;In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to none.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;background: none;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You are setting the &lt;code&gt;background-image&lt;/code&gt; to none and by default setting the &lt;code&gt;background-color&lt;/code&gt; to transparent.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Lesson 10</title>
-      <link>http://localhost:8080/lessons/lesson-10/</link>
-      <pubDate>Mon, 06 Apr 2020 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-10/</guid>
-      <author></author>
-      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;understanding-the-index-html&quot;&gt;Understanding the Index.html&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/&quot;&gt;Understanding index&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/hosting.html&quot;&gt;Setting up your site&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-10/week10-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-10/week10.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;The magic of the index.html&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;When building a site that is hosted on a web server there needs to be a default file to serve. In most cases this is  &lt;strong&gt;index.html&lt;/strong&gt;. When you have a folder and put only one file in that folder it should be index.html since it will be served by just requesting the site or any subfolder of that site.&lt;/p&gt;
-&lt;p&gt;For example you may go to a site named &lt;a href=&quot;http://www.svahtml.com&quot;&gt;http://www.svahtml.com&lt;/a&gt; but you just ask for the site you never say what file you want. The server knows to give you the default file, index.html. to make life easy it just gives you it and the file is never displayed in the URL. But what happens when you go to a sub folder like? Again you are not saying what file you want so the server needs to give you the default file which is index.html.&lt;/p&gt;
-&lt;p&gt;&lt;img height=&quot;36&quot; src=&quot;images/image04.png&quot; width=&quot;624&quot;&gt;&lt;/p&gt;
-&lt;p&gt;So far we have two files in two folders each named &lt;strong&gt;index.html&lt;/strong&gt;. For every folder that we have on the site it will have it&amp;#39;s own index.html. As you might imagine there could be a lot of index.htmls.&lt;/p&gt;
-&lt;p&gt;Because of this we need to be very careful about the file we are working on. One way to help keep track of the file that you are editing it is very useful to update the for each page on your site. It might be something like this.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For you homepage - Site Name | Home&lt;/li&gt;
-&lt;li&gt;A sub folder for your gallery might be - Site Name | Gallery&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This way you can look at the markup to know what page you are on.&lt;/p&gt;
-&lt;p&gt;It should also be noted that you can not replace one index with an other since all the links where set for that page and the content would be wrong.&lt;/p&gt;
-&lt;h2 id=&quot;your-site-might-be-something-like-this&quot;&gt;Your site might be something like this&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;Homepage
-- News
-- Sport
-- Weather
-- Gallery
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Every subsection on your site should be broken into its own folder.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;/index.html
-/news/index.html
-/sports/index.html
-/weather/index.html
-/gallery/index.html
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We have 5 index.html files.&lt;/p&gt;
-&lt;h2 id=&quot;but-what-if-we-have-to-have-more-than-one-file-in-a-folder-&quot;&gt;But what if we have to have more than one file In a folder?&lt;/h2&gt;
-&lt;p&gt;In that case any other file can be named whatever you want. It would be linked to from the index.html using the link tag &lt;strong&gt;(href=&amp;rdquo;filename.html&amp;rdquo;)&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;for-example&quot;&gt;For example&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;/news/index.html
-/news/yesterday.html
-/news/breakingnews.html
-/news/fun-stories.html
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example we have four files all in the &lt;strong&gt;/news/&lt;/strong&gt; folder.&lt;/p&gt;
-&lt;p&gt;&lt;img height=&quot;354&quot; src=&quot;images/image00.png&quot; width=&quot;624&quot;&gt;&lt;/p&gt;
-&lt;p&gt;When you have your files on a web server you are able to use absolute paths to make the paths from one section or folder to another.&lt;/p&gt;
-&lt;p&gt;If you wanted to link from the news page to the weather page there are two ways to do this.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Use a relative path. &lt;strong&gt;../weather/&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Use an absolute path &lt;strong&gt;/weather/&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The reason option 2 is better is because it will be the same path for all files on the site regardless of where you are.&lt;/p&gt;
-&lt;h2 id=&quot;dev-local&quot;&gt;Dev Local&lt;/h2&gt;
-&lt;p&gt;The big problem with this way is it will not work when viewing your files from a local directory.&lt;/p&gt;
-&lt;p&gt;If you want to still develop locally you will need to set up a local server. One great one is MAMP. it is very easy to setup and use and will allow you to have the same setup as your web server.&lt;/p&gt;
-&lt;p&gt;&lt;img height=&quot;345&quot; src=&quot;images/image01.png&quot; width=&quot;427&quot;&gt;&lt;/p&gt;
-&lt;p&gt;You just need to set the &amp;ldquo;Document Root&amp;rdquo; by clicking the Preferences button then clicking Apache.&lt;/p&gt;
-&lt;p&gt;&lt;img height=&quot;349&quot; src=&quot;images/image05.png&quot; width=&quot;432&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Then set the folder of your project and click OK.&lt;/p&gt;
-&lt;p&gt;Once that is done you need to click Start Servers. It may ask you to enter your username and password. In almost all cases this will be the same as when you logged in to the computer.&lt;/p&gt;
-&lt;p&gt;if everything works your app will have two green lights&lt;/p&gt;
-&lt;p&gt;&lt;img height=&quot;348&quot; src=&quot;images/image03.png&quot; width=&quot;430&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Then you need to go to &lt;a href=&quot;http://localhost:8888/&quot;&gt;http://localhost:8888/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This will act as a real web server but you can continue to develop locally.&lt;/p&gt;
 </description>
     </item>
     <item>
