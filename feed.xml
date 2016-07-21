@@ -679,6 +679,7 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/&quot;&gt;Understanding index&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/hosting.html&quot;&gt;Setting up your site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/background.html&quot;&gt;Background&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 &lt;a href=&quot;/lessons/lesson-7/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
