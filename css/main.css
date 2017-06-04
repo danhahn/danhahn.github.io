@@ -369,6 +369,11 @@ footer .container {
 footer .container p {
   margin: 0;
 }
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .btn-group {
   margin-left: 0;
 }
