@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lesson 9 - SVA HTML
     </title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2016">
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2017">
     <link rel="stylesheet" href="/css/github.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
@@ -73,7 +73,7 @@
         <article class="article">
           <section class="content"><p>This week we will be talking about applying a background image with <span class="caps">CSS</span> and HTML forms <div><span class="label label-default css"><i class="fa fa-css3"></i>css</span></div></p>
 <p><span class="more"></span></p>
-<h1 id="backgrounds">Backgrounds</h1>
+<p>#Backgrounds</p>
 <ul>
 <li><a href="/lessons/lesson-9/">Backgrounds</a></li>
 <li><a href="/lessons/lesson-9/forms.html">Forms</a></li>
@@ -81,13 +81,13 @@
 <p><a href="/lessons/lesson-9/week9-notes.zip">Download Notes  <i class="icon-download-alt icon-white"></i></a>
 <a href="/lessons/lesson-9/week9.zip">Download Starter File  <i class="icon-download-alt icon-white"></i></a></p>
 <p>Backgrounds are a way to add colors and images to elements on the&nbsp;page.</p>
-<h3 id="background-color">Background&nbsp;Color</h3>
+<p>###Background&nbsp;Color</p>
 <pre><code>background-color: color name | RGB Value | Hex Value;
 </code></pre><p>Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the&nbsp;background.</p>
-<h3 id="background-image">Background&nbsp;Image</h3>
+<p>###Background&nbsp;Image</p>
 <pre><code>background-image: url(&lt;image path&gt;);
 </code></pre><p>Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left&nbsp;corner.</p>
-<h3 id="background-repeat">Background&nbsp;Repeat</h3>
+<p>###Background&nbsp;Repeat</p>
 <pre><code>background-repeat: repeat | no-repeat | repeat-x | repeat-y
 </code></pre><p>When applying a background image it will tile in all directions by&nbsp;default.</p>
 <p>You can control the way the image will tile by using <code>background-repeat</code>.</p>
@@ -117,10 +117,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="background-attachment">Background&nbsp;Attachment</h3>
+<p>###Background&nbsp;Attachment</p>
 <pre><code>background-attachment: scroll | fixed;
 </code></pre><p>When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the <span class="caps">BODY</span> tag and that background image should not move when the page is&nbsp;scrolled.</p>
-<h4 id="background-position">Background&nbsp;Position</h4>
+<p>####Background&nbsp;Position</p>
 <pre><code>background-position: (left, right or center) (top, center or bottom);
 </code></pre><p>The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that&nbsp;point.</p>
 <p>If you want the image to be position the center both vertical and horizontal than you need only define the value of&nbsp;center.</p>
@@ -128,7 +128,7 @@
 </code></pre><p>Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or&nbsp;percentages.</p>
 <pre><code>background-position: 100px 300px;
 background-position: 50% 80%;
-</code></pre><h3 id="background-shorthand">Background&nbsp;Shorthand</h3>
+</code></pre><p>###Background&nbsp;Shorthand</p>
 <pre><code>background: image repeat attachment position color;
 </code></pre><p>Like many <span class="caps">CSS</span> properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default&nbsp;value.</p>
 <pre><code>background: #fff url(images/side-bar.png) repeat-y right top;
@@ -148,7 +148,7 @@ background-position: 50% 80%;
       <div class="container">
         <div class="content-wrap">
           <section class="copy">
-            <p>&copy; 2016 Daniel Hahn</p>
+            <p>&copy; 2017 Daniel Hahn</p>
           </section>
         </div>
       </div>
