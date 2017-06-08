@@ -126,6 +126,7 @@ Examples
 &lt;h1 id=&quot;anchor-tag-inline-element-&quot;&gt;Anchor Tag (inline element)&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/&quot;&gt;Link Tag&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/inline.html&quot;&gt;Inline&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/folders.html&quot;&gt;Folder&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/images.html&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/image-types.html&quot;&gt;Image Types&lt;/a&gt;&lt;/li&gt;

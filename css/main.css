@@ -798,6 +798,20 @@ pre {
   p {
     text-align: left;
   }
+  .main-content {
+    order: 2;
+  }
+  .side-nav {
+    order: 1;
+  }
+  .side-nav .nav-pills > li.active > a,
+  .side-nav .nav-pills > li.active > a:hover,
+  .side-nav .nav-pills > li.active > a:focus {
+    border: 1px solid;
+  }
+  .tags {
+    display: none;
+  }
 }
 table.no-style {
   font-family: monospace;
