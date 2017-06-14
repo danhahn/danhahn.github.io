@@ -71,7 +71,7 @@
     <div class="container main-level">
       <div class="col-md-9 main-content">
         <article class="article">
-          <section class="content"><h1 id="images">Images</h1>
+          <section class="content"><h1 id="embedding-content">Embedding&nbsp;Content</h1>
 <ul>
 <li><a href="/lessons/lesson-2/">Link&nbsp;Tag</a></li>
 <li><a href="/lessons/lesson-2/inline.html">Inline</a></li>
@@ -81,50 +81,38 @@
 <li><a href="/lessons/lesson-2/embed.html">Embed</a></li>
 <li><a href="/lessons/lesson-2/homework.html">Homework</a></li>
 </ul>
-<p>The image tag or <code>&lt;img&gt;</code> is used to embed an image within an <code>HTML</code> document.  At the time the page is rendered the browser will set aside a space on the page for an image to load.  The browser then need to find and load the image in that space.  If the iamge can’t be found than it will not show up.  There are two required&nbsp;attribute.</p>
-<table>
-<thead>
-<tr>
-<th>Attributes</th>
-<th>Values</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>src=&quot;&quot;</code> <strong>*required</strong></td>
-<td>The source of the image that you want to place on the page.</td>
-</tr>
-<tr>
-<td><code>alt=&quot;&quot;</code> <strong>*required</strong></td>
-<td>The alt tag is where you can put text that will show up when the image is loading or when the user hovers the mouse over that image.</td>
-</tr>
-<tr>
-<td><code>title=&quot;&quot;</code></td>
-<td>Displays the value of the attribute in a small box over the image when the mouse hovers over the image.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="example">Example</h2>
-<p><code>&lt;img src=”logo.gif”&gt;</code></p>
-<h2 id="adding-the-alt-attribute">Adding the Alt&nbsp;Attribute</h2>
-<p><span class="caps">HTML</span> <strong>requires</strong> that you add an alt attribute to all images tags.  This attribute is used for persons with visual impairments and use screen readers to view the internet.  If there is text with in an image that text must be placed with the alt attribute.  While the attribute is required there is no need to place text within the value unless there is text on the image.  This can be a little&nbsp;misleading.  </p>
-<p><code>&lt;img src=&quot;image.gif&quot; alt=&quot;text on the image&quot;&gt;</code></p>
-<p><strong>or</strong></p>
-<p><code>&lt;img src=&quot;image.png&quot; alt=&quot;&quot;&gt;</code></p>
-<h2 id="formats">Formats</h2>
-<p>There are <strong>3 image types</strong> that are supported by current&nbsp;browsers.</p>
-<ul>
-<li><span class="caps">GIF</span> – Limited to 256 Colors but one color can be transparent. (Used for Text based images ie Logos or&nbsp;headers)</li>
-<li><span class="caps">JPG</span> – Allows for Millions of colors compressed. (Most commonly used for&nbsp;photos)</li>
-<li><span class="caps">PNG</span> – Like the JPG but allows for opacities. (Supported by all newer browsers after IE&nbsp;6)</li>
-</ul>
-<h2 id="transparency">Transparency</h2>
-<p>Transparency is an important for two reasons. They allow for complex designs by layers images. They also allow for non-rectangular&nbsp;designs.</p>
-<p>The only image type that support transparency are <span class="caps">GIF</span> and&nbsp;PNG.</p>
-<h2 id="animation">Animation</h2>
-<p><span class="caps">GIF</span> are able to display multiple images with in the same saved&nbsp;files.</p>
+<p>One of the great things about the internet is how it display it is to share content from 3<span class="ord">rd</span> party on your web&nbsp;site.</p>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Find the content you want to&nbsp;embed</li>
+<li>Click the share&nbsp;button</li>
+<li>Select&nbsp;embed</li>
+<li>Copy code&nbsp;provided</li>
+<li>Paste the code in your <code>html</code> file</li>
+</ol>
+<p>Since each site might have a different design things might be in different places or have different labels but the basic idea are the&nbsp;same.</p>
+<h3 id="youtube">YouTube</h3>
+<p>Step&nbsp;1</p>
+<p><img src="/lessons/lesson-2/images/youtube1.png" alt=""></p>
+<p>Step&nbsp;2</p>
+<p><img src="/lessons/lesson-2/images/youtube2.png" alt=""></p>
+<p>Step&nbsp;3</p>
+<p><img src="/lessons/lesson-2/images/youtube3.png" alt=""></p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"560"</span> <span class="attr">height</span>=<span class="string">"315"</span> <span class="attr">src</span>=<span class="string">"https://www.youtube.com/embed/mRf3-JkwqfU"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span>
+</code></pre>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mRf3-JkwqfU" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="soundcloud">Soundcloud</h2>
+<p><img src="/lessons/lesson-2/images/soundcloud.png" alt=""></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"166"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">src</span>=<span class="string">"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228094613&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span>
+</code></pre>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228094613&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
 <style>
-table tr td:nth-child(1){width:20%}
+article img {
+  max-width: 100%;
+}
 </style>
 </section>
         </article>
