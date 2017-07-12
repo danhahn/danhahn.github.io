@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lesson 6 - SVA HTML
+    </title>
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2017">
+    <link rel="stylesheet" href="/css/github.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/flat-ui.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" sizes="192x192" href="/images/favicon.png">
+    <script src="/js/highlight.pack.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/underscore-min.js"></script>
+    <script src="/js/global.js"></script>
+  </head>
+  <body class="article-detail">
+    <div class="main-nav">
+      <div class="container">
+        <div role="navigation" class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="brand">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100" height="31" viewBox="0 0 430 133" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,133.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+                  <path d="M3311 1238 c-10 -24 -127 -296 -260 -604 -132 -309 -241 -564 -241 -568 0 -3 40 -6 88 -6 l88 0 259 603 c142 331 260 605 262 610 2 4 -37 7 -87 7 l-91 0 -18 -42z" class="slash"></path>
+                  <path d="M322 839 l-251 -211 96 -82 c53 -44 167 -140 252 -213 l156 -132 58 57 c31 31 57 59 57 63 0 3 -80 72 -177 154 -98 81 -179 150 -180 154 -1 3 79 71 177 151 99 80 178 148 177 152 -2 7 -106 118 -111 118 -1 0 -116 -95 -254 -211z" class="tag"></path>
+                  <path d="M3641 996 c-29 -30 -52 -59 -50 -64 2 -6 76 -69 164 -142 88 -73 168 -140 178 -149 16 -16 8 -25 -163 -165 -99 -82 -180 -151 -180 -155 0 -4 26 -32 58 -63 l57 -56 252 213 252 213 -250 208 c-137 115 -252 210 -257 212 -4 1 -32 -22 -61 -52z" class="tag"></path>
+                  <path d="M1033 990 c-71 -15 -142 -51 -177 -90 -71 -79 -73 -188 -4 -266 39 -45 78 -64 207 -104 106 -32 161 -68 161 -105 0 -9 -13 -30 -29 -46 -29 -28 -32 -29 -128 -28 -88 0 -186 18 -245 43 -16 7 -18 0 -18 -77 l0 -86 58 -12 c31 -7 120 -13 197 -13 124 0 147 3 200 23 115 46 174 135 161 244 -12 102 -63 145 -243 203 -121 39 -149 54 -165 89 -15 33 10 69 58 85 43 15 160 7 242 -14 l53 -14 -3 76 -3 76 -35 8 c-57 13 -242 18 -287 8z" class="letter"></path>
+                  <path d="M2345 985 c-38 -7 -87 -20 -107 -28 l-38 -16 0 -70 c0 -39 1 -71 3 -71 1 0 28 9 60 20 124 44 251 46 312 6 24 -16 45 -69 45 -113 0 -22 -4 -23 -72 -23 -143 0 -276 -37 -336 -93 -92 -85 -87 -259 9 -341 92 -79 253 -72 368 15 l51 39 0 -45 0 -45 80 0 80 0 0 295 c0 322 -3 340 -58 398 -73 77 -222 104 -397 72z m273 -487 c-3 -50 -5 -53 -62 -98 -53 -41 -63 -45 -113 -45 -48 0 -58 4 -79 28 -28 33 -30 66 -8 108 22 44 64 58 172 59 l93 0 -3 -52z" class="letter"></path>
+                  <path d="M1405 943 c8 -21 75 -191 149 -378 l134 -340 109 -3 108 -2 147 377 147 378 -96 3 c-60 2 -99 -1 -103 -8 -4 -6 -49 -130 -101 -275 -52 -146 -96 -265 -99 -265 -3 0 -14 24 -24 53 -10 28 -54 152 -98 275 l-80 222 -104 0-104 0 15 -37z" class="letter"></path>
+                </g>
+              </svg></a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/"><i class="fa fa-home"></i> Home</a>
+                <ul>
+                  <li><a href="/lessons/lesson-1/">Lesson 1</a></li>
+                  <li><a href="/lessons/lesson-2/">Lesson 2</a></li>
+                  <li><a href="/lessons/lesson-3/">Lesson 3</a></li>
+                  <li><a href="/lessons/lesson-4/">Lesson 4</a></li>
+                  <li><a href="/lessons/lesson-5/">Lesson 5</a></li>
+                  <li><a href="/lessons/lesson-6/">Lesson 6</a></li>
+                  <li><a href="/lessons/lesson-7/">Lesson 7</a></li>
+                  <li><a href="/lessons/lesson-8/">Lesson 8</a></li>
+                </ul>
+              </li>
+              <li><a href="/syllabus.html"><i class="fa fa-book"></i> Syllabus</a></li>
+              <li><a href="/notes/tags/index.html"><i class="fa fa-html5"></i> HTML Tag List</a></li>
+              <li><a href="/notes/css/index.html"><i class="fa fa-css3"></i> CSS</a></li>
+              <li><a href="/notes/ascii/index.html"><i class="fa fa-heart"></i> ASCII Codes</a></li>
+              <li><a href="/notes/colors/index.html"><i class="fa fa-paint-brush"></i> Colors</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="main-header">
+      <div class="container">
+        <div class="well small page-title">
+          <h1>Lesson 6</h1>
+          <div class="date"><i class="fa fa-calendar"></i><span class="month">July</span><span class="day">12,</span><span class="year">2017</span></div>
+        </div>
+      </div>
+    </header>
+    <div class="container main-level">
+      <div class="col-md-9 main-content">
+        <article class="article">
+          <section class="content"><h1 id="intro-to-flex-box">Intro to Flex&nbsp;box</h1>
+<ul>
+<li><a href="/lessons/lesson-6/">Float&nbsp;Layout</a></li>
+<li><a href="/lessons/lesson-6/flex.html">Flex&nbsp;Box</a></li>
+<li><a href="/lessons/lesson-6/flex-layout.html">Flex&nbsp;Layout</a></li>
+</ul>
+<h2 id="history-of-flex-box">History of Flex&nbsp;Box</h2>
+<p>The Flex box Layout (Flexible Box) module (currently a <span class="caps">W3C</span> Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word&nbsp;“flex”).</p>
+<p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent&nbsp;overflow.</p>
+<p>Most importantly, the flex box layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking,&nbsp;etc.).</p>
+<p><strong>Note:</strong> Flex box layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale&nbsp;layouts.</p>
+<h2 id="properties-for-the-parent-flex-container-">Properties for the Parent (flex&nbsp;container)</h2>
+<h3 id="display">display</h3>
+<p>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct&nbsp;children.</p>
+<pre><code>.container {
+  display: flex; /* or inline-flex */
+}
+</code></pre><p>Note that <span class="caps">CSS</span> columns have no effect on a flex&nbsp;container.</p>
+<iframe height='400' scrolling='no' title='Flex Intro - flex' src='//codepen.io/danhahn/embed/VvzQwP/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/VvzQwP/'>Flex Intro - flex</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<h3 id="flex-direction">flex-direction</h3>
+<p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flex box is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical&nbsp;columns.</p>
+<pre><code>.container {
+  flex-direction: row | row-reverse | column | column-reverse;
+}
+</code></pre><ul>
+<li>row (default): left to right in ltr; right to left in&nbsp;rtl</li>
+<li>row-reverse: right to left in ltr; left to right in&nbsp;rtl</li>
+<li>column: same as row but top to&nbsp;bottom</li>
+<li>column-reverse: same as row-reverse but bottom to&nbsp;top</li>
+</ul>
+<iframe height='400' scrolling='no' title='Flex Intro- flex-direction' src='//codepen.io/danhahn/embed/rOzJNX/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/rOzJNX/'>Flex Intro- flex-direction</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<h3 id="flex-wrap">flex-wrap</h3>
+<p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property. Direction also plays a role here, determining the direction new lines are stacked&nbsp;in.</p>
+<pre><code>.container{
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+</code></pre><ul>
+<li>nowrap (default): single-line / left to right in ltr; right to left in&nbsp;rtl</li>
+<li>wrap: multi-line / left to right in ltr; right to left in&nbsp;rtl</li>
+<li>wrap-reverse: multi-line / right to left in ltr; left to right in&nbsp;rtl</li>
+<li>flex-flow (Applies to: parent flex container&nbsp;element)</li>
+<li>This is a shorthand flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. Default is row&nbsp;nowrap.</li>
+</ul>
+<iframe height='400' scrolling='no' title='Flex Intro - flex-wrap' src='//codepen.io/danhahn/embed/YyxePZ/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/YyxePZ/'>Flex Intro - flex-wrap</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<pre><code>flex-flow: &lt;‘flex-direction’&gt; || &lt;‘flex-wrap’&gt;
+</code></pre><h3 id="justify-content">justify-content</h3>
+<p>This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the&nbsp;line.</p>
+<pre><code>.container {
+  justify-content: flex-start | flex-end | center | space-between | space-around;
+}
+</code></pre><ul>
+<li>flex-start (default): items are packed toward the start&nbsp;line</li>
+<li>flex-end: items are packed toward to end&nbsp;line</li>
+<li>center: items are centered along the&nbsp;line</li>
+<li>space-between: items are evenly distributed in the line; first item is on the start line, last item on the end&nbsp;line</li>
+<li>space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that&nbsp;applies.</li>
+</ul>
+<iframe height='400' scrolling='no' title='Flex Intro - justify-content' src='//codepen.io/danhahn/embed/vNJdOZ/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/vNJdOZ/'>Flex Intro - justify-content</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<h3 id="align-items">align-items</h3>
+<p>This defines the default behaviour for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the&nbsp;main-axis).</p>
+<pre><code>.container {
+  align-items: flex-start | flex-end | center | baseline | stretch;
+}
+</code></pre><ul>
+<li>flex-start: cross-start margin edge of the items is placed on the cross-start&nbsp;line</li>
+<li>flex-end: cross-end margin edge of the items is placed on the cross-end&nbsp;line</li>
+<li>center: items are centered in the&nbsp;cross-axis</li>
+<li>baseline: items are aligned such as their baselines&nbsp;align</li>
+<li>stretch (default): stretch to fill the container (still respect&nbsp;min-width/max-width)</li>
+</ul>
+<iframe height='400' scrolling='no' title='Flex Intro - align-items' src='//codepen.io/danhahn/embed/MavQwd/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/MavQwd/'>Flex Intro - align-items</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<h3 id="align-content">align-content</h3>
+<p>This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the&nbsp;main-axis.</p>
+<p><strong>Note:</strong> this property has no effect when there is only one line of flex&nbsp;items.</p>
+<pre><code>.container {
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+}
+</code></pre><ul>
+<li>flex-start: lines packed to the start of the&nbsp;container</li>
+<li>flex-end: lines packed to the end of the&nbsp;container</li>
+<li>center: lines packed to the center of the&nbsp;container</li>
+<li>space-between: lines evenly distributed; the first line is at the start of the container while the last one is at the&nbsp;end</li>
+<li>space-around: lines evenly distributed with equal space around each&nbsp;line</li>
+<li>stretch (default): lines stretch to take up the remaining&nbsp;space</li>
+</ul>
+<h2 id="properties-for-the-children-flex-items-">Properties for the Children (flex&nbsp;items)</h2>
+<h3 id="order">order</h3>
+<p>By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex&nbsp;container.</p>
+<pre><code>.item {
+  order: &lt;integer&gt;;
+}
+</code></pre><h3 id="flex-grow">flex-grow</h3>
+<p>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take&nbsp;up.</p>
+<p>If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at&nbsp;least).</p>
+<pre><code>.item {
+  flex-grow: &lt;number&gt;; /* default 0 */
+}
+</code></pre><p>Negative numbers are&nbsp;invalid.</p>
+<iframe height='400' scrolling='no' title='Flex Intro - flex-grow' src='//codepen.io/danhahn/embed/gaxvge/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/gaxvge/'>Flex Intro - flex-grow</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<h3 id="flex-shrink">flex-shrink</h3>
+<p>This defines the ability for a flex item to shrink if&nbsp;necessary.</p>
+<pre><code>.item {
+  flex-shrink: &lt;number&gt;; /* default 1 */
+}
+</code></pre><p>Negative numbers are&nbsp;invalid.</p>
+<h3 id="flex-basis">flex-basis</h3>
+<p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property” (which was temporarily done by the main-size keyword until deprecated). The content keyword means “size it based on the item’s content” - this keyword isn’t well supported yet, so it’s hard to test and harder to know what its brethren max-content, min-content, and fit-content&nbsp;do.</p>
+<pre><code>.item {
+  flex-basis: &lt;length&gt; | auto; /* default auto */
+}
+</code></pre><p>If set to 0, the extra space around content isn’t factored in. If set to auto, the extra space is distributed based on its flex-grow value. See this&nbsp;graphic.</p>
+<iframe height='400' scrolling='no' title='Flex Intro - Flex Basis' src='//codepen.io/danhahn/embed/NGvydE/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/NGvydE/'>Flex Intro - Flex Basis</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<h3 id="flex">flex</h3>
+<p>This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1&nbsp;auto.</p>
+<pre><code>.item {
+  flex: none | [ &lt;&#39;flex-grow&#39;&gt; &lt;&#39;flex-shrink&#39;&gt;? || &lt;&#39;flex-basis&#39;&gt; ]
+}
+</code></pre><p>It is recommended that you use this shorthand property rather than set the individual properties. The short hand sets the other values&nbsp;intelligently.</p>
+<h3 id="align-self">align-self</h3>
+<p>This allows the default alignment (or the one specified by align-items) to be overridden for individual flex&nbsp;items.</p>
+<p>Please see the align-items explanation to understand the available&nbsp;values.</p>
+<pre><code>.item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+</code></pre><p>Note that float, clear and vertical-align have no effect on a flex&nbsp;item.</p>
+</section>
+        </article>
+      </div>
+      <div class="col-md-3 side-nav">
+        <div class="side-nav-inner">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="content-wrap">
+          <div class="footer-container">
+            <p>&copy; 2017 Daniel Hahn</p>
+            <section class="logo">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="80" height="25" viewBox="0 0 430 133" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,133.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+                  <path d="M3311 1238 c-10 -24 -127 -296 -260 -604 -132 -309 -241 -564 -241 -568 0 -3 40 -6 88 -6 l88 0 259 603 c142 331 260 605 262 610 2 4 -37 7 -87 7 l-91 0 -18 -42z" class="slash"></path>
+                  <path d="M322 839 l-251 -211 96 -82 c53 -44 167 -140 252 -213 l156 -132 58 57 c31 31 57 59 57 63 0 3 -80 72 -177 154 -98 81 -179 150 -180 154 -1 3 79 71 177 151 99 80 178 148 177 152 -2 7 -106 118 -111 118 -1 0 -116 -95 -254 -211z" class="tag"></path>
+                  <path d="M3641 996 c-29 -30 -52 -59 -50 -64 2 -6 76 -69 164 -142 88 -73 168 -140 178 -149 16 -16 8 -25 -163 -165 -99 -82 -180 -151 -180 -155 0 -4 26 -32 58 -63 l57 -56 252 213 252 213 -250 208 c-137 115 -252 210 -257 212 -4 1 -32 -22 -61 -52z" class="tag"></path>
+                  <path d="M1033 990 c-71 -15 -142 -51 -177 -90 -71 -79 -73 -188 -4 -266 39 -45 78 -64 207 -104 106 -32 161 -68 161 -105 0 -9 -13 -30 -29 -46 -29 -28 -32 -29 -128 -28 -88 0 -186 18 -245 43 -16 7 -18 0 -18 -77 l0 -86 58 -12 c31 -7 120 -13 197 -13 124 0 147 3 200 23 115 46 174 135 161 244 -12 102 -63 145 -243 203 -121 39 -149 54 -165 89 -15 33 10 69 58 85 43 15 160 7 242 -14 l53 -14 -3 76 -3 76 -35 8 c-57 13 -242 18 -287 8z" class="letter"></path>
+                  <path d="M2345 985 c-38 -7 -87 -20 -107 -28 l-38 -16 0 -70 c0 -39 1 -71 3 -71 1 0 28 9 60 20 124 44 251 46 312 6 24 -16 45 -69 45 -113 0 -22 -4 -23 -72 -23 -143 0 -276 -37 -336 -93 -92 -85 -87 -259 9 -341 92 -79 253 -72 368 15 l51 39 0 -45 0 -45 80 0 80 0 0 295 c0 322 -3 340 -58 398 -73 77 -222 104 -397 72z m273 -487 c-3 -50 -5 -53 -62 -98 -53 -41 -63 -45 -113 -45 -48 0 -58 4 -79 28 -28 33 -30 66 -8 108 22 44 64 58 172 59 l93 0 -3 -52z" class="letter"></path>
+                  <path d="M1405 943 c8 -21 75 -191 149 -378 l134 -340 109 -3 108 -2 147 377 147 378 -96 3 c-60 2 -99 -1 -103 -8 -4 -6 -49 -130 -101 -275 -52 -146 -96 -265 -99 -265 -3 0 -14 24 -24 53 -10 28 -54 152 -98 275 l-80 222 -104 0-104 0 15 -37z" class="letter"></path>
+                </g>
+              </svg>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-187360-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
