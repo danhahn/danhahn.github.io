@@ -7,13 +7,12 @@
     <title>Lesson 5 - SVA HTML
     </title>
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2017">
-    <link rel="stylesheet" href="/css/github.css">
+    <link rel="stylesheet" href="/css/prism.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/flat-ui.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" sizes="192x192" href="/images/favicon.png">
-    <script src="/js/highlight.pack.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/underscore-min.js"></script>
@@ -88,7 +87,8 @@
 <p>To set the width of an element you take the desired width and subtract the <code>padding-left</code>, <code>padding-right</code>, <code>border-left-width</code> and <code>border-right-width</code>.  If you need to maintain the <code>margin</code> you will need to subtract the <code>margin-left</code> and <code>margin-right</code>.</p>
 <h3 id="example">Example</h3>
 <p>If we have an element that needs to fit in to a space that is <code>400px</code> and it has <code>padding: 20px</code> and <code>border: 5px solid black</code> the calculation to find the size would look like&nbsp;this.</p>
-<p>  400px - 20px -20px - 5px - 5px =&nbsp;350px</p>
+<pre><code class="lang-html">400px - 20px -20px - 5px - 5px = 350px
+</code></pre>
 <h3 id="example">Example</h3>
 <iframe height='800' scrolling='no' title='Box Model' src='//codepen.io/danhahn/embed/MoQNbO/?height=734&theme-id=light&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/danhahn/pen/MoQNbO/'>Box Model</a> by Dan Hahn (<a href='https://codepen.io/danhahn'>@danhahn</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -96,19 +96,21 @@
 <h2 id="box-sizing">Box&nbsp;Sizing</h2>
 <p>In <span class="caps">CSS</span>, by default, the width and height you assign to an element is applied only to the element’s content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that’s rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is especially tricky when implementing a responsive&nbsp;design.</p>
 <p>The <code>box-sizing</code>property can be used to adjust this&nbsp;behavior:</p>
-<pre><code>.example {
-  box-sizing: border-box;
+<pre><code class="lang-css"><span class="selector-class">.example</span> {
+  <span class="attribute">box-sizing</span>: border-box;
 }
-</code></pre><ul>
+</code></pre>
+<ul>
 <li><code>content-box</code> is the default, and gives you the default <span class="caps">CSS</span> box-sizing behavior. If you set an element’s width to 100 pixels, then the element’s content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered&nbsp;width.</li>
 <li><code>border-box</code> tells the browser to account for any border and padding in the value you specify for width and height. If you set an element’s width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size&nbsp;elements.</li>
 </ul>
 <h2 id="apply-to-all-elements">Apply to all&nbsp;elements</h2>
 <p>The <code>*</code> selector will apply a style to all elements. <code>box-sizing</code> is a great example of time to use&nbsp;it.</p>
-<pre><code>* {
-  box-sizing: border-box;
+<pre><code class="lang-css">* {
+  <span class="attribute">box-sizing</span>: border-box;
 }
-</code></pre><p>Now all elements on the page will size based on a <code>border-box</code>.</p>
+</code></pre>
+<p>Now all elements on the page will size based on a <code>border-box</code>.</p>
 </section>
         </article>
       </div>
@@ -149,6 +151,7 @@
         </div>
       </div>
     </footer>
+    <script src="/js/prism.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

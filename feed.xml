@@ -89,7 +89,7 @@ Examples
 &lt;h2 id=&quot;nesting-elements&quot;&gt;Nesting Elements&lt;/h2&gt;
 &lt;p&gt;If we think about html as the building blocks of a webpage we will have to nest elements within in each other to build the page correctly.  &lt;/p&gt;
 &lt;p&gt;Think about it this way.  If we were to build a house we might start to build the ground floor.  We might add a kitchen, bathroom and living room all with in the ground floor.  We would not finish the floor until all the rooms are done.  &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;House
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;House
     Floor
         Kitchen
         Bathroom
@@ -98,20 +98,22 @@ Examples
         Bed Room
         Bed Room
         Bathroom
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If this was HTML it might look something like this&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;house&amp;gt;
-    &amp;lt;floor&amp;gt;
-        &amp;lt;kitchen&amp;gt;&amp;lt;/kitchen&amp;gt;
-        &amp;lt;bathroom&amp;gt;&amp;lt;/bathroom&amp;gt;
-        &amp;lt;living&amp;gt;&amp;lt;/living&amp;gt;
-    &amp;lt;/floor&amp;gt;
-    &amp;lt;floor&amp;gt;
-        &amp;lt;bed&amp;gt;&amp;lt;/bed&amp;gt;
-        &amp;lt;bed&amp;gt;&amp;lt;/bed&amp;gt;
-        &amp;lt;bathroom&amp;gt;&amp;lt;/bathroom&amp;gt;
-    &amp;lt;/floor&amp;gt;
-&amp;lt;/house&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can see we open the house tag but do not close it until both floors are done.  &lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If this was HTML it might look something like this&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;house&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;floor&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;kitchen&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;kitchen&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bathroom&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bathroom&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;living&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;living&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;floor&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;floor&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bed&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bed&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bed&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bed&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bathroom&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bathroom&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;floor&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;house&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can see we open the house tag but do not close it until both floors are done.  &lt;/p&gt;
 &lt;p&gt;First in, last out. The first tag you open is the last tag you close.  &lt;/p&gt;
 </description>
     </item>
@@ -220,12 +222,12 @@ table tr td:nth-child(1){width:20%}
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/&quot;&gt;Intro to CSS&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/selectors.html&quot;&gt;Selectors&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/include.html&quot;&gt;Include File&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/css.html&quot;&gt; CSS3 Reference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/css.html&quot;&gt;CSS3 Reference&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-3/week3-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;/lessons/lesson-3/week3.zip&quot;&gt;Download Stater File &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1mYirjj8tdvtriYiZJl5F97xVhJFnOiWnf0cp1JKqO9M/edit?pli=1#slide=id.p&quot; target=&quot;_blank&quot; class=&quot;btn&quot;&gt;View Presentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-3/week3-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-3/week3.zip&quot;&gt;Download Stater File &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1mYirjj8tdvtriYiZJl5F97xVhJFnOiWnf0cp1JKqO9M/edit?pli=1#slide=id.p&quot; class=&quot;btn&quot;&gt;View Presentation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-is-css&quot;&gt;What is CSS&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;CSS stands for &lt;em&gt;Cascading Style Sheets&lt;/em&gt;&lt;/li&gt;
@@ -292,34 +294,37 @@ table tr td:nth-child(1){width:20%}
 &lt;p&gt;Inline style are effect way of applying a style to one element.  The down side is that it is not reusable.  If you where apply that style a second time you would need to create that style a second time.  &lt;/p&gt;
 &lt;h3 id=&quot;how-to-use&quot;&gt;How to use&lt;/h3&gt;
 &lt;p&gt;Inline styles are applied to an HTML element with an attribute of style.  The attribute is HTML but the value is CSS.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;h1 style=”property:value;”&amp;gt;HTML Text&amp;lt;/h1&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;internal-and-external-styles&quot;&gt;Internal and External Styles&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”property:value;”&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;internal-and-external-styles&quot;&gt;Internal and External Styles&lt;/h2&gt;
 &lt;p&gt;The more common way to use CSS is to add the style to an external file or internal style block.  This creates a clear separation between the HTML and the CSS.  If the CSS is written in an external file that file can used on many pages with in your site and if a change needs to be made it is made in once place an applied to all pages at the same time.  &lt;/p&gt;
 &lt;h3 id=&quot;how-to-use&quot;&gt;How to use&lt;/h3&gt;
 &lt;h4 id=&quot;html&quot;&gt;HTML&lt;/h4&gt;
 &lt;p&gt;On each element that a class is applied you need to add the class attribute with a value of the class name.  &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; that class name can be anything you want it it be.  The example below use a generic className but it could be almost anything.  The same thing goes for the ID name.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;h1 class=”className”&amp;gt;HTML Text&amp;lt;/h1&amp;gt;
-&amp;lt;p class=”className”&amp;gt;HTML Text&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div id=”idName”&amp;gt;
-    &amp;lt;p&amp;gt;HTML Text&amp;lt;/p&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;css-internal-style-sheet&quot;&gt;CSS - internal style sheet&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”className”&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”className”&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”idName”&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;css-internal-style-sheet&quot;&gt;CSS - internal style sheet&lt;/h4&gt;
 &lt;p&gt;The style block will be added with the HEAD tag.  Adding a style tag.&lt;/p&gt;
 &lt;p&gt;To define a class use the class name defined in the HTML and add a period (.) in front of it. .className&lt;/p&gt;
 &lt;p&gt;To define an id use the id name defined in the HTML and add a number symbol (#) in front of it. #idName&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;style type=”text/css”&amp;gt;
-
-.className {
-    property: value;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”text/css”&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;css&quot;&gt;
+&lt;span class=&quot;selector-class&quot;&gt;.className&lt;/span&gt; {
+    &lt;span class=&quot;attribute&quot;&gt;property&lt;/span&gt;: value;
 }
 
-#idName {
-    property: value;
+&lt;span class=&quot;selector-id&quot;&gt;#idName&lt;/span&gt; {
+    &lt;span class=&quot;attribute&quot;&gt;property&lt;/span&gt;: value;
 }
-&amp;lt;/style&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;css-syntax&quot;&gt;CSS Syntax&lt;/h2&gt;
+&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;css-syntax&quot;&gt;CSS Syntax&lt;/h2&gt;
 &lt;p&gt;The syntax for css is very different than HTML syntax.  &lt;/p&gt;
 &lt;h3 id=&quot;basic-format&quot;&gt;Basic format&lt;/h3&gt;
 &lt;ul&gt;
@@ -332,15 +337,17 @@ table tr td:nth-child(1){width:20%}
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Inline style - when using an inline style you will only use the property and value.&lt;/p&gt;
 &lt;h3 id=&quot;basic-format&quot;&gt;Basic format&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;selector {
-    property: value;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;selector&lt;/span&gt; {
+    &lt;span class=&quot;attribute&quot;&gt;property&lt;/span&gt;: value;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;More than one property - declarations can have many properties defined&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;selector {
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More than one property - declarations can have many properties defined&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;selector {
     property1: value;
     property2: value2;
 }
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     <item>
       <title>Lesson 4</title>
@@ -527,7 +534,8 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;p&gt;To set the width of an element you take the desired width and subtract the &lt;code&gt;padding-left&lt;/code&gt;, &lt;code&gt;padding-right&lt;/code&gt;, &lt;code&gt;border-left-width&lt;/code&gt; and &lt;code&gt;border-right-width&lt;/code&gt;.  If you need to maintain the &lt;code&gt;margin&lt;/code&gt; you will need to subtract the &lt;code&gt;margin-left&lt;/code&gt; and &lt;code&gt;margin-right&lt;/code&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
 &lt;p&gt;If we have an element that needs to fit in to a space that is &lt;code&gt;400px&lt;/code&gt; and it has &lt;code&gt;padding: 20px&lt;/code&gt; and &lt;code&gt;border: 5px solid black&lt;/code&gt; the calculation to find the size would look like this.&lt;/p&gt;
-&lt;p&gt;  400px - 20px -20px - 5px - 5px = 350px&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;400px - 20px -20px - 5px - 5px = 350px
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
 &lt;iframe height='800' scrolling='no' title='Box Model' src='//codepen.io/danhahn/embed/MoQNbO/?height=734&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'&gt;See the Pen &lt;a href='https://codepen.io/danhahn/pen/MoQNbO/'&gt;Box Model&lt;/a&gt; by Dan Hahn (&lt;a href='https://codepen.io/danhahn'&gt;@danhahn&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.
 &lt;/iframe&gt;
@@ -535,19 +543,21 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;h2 id=&quot;box-sizing&quot;&gt;Box Sizing&lt;/h2&gt;
 &lt;p&gt;In CSS, by default, the width and height you assign to an element is applied only to the element’s content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that’s rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is especially tricky when implementing a responsive design.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;box-sizing&lt;/code&gt;property can be used to adjust this behavior:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.example {
-  box-sizing: border-box;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.example&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;box-sizing&lt;/span&gt;: border-box;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;content-box&lt;/code&gt; is the default, and gives you the default CSS box-sizing behavior. If you set an element’s width to 100 pixels, then the element’s content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered width.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;border-box&lt;/code&gt; tells the browser to account for any border and padding in the value you specify for width and height. If you set an element’s width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;apply-to-all-elements&quot;&gt;Apply to all elements&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;*&lt;/code&gt; selector will apply a style to all elements. &lt;code&gt;box-sizing&lt;/code&gt; is a great example of time to use it.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;* {
-  box-sizing: border-box;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;* {
+  &lt;span class=&quot;attribute&quot;&gt;box-sizing&lt;/span&gt;: border-box;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now all elements on the page will size based on a &lt;code&gt;border-box&lt;/code&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now all elements on the page will size based on a &lt;code&gt;border-box&lt;/code&gt;.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -588,27 +598,27 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;li&gt;define a &lt;code&gt;width&lt;/code&gt; to all elements in the row&lt;/li&gt;
 &lt;li&gt;add &lt;code&gt;float: left;&lt;/code&gt; to all children of the &lt;code&gt;section&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-stylesheet&quot;&gt;section:after {
-  content: &amp;quot;&amp;quot;;
-  display: table;
-  clear: both;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;section&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:after&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: table;
+  &lt;span class=&quot;attribute&quot;&gt;clear&lt;/span&gt;: both;
 }
-.nav {
-  width: 200px;
-  float: left;
-  background-color: lightgreen;
-}
-
-.main {
-  width: 800px;
-  float: left;
-  background-color: white;
+&lt;span class=&quot;selector-class&quot;&gt;.nav&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;200px&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;float&lt;/span&gt;: left;
+  &lt;span class=&quot;attribute&quot;&gt;background-color&lt;/span&gt;: lightgreen;
 }
 
-.sidebar {
-  width: 200px;
-  float: left;
-  background-color: lightblue;
+&lt;span class=&quot;selector-class&quot;&gt;.main&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;800px&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;float&lt;/span&gt;: left;
+  &lt;span class=&quot;attribute&quot;&gt;background-color&lt;/span&gt;: white;
+}
+
+&lt;span class=&quot;selector-class&quot;&gt;.sidebar&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;200px&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;float&lt;/span&gt;: left;
+  &lt;span class=&quot;attribute&quot;&gt;background-color&lt;/span&gt;: lightblue;
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;White this will work it is not very flexible or easy to make work on a mobile device.&lt;/p&gt;

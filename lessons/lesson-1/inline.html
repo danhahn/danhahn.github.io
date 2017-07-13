@@ -7,13 +7,12 @@
     <title>Lesson 1 - SVA HTML
     </title>
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2017">
-    <link rel="stylesheet" href="/css/github.css">
+    <link rel="stylesheet" href="/css/prism.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/flat-ui.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" sizes="192x192" href="/images/favicon.png">
-    <script src="/js/highlight.pack.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/underscore-min.js"></script>
@@ -89,24 +88,28 @@
 <h2 id="strong">strong</h2>
 <p>The <span class="caps">HTML</span> Strong Element <code>&lt;strong&gt;</code> gives text strong importance, and is typically displayed in&nbsp;bold.</p>
 <h3 id="example">Example</h3>
-<pre><code>&lt;p&gt;A &lt;strong&gt;polar vortex&lt;/strong&gt; also known as a polar cyclone, polar low, or a circumpolar whirl.&lt;/p&gt;
-</code></pre><p>A <strong>polar vortex</strong> also known as a polar cyclone, polar low, or a circumpolar&nbsp;whirl.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">p</span>&gt;</span>A <span class="tag">&lt;<span class="name">strong</span>&gt;</span>polar vortex<span class="tag">&lt;/<span class="name">strong</span>&gt;</span> also known as a polar cyclone, polar low, or a circumpolar whirl.<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+</code></pre>
+<p>A <strong>polar vortex</strong> also known as a polar cyclone, polar low, or a circumpolar&nbsp;whirl.</p>
 
 <h2 id="em">em</h2>
 <p>The <span class="caps">HTML</span> element emphasis  <code>&lt;em&gt;</code> marks text that has stress&nbsp;emphasis.</p>
 <h3 id="example">Example</h3>
-<pre><code>&lt;p&gt;In HTML 5, what was previously called &lt;em&gt;block-level&lt;/em&gt; content is now called &lt;em&gt;flow&lt;/em&gt; content.&lt;/p&gt;
-</code></pre><p>In <span class="caps">HTML</span> 5, what was previously called <em>block-level</em> content is now called <em>flow</em>&nbsp;content.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">p</span>&gt;</span>In <span class="caps">HTML</span> 5, what was previously called <span class="tag">&lt;<span class="name">em</span>&gt;</span>block-level<span class="tag">&lt;/<span class="name">em</span>&gt;</span> content is now called <span class="tag">&lt;<span class="name">em</span>&gt;</span>flow<span class="tag">&lt;/<span class="name">em</span>&gt;</span> content.<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+</code></pre>
+<p>In <span class="caps">HTML</span> 5, what was previously called <em>block-level</em> content is now called <em>flow</em>&nbsp;content.</p>
 
 <h2 id="code">code</h2>
 <p>The <span class="caps">HTML</span> Code Element (<code>&lt;code&gt;</code>) represents a fragment of computer code. By default, it is displayed in the browser’s default monospace&nbsp;font.</p>
-<pre><code>&lt;p&gt;This is how we would show an &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; tag to a reader of this article.&lt;/p&gt;
-</code></pre><p>This is how we would show an <code>&lt;html&gt;</code> tag to a reader of this&nbsp;article.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This is how we would show an <span class="tag">&lt;<span class="name">code</span>&gt;</span>&amp;lt;html&amp;gt;<span class="tag">&lt;/<span class="name">code</span>&gt;</span> tag to a reader of this article.<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+</code></pre>
+<p>This is how we would show an <code>&lt;html&gt;</code> tag to a reader of this&nbsp;article.</p>
 
 <h2 id="span">span</h2>
 <p>The <span class="caps">HTML</span> <code>&lt;span&gt;</code> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <code>&lt;span&gt;</code> is very much like a <code>&lt;div&gt;</code> element, but <code>&lt;div&gt;</code> is a block-level element whereas a <code>&lt;span&gt;</code> is an inline&nbsp;element.</p>
-<pre><code>&lt;p&gt;We can use a &lt;span&gt;span to wrap&lt;/span&gt; text&lt;/p&gt;
-</code></pre><p>We can use a <span>span to wrap</span>&nbsp;text</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">p</span>&gt;</span>We can use a <span class="tag">&lt;<span class="name">span</span>&gt;</span>span to wrap<span class="tag">&lt;/<span class="name">span</span>&gt;</span> text<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+</code></pre>
+<p>We can use a <span>span to wrap</span>&nbsp;text</p>
 </section>
         </article>
       </div>
@@ -136,6 +139,7 @@
         </div>
       </div>
     </footer>
+    <script src="/js/prism.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
