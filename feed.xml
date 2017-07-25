@@ -710,8 +710,9 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/pages.html&quot;&gt;Pages&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/lessons/lesson-8/final-content.pdf&quot;&gt;Copy for pages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The final is due at the end of class on April 20, 2016.  Please email me at dan@svahtml.com with a zip file that has all the files needed to complete the final.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;final.psd&quot; class=&quot;btn&quot;&gt;Download PSD&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The final is due at the end of class on July 26, 2017.  Please email me at dan@svahtml.com with a zip file that has all the files needed to complete the final.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;final.psd&quot; class=&quot;btn&quot;&gt;Download PSD&lt;/a&gt;
+&lt;a href=&quot;images.zip&quot; class=&quot;btn&quot;&gt;Download images&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;colors&quot;&gt;Colors&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;#ffffff&lt;/li&gt;
@@ -727,18 +728,19 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;li&gt;#50b7f1&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;fonts&quot;&gt;fonts&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
 font-family: &amp;#39;Montserrat&amp;#39;, sans-serif;
 font-family: &amp;#39;Homemade Apple&amp;#39;, cursive;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;header&quot;&gt;header&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;header&quot;&gt;header&lt;/h2&gt;
 &lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;#50b7f1&lt;/li&gt;
 &lt;li&gt;#ffe11a&lt;/li&gt;
 &lt;li&gt;#ffffff&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;New York State {font size 60px}&lt;br&gt;
-The Empire State {font size 20px}&lt;/p&gt;
+&lt;p&gt;New York State &lt;code&gt;{font size 3em}&lt;/code&gt;&lt;br&gt;
+The Empire State &lt;code&gt;{font size 1.5em}&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&quot;nav&quot;&gt;Nav&lt;/h2&gt;
 &lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
 &lt;ul&gt;
@@ -765,11 +767,6 @@ The Empire State {font size 20px}&lt;/p&gt;
 &lt;li&gt;#b7b7b7&lt;/li&gt;
 &lt;li&gt;#333333&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;background-images&quot;&gt;Background Images&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;ny-seal.png
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
-&lt;p&gt;Download the image on the right.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;images.zip&quot; class=&quot;btn&quot;&gt;Download images&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;side-bar&quot;&gt;Side Bar&lt;/h2&gt;
 &lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
 &lt;ul&gt;
@@ -784,7 +781,7 @@ The Empire State {font size 20px}&lt;/p&gt;
 &lt;li&gt;#7fcaf5&lt;/li&gt;
 &lt;li&gt;#ffffff&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;© 2015 SVA HTML&lt;/p&gt;
+&lt;p&gt;© 2017 SVA HTML&lt;/p&gt;
 </description>
     </item>
     <item>

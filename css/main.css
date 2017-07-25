@@ -696,7 +696,13 @@ pre {
   }
   .main-level {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .main-level .nav > li a {
+    padding: 0 1em 0 0;
+  }
+  .main-level .nav > li.active a {
+    border: none;
   }
   .main-level .main-side-nav {
     display: flex;

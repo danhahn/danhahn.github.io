@@ -1,0 +1,9 @@
+.layout {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.layout--date > *:first-of-type {
+  margin-right: .5em;
+}

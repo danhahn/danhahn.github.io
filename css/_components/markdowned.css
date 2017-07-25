@@ -1,0 +1,101 @@
+.article__primary h1,
+.article__primary h2,
+.article__primary h3,
+.article__primary h4,
+.article__primary h5,
+.article__primary h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.article__primary h1 a,
+.article__primary h2 a,
+.article__primary h3 a,
+.article__primary h4 a,
+.article__primary h5 a,
+.article__primary h6 a {
+  color: #9e9e9e;
+  text-decoration: none;
+}
+.article__primary h1 a:hover,
+.article__primary h2 a:hover,
+.article__primary h3 a:hover,
+.article__primary h4 a:hover,
+.article__primary h5 a:hover,
+.article__primary h6 a:hover {
+  text-decoration: underline;
+}
+.article__primary img {
+  max-width: 100%;
+}
+.article__primary hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #e6e9ea;
+}
+.article__primary h1 {
+  font-size: 4em;
+  margin: .3em 0 1em;
+  font-weight: 300;
+}
+@media only screen and (max-width: 768px) {
+  .article__primary h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+}
+.article__primary h2 {
+  color: #b8b8b8;
+  font-size: 1.8em;
+  line-height: 1.8;
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .article__primary h2 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+}
+.article__primary h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.article__primary h4 {
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.article__primary p {
+  line-height: 1.8;
+  margin: 0 0 10px;
+}
+.article__primary .more {
+  display: none;
+}
+.article__primary p:first-of-type:not(h2 + p) {
+  display: none;
+}
+.article__primary ul,
+.article__primary ol {
+  padding-left: 20px;
+}
+.article__primary pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+.article__primary table {
+  border-collapse: collapse;
+  border: 1px solid #e7e7e7;
+}
+.article__primary table th,
+.article__primary table td {
+  border-bottom: 1px solid #e7e7e7;
+  text-align: left;
+  padding: .5em 1em;
+}
+.article__primary table th {
+  border-bottom-width: 2px;
+  color: #27ae4a;
+}
