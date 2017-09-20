@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lesson 8 - SVA HTML
     </title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2017">
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Fall 2017">
     <link rel="stylesheet" href="/css/prism.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
@@ -17,8 +17,6 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/underscore-min.js"></script>
     <script src="/js/global.js"></script>
-    <script src="clipboard.min.js"></script>
-    <script src="copy.js"></script>
   </head>
   <body class="article-detail">
     <div class="main-nav">
@@ -49,6 +47,10 @@
                   <li><a href="/lessons/lesson-6/">Lesson 6</a></li>
                   <li><a href="/lessons/lesson-7/">Lesson 7</a></li>
                   <li><a href="/lessons/lesson-8/">Lesson 8</a></li>
+                  <li><a href="/lessons/lesson-9/">Lesson 9</a></li>
+                  <li><a href="/lessons/lesson-10/">Lesson 10</a></li>
+                  <li><a href="/lessons/lesson-11/">Lesson 11</a></li>
+                  <li><a href="/lessons/lesson-12/">Lesson 12</a></li>
                 </ul>
               </li>
               <li><a href="/syllabus.html"><i class="fa fa-book"></i> Syllabus</a></li>
@@ -65,94 +67,115 @@
       <div class="container">
         <div class="well small page-title">
           <h1>Lesson 8</h1>
-          <div class="date"><i class="fa fa-calendar"></i><span class="month">July</span><span class="day">26,</span><span class="year">2017</span></div>
+          <div class="date"><i class="fa fa-calendar"></i><span class="month">November</span><span class="day">8,</span><span class="year">2017</span></div>
         </div>
       </div>
     </header>
     <div class="container main-level">
       <div class="col-md-9 main-content">
         <article class="article">
-          <section class="content"><p>This week we work on the in class final.  <div><span class="label label-default html"><i class="fa fa-html5"></i><span class="caps">HTML</span></span> <span class="label label-default css"><i class="fa fa-css3"></i>css</span></div></p>
+          <section class="content"><p>This week we will talk about css display, building navigations, and simple&nbsp;layouts.</p>
 <p><span class="more"></span></p>
-<h1 id="final-project">Final&nbsp;Project</h1>
+<h1 id="css-display"><span class="caps">CSS</span>&nbsp;Display</h1>
 <ul>
-<li><a href="/lessons/lesson-8/">Final&nbsp;Project</a></li>
-<li><a href="/lessons/lesson-8/pages.html">Pages</a></li>
-<li><a href="/lessons/lesson-8/final-content.pdf">Copy for&nbsp;pages</a></li>
+<li><a href="/lessons/lesson-8/"><span class="caps">CSS</span> display (inline, block, inline-block,&nbsp;etc)</a></li>
+<li><a href="/lessons/lesson-8/navigations.html">Navigation</a></li>
+<li><a href="/lessons/lesson-8/layouts.pdf">Simple&nbsp;Layouts</a></li>
 </ul>
-<p>The final is due at the end of class on July 26, 2017.  Please email me at dan@svahtml.com with a zip file that has all the files needed to complete the&nbsp;final.</p>
-<p><a href="final.psd" class="btn">Download <span class="caps">PSD</span></a>
-<a href="images.zip" class="btn">Download&nbsp;images</a></p>
-<h2 id="colors">Colors</h2>
-<ul>
-<li>#ffffff</li>
-<li>#c0c0c0</li>
-<li>#808080</li>
-<li>#333333</li>
-<li>#000000</li>
-<li>#004358</li>
-<li>#181e47</li>
-<li>#ffe11a</li>
-<li>#ff951a</li>
-<li>#7fcaf5</li>
-<li>#50b7f1</li>
-</ul>
-<h2 id="fonts">fonts</h2>
-<pre><code class="lang-css">@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
-font-family: &#39;Montserrat&#39;, sans-serif;
-font-family: &#39;Homemade Apple&#39;, cursive;
-</code></pre>
-<h2 id="header">header</h2>
-<h6 id="swatches">Swatches</h6>
-<ul>
-<li>#50b7f1</li>
-<li>#ffe11a</li>
-<li>#ffffff</li>
-</ul>
-<p>New York State <code>{font size 3em}</code><br>
-The Empire State <code>{font size 1.5em}</code></p>
-<h2 id="nav">Nav</h2>
-<h6 id="swatches">Swatches</h6>
-<ul>
-<li>#ffe11a</li>
-<li>#ff951a</li>
-<li>#000000</li>
-</ul>
-<h3 id="nav-items">Nav&nbsp;Items</h3>
-<ul>
-<li>Home(index.html)</li>
-<li>History(history/index.html)</li>
-<li>Geography(geography/index.html)</li>
-<li>Major&nbsp;cities(cities/index.html)</li>
-<li>Demographics(demographics/index.html)</li>
-<li>Transportation(transportation/index.html)</li>
-<li>Sports(sports/index.html)</li>
-</ul>
-<h2 id="content">Content</h2>
-<h6 id="swatches">Swatches</h6>
-<ul>
-<li>#ffffff</li>
-<li>#50b7f1</li>
-<li>#004358</li>
-<li>#b7b7b7</li>
-<li>#333333</li>
-</ul>
-<h2 id="side-bar">Side&nbsp;Bar</h2>
-<h6 id="swatches">Swatches</h6>
-<ul>
-<li>#004358</li>
-<li>#ffffff</li>
-<li>#50b7f1</li>
-<li>#b7b7b7</li>
-</ul>
-<h2 id="footer">Footer</h2>
-<h6 id="swatches">Swatches</h6>
-<ul>
-<li>#7fcaf5</li>
-<li>#ffffff</li>
-</ul>
-<p>© 2017 <span class="caps">SVA</span>&nbsp;HTML</p>
-</section>
+<h2 id="display">Display</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>inline</code></td>
+<td>Default value. Displays an element as an inline element (like <code>&lt;span&gt;</code>)     </td>
+</tr>
+<tr>
+<td><code>block</code></td>
+<td>Displays an element as a block element (like <code>&lt;p&gt;</code>)     </td>
+</tr>
+<tr>
+<td><code>flex</code></td>
+<td>Displays an element as a block-level flex container. New in <span class="caps">CSS3</span>     </td>
+</tr>
+<tr>
+<td><code>inline-block</code></td>
+<td>Displays an element as an inline-level block container. The inside of this block is formatted as block-level box , and the element itself is formatted as an inline-level box     </td>
+</tr>
+<tr>
+<td><code>inline-flex</code></td>
+<td>Displays an element as an inline-level flex container. New in <span class="caps">CSS3</span>     </td>
+</tr>
+<tr>
+<td><code>inline-table</code></td>
+<td>The element is displayed as an inline-level table     </td>
+</tr>
+<tr>
+<td><code>list-item</code></td>
+<td>Let the element behave like a <code>&lt;li&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>run-in</code></td>
+<td>Displays an element as either block or inline, depending on context     </td>
+</tr>
+<tr>
+<td><code>table</code></td>
+<td>Let the element behave like a <code>&lt;table&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>table-caption</code></td>
+<td>Let the element behave like a <code>&lt;caption&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>table-column-group</code></td>
+<td>Let the element behave like a <code>&lt;colgroup&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>table-header-group</code></td>
+<td>Let the element behave like a <code>&lt;thead&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>table-footer-group</code></td>
+<td>Let the element behave like a <code>&lt;tfoot&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>table-row-group</code></td>
+<td>Let the element behave like a <code>&lt;tbody&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>table-cell</code></td>
+<td>Let the element behave like a <code>&lt;td&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>table-column</code></td>
+<td>Let the element behave like a <code>&lt;col&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>table-row</code></td>
+<td>Let the element behave like a <code>&lt;tr&gt;</code> element     </td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>The element will not be displayed at all (has no effect on layout)     </td>
+</tr>
+<tr>
+<td><code>initial</code></td>
+<td>Sets this property to its default value. Read about initial     </td>
+</tr>
+<tr>
+<td><code>inherit</code></td>
+<td>Inherits this property from its parent element. Read about inherit</td>
+</tr>
+</tbody>
+</table>
+<style>
+tr td:first-of-type code {white-space: nowrap}
+</style></section>
         </article>
       </div>
       <div class="col-md-3 side-nav">

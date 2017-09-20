@@ -4,14 +4,14 @@
     <title>SVA HTML</title>
     <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://localhost:8080</link>
-    <description>Summer 2017</description>
-    <pubDate>Wed, 07 Jun 2017 15:00:00 -0400</pubDate>
+    <description>Fall 2017</description>
+    <pubDate>Wed, 20 Sep 2017 15:00:00 -0400</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Lesson 1</title>
       <link>http://localhost:8080/lessons/lesson-1/</link>
-      <pubDate>Wed, 07 Jun 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Sep 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-1/</guid>
       <author></author>
       <description>&lt;p&gt;Introduction to HTML, Web Browsers, Standards &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -120,7 +120,7 @@ Examples
     <item>
       <title>Lesson 2</title>
       <link>http://localhost:8080/lessons/lesson-2/</link>
-      <pubDate>Wed, 14 Jun 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 27 Sep 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-2/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will talk about how to create links and embed images. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -213,7 +213,7 @@ table tr td:nth-child(1){width:20%}
     <item>
       <title>Lesson 3</title>
       <link>http://localhost:8080/lessons/lesson-3/</link>
-      <pubDate>Wed, 21 Jun 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 04 Oct 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-3/</guid>
       <author></author>
       <description>&lt;p&gt;This week we start to talk about CSS. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -352,7 +352,7 @@ table tr td:nth-child(1){width:20%}
     <item>
       <title>Lesson 4</title>
       <link>http://localhost:8080/lessons/lesson-4/</link>
-      <pubDate>Wed, 28 Jun 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 11 Oct 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-4/</guid>
       <author></author>
       <description>&lt;p&gt;This week We will dive back into CSS and talk about text, font, borders, margin and padding. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -514,7 +514,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 5</title>
       <link>http://localhost:8080/lessons/lesson-5/</link>
-      <pubDate>Wed, 05 Jul 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 18 Oct 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-5/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -563,7 +563,7 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 6</title>
       <link>http://localhost:8080/lessons/lesson-6/</link>
-      <pubDate>Wed, 12 Jul 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 25 Oct 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
       <author></author>
       <description>&lt;p&gt;This week we will talk about the new CSS3 flex box layout. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
@@ -627,19 +627,301 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 7</title>
       <link>http://localhost:8080/lessons/lesson-7/</link>
-      <pubDate>Wed, 19 Jul 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 01 Nov 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
+      <author></author>
+      <description>&lt;p&gt;Adding background images or colors to elements and Building and styling tables.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/&quot;&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/tables.html&quot;&gt;Tables&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-7/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
+&lt;h2 id=&quot;background-color&quot;&gt;Background Color&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-color: color name | RGB Value | Hex Value;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the background.&lt;/p&gt;
+&lt;p&gt;&lt;p data-height=&quot;200&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;YWaZzb&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/YWaZzb/&quot;&gt;background-color&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;background-image&quot;&gt;Background Image&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-image&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;url&lt;/span&gt;(&amp;lt;&lt;span class=&quot;selector-tag&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;path&lt;/span&gt;&amp;gt;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left corner.&lt;/p&gt;
+&lt;p&gt;&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;yJKvov&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/yJKvov/&quot;&gt;yJKvov&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;background-repeat&quot;&gt;Background Repeat&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-repeat: repeat | no-repeat | repeat-x | repeat-y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When applying a background image it will tile in all directions by default.&lt;/p&gt;
+&lt;p&gt;You can control the way the image will tile by using &lt;code&gt;background-repeat&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Repeat&lt;/th&gt;
+&lt;th&gt;Direction&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat (default)&lt;/td&gt;
+&lt;td&gt;tiles in all directions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;no-repeat&lt;/td&gt;
+&lt;td&gt;the image will appear one time.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat-x&lt;/td&gt;
+&lt;td&gt;repeat along the x axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat-y&lt;/td&gt;
+&lt;td&gt;repeat along the x axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;bZvLoq&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/bZvLoq/&quot;&gt;background-repeat&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;##Background Attachment&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-attachment: scroll | fixed;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the BODY tag and that background image should not move when the page is scrolled.&lt;/p&gt;
+&lt;h2 id=&quot;background-position&quot;&gt;Background Position&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: (&lt;span class=&quot;selector-tag&quot;&gt;left&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt;) (&lt;span class=&quot;selector-tag&quot;&gt;top&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;bottom&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that point.&lt;/p&gt;
+&lt;p&gt;If you want the image to be position the center both vertical and horizontal than you need only define the value of center.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or percentages.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: 100&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 300&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;
+&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: 50% 80%;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;mExXpV&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/mExXpV/&quot;&gt;background-position&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;background-shorthand&quot;&gt;Background Shorthand&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;repeat&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;attachment&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;color&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Like many CSS properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default value.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background: #fff url(images/side-bar.png) repeat-y right top;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;ZOxAxr&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/ZOxAxr/&quot;&gt;background&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;In this example attachment is not defined so it will be set to the default which in this case is scroll.&lt;/p&gt;
+&lt;p&gt;In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to none.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;none&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You are setting the &lt;code&gt;background-image&lt;/code&gt; to none and by default setting the &lt;code&gt;background-color&lt;/code&gt; to transparent.&lt;/p&gt;
+&lt;p&gt;&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;jAzkjx&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/jAzkjx/&quot;&gt;background: none&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 8</title>
+      <link>http://localhost:8080/lessons/lesson-8/</link>
+      <pubDate>Wed, 08 Nov 2017 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will talk about css display, building navigations, and simple layouts.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;css-display&quot;&gt;CSS Display&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/&quot;&gt;CSS display (inline, block, inline-block, etc)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/navigations.html&quot;&gt;Navigation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/layouts.pdf&quot;&gt;Simple Layouts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;display&quot;&gt;Display&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;inline&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Default value. Displays an element as an inline element (like &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;)     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;block&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Displays an element as a block element (like &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;)     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;flex&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Displays an element as a block-level flex container. New in CSS3     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;inline-block&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Displays an element as an inline-level block container. The inside of this block is formatted as block-level box , and the element itself is formatted as an inline-level box     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;inline-flex&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Displays an element as an inline-level flex container. New in CSS3     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;inline-table&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The element is displayed as an inline-level table     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;list-item&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;run-in&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Displays an element as either block or inline, depending on context     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;table&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;table-caption&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;caption&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;table-column-group&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;colgroup&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;table-header-group&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;table-footer-group&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;tfoot&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;table-row-group&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;table-cell&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;table-column&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;table-row&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;none&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The element will not be displayed at all (has no effect on layout)     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;initial&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Sets this property to its default value. Read about initial     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;inherit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Inherits this property from its parent element. Read about inherit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;style&gt;
+tr td:first-of-type code {white-space: nowrap}
+&lt;/style&gt;</description>
+    </item>
+    <item>
+      <title>Lesson 9</title>
+      <link>http://localhost:8080/lessons/lesson-9/</link>
+      <pubDate>Wed, 15 Nov 2017 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will be talking about applying a background image with CSS and HTML forms &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;#Backgrounds&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/&quot;&gt;Backgrounds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/lessons/lesson-9/forms.html&quot;&gt;Forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;/lessons/lesson-9/week9-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-9/week9.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
+&lt;p&gt;###Background Color&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background-color: color name | RGB Value | Hex Value;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the background.&lt;/p&gt;
+&lt;p&gt;###Background Image&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background-image: url(&amp;lt;image path&amp;gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left corner.&lt;/p&gt;
+&lt;p&gt;###Background Repeat&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background-repeat: repeat | no-repeat | repeat-x | repeat-y
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When applying a background image it will tile in all directions by default.&lt;/p&gt;
+&lt;p&gt;You can control the way the image will tile by using &lt;code&gt;background-repeat&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Repeat&lt;/th&gt;
+&lt;th&gt;Direction&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat (default)&lt;/td&gt;
+&lt;td&gt;tiles in all directions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;no-repeat&lt;/td&gt;
+&lt;td&gt;the image will appear one time.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat-x&lt;/td&gt;
+&lt;td&gt;repeat along the x axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat-y&lt;/td&gt;
+&lt;td&gt;repeat along the x axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;###Background Attachment&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background-attachment: scroll | fixed;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the BODY tag and that background image should not move when the page is scrolled.&lt;/p&gt;
+&lt;p&gt;####Background Position&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background-position: (left, right or center) (top, center or bottom);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that point.&lt;/p&gt;
+&lt;p&gt;If you want the image to be position the center both vertical and horizontal than you need only define the value of center.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background-position: center;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or percentages.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background-position: 100px 300px;
+background-position: 50% 80%;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;###Background Shorthand&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background: image repeat attachment position color;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Like many CSS properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default value.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background: #fff url(images/side-bar.png) repeat-y right top;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example attachment is not defined so it will be set to the default which in this case is scroll.&lt;/p&gt;
+&lt;p&gt;In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to none.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;background: none;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You are setting the &lt;code&gt;background-image&lt;/code&gt; to none and by default setting the &lt;code&gt;background-color&lt;/code&gt; to transparent.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 10</title>
+      <link>http://localhost:8080/lessons/lesson-10/</link>
+      <pubDate>Wed, 29 Nov 2017 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-10/</guid>
       <author></author>
       <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;understanding-the-index-html&quot;&gt;Understanding the Index.html&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/&quot;&gt;Understanding index&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/hosting.html&quot;&gt;Setting up your site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/background.html&quot;&gt;Background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/&quot;&gt;Understanding index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/hosting.html&quot;&gt;Setting up your site&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-7/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;/lessons/lesson-10/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;The magic of the index.html&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;When building a site that is hosted on a web server there needs to be a default file to serve. In most cases this is  &lt;strong&gt;index.html&lt;/strong&gt;. When you have a folder and put only one file in that folder it should be index.html since it will be served by just requesting the site or any subfolder of that site.&lt;/p&gt;
@@ -697,18 +979,18 @@ td .label {margin-right: 4px;cursor: pointer;}
 </description>
     </item>
     <item>
-      <title>Lesson 8</title>
-      <link>http://localhost:8080/lessons/lesson-8/</link>
-      <pubDate>Wed, 26 Jul 2017 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
+      <title>Lesson 11</title>
+      <link>http://localhost:8080/lessons/lesson-11/</link>
+      <pubDate>Wed, 06 Dec 2017 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-11/</guid>
       <author></author>
       <description>&lt;p&gt;This week we work on the in class final.  &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;final-project&quot;&gt;Final Project&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/&quot;&gt;Final Project&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/pages.html&quot;&gt;Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/lessons/lesson-8/final-content.pdf&quot;&gt;Copy for pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/&quot;&gt;Final Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/pages.html&quot;&gt;Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/lessons/lesson-11/final-content.pdf&quot;&gt;Copy for pages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The final is due at the end of class on July 26, 2017.  Please email me at dan@svahtml.com with a zip file that has all the files needed to complete the final.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;final.psd&quot; class=&quot;btn&quot;&gt;Download PSD&lt;/a&gt;
@@ -782,6 +1064,18 @@ The Empire State &lt;code&gt;{font size 1.5em}&lt;/code&gt;&lt;/p&gt;
 &lt;li&gt;#ffffff&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;© 2017 SVA HTML&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 12</title>
+      <link>http://localhost:8080/lessons/lesson-12/</link>
+      <pubDate>Wed, 13 Dec 2017 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
+      <author></author>
+      <description>&lt;p&gt;Continue to work on final &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;continue-to-work-on-final&quot;&gt;Continue to work on final&lt;/h1&gt;
+&lt;p&gt;Final is due at the end of this class.  If you are not able to make it to this class your final is still due at this time.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1240,91 +1534,6 @@ We added the class ‘red-border’ to our paragraph tag.&lt;/p&gt;
 &lt;p&gt;&lt;h2&gt;Happy Scripting&lt;/h2&gt;
 Elijah Meerson, Software Engineer at AppNexus.  &lt;a href=&quot;https://twitter.com/elimeerson&quot;&gt;@elimeerson&lt;/a&gt;
 Also I’m on Google+&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Lesson 9</title>
-      <link>http://localhost:8080/lessons/lesson-9/</link>
-      <pubDate>Mon, 23 Mar 2020 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
-      <author></author>
-      <description>&lt;p&gt;This week we will be talking about applying a background image with CSS and HTML forms &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;#Backgrounds&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/&quot;&gt;Backgrounds&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/lessons/lesson-9/forms.html&quot;&gt;Forms&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-9/week9-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-9/week9.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
-&lt;p&gt;###Background Color&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-color: color name | RGB Value | Hex Value;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the background.&lt;/p&gt;
-&lt;p&gt;###Background Image&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-image: url(&amp;lt;image path&amp;gt;);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left corner.&lt;/p&gt;
-&lt;p&gt;###Background Repeat&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-repeat: repeat | no-repeat | repeat-x | repeat-y
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When applying a background image it will tile in all directions by default.&lt;/p&gt;
-&lt;p&gt;You can control the way the image will tile by using &lt;code&gt;background-repeat&lt;/code&gt;.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Repeat&lt;/th&gt;
-&lt;th&gt;Direction&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;repeat (default)&lt;/td&gt;
-&lt;td&gt;tiles in all directions&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;no-repeat&lt;/td&gt;
-&lt;td&gt;the image will appear one time.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;repeat-x&lt;/td&gt;
-&lt;td&gt;repeat along the x axis&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;repeat-y&lt;/td&gt;
-&lt;td&gt;repeat along the x axis&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;###Background Attachment&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-attachment: scroll | fixed;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the BODY tag and that background image should not move when the page is scrolled.&lt;/p&gt;
-&lt;p&gt;####Background Position&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-position: (left, right or center) (top, center or bottom);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that point.&lt;/p&gt;
-&lt;p&gt;If you want the image to be position the center both vertical and horizontal than you need only define the value of center.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-position: center;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or percentages.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-position: 100px 300px;
-background-position: 50% 80%;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;###Background Shorthand&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background: image repeat attachment position color;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Like many CSS properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default value.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background: #fff url(images/side-bar.png) repeat-y right top;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example attachment is not defined so it will be set to the default which in this case is scroll.&lt;/p&gt;
-&lt;p&gt;In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to none.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background: none;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You are setting the &lt;code&gt;background-image&lt;/code&gt; to none and by default setting the &lt;code&gt;background-color&lt;/code&gt; to transparent.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Lesson 12</title>
-      <link>http://localhost:8080/lessons/lesson-12/</link>
-      <pubDate>Mon, 20 Apr 2020 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
-      <author></author>
-      <description>&lt;p&gt;Continue to work on final &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;continue-to-work-on-final&quot;&gt;Continue to work on final&lt;/h1&gt;
-&lt;p&gt;Final is due at the end of this class.  If you are not able to make it to this class your final is still due at this time.&lt;/p&gt;
 </description>
     </item>
     <item>

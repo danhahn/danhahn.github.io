@@ -299,7 +299,7 @@ p.date {
   padding: 0;
   position: relative;
 }
-.lesson-item:nth-of-type(2n) .well {
+.lesson-item:nth-of-type(3n) .well {
   margin-right: 0;
 }
 .lesson-item .well {

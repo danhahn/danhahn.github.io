@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lesson 7 - SVA HTML
     </title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Summer 2017">
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Fall 2017">
     <link rel="stylesheet" href="/css/prism.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
@@ -47,6 +47,10 @@
                   <li><a href="/lessons/lesson-6/">Lesson 6</a></li>
                   <li><a href="/lessons/lesson-7/">Lesson 7</a></li>
                   <li><a href="/lessons/lesson-8/">Lesson 8</a></li>
+                  <li><a href="/lessons/lesson-9/">Lesson 9</a></li>
+                  <li><a href="/lessons/lesson-10/">Lesson 10</a></li>
+                  <li><a href="/lessons/lesson-11/">Lesson 11</a></li>
+                  <li><a href="/lessons/lesson-12/">Lesson 12</a></li>
                 </ul>
               </li>
               <li><a href="/syllabus.html"><i class="fa fa-book"></i> Syllabus</a></li>
@@ -63,77 +67,106 @@
       <div class="container">
         <div class="well small page-title">
           <h1>Lesson 7</h1>
-          <div class="date"><i class="fa fa-calendar"></i><span class="month">July</span><span class="day">19,</span><span class="year">2017</span></div>
+          <div class="date"><i class="fa fa-calendar"></i><span class="month">November</span><span class="day">1,</span><span class="year">2017</span></div>
         </div>
       </div>
     </header>
     <div class="container main-level">
       <div class="col-md-9 main-content">
         <article class="article">
-          <section class="content"><p>How to set up your own <span class="caps">HTML</span> website including how to choose where to host and how to upload. <div><span class="label label-default html"><i class="fa fa-html5"></i><span class="caps">HTML</span></span> <span class="label label-default css"><i class="fa fa-css3"></i>css</span></div></p>
+          <section class="content"><p>Adding background images or colors to elements and Building and styling&nbsp;tables.</p>
 <p><span class="more"></span></p>
-<h1 id="understanding-the-index-html">Understanding the&nbsp;Index.html</h1>
+<h1 id="background">Background</h1>
 <ul>
-<li><a href="/lessons/lesson-7/">Understanding&nbsp;index</a></li>
-<li><a href="/lessons/lesson-7/hosting.html">Setting up your&nbsp;site</a></li>
-<li><a href="/lessons/lesson-7/background.html">Background</a></li>
+<li><a href="/lessons/lesson-7/">Background</a></li>
+<li><a href="/lessons/lesson-7/tables.html">Tables</a></li>
 </ul>
 <p><a href="/lessons/lesson-7/week7-notes.zip">Download Notes  <i class="icon-download-alt icon-white"></i></a>
 <a href="/lessons/lesson-7/week7.zip">Download Starter File  <i class="icon-download-alt icon-white"></i></a></p>
-<h2 id="building-a-full-site">Building a full&nbsp;site</h2>
-<p><strong>The magic of the&nbsp;index.html</strong></p>
-<p>When building a site that is hosted on a web server there needs to be a default file to serve. In most cases this is  <strong>index.html</strong>. When you have a folder and put only one file in that folder it should be index.html since it will be served by just requesting the site or any subfolder of that&nbsp;site.</p>
-<p>For example you may go to a site named <a href="http://www.svahtml.com">http://www.svahtml.com</a> but you just ask for the site you never say what file you want. The server knows to give you the default file, index.html. to make life easy it just gives you it and the file is never displayed in the <span class="caps">URL</span>. But what happens when you go to a sub folder like? Again you are not saying what file you want so the server needs to give you the default file which is&nbsp;index.html.</p>
-<p><img height="36" src="images/image04.png" width="624"></p>
-<p>So far we have two files in two folders each named <strong>index.html</strong>. For every folder that we have on the site it will have it&#39;s own index.html. As you might imagine there could be a lot of&nbsp;index.htmls.</p>
-<p>Because of this we need to be very careful about the file we are working on. One way to help keep track of the file that you are editing it is very useful to update the for each page on your site. It might be something like&nbsp;this.</p>
-<ul>
-<li>For you homepage - Site Name |&nbsp;Home</li>
-<li>A sub folder for your gallery might be - Site Name |&nbsp;Gallery</li>
-</ul>
-<p>This way you can look at the markup to know what page you are&nbsp;on.</p>
-<p>It should also be noted that you can not replace one index with an other since all the links where set for that page and the content would be&nbsp;wrong.</p>
-<h2 id="your-site-might-be-something-like-this">Your site might be something like&nbsp;this</h2>
-<pre><code>Homepage
-- News
-- Sport
-- Weather
-- Gallery
-</code></pre><p>Every subsection on your site should be broken into its own&nbsp;folder.</p>
-<pre><code>/index.html
-/news/index.html
-/sports/index.html
-/weather/index.html
-/gallery/index.html
-</code></pre><p>We have 5 index.html&nbsp;files.</p>
-<h2 id="but-what-if-we-have-to-have-more-than-one-file-in-a-folder-">But what if we have to have more than one file In a&nbsp;folder?</h2>
-<p>In that case any other file can be named whatever you want. It would be linked to from the index.html using the link tag <strong>(href=&rdquo;filename.html&rdquo;)</strong>.</p>
-<h2 id="for-example">For&nbsp;example</h2>
-<pre><code>/news/index.html
-/news/yesterday.html
-/news/breakingnews.html
-/news/fun-stories.html
-</code></pre><p>In this example we have four files all in the <strong>/news/</strong>&nbsp;folder.</p>
-<p><img height="354" src="images/image00.png" width="624"></p>
-<p>When you have your files on a web server you are able to use absolute paths to make the paths from one section or folder to&nbsp;another.</p>
-<p>If you wanted to link from the news page to the weather page there are two ways to do&nbsp;this.</p>
-<ol>
-<li>Use a relative path. <strong>../weather/</strong></li>
-<li>Use an absolute path <strong>/weather/</strong></li>
-</ol>
-<p>The reason option 2 is better is because it will be the same path for all files on the site regardless of where you&nbsp;are.</p>
-<h2 id="dev-local">Dev&nbsp;Local</h2>
-<p>The big problem with this way is it will not work when viewing your files from a local&nbsp;directory.</p>
-<p>If you want to still develop locally you will need to set up a local server. One great one is <span class="caps">MAMP</span>. it is very easy to setup and use and will allow you to have the same setup as your web&nbsp;server.</p>
-<p><img height="345" src="images/image01.png" width="427"></p>
-<p>You just need to set the &ldquo;Document Root&rdquo; by clicking the Preferences button then clicking&nbsp;Apache.</p>
-<p><img height="349" src="images/image05.png" width="432"></p>
-<p>Then set the folder of your project and click&nbsp;<span class="caps">OK</span>.</p>
-<p>Once that is done you need to click Start Servers. It may ask you to enter your username and password. In almost all cases this will be the same as when you logged in to the&nbsp;computer.</p>
-<p>if everything works your app will have two green&nbsp;lights</p>
-<p><img height="348" src="images/image03.png" width="430"></p>
-<p>Then you need to go to <a href="http://localhost:8888/">http://localhost:8888/</a></p>
-<p>This will act as a real web server but you can continue to develop&nbsp;locally.</p>
+<p>Backgrounds are a way to add colors and images to elements on the&nbsp;page.</p>
+<h2 id="background-color">Background&nbsp;Color</h2>
+<pre><code class="lang-css">background-color: color name | RGB Value | Hex Value;
+</code></pre>
+<p>Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the&nbsp;background.</p>
+<p><p data-height="200" data-theme-id="light" data-slug-hash="YWaZzb" data-default-tab="result" data-user="danhahn" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/danhahn/pen/YWaZzb/">background-color</a> by Dan Hahn (<a href="http://codepen.io/danhahn">@danhahn</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="background-image">Background&nbsp;Image</h2>
+<pre><code class="lang-css"><span class="selector-tag">background-image</span>: <span class="selector-tag">url</span>(&lt;<span class="selector-tag">image</span> <span class="selector-tag">path</span>&gt;);
+</code></pre>
+<p>Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left&nbsp;corner.</p>
+<p><p data-height="400" data-theme-id="light" data-slug-hash="yJKvov" data-default-tab="result" data-user="danhahn" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/danhahn/pen/yJKvov/">yJKvov</a> by Dan Hahn (<a href="http://codepen.io/danhahn">@danhahn</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="background-repeat">Background&nbsp;Repeat</h2>
+<pre><code class="lang-css">background-repeat: repeat | no-repeat | repeat-x | repeat-y
+</code></pre>
+<p>When applying a background image it will tile in all directions by&nbsp;default.</p>
+<p>You can control the way the image will tile by using <code>background-repeat</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Repeat</th>
+<th>Direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>repeat (default)</td>
+<td>tiles in all directions</td>
+</tr>
+<tr>
+<td>no-repeat</td>
+<td>the image will appear one time.</td>
+</tr>
+<tr>
+<td>repeat-x</td>
+<td>repeat along the x axis</td>
+</tr>
+<tr>
+<td>repeat-y</td>
+<td>repeat along the x axis</td>
+</tr>
+</tbody>
+</table>
+<p><p data-height="400" data-theme-id="light" data-slug-hash="bZvLoq" data-default-tab="result" data-user="danhahn" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/danhahn/pen/bZvLoq/">background-repeat</a> by Dan Hahn (<a href="http://codepen.io/danhahn">@danhahn</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>##Background&nbsp;Attachment</p>
+<pre><code class="lang-css">background-attachment: scroll | fixed;
+</code></pre>
+<p>When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the <span class="caps">BODY</span> tag and that background image should not move when the page is&nbsp;scrolled.</p>
+<h2 id="background-position">Background&nbsp;Position</h2>
+<pre><code class="lang-css"><span class="selector-tag">background-position</span>: (<span class="selector-tag">left</span>, <span class="selector-tag">right</span> <span class="selector-tag">or</span> <span class="selector-tag">center</span>) (<span class="selector-tag">top</span>, <span class="selector-tag">center</span> <span class="selector-tag">or</span> <span class="selector-tag">bottom</span>);
+</code></pre>
+<p>The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that&nbsp;point.</p>
+<p>If you want the image to be position the center both vertical and horizontal than you need only define the value of&nbsp;center.</p>
+<pre><code class="lang-css"><span class="selector-tag">background-position</span>: <span class="selector-tag">center</span>;
+</code></pre>
+<p>Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or&nbsp;percentages.</p>
+<pre><code class="lang-css"><span class="selector-tag">background-position</span>: 100<span class="selector-tag">px</span> 300<span class="selector-tag">px</span>;
+<span class="selector-tag">background-position</span>: 50% 80%;
+</code></pre>
+<p><p data-height="400" data-theme-id="light" data-slug-hash="mExXpV" data-default-tab="result" data-user="danhahn" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/danhahn/pen/mExXpV/">background-position</a> by Dan Hahn (<a href="http://codepen.io/danhahn">@danhahn</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="background-shorthand">Background&nbsp;Shorthand</h2>
+<pre><code class="lang-css"><span class="selector-tag">background</span>: <span class="selector-tag">image</span> <span class="selector-tag">repeat</span> <span class="selector-tag">attachment</span> <span class="selector-tag">position</span> <span class="selector-tag">color</span>;
+</code></pre>
+<p>Like many <span class="caps">CSS</span> properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default&nbsp;value.</p>
+<pre><code class="lang-css">background: #fff url(images/side-bar.png) repeat-y right top;
+</code></pre>
+<p><p data-height="400" data-theme-id="light" data-slug-hash="ZOxAxr" data-default-tab="result" data-user="danhahn" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/danhahn/pen/ZOxAxr/">background</a> by Dan Hahn (<a href="http://codepen.io/danhahn">@danhahn</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+<p>In this example attachment is not defined so it will be set to the default which in this case is&nbsp;scroll.</p>
+<p>In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to&nbsp;none.</p>
+<pre><code class="lang-css"><span class="selector-tag">background</span>: <span class="selector-tag">none</span>;
+</code></pre>
+<p>You are setting the <code>background-image</code> to none and by default setting the <code>background-color</code> to&nbsp;transparent.</p>
+<p><p data-height="265" data-theme-id="light" data-slug-hash="jAzkjx" data-default-tab="result" data-user="danhahn" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/danhahn/pen/jAzkjx/">background: none</a> by Dan Hahn (<a href="http://codepen.io/danhahn">@danhahn</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 </section>
         </article>
       </div>
