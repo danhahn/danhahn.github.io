@@ -14,19 +14,8 @@
       <pubDate>Wed, 20 Sep 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-1/</guid>
       <author></author>
-      <description>&lt;p&gt;Introduction to HTML, Web Browsers, Standards &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Introduction to HTML, Web Browsers, Standards&lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/editors.html&quot;&gt;Editors&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/template.html&quot;&gt;HTML Template&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/block-level.html&quot;&gt;Block-Level&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/inline.html&quot;&gt;Inline&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/classwork.html&quot;&gt;Classwork&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-1/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-1/week1-notes.zip&quot;&gt;Download Notes&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-is-html-&quot;&gt;What is HTML?&lt;/h2&gt;
 &lt;p&gt;HTML or Hyper Text Markup Language is the building blocks of all web pages.  HTML uses tags to create element that are filled with content like text and images.  The elements are instructions to the web browser how to display the content on the screen.  &lt;/p&gt;
 &lt;p&gt;Another way to think about it is HTML is a series of start and stop commands for the web browser.  The browser then renders that content to the specs of HTML.  &lt;/p&gt;
@@ -45,12 +34,15 @@
 &lt;/ul&gt;
 &lt;h2 id=&quot;the-tag&quot;&gt;The Tag&lt;/h2&gt;
 &lt;p&gt;There are over 80 different HTML tags that can be used.  They all have the same basic format.  Most tags have an opening and a closing tag.  &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;tag&amp;gt;content&amp;lt;/tag&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;All tags have brackets around them &amp;lt; and &amp;gt; that are used by the browser to know what is a tag and what is content.  Right after the opening bracket &lt;code&gt;&amp;lt;&lt;/code&gt; is the tag name like h1 or p then the closing bracket &lt;code&gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;tag&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If the tag has a closing tag it will match the opening tag but have an &lt;code&gt;/&lt;/code&gt; after the opening bracket.  This is the indication to the browser to close the tag that was opened.  With out it the browser would never know when to stop.  &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;/tag&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;There are a few number of tags that do not have a closing tag because they do not wrap any content.  Older versions of HTML required that all tags be opened and closed.  This is no longer the case although you may still see a self-closing tag &lt;code&gt;&amp;lt;tag /&amp;gt;&lt;/code&gt; in code examples.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;content&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All tags have brackets around them &amp;lt; and &amp;gt; that are used by the browser to know what is a tag and what is content.  Right after the opening bracket &lt;code&gt;&amp;lt;&lt;/code&gt; is the tag name like h1 or p then the closing bracket &lt;code&gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the tag has a closing tag it will match the opening tag but have an &lt;code&gt;/&lt;/code&gt; after the opening bracket.  This is the indication to the browser to close the tag that was opened.  With out it the browser would never know when to stop.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are a few number of tags that do not have a closing tag because they do not wrap any content.  Older versions of HTML required that all tags be opened and closed.  This is no longer the case although you may still see a self-closing tag &lt;code&gt;&amp;lt;tag /&amp;gt;&lt;/code&gt; in code examples.  &lt;/p&gt;
 &lt;h2 id=&quot;attributes&quot;&gt;Attributes&lt;/h2&gt;
 &lt;p&gt;Sometimes a tag will need additional information to perform correctly.  Adding an attribute to the tag allows the developer to set the correct information on each tag.  &lt;/p&gt;
 &lt;ul&gt;
@@ -62,10 +54,12 @@
 &lt;li&gt;The number of attributes that are used has decreased with newer versions of HTML.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;one-attribute&quot;&gt;One Attribute&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;tag attribute=&amp;quot;value&amp;quot;&amp;gt;content&amp;lt;/tag&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;two-attributes&quot;&gt;Two Attributes&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;tag attribute=&amp;quot;value&amp;quot; attribute=&amp;quot;value&amp;quot;&amp;gt;content&amp;lt;/tag&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;block-level-vs-inline&quot;&gt;Block-level vs inline&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;attribute&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;value&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;content&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;two-attributes&quot;&gt;Two Attributes&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;attribute&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;value&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;attribute&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;value&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;content&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;block-level-vs-inline&quot;&gt;Block-level vs inline&lt;/h2&gt;
 &lt;p&gt;Most all tags fall in to one of two types of tags, inline or block.  Understanding how an element displays will help you choose the correct tag to use.  &lt;/p&gt;
 &lt;p&gt;Block-level elements will&lt;/p&gt;
 &lt;ul&gt;
@@ -123,19 +117,8 @@ Examples
       <pubDate>Wed, 27 Sep 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-2/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about how to create links and embed images. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about how to create links and embed images. &lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;anchor-tag-inline-element-&quot;&gt;Anchor Tag (inline element)&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/&quot;&gt;Link Tag&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/inline.html&quot;&gt;Inline&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/folders.html&quot;&gt;Folder&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/images.html&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/image-types.html&quot;&gt;Image Types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/embed.html&quot;&gt;Embed&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-2/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-2/week2-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;a href=&quot;/lessons/lesson-2/week2.zip&quot;&gt;Download Stater File &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The anchor tag or the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag is most commonly used to create a link to an other file or page.  The anchor tag by default will not act as a link without the &lt;code&gt;href&lt;/code&gt; attribute.  &lt;/p&gt;
 &lt;p&gt;The anchor tag can also be used to set a point on a page where the page can be linked to.  You might see this on an FAQ page where you have a list of questions at the top and the answers at the bottom.&lt;/p&gt;
 &lt;p&gt;Please note there is not a link tag.  If someone askes you to create a link they are talking about the anchor tag.&lt;/p&gt;
@@ -216,17 +199,8 @@ table tr td:nth-child(1){width:20%}
       <pubDate>Wed, 04 Oct 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-3/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we start to talk about CSS. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we start to talk about CSS. &lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;lesson-3-css&quot;&gt;Lesson 3 - CSS&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/&quot;&gt;Intro to CSS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/selectors.html&quot;&gt;Selectors&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/css.html&quot;&gt;CSS3 Reference&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-3/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-3/week3-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-3/week3.zip&quot;&gt;Download Stater File &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1mYirjj8tdvtriYiZJl5F97xVhJFnOiWnf0cp1JKqO9M/edit?pli=1#slide=id.p&quot; class=&quot;btn&quot;&gt;View Presentation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-is-css&quot;&gt;What is CSS&lt;/h2&gt;
 &lt;ul&gt;
@@ -355,19 +329,8 @@ table tr td:nth-child(1){width:20%}
       <pubDate>Wed, 11 Oct 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-4/</guid>
       <author></author>
-      <description>&lt;p&gt;This week We will dive back into CSS and talk about text, font, borders, margin and padding. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week We will dive back into CSS and talk about text, font, borders, margin and padding. &lt;div&gt;&lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;basic-style-properties&quot;&gt;Basic Style Properties&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-4/&quot;&gt;Font Properties&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-4/text.html&quot;&gt;Text Properties&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-4/include.html&quot;&gt;Include CSS File&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-4/borders.html&quot;&gt;Borders&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-4/padding-margin.html&quot;&gt;Padding and Margin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-4/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-4/week4-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-4/week4.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;When styling fonts with CSS they are broken into two types.  &lt;strong&gt;Font&lt;/strong&gt; properties and &lt;strong&gt;Text&lt;/strong&gt; properties. The two are very similar, the &lt;strong&gt;Font&lt;/strong&gt; deals more with the character set and the &lt;strong&gt;Text&lt;/strong&gt; is more about changing the way the font looks.&lt;/p&gt;
 &lt;h2 id=&quot;font-properties&quot;&gt;Font Properties&lt;/h2&gt;
 &lt;table&gt;
@@ -517,18 +480,8 @@ td .label {margin-right: 4px;cursor: pointer;}
       <pubDate>Wed, 18 Oct 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-5/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;div&gt;&lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;css-box-model&quot;&gt;CSS Box Model&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/&quot;&gt;Box Model&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/pseudo.html&quot;&gt;Pseudo Class&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/floats.html&quot;&gt;Floats&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/clear-fix.html&quot;&gt;Clear Fix&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-5/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-5/week5-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-5/week5.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Since Everything on in web design is a rectangular box we need to know how to size that box.  The way that CSS calculates the size of a box is not what you expect.  Rather than set the size of the box based on the outer most elements &lt;code&gt;border&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; the width is set baed on the content.&lt;/p&gt;
 &lt;h3 id=&quot;setting-a-width&quot;&gt;Setting a width&lt;/h3&gt;
 &lt;p&gt;To set the width of an element you take the desired width and subtract the &lt;code&gt;padding-left&lt;/code&gt;, &lt;code&gt;padding-right&lt;/code&gt;, &lt;code&gt;border-left-width&lt;/code&gt; and &lt;code&gt;border-right-width&lt;/code&gt;.  If you need to maintain the &lt;code&gt;margin&lt;/code&gt; you will need to subtract the &lt;code&gt;margin-left&lt;/code&gt; and &lt;code&gt;margin-right&lt;/code&gt;.&lt;/p&gt;
@@ -566,15 +519,8 @@ td .label {margin-right: 4px;cursor: pointer;}
       <pubDate>Wed, 25 Oct 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about the new CSS3 flex box layout. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about the new CSS3 flex box layout. &lt;div&gt;&lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;float-layout&quot;&gt;Float Layout&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/&quot;&gt;Float Layout&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/flex.html&quot;&gt;Flex Box&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-6/flex-layout.html&quot;&gt;Flex Layout&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-6/week6.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;iframe height='589' scrolling='no' title='Float Layout' src='//codepen.io/danhahn/embed/owGKdY/?height=589&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'&gt;See the Pen &lt;a href='https://codepen.io/danhahn/pen/owGKdY/'&gt;Float Layout&lt;/a&gt; by Dan Hahn (&lt;a href='https://codepen.io/danhahn'&gt;@danhahn&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.
 &lt;/iframe&gt;
 
@@ -630,15 +576,9 @@ td .label {margin-right: 4px;cursor: pointer;}
       <pubDate>Wed, 01 Nov 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
       <author></author>
-      <description>&lt;p&gt;Adding background images or colors to elements and Building and styling tables.&lt;/p&gt;
+      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/&quot;&gt;Background&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/tables.html&quot;&gt;Tables&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-7/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-7/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
 &lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
 &lt;h2 id=&quot;background-color&quot;&gt;Background Color&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-color: color name | RGB Value | Hex Value;
@@ -733,12 +673,6 @@ td .label {margin-right: 4px;cursor: pointer;}
       <author></author>
       <description>&lt;p&gt;This week we will talk about css display, building navigations, and simple layouts.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;css-display&quot;&gt;CSS Display&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/&quot;&gt;CSS display (inline, block, inline-block, etc)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/navigations.html&quot;&gt;Navigation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-8/layouts.pdf&quot;&gt;Simple Layouts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id=&quot;display&quot;&gt;Display&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -832,7 +766,8 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;/table&gt;
 &lt;style&gt;
 tr td:first-of-type code {white-space: nowrap}
-&lt;/style&gt;</description>
+&lt;/style&gt;
+</description>
     </item>
     <item>
       <title>Lesson 9</title>
@@ -840,25 +775,23 @@ tr td:first-of-type code {white-space: nowrap}
       <pubDate>Wed, 15 Nov 2017 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will be talking about applying a background image with CSS and HTML forms &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will be talking about applying a background image with CSS and HTML forms &lt;div&gt;&lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;#Backgrounds&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/&quot;&gt;Backgrounds&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/lessons/lesson-9/forms.html&quot;&gt;Forms&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-9/week9-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-9/week9.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/week9-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;http://localhost:8080/lessons/lesson-9/week9.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
-&lt;p&gt;###Background Color&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-color: color name | RGB Value | Hex Value;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the background.&lt;/p&gt;
-&lt;p&gt;###Background Image&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-image: url(&amp;lt;image path&amp;gt;);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left corner.&lt;/p&gt;
-&lt;p&gt;###Background Repeat&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-repeat: repeat | no-repeat | repeat-x | repeat-y
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When applying a background image it will tile in all directions by default.&lt;/p&gt;
+&lt;h3 id=&quot;background-color&quot;&gt;Background Color&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-color: color name | RGB Value | Hex Value;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the background.&lt;/p&gt;
+&lt;h3 id=&quot;background-image&quot;&gt;Background Image&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-image&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;url&lt;/span&gt;(&amp;lt;&lt;span class=&quot;selector-tag&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;path&lt;/span&gt;&amp;gt;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left corner.&lt;/p&gt;
+&lt;h3 id=&quot;background-repeat&quot;&gt;Background Repeat&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-repeat: repeat | no-repeat | repeat-x | repeat-y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When applying a background image it will tile in all directions by default.&lt;/p&gt;
 &lt;p&gt;You can control the way the image will tile by using &lt;code&gt;background-repeat&lt;/code&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -886,25 +819,32 @@ tr td:first-of-type code {white-space: nowrap}
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;###Background Attachment&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-attachment: scroll | fixed;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the BODY tag and that background image should not move when the page is scrolled.&lt;/p&gt;
-&lt;p&gt;####Background Position&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-position: (left, right or center) (top, center or bottom);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that point.&lt;/p&gt;
+&lt;h3 id=&quot;background-attachment&quot;&gt;Background Attachment&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-attachment: scroll | fixed;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the BODY tag and that background image should not move when the page is scrolled.&lt;/p&gt;
+&lt;h3 id=&quot;background-position&quot;&gt;Background Position&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: (&lt;span class=&quot;selector-tag&quot;&gt;left&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt;) (&lt;span class=&quot;selector-tag&quot;&gt;top&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;bottom&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that point.&lt;/p&gt;
 &lt;p&gt;If you want the image to be position the center both vertical and horizontal than you need only define the value of center.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-position: center;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or percentages.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background-position: 100px 300px;
-background-position: 50% 80%;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;###Background Shorthand&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background: image repeat attachment position color;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Like many CSS properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default value.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background: #fff url(images/side-bar.png) repeat-y right top;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example attachment is not defined so it will be set to the default which in this case is scroll.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or percentages.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: 100&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 300&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;
+&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: 50% 80%;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;background-shorthand&quot;&gt;Background Shorthand&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;repeat&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;attachment&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;color&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Like many CSS properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default value.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background: #fff url(images/side-bar.png) repeat-y right top;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this example attachment is not defined so it will be set to the default which in this case is scroll.&lt;/p&gt;
 &lt;p&gt;In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to none.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;background: none;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You are setting the &lt;code&gt;background-image&lt;/code&gt; to none and by default setting the &lt;code&gt;background-color&lt;/code&gt; to transparent.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;none&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You are setting the &lt;code&gt;background-image&lt;/code&gt; to none and by default setting the &lt;code&gt;background-color&lt;/code&gt; to transparent.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -915,13 +855,6 @@ background-position: 50% 80%;
       <author></author>
       <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;understanding-the-index-html&quot;&gt;Understanding the Index.html&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/&quot;&gt;Understanding index&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/hosting.html&quot;&gt;Setting up your site&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-10/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-10/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;The magic of the index.html&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;When building a site that is hosted on a web server there needs to be a default file to serve. In most cases this is  &lt;strong&gt;index.html&lt;/strong&gt;. When you have a folder and put only one file in that folder it should be index.html since it will be served by just requesting the site or any subfolder of that site.&lt;/p&gt;
@@ -986,84 +919,7 @@ background-position: 50% 80%;
       <author></author>
       <description>&lt;p&gt;This week we work on the in class final.  &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;final-project&quot;&gt;Final Project&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/&quot;&gt;Final Project&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-11/pages.html&quot;&gt;Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/lessons/lesson-11/final-content.pdf&quot;&gt;Copy for pages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The final is due at the end of class on July 26, 2017.  Please email me at dan@svahtml.com with a zip file that has all the files needed to complete the final.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;final.psd&quot; class=&quot;btn&quot;&gt;Download PSD&lt;/a&gt;
-&lt;a href=&quot;images.zip&quot; class=&quot;btn&quot;&gt;Download images&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;colors&quot;&gt;Colors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;li&gt;#c0c0c0&lt;/li&gt;
-&lt;li&gt;#808080&lt;/li&gt;
-&lt;li&gt;#333333&lt;/li&gt;
-&lt;li&gt;#000000&lt;/li&gt;
-&lt;li&gt;#004358&lt;/li&gt;
-&lt;li&gt;#181e47&lt;/li&gt;
-&lt;li&gt;#ffe11a&lt;/li&gt;
-&lt;li&gt;#ff951a&lt;/li&gt;
-&lt;li&gt;#7fcaf5&lt;/li&gt;
-&lt;li&gt;#50b7f1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;fonts&quot;&gt;fonts&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;@import url(http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat);
-font-family: &amp;#39;Montserrat&amp;#39;, sans-serif;
-font-family: &amp;#39;Homemade Apple&amp;#39;, cursive;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;header&quot;&gt;header&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#50b7f1&lt;/li&gt;
-&lt;li&gt;#ffe11a&lt;/li&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;New York State &lt;code&gt;{font size 3em}&lt;/code&gt;&lt;br&gt;
-The Empire State &lt;code&gt;{font size 1.5em}&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;nav&quot;&gt;Nav&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#ffe11a&lt;/li&gt;
-&lt;li&gt;#ff951a&lt;/li&gt;
-&lt;li&gt;#000000&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;nav-items&quot;&gt;Nav Items&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Home(index.html)&lt;/li&gt;
-&lt;li&gt;History(history/index.html)&lt;/li&gt;
-&lt;li&gt;Geography(geography/index.html)&lt;/li&gt;
-&lt;li&gt;Major cities(cities/index.html)&lt;/li&gt;
-&lt;li&gt;Demographics(demographics/index.html)&lt;/li&gt;
-&lt;li&gt;Transportation(transportation/index.html)&lt;/li&gt;
-&lt;li&gt;Sports(sports/index.html)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;content&quot;&gt;Content&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;li&gt;#50b7f1&lt;/li&gt;
-&lt;li&gt;#004358&lt;/li&gt;
-&lt;li&gt;#b7b7b7&lt;/li&gt;
-&lt;li&gt;#333333&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;side-bar&quot;&gt;Side Bar&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#004358&lt;/li&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;li&gt;#50b7f1&lt;/li&gt;
-&lt;li&gt;#b7b7b7&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;footer&quot;&gt;Footer&lt;/h2&gt;
-&lt;h6 id=&quot;swatches&quot;&gt;Swatches&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;#7fcaf5&lt;/li&gt;
-&lt;li&gt;#ffffff&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;© 2017 SVA HTML&lt;/p&gt;
+&lt;p&gt;Details of final will be released at a later date.&lt;/p&gt;
 </description>
     </item>
     <item>
@@ -1072,539 +928,9 @@ The Empire State &lt;code&gt;{font size 1.5em}&lt;/code&gt;&lt;/p&gt;
       <pubDate>Wed, 13 Dec 2017 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
       <author></author>
-      <description>&lt;p&gt;Continue to work on final &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we work on the in class final.  &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;continue-to-work-on-final&quot;&gt;Continue to work on final&lt;/h1&gt;
-&lt;p&gt;Final is due at the end of this class.  If you are not able to make it to this class your final is still due at this time.&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Lesson 5</title>
-      <link>http://localhost:8080/lessons/lesson-B/</link>
-      <pubDate>Mon, 24 Feb 2020 15:00:00 -0500</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-B/</guid>
-      <author></author>
-      <description>&lt;p&gt;This week we will talk about Table and all the good and bad that goes with it. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;tables&quot;&gt;Tables&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-B/&quot;&gt;Intro to Tables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/lessons/lesson-B/table-example/index.html&quot;&gt;Build a table&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-B/styles.html&quot;&gt;Adding Styles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-B/homework.html&quot;&gt;Homework&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-B/week5-notes.zip&quot;&gt;Download Notes &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-B/week5.zip&quot;&gt;Download Starter Files &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Tables are defined with the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; tag. A table is divided into rows (with the &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; tag), and each row is divided into data cells (with the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; tag). The letters td stands for &lt;strong&gt;“table data,”&lt;/strong&gt; which is the content of a data cell. A data cell can contain text, images, lists, paragraphs, forms, tables, etc. There is also the &lt;code&gt;&amp;lt;th&amp;gt;&lt;/code&gt; or table header to define a header within the table.  &lt;strong&gt;HTML5&lt;/strong&gt; added two new tags to help better group content within the table.  The &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt; or table header and &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; or table body are &lt;strong&gt;optional&lt;/strong&gt; tags that can be used to help define areas of the table.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;thead&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;th&amp;gt;row 1, cell 1&amp;lt;/th&amp;gt;
-            &amp;lt;th&amp;gt;row 1, cell 2&amp;lt;/th&amp;gt;
-        &amp;lt;/tr&amp;gt;
-    &amp;lt;/thead&amp;gt;
-    &amp;lt;tbody&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;td&amp;gt;row 2, cell 1&amp;lt;/td&amp;gt;
-            &amp;lt;td&amp;gt;row 2, cell 2&amp;lt;/td&amp;gt;
-        &amp;lt;/tr&amp;gt;
-    &amp;lt;/tbody&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
-&lt;table class=&quot;no-style&quot;&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;row 1, cell 1&lt;/th&gt;
-            &lt;th&gt;row 1, cell 2&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;row 2, cell 1&lt;/td&gt;
-            &lt;td&gt;row 2, cell 2&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;table-tag&quot;&gt;Table Tag&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;table&amp;gt;&amp;lt;/table&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;table&lt;/strong&gt; tag defines the starting and stopping points of the table. After the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; all content that is to be displayed on the screen must be placed between &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;/td&amp;gt;&lt;/code&gt;. Once a &lt;code&gt;&amp;lt;/table&amp;gt;&lt;/code&gt; is indicated all html goes on as normal.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;!-- add table content --&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;table-row&quot;&gt;Table Row&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;tr&amp;gt;&amp;lt;/tr&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Table Row&lt;/strong&gt; defines the starting and stopping points for a table row. All table data cells must be placed between the &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;/tr&amp;gt;&lt;/code&gt;. Because a table might have more than one row you can have more than one &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; set.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;tr&amp;gt;
-        &amp;lt;!-- add table content --&amp;gt;
-    &amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;table-data&quot;&gt;Table Data&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;table data&lt;/strong&gt; Defines a cell with a table and must be between &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;/tr&amp;gt;&lt;/code&gt;. Because all content must be located in the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; set you can have more than on &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; set per row.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;tr&amp;gt;
-        &amp;lt;td&amp;gt;&amp;lt;!-- add table content --&amp;gt;&amp;lt;/td&amp;gt;
-    &amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;table-header&quot;&gt;Table Header&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;table header&lt;/strong&gt; Just like the &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; but defines a &lt;strong&gt;header&lt;/strong&gt;. The table header is always &lt;em&gt;bold and center&lt;/em&gt; although this can be overwritten with CSS.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;tr&amp;gt;
-        &amp;lt;th&amp;gt;&amp;lt;!-- add table content --&amp;gt;&amp;lt;/tg&amp;gt;
-    &amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;table-head&quot;&gt;Table Head&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;thead&amp;gt;&amp;lt;/thead&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;table head&lt;/strong&gt; Defines an &lt;em&gt;optional&lt;/em&gt; area within the table as the header of that table. &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt; is descendant of the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;thead&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;th&amp;gt;&amp;lt;!-- add table content --&amp;gt;&amp;lt;/tg&amp;gt;
-        &amp;lt;/tr&amp;gt;
-    &amp;lt;/head&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;table-body&quot;&gt;Table Body&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;tbody&amp;gt;&amp;lt;/tbody&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;table body&lt;/strong&gt; Defines an &lt;em&gt;optional&lt;/em&gt; area within the table as the body of that table. &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt; is descendant of the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;tbody&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;td&amp;gt;&amp;lt;!-- add table content --&amp;gt;&amp;lt;/td&amp;gt;
-        &amp;lt;/tr&amp;gt;
-    &amp;lt;/tbody&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
-&lt;p&gt;Normal table with header&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;thead&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;th&amp;gt;Heading&amp;lt;/th&amp;gt;
-            &amp;lt;th&amp;gt;Another Heading&amp;lt;/th&amp;gt;
-        &amp;lt;/tr&amp;gt;
-    &amp;lt;/thead&amp;gt;
-    &amp;lt;tbody&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;td&amp;gt;row 1, cell 1&amp;lt;/td&amp;gt;
-            &amp;lt;td&amp;gt;row 1, cell 2&amp;lt;/td&amp;gt;
-        &amp;lt;/tr&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;td&amp;gt;row 2, cell 1&amp;lt;/td&amp;gt;
-            &amp;lt;td&amp;gt;row 2, cell 2&amp;lt;/td&amp;gt;
-        &amp;lt;/tr&amp;gt;
-    &amp;lt;tbody&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;table border=&quot;1&quot; class=&quot;no-style&quot;&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Heading&lt;/th&gt;
-            &lt;th&gt;Another Heading&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;row 1, cell 1&lt;/td&gt;
-            &lt;td&gt;row 1, cell 2&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;row 2, cell 1&lt;/td&gt;
-            &lt;td&gt;row 2, cell 2&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&quot;row-span-and-col-span&quot;&gt;Row Span and Col Span&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;colspan&lt;/code&gt; attribute is a way to make on &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; take up the space of two or more columns.  This is very useful when you have a title or other content that need to span over two or more columns.&lt;/p&gt;
-&lt;h3 id=&quot;table-with-colspan&quot;&gt;Table with colspan&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table border=&amp;quot;1&amp;quot;&amp;gt;
-&amp;lt;tr&amp;gt;
-    &amp;lt;td colspan=&amp;quot;2&amp;quot;&amp;gt;row 1, cell 1&amp;lt;/td&amp;gt;
-&amp;lt;/tr&amp;gt;
-&amp;lt;tr&amp;gt;
-    &amp;lt;td&amp;gt;row 2, cell 1&amp;lt;/td&amp;gt;
-    &amp;lt;td&amp;gt;row 2, cell 2&amp;lt;/td&amp;gt;
-&amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;table border=&quot;1&quot; class=&quot;no-style&quot;&gt;
-&lt;tr&gt;
-    &lt;td colspan=&quot;2&quot;&gt;row 1, cell 1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt;row 2, cell 1&lt;/td&gt;
-    &lt;td&gt;row 2, cell 2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;The &lt;code&gt;rowspan&lt;/code&gt; attribute is like the &lt;code&gt;colspan&lt;/code&gt; but the cell will span from one row to the next.&lt;/p&gt;
-&lt;h3 id=&quot;table-with-rowspan&quot;&gt;Table with rowspan&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table border=&amp;quot;1&amp;quot;&amp;gt;
-&amp;lt;tr&amp;gt;
-    &amp;lt;td rowspan=&amp;quot;2&amp;quot;&amp;gt;row 1, cell 1&amp;lt;/td&amp;gt;
-    &amp;lt;td&amp;gt;row 1, cell 2&amp;lt;/td&amp;gt;
-&amp;lt;/tr&amp;gt;
-&amp;lt;tr&amp;gt;
-    &amp;lt;td&amp;gt;row 2, cell 2&amp;lt;/td&amp;gt;
-&amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;table border=&quot;1&quot; class=&quot;no-style&quot;&gt;
-&lt;tr&gt;
-    &lt;td rowspan=&quot;2&quot;&gt;row 1, cell 1&lt;/td&gt;
-    &lt;td&gt;row 1, cell 2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt;row 2, cell 2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; that you would never put a colspan or rowspan on the last td in the row or column.&lt;/p&gt;
-&lt;h2 id=&quot;nested-tables&quot;&gt;Nested Tables&lt;/h2&gt;
-&lt;p&gt;A nested is one table that is coded within another table.   All HTML elements in a table must be coded within the &lt;td&gt; tag.  Almost all HTML elements can be code in a table including another table.&lt;/p&gt;
-&lt;p&gt;When nesting a table within another table be aware that you will now have a &lt;code&gt;&amp;lt;table&amp;gt;&amp;lt;/table&amp;gt;&lt;/code&gt; for each table.  So if you have two tables (one inside the other) you will need to have two sets of table tags.&lt;/p&gt;
-&lt;h4 id=&quot;adding-a-comment-&quot;&gt;Adding a comment &lt;!-- --&gt;&lt;/h4&gt;
-&lt;p&gt;One way to help organized and limit the number of errors is to add a HTML comment.  A comment is a snippet of code that is ignored by the browser.  It used to leave a note in the code.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;!-- comment here --&amp;gt;  (replace comment here with your note)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Anything between the two tags will not seen on the screen.&lt;/p&gt;
-&lt;p&gt;Adding comments before and after a nested table helps keep the two table straight and can limit the number of errors.&lt;/p&gt;
-&lt;h3 id=&quot;setting-up-a-nested-table&quot;&gt;Setting up a nested table&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;table&amp;gt;
-    &amp;lt;tr&amp;gt;
-        &amp;lt;td&amp;gt;
-            This cell contains a nested table.
-            &amp;lt;!-- start nested table --&amp;gt;
-            &amp;lt;table&amp;gt;
-            &amp;lt;tr&amp;gt;
-                &amp;lt;td&amp;gt;Nested table&amp;lt;/td&amp;gt;
-                &amp;lt;td&amp;gt;Nested table&amp;lt;/td&amp;gt;
-            &amp;lt;/tr&amp;gt;
-            &amp;lt;tr&amp;gt;
-                &amp;lt;td&amp;gt;Nested table&amp;lt;/td&amp;gt;
-                &amp;lt;td&amp;gt;Nested table&amp;lt;/td&amp;gt;
-            &amp;lt;/tr&amp;gt;
-            &amp;lt;/table&amp;gt;
-            &amp;lt;!-- end nested table --&amp;gt;
-        &amp;lt;/td&amp;gt;
-        &amp;lt;td&amp;gt;No Nested table here.&amp;lt;/td&amp;gt;
-    &amp;lt;/tr&amp;gt;
-&amp;lt;/table&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;table class=&quot;no-style&quot;&gt;
-&lt;tr&gt;
-    &lt;td&gt;
-        This cell contains a nested table.
-        &lt;!-- start nested table --&gt;
-        &lt;table&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Nested table&lt;/td&gt;
-            &lt;td&gt;Nested table&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Nested table&lt;/td&gt;
-            &lt;td&gt;Nested table&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;/table&gt;
-        &lt;!-- end nested table --&gt;
-    &lt;/td&gt;
-    &lt;td&gt;No Nested table here.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-</description>
-    </item>
-    <item>
-      <title>Lesson 7</title>
-      <link>http://localhost:8080/lessons/lesson-A/</link>
-      <pubDate>Mon, 09 Mar 2020 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-A/</guid>
-      <author></author>
-      <description>&lt;p&gt;This week we will have an introduction to JavaScript and JQuery. &lt;div&gt;&lt;span class=&quot;label label-default js&quot;&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;JavaScript&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;What is JavaScript?&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-A/&quot;&gt;Javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-A/jquery.html&quot;&gt;Jquery&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-A/week8-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-A/week8.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-A/lesson/index.html&quot;&gt;Slide Show&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;JavaScript (JS) is an interpreted computer programming language.  It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;what-does-that-mean-&quot;&gt;What does that mean?&lt;/h2&gt;
-&lt;p&gt;JavaScript gives life to web pages by way of the interpreter in a web browser.  The JavaScript interpreter translates a given script in order to manipulate elements within the page.
-Without it web sites would be fairly static.&lt;/p&gt;
-&lt;h2 id=&quot;history-of-javascript&quot;&gt;History of JavaScript&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li class=&quot;fragment&quot;&gt;Created by Brendan Eich (Mozilla CTO) &lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Shipped in Netscape Navigator 2.0 in 1995&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Originally Called &lt;i&gt;LiveScript&lt;/i&gt;&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Partially inspired by and shares superficial similarities to Java, but intended to appeal to non-programmers, similar to Microsoft’s Visual Basic&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Microsoft quickly adopted to gain footing with IE 3 in 1996&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Netscape submitted it to to The European Computer Manufacturers Association (ECMA) in 1996 for standardization. The standardized spec for this language is ECMAscript&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Now the working language of the web, for better or worse&lt;/li&gt;
-&lt;/ol&gt;
-
-
-
-
-&lt;h2 id=&quot;what-is-it-used-for-&quot;&gt;What is it used for?&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li class=&quot;fragment&quot;&gt;Adding dynamic behavior to web pages&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Manipulating and scripting elements on web pages&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Requesting data from a different source (we won’t cover this)&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;Processing data outside of the web with frameworks like Node.js (we won’t cover this)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
-&lt;h3&gt;Gmail&lt;/h3&gt;
-check out the sweet hover menu!
-
-&lt;h3&gt;&lt;b style=&quot;color: gray&quot;&gt;color&lt;/b&gt; a color matching game&lt;/h3&gt;
-
-&lt;p&gt;Using a markup language called SVG, JavaScript brings interactive graphics to create a rich experience&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://color.method.ac/&quot;&gt;http://color.method.ac&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;h3&gt;reveal.js&lt;/h3&gt;
-This presentation is using a JavaScript library.  Requires no JS knowledge on my part,  but automagically adds razzle &amp;amp; dazzle.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://lab.hakim.se/reveal-js/&quot;&gt;http://lab.hakim.se/reveal-js/&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;What does it look like?&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
-&amp;lt;script&amp;gt;
-function sayHello(name) {
-    alert(&amp;quot;Hello &amp;quot; + name + &amp;quot;!&amp;quot;);
-}
-&amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Similar to stylesheets, to keep your code clean &amp;amp; organized, best practice is to include external script&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
-&amp;lt;link href=&amp;quot;path/to/mystylesheet.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;&amp;lt;/link&amp;gt;
-&amp;lt;script src=&amp;quot;path/to/myjavascript.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In most cases stylesheets should precede script tags so that the browser can immediately render layout as intended, whereas scripts adding interactive behavior can take considerable time to load&lt;/p&gt;
-&lt;h2&gt;Lets dive in&lt;/h2&gt;
-
-&lt;p&gt;Variable assignment: numbers, booleans, strings&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;var myNumber = 5;
-var myBoolean = true;
-var myString = &amp;quot;Hello World!&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Variable assignment: arrays, objects&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;var myNumberArray = [1,2,3];
-var myCircleObject = { color: &amp;quot;red&amp;quot;, radius: 2};
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Take note how variable declarations begin with the &lt;b&gt;var&lt;/b&gt; keyword&lt;/p&gt;
-&lt;h2&gt;Control Flow&lt;/h2&gt;
-
-&lt;p&gt;&lt;b&gt;if&lt;/b&gt; statements are used to control the flow of logic in your script. The expression within the parenthesis following the &lt;code&gt;if&lt;/code&gt; keyword must evaluate to a boolean value: &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; in order to evaluate&lt;/p&gt;
-&lt;p&gt;var myGrade = 92;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;if (myGrade &amp;gt;= 85) {
-alert(&amp;#39;You are doing really well in this class!&amp;#39;);
-} else {
-alert(&amp;#39;You might want to study up.&amp;#39;);
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The expression in the parenthesis is checking that &lt;b&gt;myGrade&lt;/b&gt; is greater than or equal to 85.  &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;gt;=&lt;/code&gt;, &lt;code&gt;==&lt;/code&gt; are all logical operators used to compare values.&lt;/p&gt;
-&lt;h2&gt;Arithmetic Expressions&lt;/h2&gt;
-
-&lt;p&gt;We can perform arithmetic operations on numbers in JavaScript.  +, -, /, * are standard operators.  Take note on the 8th line that when we add a number to a string (a series of characters), JavaScript coerces the number to a string &amp;amp; appends it.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;var exam1 = 92;
-var exam2 = 85;
-var exam3 = 90;
-
-var average = (exam1 + exam2 + exam3) / 3;
-
-if (average &amp;gt;= 85) {
-alert(&amp;#39;You are doing really well in this class!&amp;#39;);
-} else {
-alert(&amp;#39;You might want to study up. Your average is &amp;#39; + average + &amp;#39;.&amp;#39;);
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;JavaScript also features a &lt;b&gt;Math&lt;/b&gt; namespace of advanced operations including &lt;code&gt;sqrt()&lt;/code&gt;, &lt;code&gt;pow()&lt;/code&gt; and &lt;code&gt;abs()&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;Objects&lt;/h2&gt;
-
-&lt;p&gt;Objects are a structured set of primitive values.  Let’s declare an object named circle with
-a color and radius property.  Then we’ll calculate the circumference and update the object with a new property that we can access later.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;var pi = 3.14;
-
-var circle = {
-color: &amp;quot;red&amp;quot;,
-radius: 5
-};
-
-circle.circumference = 2 * pi * circle.radius;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that we’ve declared a variable called pi for convenience and readability.&lt;/p&gt;
-&lt;h2&gt;Arrays &amp;amp; Iteration&lt;/h2&gt;
-An array is a collection of things.  They could be basic values, such as numbers, or more complex data structures such as objects.
-
-Let’s declare an array of objects representing report cards. We can access the length of the array. The first element of an array starts at 0 and the last one is at the position of length - 1
-&lt;pre&gt;&lt;code data-trim contenteditable&gt;
-var ReportCards = [
-{ name: “Dan”, Exam1: 85, Exam2: 90, Exam3: 75 },
-{ name: “Elijah”, Exam1: 65, Exam2: 80, Exam3: 75 },
-{ name: “Jennifer”, Exam1: 95, Exam2: 80, Exam3: 100 }
-];
-
-//Access the 1st element
-ReportCards[0];
-
-//Access the name of the 2nd element
-ReportCards[1].name;
-&lt;/code&gt;&lt;/pre&gt;
-
-
-
-Now Let’s iterate over our ReportCards array and calculate the average final score for each student.
-A &lt;b&gt;for&lt;/b&gt; loop is composed of multiple statements: the initial position of the iterator (in this case we are using the variable i), the terminating position &amp;amp; finally the incrementor.  In most for loops it is only needed to increment by one using the operator i++.  This is equivalent to i = i + 1.
-&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-for (var i = 0; i &amp;lt; ReportCards.length; i++) {
-var card = ReportCards[i];
-card.final = (card.Exam1 + card.Exam2 + card.Exam3) / 3;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-
-
-
-&lt;h2&gt;Functions&lt;/h2&gt;
-
-&lt;p&gt;Functions encapsulate a series of statements to represent a particular behavior. Functions become a critical mechanism when working with a large code base because they allow behaviors to be reusable.&lt;/p&gt;
-&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-function calculateAverage(numbers) {
-var aggregate = 0;
-
-for (var i = 0; i &lt; numbers.length; i++) {
-aggregate = aggregate + numbers[i];
-}
-
-return aggregate / numbers.length;
-}
-
-var set_of_numbers = [5, 10, 15];
-
-calculateAverage(set_of_numbers);
-
-var another_set_of_numbers = [100, 130, 150, 170, 200];
-
-calculateAverage(another_set_of_numbers);
-&lt;/code&gt;&lt;/pre&gt;
-
-
-
-
-&lt;p&gt;&lt;img src=&quot;img/jquery_hosting.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;
-&lt;h1&gt;jQuery&lt;/h1&gt;
-
-
-
-&lt;p&gt;&lt;h2&gt;What is jQuery?&lt;/h2&gt;
-jQuery is a cross-browser JavaScript library originally developed by John Resig.  It simplifies DOM (Document Object Model) manipulation and standardizes the API between different browser environments. jQuery has gained incredible popularity for its ease of use and expressive syntax.&lt;/p&gt;
-&lt;p&gt;Note: The DOM just means HTML accessible by JavaScript. Its effectively a snooty way of saying HTML when its live and programmable in a web browser. An API just stands for Application Programming Interface.  It means ‘The way something can be programmatically accessed.’&lt;/p&gt;
-&lt;p&gt;&lt;h2&gt;Selectors&lt;/h2&gt;
-jQuery offers an especially convenient way to select HTML elements by way of CSS selectors, as well as creating HTML fragments on the fly.&lt;/p&gt;
-&lt;p&gt;&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-//select all divs with the class button
-$(‘div.button’);&lt;/p&gt;
-&lt;p&gt;//select all table data cells whose parents are a table row with class even
-$(‘tr.even &amp;gt; td’);&lt;/p&gt;
-&lt;p&gt;//select by id (should only return one element)
-$(‘#reportcards’);
-&lt;/code&gt;&lt;/pre&gt;
-$() is jQuery’s magic function.  jQuery sacrifices verbose syntax in favor of short, expressive statements.  One of the jQuery framework’s design decisions is to have a magic $() function that is context aware to the arguments being passed in.  In this case we are passing in a string representing a CSS selector, so jQuery knows to look for elements in our web page.&lt;/p&gt;
-&lt;p&gt;&lt;h2&gt;DOM Fragments&lt;/h2&gt;
-Let’s create a document fragment composed of an HTML string.  We will then use
-jQuery’s append() method to add it to our document body.&lt;/p&gt;
-&lt;p&gt;&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-var paragraph_fragment = $(‘Hello World!’);&lt;/p&gt;
-&lt;p&gt;$(‘#paragraph-container’).append(paragraph_fragment);
-&lt;/code&gt;&lt;/pre&gt;
-jQuery’s magic $() function recognized that our string represents HTML instead of a CSS selector, so it knows to create a document object which we can further manipulate.&lt;/p&gt;
-&lt;p&gt;&lt;pre class=&quot;fragment&quot;&gt;&lt;code data-trim contenteditable&gt;
-paragraph_fragment.addClass(‘red-border’);
-&lt;/code&gt;&lt;/pre&gt;
-We added the class ‘red-border’ to our paragraph tag.&lt;/p&gt;
-&lt;p&gt;&lt;h2&gt;Expand your knowledge&lt;/h2&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li class=&quot;fragment&quot;&gt;Code Academy: &lt;a href=&quot;http://www.codecademy.com/tracks/javascript&quot;&gt;http://www.codecademy.com/tracks/javascript&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;JavaScript the Good Parts: &lt;a href=&quot;http://shop.oreilly.com/product/9780596517748.do&quot;&gt;http://shop.oreilly.com/product/9780596517748.do&lt;/a&gt;&lt;/li&gt;
-&lt;li class=&quot;fragment&quot;&gt;jQuery Documentation: &lt;a href=&quot;http://api.jquery.com/&quot;&gt;http://api.jquery.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;h2&gt;Happy Scripting&lt;/h2&gt;
-Elijah Meerson, Software Engineer at AppNexus.  &lt;a href=&quot;https://twitter.com/elimeerson&quot;&gt;@elimeerson&lt;/a&gt;
-Also I’m on Google+&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Lesson 7</title>
-      <link>http://localhost:8080/lessons/lesson-C/</link>
-      <pubDate>Mon, 20 Jul 2020 15:00:00 -0400</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-C/</guid>
-      <author></author>
-      <description>&lt;p&gt;This week we will be talking about CSS Layouts.  How to build them without tables. &lt;div&gt;&lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;basic-layouts&quot;&gt;Basic Layouts&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-C/&quot;&gt;Basic Layouts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-C/overflow.html&quot;&gt;Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://localhost:8080/lessons/lesson-C/responsive.html&quot;&gt;Responsive&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/lessons/lesson-C/week7-notes.zip&quot;&gt;Download Notes  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-&lt;a href=&quot;/lessons/lesson-C/week7.zip&quot;&gt;Download Starter File  &lt;i class=&quot;icon-download-alt icon-white&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;CSS layouts have changed the way that we are able to design websites. At one time all layouts were done with the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;. This was both slow and hard to manage.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Table free&lt;/em&gt; layouts have been used for almost a decade now while they are an improvement over the &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; they have flaws.&lt;/p&gt;
-&lt;h2 id=&quot;structure&quot;&gt;Structure&lt;/h2&gt;
-&lt;p&gt;In this example we are looking the the most basic layout. Assume that this page is a standard content page that has a &lt;code&gt;header&lt;/code&gt;, &lt;code&gt;navigation&lt;/code&gt;, &lt;code&gt;content&lt;/code&gt; area and &lt;code&gt;footer&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;
-&amp;lt;nav&amp;gt;&amp;lt;/nav&amp;gt;
-&amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;
-&amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The issue now is that we have no way to limit the width of the elements. One option would be with set the width on each element there are some issue that come along with that. The box model kicks in when a width is set.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;add-wrapper&quot;&gt;Add Wrapper&lt;/h2&gt;
-&lt;p&gt;The other option is to wrap all the element with an other element like a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. This will allow you to define a &lt;code&gt;width&lt;/code&gt; on it.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;
-  &amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;
-  &amp;lt;nav&amp;gt;&amp;lt;/nav&amp;gt;
-  &amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;
-  &amp;lt;footer&amp;gt;&amp;lt;/footer&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;adding-class&quot;&gt;Adding class&lt;/h2&gt;
-&lt;p&gt;While the structure is correct at this point we want to add an id or class to help identify this &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; from any other &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt; that may be on the page.&lt;/p&gt;
-&lt;p&gt;There are some who say you should never use an id because they are too specific. I disagree with this. I feel that a well place id can help identify which element you are targeting.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
-  &amp;lt;header class=&amp;quot;globalHeader&amp;quot;&amp;gt;&amp;lt;/header&amp;gt;
-  &amp;lt;nav class=&amp;quot;globalNav&amp;quot;&amp;gt;&amp;lt;/nav&amp;gt;
-  &amp;lt;article class=&amp;quot;contentArea&amp;quot;&amp;gt;&amp;lt;/article&amp;gt;
-  &amp;lt;footer class=&amp;quot;gloablFooter&amp;quot;&amp;gt;&amp;lt;/footer&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;styles&quot;&gt;Styles&lt;/h2&gt;
-&lt;p&gt;Now that we have the structure in place we need to write the &lt;code&gt;css&lt;/code&gt; to support the markup.&lt;/p&gt;
-&lt;h3 id=&quot;fixed-width&quot;&gt;Fixed width&lt;/h3&gt;
-&lt;p&gt;In this example we are setting up a page that is a fixed width of &lt;code&gt;800px&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.container {
-  width: 800px;
-}
-
-.gloablNav, .contentArea {
-   float: left;
-}
-
-.gloablNav {
-  width: 200px;
-}
-
-.contentArea {
-   width: 600px;
-}
-
-.footer {
-   clear: both;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a fixed two column layout. The width can be adjusted any value just note that the &lt;code&gt;.globalNav&lt;/code&gt; and &lt;code&gt;.contentArea&lt;/code&gt; must add up to the width of the &lt;code&gt;.container&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Details of final will be released at a later date.&lt;/p&gt;
 </description>
     </item>
   </channel>

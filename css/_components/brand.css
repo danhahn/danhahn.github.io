@@ -3,7 +3,7 @@
   height: 35px;
 }
 .brand__svg .slash {
-  fill: #d1d1d1;
+  fill: #60db94;
 }
 .brand__svg .tag {
   fill: #cbd0d3;
@@ -12,11 +12,13 @@
   fill: #ffffff;
 }
 .homepage .brand__svg {
-  width: 287.5px;
-  height: 87.5px;
+  margin-top: 5px;
+  width: 108px;
+  height: 30px;
 }
 @media only screen and (max-width: 1024px) {
   .homepage .brand__svg {
+    margin-top: 5px;
     width: 115px;
     height: 35px;
   }

@@ -9,8 +9,7 @@
 }
 @media only screen and (max-width: 768px) {
   .article {
-    grid-template-columns: 1fr;
-    grid-template-areas: "s" "p";
+    grid-template-areas: "s s s s s s s s s s s s" "p p p p p p p p p p p p";
   }
 }
 @media only screen and (max-width: 768px) {
@@ -19,8 +18,8 @@
   }
 }
 .article__primary {
-  grid-area: p;
   padding: 2em 1em;
+  grid-area: p;
 }
 @media only screen and (max-width: 768px) {
   .article__primary {
@@ -33,8 +32,8 @@
   }
 }
 .article__secondary {
-  grid-area: s;
   padding: 2em 0;
+  grid-area: s;
 }
 @media only screen and (min-width: 769px) {
   .article__secondary {
