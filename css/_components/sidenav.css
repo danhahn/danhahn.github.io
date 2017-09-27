@@ -19,7 +19,7 @@
     top: 64px;
     left: 70vw;
     padding: 1px 5px 5px 4px;
-    background-color: #27ae33;
+    background-color: #f52a00;
     box-shadow: 3px 1px 10px -4px #000000;
     z-index: -1;
     line-height: 1em;
@@ -36,7 +36,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     margin: -1em -1em 1em;
-    border-bottom: 1px solid #27ae60;
+    border-bottom: 1px solid #f57c00;
     justify-content: space-around;
   }
 }
@@ -47,7 +47,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: #27ae33;
+    background-color: #f52a00;
     width: 70vw;
     margin: 0;
     display: flex;
@@ -62,7 +62,7 @@
 }
 @media only screen and (max-width: 425px) {
   .sidenav__item {
-    border-bottom: 1px solid #60db94;
+    border-bottom: 1px solid #ffae5c;
     font-size: 1.5em;
     flex: 1;
     display: flex;
@@ -73,7 +73,7 @@
   display: block;
   padding: .5em 1em;
   text-decoration: none;
-  color: #27ae60;
+  color: #f57c00;
   border-left: 2px solid transparent;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -87,21 +87,21 @@
 }
 @media only screen and (min-width: 769px) {
   .sidenav__link.active {
-    border-left-color: #27ae60;
-    color: #27ae60;
+    border-left-color: #f57c00;
+    color: #f57c00;
   }
   .sidenav__link:not(.active):hover {
-    border-left-color: #36d278;
-    color: #36d278;
+    border-left-color: #ff9529;
+    color: #ff9529;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   .sidenav__link.active {
-    background-color: #27ae60;
+    background-color: #f57c00;
     color: #ffffff;
   }
   .sidenav__link:not(.active):hover {
-    background-color: #36d278;
+    background-color: #ff9529;
     color: #ffffff;
   }
 }

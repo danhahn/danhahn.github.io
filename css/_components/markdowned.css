@@ -12,7 +12,7 @@
 .article__primary h4 a,
 .article__primary h5 a,
 .article__primary h6 a {
-  color: #27ae60;
+  color: #f57c00;
   text-decoration: none;
 }
 .article__primary h1 a:hover,
@@ -44,7 +44,7 @@
   }
 }
 .article__primary h2 {
-  color: #36d278;
+  color: #ff9529;
   font-size: 1.8em;
   line-height: 1.8;
   font-weight: 700;
@@ -87,15 +87,15 @@
 }
 .article__primary table {
   border-collapse: collapse;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #d9dcde;
 }
 .article__primary table th,
 .article__primary table td {
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid #d9dcde;
   text-align: left;
   padding: .5em 1em;
 }
 .article__primary table th {
   border-bottom-width: 2px;
-  color: #27ae4a;
+  color: #f57c00;
 }

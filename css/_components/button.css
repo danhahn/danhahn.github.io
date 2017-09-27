@@ -19,12 +19,12 @@
   border: 1px solid transparent;
   border-radius: 4px;
   text-decoration: none;
-  color: #27ae60;
-  border: 1px solid #27ae60;
+  color: #f57c00;
+  border: 1px solid #f57c00;
   transition: all .1s;
 }
 .btn:hover {
-  background-color: #2cc36b;
+  background-color: #ff8910;
   color: #ffffff;
 }
 .btn i {
@@ -32,8 +32,8 @@
 }
 .btn--primary {
   color: #ffffff;
-  background-color: #27ae60;
+  background-color: #f57c00;
 }
 .btn--primary:hover {
-  background-color: #36d278;
+  background-color: #ff9529;
 }
