@@ -83,9 +83,11 @@
 <p>The anchor tag can also be used to set a point on a page where the page can be linked to.  You might see this on an <span class="caps">FAQ</span> page where you have a list of questions at the top and the answers at the&nbsp;bottom.</p>
 <p>Please note there is not a link tag.  If someone askes you to create a link they are talking about the anchor&nbsp;tag.</p>
 <h2 id="example">Example</h2>
-<p><code>&lt;a href=”http://www.sva.edu”&gt;http://www.sva.edu&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”http://www.sva.edu”</span>&gt;</span>http://www.sva.edu<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <p><strong>or</strong></p>
-<p><code>&lt;a name=&quot;pointname&quot;&gt;Page Content&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"pointname"</span>&gt;</span>Page Content<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <h3 id="description">Description</h3>
 <table>
 <thead>
@@ -116,36 +118,45 @@
 <li>The location of the page the user will have the page&nbsp;replace.</li>
 </ol>
 <h3 id="example">Example</h3>
-<p><code>&lt;a href=&quot;location/of/file.html&quot;&gt;Clickable text&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"location/of/file.html"</span>&gt;</span>Clickable text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <h4 id="breaking-it-down">Breaking it&nbsp;down</h4>
 <p>Lets start with the <code>&lt;a&gt;</code> which is added to create the anchor.  Next we need to add the <code>href</code> <strong>attribute</strong> to make the anchor act as a <em>link</em>. Then we wrap the text we want the user to click on with the <code>&lt;a&gt;</code>. Last we add the location of the page we want to link&nbsp;to.</p>
 <p>If we had the text <strong><span class="caps">HTML</span> at SVA</strong> and wanted to link to the web page <em><a href="http://www.svahtml.com">http://www.svahtml.com</a></em> the link would look like&nbsp;this.</p>
-<p><code>&lt;a href=&quot;http://www.svahtml.com&quot;&gt;HTML at SVA&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.svahtml.com"</span>&gt;</span><span class="caps">HTML</span> at SVA<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <p>Keep in mind that the <code>&lt;a&gt;</code> is an inline element so it can be placed next to other&nbsp;text.</p>
 <p>If you want a link to be on its own line it would need to wrapped with a Block-Level element like a <code>&lt;p&gt;</code>.</p>
 <hr>
 <h2 id="linking-to-a-file-in-the-same-folder">Linking to a file in the same&nbsp;folder</h2>
 <p>When you link to a file that is in the same folder just add the file name to the <span class="caps">HREF</span>&nbsp;attribute.</p>
-<p><code>&lt;a href=&quot;filename.html&quot;&gt;Link Text&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"filename.html"</span>&gt;</span>Link Text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <h2 id="linking-to-a-file-in-a-sub-folder">Linking to a file in a sub&nbsp;folder</h2>
 <p>When linking to a file in a sub folder you need to declare what folder you are navigating to then add the&nbsp;file.</p>
-<p><code>&lt;a href=&quot;folder/filename.html&quot;&gt;Link Text&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"folder/filename.html"</span>&gt;</span>Link Text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <h2 id="linking-to-a-file-in-a-parent-folder">Linking to a file in a parent&nbsp;folder</h2>
 <p>When linking a file in a parent folder you need to add <code>&quot;../&quot;</code> for each folder you want to navigate up.  You do not need the folder name when navigating&nbsp;up.</p>
-<p><code>&lt;a href=&quot;../filename.html&quot;&gt;Link Text&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"../filename.html"</span>&gt;</span>Link Text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <h2 id="linking-to-an-outside-site">Linking to an outside&nbsp;site</h2>
 <p>When linking to an outside site you need to add the full <span class="caps">URL</span> including the <code>http://</code>.</p>
-<p><code>&lt;a href=&quot;http://www.svahtml.com&quot;&gt;Link Text&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.svahtml.com"</span>&gt;</span>Link Text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <h2 id="linking-to-a-point-with-a-page-">Linking to a point with a&nbsp;page.</h2>
 <p>The link add the “#” that says look on the page for a A tag with a name that matches the text after the&nbsp;#.</p>
-<p><code>&lt;a href=&quot;#sectionName&quot;&gt;Link to section&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#sectionName"</span>&gt;</span>Link to section<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <p>The point on the page you are linking&nbsp;to.</p>
-<p><code>&lt;a name=&quot;sectionName&quot;&gt;&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"sectionName"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <h2 id="images-as-a-link">Images as a&nbsp;link</h2>
 <h3 id="example">Example</h3>
-<p><code>&lt;a href=”http://www.cnn.com”&gt;&lt;img src=”/images/cnnlogo.png” alt=”link to cnn” border=”0”/&gt;&lt;/a&gt;</code></p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”http://www.cnn.com”</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">”/images/cnnlogo.png”</span> <span class="attr">alt</span>=<span class="string">”link</span> <span class="attr">to</span> <span class="attr">cnn</span>” <span class="attr">border</span>=<span class="string">”0”/</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+</code></pre>
 <h2 id="adding-target">Adding&nbsp;Target</h2>
-<p>There will be time what you want open a page in a new window. By adding the `target=”_blank” attribute it will force that page to open in a new window or&nbsp;tab.</p>
+<p>There will be time what you want open a page in a new window. By adding the <code>target=&quot;_blank&quot;</code> attribute it will force that page to open in a new window or&nbsp;tab.</p>
 <p><strong>Note:</strong> How the page open can not be controlled it is a setting of the browser.  In most cases it will open in a new&nbsp;tab.</p>
 <p><a href="http://css-tricks.com/use-target_blank/">Read More</a> about when you should use <code>target</code></p>
 <style>
