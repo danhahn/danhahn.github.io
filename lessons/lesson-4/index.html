@@ -123,26 +123,31 @@
 <p>When styling fonts with <span class="caps">CSS</span> they are broken into two types.  <strong>Font</strong> properties and <strong>Text</strong> properties. The two are very similar, the <strong>Font</strong> deals more with the character set and the <strong>Text</strong> is more about changing the way the font&nbsp;looks.</p>
 <hr>
 <p><code>font</code> - is a shorthand way to express any font propertiesx on one line.  When using the shorthand the order matters.  There are two required properties, font-size and&nbsp;font-family.</p>
-<pre><code>font: italic small-caps bold 12px arial, verdana;
-</code></pre><p>If you do not define a property within the shorthand it will be set to the default state often normal. It could be the case that in the case of <code>h1</code> where the default is for the text to be bold that when using the shorthand and not setting the <code>font-weight</code> it will be sent to <code>normal</code> and the <code>h1</code> will no longer be bold even though we did not set&nbsp;it.</p>
+<pre><code class="lang-css"><span class="selector-tag">font</span>: <span class="selector-tag">italic</span> <span class="selector-tag">small-caps</span> <span class="selector-tag">bold</span> 12<span class="selector-tag">px</span> <span class="selector-tag">arial</span>, <span class="selector-tag">verdana</span>;
+</code></pre>
+<p>If you do not define a property within the shorthand it will be set to the default state often normal. It could be the case that in the case of <code>h1</code> where the default is for the text to be bold that when using the shorthand and not setting the <code>font-weight</code> it will be sent to <code>normal</code> and the <code>h1</code> will no longer be bold even though we did not set&nbsp;it.</p>
 <hr>
 <p><code>font-style</code> will define if something will be italic.  If something is italic by default like the <code>em</code> you can also set the <code>font-style</code> to be <code>normal</code> and it will remove the&nbsp;italics.</p>
-<pre><code>font-style: italic;
-</code></pre><hr>
+<pre><code class="lang-css"><span class="selector-tag">font-style</span>: <span class="selector-tag">italic</span>;
+</code></pre>
+<hr>
 <p><code>font-variant</code> will set the text to be <code>small-caps</code> where the “lowercase” letters will be displayed as small uppercase&nbsp;letters.</p>
-<pre><code>font-variant: small-caps;
-</code></pre><hr>
+<pre><code class="lang-css"><span class="selector-tag">font-variant</span>: <span class="selector-tag">small-caps</span>;
+</code></pre>
+<hr>
 <p><code>font-weight</code>will define text that is bold.  If something is bold by default like <code>h2</code> you can remove the bold by setting the value to <code>normal</code>.</p>
-<pre><code>font-weight: bold;
-</code></pre><hr>
+<pre><code class="lang-css"><span class="selector-tag">font-weight</span>: <span class="selector-tag">bold</span>;
+</code></pre>
+<hr>
 <p><code>font-size</code> - set the size of the&nbsp;font.</p>
 <p>While there are a number of options to define what the size can be we use only three options.  We will use <strong>percent</strong>, <strong>em</strong>, or <strong>pixel</strong>.</p>
 <p>Both percent and em calculate the size of the font off of another font size. For example if a font size set to <code>10px</code> and wanted to have the text be <strong>twice as large</strong> you could set the size to be <code>2em</code> or <code>200%</code>,  This will calculate size to be <code>20px</code> but if the font size where to change to <code>12px</code> it would then calculate the size to <code>24px</code>.  The advantage of this is you only need to <strong>change the one font</strong> and all the other fonts will change in relation to that&nbsp;size.</p>
 <p>Since we <strong>can’t</strong> measure what an inch is on a computer screen we can’t use it. That also means that we <strong>can’t</strong> use point because <code>1 points</code> is defined as <code>1/72 inch</code>.  The fact that we do not know what an inch is it we can not calculate what a point is.  Instead you should always define <strong>font sizes in pixels, percent or em</strong>.</p>
-<pre><code>font-size: 12px;
-font-size: 2em;
-font-size: 200%;
-</code></pre><h3 id="css-units"><span class="caps">CSS</span>&nbsp;Units</h3>
+<pre><code class="lang-css"><span class="selector-tag">font-size</span>: 12<span class="selector-tag">px</span>;
+<span class="selector-tag">font-size</span>: 2<span class="selector-tag">em</span>;
+<span class="selector-tag">font-size</span>: 200%;
+</code></pre>
+<h3 id="css-units"><span class="caps">CSS</span>&nbsp;Units</h3>
 <table>
 <thead>
 <tr>
@@ -188,8 +193,9 @@ font-size: 200%;
 <p>*<em>Should not be used when viewing on a computer screen. Should only be used when&nbsp;printing</em></p>
 <hr>
 <p><code>font-family</code> - defines what font is displayed when the page is rendered.  The <code>font-family</code> can only load a font that is installed on the <strong>local computer</strong> viewing the page.   This means we are limited in the fonts that installed on both the Mac and Windows computers by&nbsp;default.</p>
-<pre><code>font-family: helvetica, arial, “time new roman”
-</code></pre><p><strong>Note:</strong> any font name that has a <em>space</em> in needs to be&nbsp;quoted(“).</p>
+<pre><code class="lang-css"><span class="selector-tag">font-family</span>: <span class="selector-tag">helvetica</span>, <span class="selector-tag">arial</span>, “<span class="selector-tag">time</span> <span class="selector-tag">new</span> <span class="selector-tag">roman</span>”
+</code></pre>
+<p><strong>Note:</strong> any font name that has a <em>space</em> in needs to be&nbsp;quoted(“).</p>
 <p>If you want to use a font that may not be fully supported but have a fall back you can put them in a comma separated list.  If the first item in the list is not available it will try the next font in the list.  If no font is available it will display the browser&nbsp;default.</p>
 <table>
 <thead>
