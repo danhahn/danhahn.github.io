@@ -593,7 +593,7 @@ td .label {margin-right: 4px;cursor: pointer;}
       <pubDate>Wed, 01 Nov 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
       <author></author>
-      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about CSS backgrounds and how to build and style an HTML table.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
 &lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
