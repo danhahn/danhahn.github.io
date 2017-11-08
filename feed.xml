@@ -593,7 +593,7 @@ td .label {margin-right: 4px;cursor: pointer;}
       <pubDate>Wed, 01 Nov 2017 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about CSS backgrounds and how to build and style an HTML table.&lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about CSS backgrounds and how to build and style an HTML table. &lt;div&gt; &lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
 &lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
@@ -688,102 +688,109 @@ td .label {margin-right: 4px;cursor: pointer;}
       <pubDate>Wed, 08 Nov 2017 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about css display, building navigations, and simple layouts.&lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about adding Google Fonts, responsive and the &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; tag. &lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;display&quot;&gt;Display&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Value&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;inline&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Default value. Displays an element as an inline element (like &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;)     &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;block&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Displays an element as a block element (like &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;)     &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;flex&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Displays an element as a block-level flex container. New in CSS3     &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;inline-block&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Displays an element as an inline-level block container. The inside of this block is formatted as block-level box , and the element itself is formatted as an inline-level box     &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;inline-flex&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Displays an element as an inline-level flex container. New in CSS3     &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;inline-table&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The element is displayed as an inline-level table     &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;list-item&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;h2 id=&quot;font-families-recap&quot;&gt;Font families recap&lt;/h2&gt;
+&lt;p&gt;As we looked at in Fundamental text and font styling, the fonts applied to your HTML can be controlled using the font-family property. This takes one or more font family names, and the browser travels down the list until it finds a font it has available on the system it is running on:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;p&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;font-family&lt;/span&gt;: Helvetica, &lt;span class=&quot;string&quot;&gt;&quot;Trebuchet MS&quot;&lt;/span&gt;, Verdana, sans-serif;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This system works well, but traditionally web developers font choices were limited. There are only a handful of fonts that you can guarantee to be available across all common systems — the so-called Web-safe fonts. You can use the font stack to specify preferrable fonts, followed by web-safe alternatives, followed by the default system font, but this adds overhead in terms of testing to make sure that your designs look ok with each font, etc.&lt;/p&gt;
+&lt;h2 id=&quot;web-fonts&quot;&gt;Web fonts&lt;/h2&gt;
+&lt;p&gt;But there is an alternative, which works very well, right back to IE version 6. Web fonts are a CSS feature that allows you to specify font files to be downloaded along with your website as it is accessed, meaning that any browser that supports web fonts can have exactly the fonts you specify available to it. Amazing! The syntax required looks something like this:&lt;/p&gt;
+&lt;p&gt;First of all, you have a &lt;code&gt;@font-face&lt;/code&gt; block at the start of the CSS, which specifies the font file(s) to download:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;@&lt;span class=&quot;keyword&quot;&gt;font-face&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;font-family&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;myFont&quot;&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;src&lt;/span&gt;: &lt;span class=&quot;built_in&quot;&gt;url&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;myFont.ttf&quot;&lt;/span&gt;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Below this you can then use the font family name specified inside &lt;code&gt;@font-face&lt;/code&gt; to apply your custom font to anything you like, as normal:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;html {
+  font-family: &amp;quot;myFont&amp;quot;, &amp;quot;Bitstream Vera Serif&amp;quot;, serif;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;There are two important things to bear in mind about web fonts:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Browsers support different font formats, so you’ll need multiple font formats for decent cross browser support. For example, most modern browsers support WOFF/WOFF2 (Web Open Font Format versions 1 and 2), the most efficient format around, but older versions of IE only support EOT (Embedded Open Type) fonts, and you might need to include an SVG version of the font to support older versions of iPhone and Android browsers. We’ll show you below how to generate the required code.&lt;/li&gt;
+&lt;li&gt;Fonts generally aren’t free to use. You have to pay for them, and/or follow other license conditions such as crediting the font creator in the code (or on your site.) You shouldn’t steal fonts and use them without giving proper credit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below are all the supported non web fonts.  If the font you want to use is not listed below you will need to use a web font.  While you can set up your own hosted fonts there are &lt;a href=&quot;https://www.smashingmagazine.com/2010/10/review-of-popular-web-font-embedding-services/&quot;&gt;services that will host and serve your fonts for you&lt;/a&gt;.  Many of them are free.  In our next section we we will talk about how to use &lt;a href=&quot;http://localhost:8080/lessons/lesson-8/google-fonts.html&quot;&gt;Google Fonts&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;serif-fonts&quot;&gt;Serif Fonts&lt;/h3&gt;
+&lt;table class=&quot;w3-table-all notranslate&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th style=&quot;width:55%&quot;&gt;font-family&lt;/th&gt;
+&lt;th&gt;Example text&lt;/th&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;run-in&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Displays an element as either block or inline, depending on context     &lt;/td&gt;
+&lt;td&gt;Georgia, serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Georgia, serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Georgia, serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;table&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;td&gt;“Palatino Linotype”, “Book Antiqua”, Palatino, serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;table-caption&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;caption&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;td&gt;“Times New Roman”, Times, serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Times New Roman', Times, serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Times New Roman', Times, serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;sans-serif-fonts&quot;&gt;Sans-Serif Fonts&lt;/h3&gt;
+&lt;table class=&quot;w3-table-all notranslate&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th style=&quot;width:55%&quot;&gt;font-family&lt;/th&gt;
+&lt;th&gt;Example text&lt;/th&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;table-column-group&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;colgroup&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;td&gt;Arial, Helvetica, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Arial, Helvetica, sans-serif;&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Arial, Helvetica, sans-serif;&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;table-header-group&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;thead&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;td&gt;“Arial Black”, Gadget, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Arial Black, Gadget, sans-serif;font-weight:normal;&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Arial Black, Gadget, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;table-footer-group&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;tfoot&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;td&gt;“Comic Sans MS”, cursive, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Comic Sans MS', cursive, sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Comic Sans MS', cursive, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;table-row-group&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;tbody&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;td&gt;Impact, Charcoal, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Impact, Charcoal, sans-serif;font-weight:normal&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Impact, Charcoal, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;table-cell&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;td&gt;“Lucida Sans Unicode”, “Lucida Grande”, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;table-column&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;col&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;td&gt;Tahoma, Geneva, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Tahoma, Geneva, sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Tahoma, Geneva, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;table-row&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Let the element behave like a &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; element     &lt;/td&gt;
+&lt;td&gt;“Trebuchet MS”, Helvetica, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Trebuchet MS', Helvetica, sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Trebuchet MS', Helvetica, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;none&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;The element will not be displayed at all (has no effect on layout)     &lt;/td&gt;
+&lt;td&gt;Verdana, Geneva, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Verdana, Geneva, sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Verdana, Geneva, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;monospace-fonts&quot;&gt;Monospace Fonts&lt;/h3&gt;
+&lt;table class=&quot;w3-table-all notranslate&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th style=&quot;width:55%&quot;&gt;font-family&lt;/th&gt;
+&lt;th&gt;Example text&lt;/th&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;initial&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Sets this property to its default value. Read about initial     &lt;/td&gt;
+&lt;td&gt;“Courier New”, Courier, monospace&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Courier New', Courier, monospace&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Courier New', Courier, monospace&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;inherit&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Inherits this property from its parent element. Read about inherit&lt;/td&gt;
+&lt;td&gt;“Lucida Console”, Monaco, monospace&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Lucida Console', Monaco, monospace&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Lucida Console', Monaco, monospace&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;style&gt;
-tr td:first-of-type code {white-space: nowrap}
-&lt;/style&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 </description>
     </item>
     <item>
