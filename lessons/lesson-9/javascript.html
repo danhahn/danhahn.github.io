@@ -7,25 +7,16 @@
     <title>Lesson 9 - SVA HTML
     </title>
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Fall 2017">
-    <link rel="stylesheet" href="/css/prism.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/flat-ui.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" sizes="192x192" href="/images/favicon.png">
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/underscore-min.js"></script>
-    <script src="/js/global.js"></script>
   </head>
   <body class="article-detail">
-    <div class="main-nav">
-      <div class="container">
-        <div role="navigation" class="navbar navbar-default">
-          <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="brand">
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100" height="31" viewBox="0 0 430 133" preserveAspectRatio="xMidYMid meet">
-                <g transform="translate(0.000000,133.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+    <nav class="container global-nav">
+      <div class="container__center">
+        <div class="simple-row simple-row--header nav-content">
+          <div class="simple-row simple-row--brandbar"><a href="/" class="brand">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="315" height="88" viewBox="0 0 430 133" preserveAspectRatio="xMidYMid meet" class="brand__svg">
+                <g transform="translate(0.000000,133.000000) scale(0.100000,-0.100000)" fill="#000" stroke="none">
                   <path d="M3311 1238 c-10 -24 -127 -296 -260 -604 -132 -309 -241 -564 -241 -568 0 -3 40 -6 88 -6 l88 0 259 603 c142 331 260 605 262 610 2 4 -37 7 -87 7 l-91 0 -18 -42z" class="slash"></path>
                   <path d="M322 839 l-251 -211 96 -82 c53 -44 167 -140 252 -213 l156 -132 58 57 c31 31 57 59 57 63 0 3 -80 72 -177 154 -98 81 -179 150 -180 154 -1 3 79 71 177 151 99 80 178 148 177 152 -2 7 -106 118 -111 118 -1 0 -116 -95 -254 -211z" class="tag"></path>
                   <path d="M3641 996 c-29 -30 -52 -59 -50 -64 2 -6 76 -69 164 -142 88 -73 168 -140 178 -149 16 -16 8 -25 -163 -165 -99 -82 -180 -151 -180 -155 0 -4 26 -32 58 -63 l57 -56 252 213 252 213 -250 208 c-137 115 -252 210 -257 212 -4 1 -32 -22 -61 -52z" class="tag"></path>
@@ -34,161 +25,317 @@
                   <path d="M1405 943 c8 -21 75 -191 149 -378 l134 -340 109 -3 108 -2 147 377 147 378 -96 3 c-60 2 -99 -1 -103 -8 -4 -6 -49 -130 -101 -275 -52 -146 -96 -265 -99 -265 -3 0 -14 24 -24 53 -10 28 -54 152 -98 275 l-80 222 -104 0-104 0 15 -37z" class="letter"></path>
                 </g>
               </svg></a>
+            <div class="burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
           </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="/"><i class="fa fa-home"></i> Home</a>
-                <ul>
-                  <li><a href="/lessons/lesson-1/">Lesson 1</a></li>
-                  <li><a href="/lessons/lesson-2/">Lesson 2</a></li>
-                  <li><a href="/lessons/lesson-3/">Lesson 3</a></li>
-                  <li><a href="/lessons/lesson-4/">Lesson 4</a></li>
-                  <li><a href="/lessons/lesson-5/">Lesson 5</a></li>
-                  <li><a href="/lessons/lesson-6/">Lesson 6</a></li>
-                  <li><a href="/lessons/lesson-7/">Lesson 7</a></li>
-                  <li><a href="/lessons/lesson-8/">Lesson 8</a></li>
-                  <li><a href="/lessons/lesson-9/">Lesson 9</a></li>
-                  <li><a href="/lessons/lesson-10/">Lesson 10</a></li>
-                  <li><a href="/lessons/lesson-11/">Lesson 11</a></li>
-                  <li><a href="/lessons/lesson-12/">Lesson 12</a></li>
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item header-nav__item--home"><a href="/" class="header-nav__link"><i class="fa fa-home header-nav__icon"></i> Home</a>
+                <ul class="header-nav__dropdown">
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-1/index.html">Lesson 1</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-2/index.html">Lesson 2</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-3/index.html">Lesson 3</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-4/index.html">Lesson 4</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-5/index.html">Lesson 5</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-6/index.html">Lesson 6</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-7/index.html">Lesson 7</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-8/index.html">Lesson 8</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-9/index.html">Lesson 9</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-10/index.html">Lesson 10</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-11/index.html">Lesson 11</a></li>
+                  <li class="header-nav__drop-item"><a href="/lessons/lesson-12/index.html">Lesson 12</a></li>
                 </ul>
               </li>
-              <li><a href="/syllabus.html"><i class="fa fa-book"></i> Syllabus</a></li>
-              <li><a href="/notes/tags/index.html"><i class="fa fa-html5"></i> HTML Tag List</a></li>
-              <li><a href="/notes/css/index.html"><i class="fa fa-css3"></i> CSS</a></li>
-              <li><a href="/notes/ascii/index.html"><i class="fa fa-heart"></i> ASCII Codes</a></li>
-              <li><a href="/notes/colors/index.html"><i class="fa fa-paint-brush"></i> Colors</a></li>
+              <li class="header-nav__item"><a href="/syllabus.html" class="header-nav__link"><i class="fa fa-book header-nav__icon"></i> Syllabus</a></li>
+              <li class="header-nav__item"><a href="/notes/tags/index.html" class="header-nav__link"><i class="fa fa-html5 header-nav__icon"></i> HTML Tag List</a></li>
+              <li class="header-nav__item"><a href="/notes/css/index.html" class="header-nav__link"><i class="fa fa-css3 header-nav__icon"></i> CSS</a></li>
+              <li class="header-nav__item"><a href="/notes/ascii/index.html" class="header-nav__link"><i class="fa fa-heart header-nav__icon"></i> ASCII Codes</a></li>
+              <li class="header-nav__item"><a href="/notes/colors/index.html" class="header-nav__link"><i class="fa fa-paint-brush header-nav__icon"></i> Colors</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </nav>
+    <header class="main-titlebar container">
+      <div class="container__center">
+        <div class="titlebar">
+          <h1 class="titlebar__main"><span class="caps">Lesson</span> 9
+          </h1>
+          <div class="titlebar__date">
+            <ul class="layout layout--date">
+              <li class="layout__item"><i class="fa fa-calendar"></i></li>
+              <li class="layout__item"><span class="date">November 15, 2017</span></li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-    <header class="main-header">
-      <div class="container">
-        <div class="well small page-title">
-          <h1>Lesson 9</h1>
-          <div class="date"><i class="fa fa-calendar"></i><span class="month">March</span><span class="day">30,</span><span class="year">2016</span></div>
-        </div>
-      </div>
     </header>
-    <div class="container main-level">
-      <div class="col-md-9 main-content">
-        <article class="article">
-          <section class="content"><h1 id="introduction-to-javascript">Introduction to&nbsp;JavaScript</h1>
+    <article class="container main-level">
+      <div class="container__center">
+        <section class="article">
+          <article class="article__primary">
+            <h1><span class="caps">JavascriptA</span> 
+            </h1><h2 id="javascript-variable">JavaScript&nbsp;Variable</h2>
+<p>Variable declarations, wherever they occur, are processed before any code is executed. The scope of a variable declared with var is its current execution context, which is either the enclosing function or, for variables declared outside any function, global. If you re-declare a JavaScript variable, it will not lose its&nbsp;value.</p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> name = <span class="string">"Dan"</span>;
+
+<span class="comment">// write out the value of Name to the console.</span>
+<span class="built_in">console</span>.log(name); <span class="comment">// Dan</span>
+</code></pre>
+<p>A variable can be any of the data types listed&nbsp;below.  </p>
+<h2 id="javascript-data-types">JavaScript Data&nbsp;Types</h2>
+<p>When we create a variable in JavaScript the values that are set are the data&nbsp;types.  </p>
+<p>The latest ECMAScript standard defines seven data&nbsp;types:</p>
+<h2 id="six-data-types-that-are-primitives-">Six data types that are&nbsp;primitives:</h2>
 <ul>
-<li><a href="/lessons/lesson-9/"><span class="caps">HTML</span>&nbsp;Forms</a></li>
-<li><a href="/lessons/lesson-9/classwork.html">Class&nbsp;Work</a></li>
-<li><a href="/lessons/lesson-9/javascript.html">Intro to <span class="caps">JS</span> and&nbsp;Jquery</a></li>
+<li>Boolean</li>
+<li>Null</li>
+<li>Undefined</li>
+<li>Number</li>
+<li>String</li>
+<li>Symbol (new in ECMAScript&nbsp;6)</li>
 </ul>
-<h2 id="what-is-javascript-">What is&nbsp;JavaScript?</h2>
-<p>Javascript is the action layer of web development.  Javascript allows for things on the page to change after the page has&nbsp;loaded.  </p>
-<h2 id="what-is-jquery-">What is&nbsp;JQuery?</h2>
-<p>Jquery is a fast, small, and feature-rich JavaScript library. It makes things like <span class="caps">HTML</span> document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of&nbsp;browsers.</p>
-<p>You can use JavaScript with out Jquery but can not use Jquery with out&nbsp;JavaScript.</p>
-<h2 id="class-work">Class&nbsp;work</h2>
-<p>We are going to use Jquery to check to see if all the fields are filled out.  If they are not we will prevent the form from being&nbsp;submitted.</p>
-<h3 id="there-are-a-few-basis-ideas-that-we-need-to-go-over">there are a few basis ideas that we need to go&nbsp;over</h3>
-<p>There are a number of way we can store data in&nbsp;<span class="caps">JS</span>.</p>
-<ol>
-<li>string - plain text <code>&quot;string&quot;</code></li>
-<li>boolean - true or false <code>true</code></li>
-<li>number - a number <code>20</code></li>
-<li>array - comma separated list <code>[&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;]</code></li>
-<li>object - a group of strings, booleans, numbers, arrays or objects <code>{numbers: [1,2,3]}</code> </li>
-</ol>
-<h3 id="functions">functions</h3>
-<p>You can think of a function as small program that you can define when it is&nbsp;runs. </p>
-<pre><code>// set up function 
-function runTest(var) {
-    // do test here
-    alert(var)
+<p>All types except objects define immutable values (values, which are incapable of being changed). For example and unlike to C, Strings are immutable. We refer to values of these types as “primitive&nbsp;values”.</p>
+<h3 id="boolean-type">Boolean&nbsp;type</h3>
+<p>Boolean represents a logical entity and can have two values: <code>true</code>, and <code>false</code>.</p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> isHappy = <span class="literal">true</span>;
+
+<span class="built_in">console</span>.log(isHappy); <span class="comment">// true</span>
+
+isHappy = <span class="literal">false</span>;
+
+<span class="built_in">console</span>.log(isHappy); <span class="comment">// false</span>
+
+<span class="keyword">if</span> (isHappy === <span class="literal">true</span>) {
+  <span class="built_in">console</span>.log(<span class="string">"😙"</span>);
+} <span class="keyword">else</span> {
+  conosle.log(<span class="string">"☹️"</span>);
+}
+ <span class="comment">// ☹️ since `isHappy` is false</span>
+</code></pre>
+<h3 id="null-type">Null&nbsp;type</h3>
+<p>The Null type has exactly one value: <code>null</code>.  In computer science, a null value represents a reference that points, generally intentionally, to a nonexistent or invalid object or address. In other words no value. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null" target="_blank">Read&nbsp;More</a></p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> notSet = <span class="literal">null</span>;
+
+<span class="built_in">console</span>.log(notSet); <span class="comment">// null</span>
+</code></pre>
+<h3 id="undefined-type">Undefined&nbsp;type</h3>
+<p>A variable that has not been assigned a value has the value <code>undefined</code>.</p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> x;
+
+<span class="built_in">console</span>.log(x); <span class="comment">// undefined</span>
+</code></pre>
+<h3 id="number-type">Number&nbsp;type</h3>
+<p>a number is able to represent floating-point numbers, the number type has three symbolic values: +Infinity, -Infinity, and <code>NaN</code> (not-a-number).</p>
+<p>With numbers you can do math on them <code>+</code> add, <code>-</code> subtract, <code>*</code> multiply and <code>/</code> divide.</p>
+<pre><code class="lang-javascript"><span class="built_in">console</span>.log(<span class="number">2</span> + <span class="number">4</span>); <span class="comment">// 6</span>
+<span class="built_in">console</span>.log(<span class="number">4</span> - <span class="number">2</span>); <span class="comment">// 2</span>
+<span class="built_in">console</span>.log(<span class="number">3</span> * <span class="number">3</span>): <span class="comment">// 9</span>
+<span class="built_in">console</span>.log(<span class="number">12</span> / <span class="number">3</span>); <span class="comment">// 3</span>
+<span class="built_in">console</span>.log(<span class="number">10</span> / <span class="number">0</span>); <span class="comment">// Infinity</span>
+
+<span class="built_in">console</span>.log(<span class="number">3</span> + <span class="string">"a"</span>); <span class="comment">// "3a"</span>
+<span class="built_in">console</span>.log(<span class="number">3</span> / <span class="string">"a"</span>); <span class="comment">// NaN</span>
+</code></pre>
+<h3 id="string-type">String&nbsp;type</h3>
+<p>JavaScript’s String type is used to represent textual data. It is a set of “elements” of 16-bit unsigned integer values. Each element in the String occupies a position in the String. The first element is at index 0, the next at index 1, and so on. The length of a String is the number of elements in&nbsp;it.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">Learn&nbsp;More</a></p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> name = <span class="string">"Dan Hahn"</span>;
+
+<span class="built_in">console</span>.log(name); <span class="comment">// "Dan Hahn"</span>
+
+<span class="keyword">var</span> firstName = <span class="string">"Dan"</span>;
+<span class="keyword">var</span> lastName = <span class="string">"Hahn"</span>;
+
+<span class="keyword">const</span> fullName = firstName + lastName;
+
+<span class="built_in">console</span>.log(fullName); <span class="comment">// "DanHahn"</span>
+
+<span class="built_in">console</span>.log(<span class="string">`<span class="subst">${firstName}</span> <span class="subst">${lastName}</span>`</span>); <span class="comment">// "Dan Hahn"</span>
+</code></pre>
+<h2 id="javascript-array">JavaScript&nbsp;Array</h2>
+<p>The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like&nbsp;objects.</p>
+<p>In other words an array is a list of strings, numbers, boolans, object or arrays.  They can be acceed by their index with is a zero base index meaning it starts counting at <code>0</code>.</p>
+<p>There are number of build in tools(methods) that can help get information about the&nbsp;array.  </p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> fruits = [<span class="string">'Apple'</span>, <span class="string">'Banana'</span>];
+
+<span class="built_in">console</span>.log(fruits.length); <span class="comment">// 2</span>
+
+<span class="comment">// get the first item in the array</span>
+<span class="keyword">var</span> first = fruits[<span class="number">0</span>]; <span class="comment">// Apple</span>
+
+<span class="comment">// get the last item in the array</span>
+<span class="keyword">var</span> last = fruits[fruits.length - <span class="number">1</span>]; <span class="comment">// Banana</span>
+
+<span class="comment">// add an item to the array</span>
+fruits.push(<span class="string">'Grape'</span>);
+
+<span class="built_in">console</span>.log(fruits.length); <span class="comment">// 3</span>
+<span class="built_in">console</span>.log(fruits); <span class="comment">// ['Apple', 'Banana', 'Grape'];</span>
+</code></pre>
+<h2 id="javascript-object">JavaScript&nbsp;Object</h2>
+<p>An object is a collection of related data and/or functionality (which usually consists of several variables and functions — which are called properties and methods when they are inside&nbsp;objects.) </p>
+<p>Unlike an array does not have a “order” you will need to get the value from a <code>key</code>.</p>
+<pre><code class="lang-javascript"><span class="comment">// create a object</span>
+<span class="keyword">var</span> person = {};
+
+<span class="built_in">console</span>.log(person); <span class="comment">// {}</span>
+
+<span class="comment">//Let create the same object again but this time with some data in it.</span>
+
+<span class="keyword">var</span> person = {  
+  <span class="attr">firstName</span> : <span class="string">"Dan"</span>,
+  <span class="attr">lastName</span> : <span class="string">"Hahn"</span>,
+  <span class="attr">email</span>: <span class="string">"dan@svahtml.com"</span>,
+  <span class="attr">interests</span>: [<span class="string">'html'</span>, <span class="string">'css'</span>, <span class="string">'javascript'</span>],
+  <span class="attr">isCool</span>: <span class="literal">false</span>,
+  <span class="attr">age</span>: <span class="number">22</span> 
 }
 
-// run function
-runTest();
-</code></pre><h4 id="parts-of-the-function">Parts of the&nbsp;function</h4>
-<ul>
-<li>function - defines the start of a&nbsp;function </li>
-<li>runTest - the name of the function (this could be&nbsp;anything)</li>
-<li>(var) - any variable passed in to the&nbsp;function </li>
-<li>{} - wraps what the function should do when&nbsp;called.</li>
-</ul>
-<h3 id="event-handlers">Event&nbsp;Handlers</h3>
-<p> Events handlers are a way to let the user call a function that could change something on the&nbsp;page.</p>
-<p> Event handlers can be added directly on an html&nbsp;elements.</p>
-<pre><code>&lt;button onclick=&quot;runTest();&quot;&gt;Run Test&lt;/button&gt;
-</code></pre><p>When the button is clicked the function <code>runTest();</code> will&nbsp;run.</p>
-<h2 id="if-statements">if&nbsp;statements</h2>
-<p>One of the ways that javascript is so powerful is it can make a decision.  We can use a <code>if</code> statement to see if something is true.  Based on the result of that question we can do one of two&nbsp;things.</p>
-<p>If the question is true than run this code otherwise run this&nbsp;code.</p>
-<pre><code>if(today == &quot;monday&quot;) {
-    alert(&quot;YES its monday&quot;);
+<span class="built_in">console</span>.log(person);
+<span class="comment">// { </span>
+<span class="comment">//   firstName: 'Dan',</span>
+<span class="comment">//   lastName: 'Hahn',</span>
+<span class="comment">//   email: 'dan@svahtml.com',</span>
+<span class="comment">//   interests: [ 'html', 'css', 'javascript' ],</span>
+<span class="comment">//   isCool: false,</span>
+<span class="comment">//   age: 22 </span>
+<span class="comment">// }</span>
+
+<span class="comment">// access a value on the object.</span>
+<span class="built_in">console</span>.log(person[<span class="string">'firstName'</span>]); <span class="comment">// "Dan"</span>
+<span class="comment">// or</span>
+<span class="built_in">console</span>.log(person.age); <span class="comment">// 22</span>
+<span class="built_in">console</span>.log(person.email); <span class="comment">// "dan@svahtml.com"</span>
+
+<span class="comment">// change a value on an object.  </span>
+person.isCool = <span class="literal">true</span>;
+<span class="built_in">console</span>.log(person);
+<span class="comment">// { </span>
+<span class="comment">//   firstName: 'Dan',</span>
+<span class="comment">//   lastName: 'Hahn',</span>
+<span class="comment">//   email: 'dan@svahtml.com',</span>
+<span class="comment">//   interests: [ 'html', 'css', 'javascript' ],</span>
+<span class="comment">//   isCool: true,</span>
+<span class="comment">//   age: 22 </span>
+<span class="comment">// }</span>
+
+<span class="comment">// add key to the object</span>
+person.city = <span class="string">"New York"</span>;
+<span class="built_in">console</span>.log(person);
+<span class="comment">// { </span>
+<span class="comment">//   firstName: 'Dan',</span>
+<span class="comment">//   lastName: 'Hahn',</span>
+<span class="comment">//   email: 'dan@svahtml.com',</span>
+<span class="comment">//   interests: [ 'html', 'css', 'javascript' ],</span>
+<span class="comment">//   isCool: false,</span>
+<span class="comment">//   age: 22,</span>
+<span class="comment">//   city: 'New York' </span>
+<span class="comment">// }</span>
+</code></pre>
+<h2 id="javascript-function">JavaScript&nbsp;function</h2>
+<p>Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call&nbsp;it.</p>
+<pre><code class="lang-javascript"><span class="comment">// let build a function that will say hello to the console</span>
+<span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params"></span>) </span>{
+  <span class="keyword">var</span> greeting = <span class="string">"Hello World"</span>;
+  <span class="built_in">console</span>.log(greeting);
 }
-else {
-    alert(&quot;NO today is not monday&quot;);
+
+<span class="comment">// the function will not fire until it is called;</span>
+
+<span class="comment">// lets call the function </span>
+
+sayHi();
+<span class="comment">// "Hello World!"</span>
+
+<span class="comment">// Lets customize our function by tell the name to say hi to. </span>
+<span class="comment">// We need to pass the name in to the function.</span>
+
+<span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params">displayName</span>) </span>{
+  <span class="comment">// displayName is passed in to the function and set </span>
+  <span class="comment">// to a variable of `displayName`</span>
+  <span class="comment">// it would look like this var displayName = "Dan";</span>
+  <span class="comment">// We can now use this variable in our function just </span>
+  <span class="comment">// like we could any other variable that may be defined. </span>
+  <span class="keyword">var</span> greeting = <span class="string">`Hello <span class="subst">${displayName}</span>!`</span>;
+  <span class="built_in">console</span>.log(greeting);
 }
-</code></pre><p>In this example we are checking if the variable <code>today</code> is equal to the string “monday”.  If it is than this is a true statement and the code inside the <code>{}</code> will run.  If it is not true than the code in the <code>else</code> will&nbsp;run. </p>
-<h2 id="using-jquery">Using&nbsp;Jquery</h2>
-<p>Jquery is a library that extends JavaScript so it can use all the parts of Javascript but has some nice tools to make working with <span class="caps">HTML</span> a bit&nbsp;easy.</p>
-<p>Lets say we want to create an element then add that element to an <span class="caps">HTML</span> page.  In javascript you would un this command in your&nbsp;script.  </p>
-<pre><code>var newDiv = document.createElement(&quot;div&quot;);
-</code></pre><p>Now you have a new div but we still need to add text to this&nbsp;div</p>
-<pre><code>var newContent = document.createTextNode(&quot;Hi there and greetings!&quot;); 
-</code></pre><p>Now we need to add the content to the new&nbsp;div</p>
-<pre><code>newDiv.appendChild(newContent);
-</code></pre><p>Last we want to add this to the&nbsp;body </p>
-<pre><code>document.body.appendChild(newDiv);
-</code></pre><p>As you can see there is a lot of stuff going on.  Most of it we do not really&nbsp;understand.</p>
-<p>We can do the same thing with Jquery but in a much ore logical way using things we are comfortable with like css&nbsp;selectors.</p>
-<p>Lets create a  new&nbsp;div </p>
-<pre><code>var newDiv = $(&quot;&lt;div&gt;&quot;);
-</code></pre><p>Now lets add the&nbsp;text</p>
-<pre><code>newDiv.html(&quot;Hi there and greetings!&quot;);
-</code></pre><p>Now we need to add it to the&nbsp;body</p>
-<pre><code>newDiv.appendTo(&quot;body&quot;);
-</code></pre><p>What makes Jquery so easy to work with is we can do all three things in one&nbsp;line.</p>
-<pre><code>var newDiv = $(&quot;&lt;div&gt;&quot;).html(&quot;Hi there and greetings!&quot;).appendTo(&quot;body&quot;);
-</code></pre><p>Jquery also lets you easy add css or add a&nbsp;class</p>
-<pre><code>newDiv.css(&quot;color&quot;, &quot;red&quot;);
-newDiv.addClass(&quot;active&quot;);
-</code></pre><h3 id="events-with-jquery">Events with&nbsp;jquery</h3>
-<p>Before we added an event by adding it do the <code>button</code> the problem with this is we do not have a spereratoin of the <span class="caps">HTML</span> and JS.  Like with CSS if we had to make a change we would to go in to every page and update&nbsp;it.</p>
-<p>We can add an event using jquery like&nbsp;this</p>
-<pre><code>$(&quot;button&quot;).on(&quot;click&quot;, function() {
-    // code to run if clicked
-})
-</code></pre><p>Here we call <code>on</code> and tell it what type of event we want.  There are many like click, submit, mouseover and many more.  Then we need to pass in a function (remember that functions are the the&nbsp;doers)</p>
-<p>That functions is called an anonymous function. It is like a named functions but is just called/run at the time it is&nbsp;defined.  </p>
-</section>
-        </article>
+
+sayHi(<span class="string">'Dan'</span>);
+<span class="comment">// "Hello Dan!"</span>
+
+sayHi(<span class="string">'Larry'</span>);
+<span class="comment">// "Hello Larry!"</span>
+</code></pre>
+<p>We can do many things with our function.  One way to keep the code clean is to break the function up in to smaller parts.  This is called functional programing.  The idea is that each function will only do one thing.  We need to introduce a new idea <code>return</code>.  A <code>return</code> will return a calculated value from another&nbsp;function. </p>
+<p>Lets build a function that will calculate a dogs age (age times 7) and display its&nbsp;bark.</p>
+<pre><code class="lang-javascript"><span class="comment">// this will calculate the dogs age</span>
+<span class="function"><span class="keyword">function</span> <span class="title">calcDogAge</span>(<span class="params">age</span>) </span>{
+  <span class="keyword">return</span> age * <span class="number">7</span>;
+  <span class="comment">// return the age times 7;</span>
+}
+
+<span class="function"><span class="keyword">function</span> <span class="title">dogGreeting</span>(<span class="params">dogName, age, greeting</span>) </span>{
+  <span class="comment">// get the age of the dog.</span>
+  <span class="keyword">var</span> dogAge = calcDogAge(age);
+  <span class="comment">// use a build in string function to repeat the greeting two time. </span>
+  <span class="keyword">var</span> dogGreeting = greeting.repeat(<span class="number">2</span>);
+
+  <span class="comment">// build the string to be return using a string template.</span>
+  <span class="keyword">return</span> <span class="string">`<span class="subst">${dogGreeting}</span> <span class="subst">${dogName}</span> is <span class="subst">${dogAge}</span> years old.`</span>;
+  <span class="comment">// return the full string.</span>
+}
+
+<span class="built_in">console</span>.log(dogGreeting(<span class="string">'Snickers'</span>, <span class="number">3</span>, <span class="string">'Woof'</span>));
+<span class="comment">// "WoofWoof Snickers is 21 years old."</span>
+
+alert(dogGreeting(<span class="string">'Puddles'</span>, <span class="number">1</span>, <span class="string">'Bark'</span>));
+<span class="comment">// alert box this time.</span>
+<span class="comment">// "BarkBark Puddles is 7 years old."</span>
+</code></pre>
+<p>Here the function does not display the string but return the full string and the thing that is calling the function is responable for how to display the&nbsp;string. </p>
+
+          </article>
+          <aside class="article__secondary">
+            <div class="side-nav-inner">
+              <ul class="sidenav">
+                <div class="trigger">&#8250;</div>
+                <li class="sidenav__item"><a href="index.html" class="sidenav__link">Forms</a></li>
+                <li class="sidenav__item"><a href="javascript.html" class="sidenav__link">Javascript</a></li>
+              </ul>
+              <h3>Downloads</h3>
+              <ul class="downloads">
+                <li class="downloads__item"><a href="week9.zip" class="btn--primary btn">Download Stater File<i class="fa fa-download"></i></a></li>
+              </ul>
+            </div>
+          </aside>
+        </section>
       </div>
-      <div class="col-md-3 side-nav">
-        <div class="side-nav-inner">
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="content-wrap">
-          <div class="footer-container">
-            <p>&copy; 2017 Daniel Hahn</p>
-            <section class="logo">
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="80" height="25" viewBox="0 0 430 133" preserveAspectRatio="xMidYMid meet">
-                <g transform="translate(0.000000,133.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
-                  <path d="M3311 1238 c-10 -24 -127 -296 -260 -604 -132 -309 -241 -564 -241 -568 0 -3 40 -6 88 -6 l88 0 259 603 c142 331 260 605 262 610 2 4 -37 7 -87 7 l-91 0 -18 -42z" class="slash"></path>
-                  <path d="M322 839 l-251 -211 96 -82 c53 -44 167 -140 252 -213 l156 -132 58 57 c31 31 57 59 57 63 0 3 -80 72 -177 154 -98 81 -179 150 -180 154 -1 3 79 71 177 151 99 80 178 148 177 152 -2 7 -106 118 -111 118 -1 0 -116 -95 -254 -211z" class="tag"></path>
-                  <path d="M3641 996 c-29 -30 -52 -59 -50 -64 2 -6 76 -69 164 -142 88 -73 168 -140 178 -149 16 -16 8 -25 -163 -165 -99 -82 -180 -151 -180 -155 0 -4 26 -32 58 -63 l57 -56 252 213 252 213 -250 208 c-137 115 -252 210 -257 212 -4 1 -32 -22 -61 -52z" class="tag"></path>
-                  <path d="M1033 990 c-71 -15 -142 -51 -177 -90 -71 -79 -73 -188 -4 -266 39 -45 78 -64 207 -104 106 -32 161 -68 161 -105 0 -9 -13 -30 -29 -46 -29 -28 -32 -29 -128 -28 -88 0 -186 18 -245 43 -16 7 -18 0 -18 -77 l0 -86 58 -12 c31 -7 120 -13 197 -13 124 0 147 3 200 23 115 46 174 135 161 244 -12 102 -63 145 -243 203 -121 39 -149 54 -165 89 -15 33 10 69 58 85 43 15 160 7 242 -14 l53 -14 -3 76 -3 76 -35 8 c-57 13 -242 18 -287 8z" class="letter"></path>
-                  <path d="M2345 985 c-38 -7 -87 -20 -107 -28 l-38 -16 0 -70 c0 -39 1 -71 3 -71 1 0 28 9 60 20 124 44 251 46 312 6 24 -16 45 -69 45 -113 0 -22 -4 -23 -72 -23 -143 0 -276 -37 -336 -93 -92 -85 -87 -259 9 -341 92 -79 253 -72 368 15 l51 39 0 -45 0 -45 80 0 80 0 0 295 c0 322 -3 340 -58 398 -73 77 -222 104 -397 72z m273 -487 c-3 -50 -5 -53 -62 -98 -53 -41 -63 -45 -113 -45 -48 0 -58 4 -79 28 -28 33 -30 66 -8 108 22 44 64 58 172 59 l93 0 -3 -52z" class="letter"></path>
-                  <path d="M1405 943 c8 -21 75 -191 149 -378 l134 -340 109 -3 108 -2 147 377 147 378 -96 3 c-60 2 -99 -1 -103 -8 -4 -6 -49 -130 -101 -275 -52 -146 -96 -265 -99 -265 -3 0 -14 24 -24 53 -10 28 -54 152 -98 275 l-80 222 -104 0-104 0 15 -37z" class="letter"></path>
-                </g>
-              </svg>
-            </section>
-          </div>
+    </article>
+    <footer class="container global-footer">
+      <div class="container__center">
+        <div class="simple-row simple-row--footer">
+          <p>Copyright &copy; 2017 Copyright Holder All Rights Reserved.</p>
+          <section class="logo">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="80" height="25" viewBox="0 0 430 133" preserveAspectRatio="xMidYMid meet" class="simple-row--svg">
+              <g transform="translate(0.000000,133.000000) scale(0.100000,-0.100000)" fill="#000" stroke="none">
+                <path d="M3311 1238 c-10 -24 -127 -296 -260 -604 -132 -309 -241 -564 -241 -568 0 -3 40 -6 88 -6 l88 0 259 603 c142 331 260 605 262 610 2 4 -37 7 -87 7 l-91 0 -18 -42z" class="slash"></path>
+                <path d="M322 839 l-251 -211 96 -82 c53 -44 167 -140 252 -213 l156 -132 58 57 c31 31 57 59 57 63 0 3 -80 72 -177 154 -98 81 -179 150 -180 154 -1 3 79 71 177 151 99 80 178 148 177 152 -2 7 -106 118 -111 118 -1 0 -116 -95 -254 -211z" class="tag"></path>
+                <path d="M3641 996 c-29 -30 -52 -59 -50 -64 2 -6 76 -69 164 -142 88 -73 168 -140 178 -149 16 -16 8 -25 -163 -165 -99 -82 -180 -151 -180 -155 0 -4 26 -32 58 -63 l57 -56 252 213 252 213 -250 208 c-137 115 -252 210 -257 212 -4 1 -32 -22 -61 -52z" class="tag"></path>
+                <path d="M1033 990 c-71 -15 -142 -51 -177 -90 -71 -79 -73 -188 -4 -266 39 -45 78 -64 207 -104 106 -32 161 -68 161 -105 0 -9 -13 -30 -29 -46 -29 -28 -32 -29 -128 -28 -88 0 -186 18 -245 43 -16 7 -18 0 -18 -77 l0 -86 58 -12 c31 -7 120 -13 197 -13 124 0 147 3 200 23 115 46 174 135 161 244 -12 102 -63 145 -243 203 -121 39 -149 54 -165 89 -15 33 10 69 58 85 43 15 160 7 242 -14 l53 -14 -3 76 -3 76 -35 8 c-57 13 -242 18 -287 8z" class="letter"></path>
+                <path d="M2345 985 c-38 -7 -87 -20 -107 -28 l-38 -16 0 -70 c0 -39 1 -71 3 -71 1 0 28 9 60 20 124 44 251 46 312 6 24 -16 45 -69 45 -113 0 -22 -4 -23 -72 -23 -143 0 -276 -37 -336 -93 -92 -85 -87 -259 9 -341 92 -79 253 -72 368 15 l51 39 0 -45 0 -45 80 0 80 0 0 295 c0 322 -3 340 -58 398 -73 77 -222 104 -397 72z m273 -487 c-3 -50 -5 -53 -62 -98 -53 -41 -63 -45 -113 -45 -48 0 -58 4 -79 28 -28 33 -30 66 -8 108 22 44 64 58 172 59 l93 0 -3 -52z" class="letter"></path>
+                <path d="M1405 943 c8 -21 75 -191 149 -378 l134 -340 109 -3 108 -2 147 377 147 378 -96 3 c-60 2 -99 -1 -103 -8 -4 -6 -49 -130 -101 -275 -52 -146 -96 -265 -99 -265 -3 0 -14 24 -24 53 -10 28 -54 152 -98 275 l-80 222 -104 0-104 0 15 -37z" class="letter"></path>
+              </g>
+            </svg>
+          </section>
         </div>
       </div>
     </footer>
     <script src="/js/prism.js"></script>
+    <script src="/js/global.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q || []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -77,89 +77,188 @@
       <div class="container__center">
         <section class="article">
           <article class="article__primary">
-            <h1><span class="caps">Backgrounds</span> 
+            <h1><span class="caps">Forms</span> 
             </h1>
-<p><a href="/lessons/lesson-9/week9-notes.zip">Download Notes  <i class="icon-download-alt icon-white"></i></a>
-<a href="/lessons/lesson-9/week9.zip">Download Starter File  <i class="icon-download-alt icon-white"></i></a></p>
-<p>Backgrounds are a way to add colors and images to elements on the&nbsp;page.</p>
-<h3 id="background-color">Background&nbsp;Color</h3>
-<pre><code class="lang-css">background-color: color name | RGB Value | Hex Value;
-</code></pre>
-<p>Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the&nbsp;background.</p>
-<h3 id="background-image">Background&nbsp;Image</h3>
-<pre><code class="lang-css"><span class="selector-tag">background-image</span>: <span class="selector-tag">url</span>(&lt;<span class="selector-tag">image</span> <span class="selector-tag">path</span>&gt;);
-</code></pre>
-<p>Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left&nbsp;corner.</p>
-<h3 id="background-repeat">Background&nbsp;Repeat</h3>
-<pre><code class="lang-css">background-repeat: repeat | no-repeat | repeat-x | repeat-y
-</code></pre>
-<p>When applying a background image it will tile in all directions by&nbsp;default.</p>
-<p>You can control the way the image will tile by using <code>background-repeat</code>.</p>
-<table>
-<thead>
-<tr>
-<th>Repeat</th>
-<th>Direction</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>repeat (default)</td>
-<td>tiles in all directions</td>
-</tr>
-<tr>
-<td>no-repeat</td>
-<td>the image will appear one time.</td>
-</tr>
-<tr>
-<td>repeat-x</td>
-<td>repeat along the x axis</td>
-</tr>
-<tr>
-<td>repeat-y</td>
-<td>repeat along the x axis</td>
-</tr>
-</tbody>
-</table>
-<h3 id="background-attachment">Background&nbsp;Attachment</h3>
-<pre><code class="lang-css">background-attachment: scroll | fixed;
-</code></pre>
-<p>When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the <span class="caps">BODY</span> tag and that background image should not move when the page is&nbsp;scrolled.</p>
-<h3 id="background-position">Background&nbsp;Position</h3>
-<pre><code class="lang-css"><span class="selector-tag">background-position</span>: (<span class="selector-tag">left</span>, <span class="selector-tag">right</span> <span class="selector-tag">or</span> <span class="selector-tag">center</span>) (<span class="selector-tag">top</span>, <span class="selector-tag">center</span> <span class="selector-tag">or</span> <span class="selector-tag">bottom</span>);
-</code></pre>
-<p>The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that&nbsp;point.</p>
-<p>If you want the image to be position the center both vertical and horizontal than you need only define the value of&nbsp;center.</p>
-<pre><code class="lang-css"><span class="selector-tag">background-position</span>: <span class="selector-tag">center</span>;
-</code></pre>
-<p>Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or&nbsp;percentages.</p>
-<pre><code class="lang-css"><span class="selector-tag">background-position</span>: 100<span class="selector-tag">px</span> 300<span class="selector-tag">px</span>;
-<span class="selector-tag">background-position</span>: 50% 80%;
-</code></pre>
-<h3 id="background-shorthand">Background&nbsp;Shorthand</h3>
-<pre><code class="lang-css"><span class="selector-tag">background</span>: <span class="selector-tag">image</span> <span class="selector-tag">repeat</span> <span class="selector-tag">attachment</span> <span class="selector-tag">position</span> <span class="selector-tag">color</span>;
-</code></pre>
-<p>Like many <span class="caps">CSS</span> properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default&nbsp;value.</p>
-<pre><code class="lang-css">background: #fff url(images/side-bar.png) repeat-y right top;
-</code></pre>
-<p>In this example attachment is not defined so it will be set to the default which in this case is&nbsp;scroll.</p>
-<p>In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to&nbsp;none.</p>
-<pre><code class="lang-css"><span class="selector-tag">background</span>: <span class="selector-tag">none</span>;
-</code></pre>
-<p>You are setting the <code>background-image</code> to none and by default setting the <code>background-color</code> to&nbsp;transparent.</p>
+<h2 id="form">form</h2>
+<p>The <code>&lt;form&gt;</code> tag is used to create an <span class="caps">HTML</span> form for user&nbsp;input.</p>
+<p>The <code>&lt;form&gt;</code> element can contain one or more of the following form&nbsp;elements:</p>
+<table class="w3-table-all notranslate" id="table1">
+  <tbody><tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:37%">Value</th>
+    <th style="width:43%">Description</th>
+  </tr>
+  <tr>
+    <td>action</td>
+    <td><i><span class="caps">URL</span></i></td>
+    <td>Specifies where to send the form-data when a form is submitted</td>
+  </tr>
+  <tr>
+    <td>method</td>
+    <td>get<br>
+      post</td>
+    <td>Specifies the <span class="caps">HTTP</span> method to use when sending form-data</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td><i>text</i></td>
+    <td>Specifies the name of a form</td>
+  </tr>
+  <tr>
+    <td>target</td>
+    <td>_blank<br>
+      _self<br>
+      _parent<br>
+      _top</td>
+    <td>Specifies where to display the response that is received after submitting the form</td>
+  </tr>
+</tbody></table>
 
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/action_page.php"</span> <span class="attr">method</span>=<span class="string">"get"</span>&gt;</span>
+  First name: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"fname"</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span>
+  Last name: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"lname"</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Submit"</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">form</span>&gt;</span>
+</code></pre>
+<h2 id="input">input</h2>
+<p>The <code>&lt;input&gt;</code> tag specifies an input field where the user can enter&nbsp;data.</p>
+<p><code>&lt;input&gt;</code> elements are used within a <code>&lt;form&gt;</code> element to declare input controls that allow users to input&nbsp;data.</p>
+<p>An input field can vary in many ways, depending on the type&nbsp;attribute.</p>
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:22%">Attribute</th>
+    <th style="width:37%">Value</th>
+    <th style="width:41%">Description</th>
+  </tr>
+  <tr>
+    <td>checked</td>
+    <td>checked</td>
+    <td>Specifies that an <code>&lt;input&gt;</code> element should be pre-selected when the page loads (for <code>type=&quot;checkbox&quot;</code> or <code>type=&quot;radio&quot;</code>)</td>
+  </tr>
+  <tr>
+    <td>disabled</td>
+    <td>disabled</td>
+    <td>Specifies that an <code>&lt;input&gt;</code> element should be disabled</td>
+  </tr>
+  <tr>
+    <td>maxlength</td>
+    <td><i>number</i></td>
+    <td>Specifies the maximum number of characters allowed in an <code>&lt;input&gt;</code> element</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td><i>text</i></td>
+    <td>Specifies the name of an <code>&lt;input&gt;</code> element</td>
+  </tr>
+  <tr>
+    <td>placeholder</td>
+    <td><i>text</i></td>
+    <td>Specifies a short hint that describes the expected value of an <code>&lt;input&gt;</code> element</td>
+  </tr>
+  <tr>
+    <td>readonly</td>
+    <td>readonly</td>
+    <td>Specifies that an input field is <code>read-only</code></td>
+  </tr>
+  <tr>
+    <td>required</td>
+    <td>required</td>
+    <td>Specifies that an input field must be filled out before submitting the form</td>
+  </tr>
+  <tr>
+    <td>size</td>
+    <td><i>number</i></td>
+    <td>Specifies the width, in characters, of an <code>&lt;input&gt;</code> element</td>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>button<br>
+      checkbox<br>
+ color<br>
+      date <br>
+ email <br>
+      file<br>
+      hidden<br>
+      image<br>
+      password<br>
+      radio<br>
+      range <br>
+      reset<br>
+      submit<br>
+      text<br>
+    </td>
+    <td>Specifies the type <code>&lt;input&gt;</code> element to display</td>
+  </tr>
+  <tr>
+    <td>value</td>
+    <td><i>text</i></td>
+    <td>Specifies the value of an <code>&lt;input&gt;</code> element<b><br>
+ &nbsp;</b></td>
+  </tr>
+
+</tbody></table>
+
+<p><p data-height="650" data-theme-id="light" data-slug-hash="vWJXgj" data-default-tab="html,result" data-user="danhahn" data-embed-version="2" data-pen-title="Form Elements" class="codepen">See the Pen <a href="https://codepen.io/danhahn/pen/vWJXgj/">Form Elements</a> by Dan Hahn (<a href="https://codepen.io/danhahn">@danhahn</a>) on <a href="https://codepen.io">CodePen</a>.</p></p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="select">select</h2>
+<p>The <code>&lt;select&gt;</code> element is used to create a drop-down&nbsp;list.</p>
+<p>The <code>&lt;option&gt;</code> tags inside the <code>&lt;select&gt;</code> element define the available options in the&nbsp;list.</p>
+<table class="w3-table-all notranslate"> 
+  <tbody><tr>
+    <th style="width:20%">Attribute</th>
+    <th style="width:20%">Value</th>
+    <th style="width:60%">Description</th>
+  </tr>
+  <tr>
+    <td>disabled</td>
+    <td>disabled</td>
+    <td>Specifies that a drop-down list should be disabled</td>
+  </tr>
+  <tr>
+    <td class="html5badge">form</td>
+    <td><i>form_id</i></td>
+    <td>Defines one or more forms the select field belongs to</td>
+  </tr>
+  <tr>
+    <td>multiple</td>
+    <td>multiple</td>
+    <td>Specifies that multiple options can be selected at once</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td><i>name</i></td>
+    <td>Defines a name for the drop-down list</td>
+  </tr>
+    <tr>
+    <td class="html5badge">required</td>
+    <td>required</td>
+    <td>Specifies that the user is required to select a value before submitting the form</td>
+    </tr>
+  <tr>
+    <td>size</td>
+    <td><i>number</i></td>
+    <td>Defines the number of visible options in a drop-down list</td>
+  </tr>
+</tbody></table>
+
+<h2 id="textarea">textarea</h2>
+<p>The <code>&lt;textarea&gt;</code> tag defines a multi-line text input&nbsp;control.</p>
+<p>A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually&nbsp;Courier).</p>
+<p>The size of a text area can be specified by the cols and rows attributes, or even better; through <span class="caps">CSS</span>’ height and width&nbsp;properties.</p>
+<p><p data-height="450" data-theme-id="light" data-slug-hash="LOjbGg" data-default-tab="html,result" data-user="danhahn" data-embed-version="2" data-pen-title="Form Elements select, textarea" class="codepen">See the Pen <a href="https://codepen.io/danhahn/pen/LOjbGg/">Form Elements select, textarea</a> by Dan Hahn (<a href="https://codepen.io/danhahn">@danhahn</a>) on <a href="https://codepen.io">CodePen</a>.</p></p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
           </article>
           <aside class="article__secondary">
             <div class="side-nav-inner">
               <ul class="sidenav">
                 <div class="trigger">&#8250;</div>
-                <li class="sidenav__item"><a href="index.html" class="sidenav__link">Backgrounds</a></li>
-                <li class="sidenav__item"><a href="forms.html" class="sidenav__link">Forms</a></li>
+                <li class="sidenav__item"><a href="index.html" class="sidenav__link">Forms</a></li>
+                <li class="sidenav__item"><a href="javascript.html" class="sidenav__link">Javascript</a></li>
               </ul>
               <h3>Downloads</h3>
               <ul class="downloads">
                 <li class="downloads__item"><a href="week9.zip" class="btn--primary btn">Download Stater File<i class="fa fa-download"></i></a></li>
-                <li class="downloads__item"><a href="week9-notes.zip" class="btn">Download Notes<i class="fa fa-download"></i></a></li>
               </ul>
             </div>
           </aside>
