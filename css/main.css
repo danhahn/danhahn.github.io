@@ -141,7 +141,7 @@
   height: 35px;
 }
 .brand__svg .slash {
-  fill: #ffae5c;
+  fill: #f1874f;
 }
 .brand__svg .tag {
   fill: #cbd0d3;
@@ -175,7 +175,7 @@
 @media only screen and (max-width: 768px) {
   .header-nav {
     align-self: stretch;
-    background-color: #ff8910;
+    background-color: #e25912;
     box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.5) inset, 0 1px 1px rgba(0, 0, 0, 0.05) inset;
     overflow: hidden;
     max-height: 0;
@@ -194,7 +194,7 @@
   }
 }
 .header-nav__item:hover {
-  background-color: #ffae5c;
+  background-color: #f1874f;
 }
 @media only screen and (min-width: 769px) {
   .header-nav__item:hover .header-nav__dropdown {
@@ -203,7 +203,7 @@
 }
 @media only screen and (max-width: 768px) {
   .header-nav__item:not(:last-of-type) {
-    border-bottom: 1px solid #f57c00;
+    border-bottom: 1px solid #ca5010;
   }
 }
 .header-nav__link {
@@ -218,8 +218,8 @@
     padding: 0;
     margin: 0;
     position: absolute;
-    background-color: #ffae5c;
-    border: 1px solid #f57c00;
+    background-color: #f1874f;
+    border: 1px solid #ca5010;
     box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.5);
     display: none;
   }
@@ -229,7 +229,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #ffae5c;
+    background-color: #f1874f;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.3) inset, 0 -5px 3px -3px rgba(0, 0, 0, 0.1) inset;
@@ -237,7 +237,7 @@
 }
 @media only screen and (min-width: 769px) {
   .header-nav__drop-item {
-    border-bottom: 2px solid #f57c00;
+    border-bottom: 2px solid #ca5010;
     min-width: 170px;
   }
 }
@@ -249,7 +249,7 @@
 }
 .header-nav__drop-item a:hover {
   background-color: #fff;
-  color: #f57c00;
+  color: #ca5010;
 }
 @media only screen and (max-width: 768px) {
   .header-nav__drop-item {
@@ -376,7 +376,7 @@
 .article__primary h4 a,
 .article__primary h5 a,
 .article__primary h6 a {
-  color: #f57c00;
+  color: #ca5010;
   text-decoration: none;
 }
 .article__primary h1 a:hover,
@@ -408,7 +408,7 @@
   }
 }
 .article__primary h2 {
-  color: #ff9529;
+  color: #ed6620;
   font-size: 1.8em;
   line-height: 1.8;
   font-weight: 700;
@@ -461,7 +461,7 @@
 }
 .article__primary table th {
   border-bottom-width: 2px;
-  color: #f57c00;
+  color: #ca5010;
 }
 .btn {
   display: inline-block;
@@ -484,12 +484,12 @@
   border: 1px solid transparent;
   border-radius: 4px;
   text-decoration: none;
-  color: #f57c00;
-  border: 1px solid #f57c00;
+  color: #ca5010;
+  border: 1px solid #ca5010;
   transition: all .1s;
 }
 .btn:hover {
-  background-color: #ff8910;
+  background-color: #e25912;
   color: #ffffff;
 }
 .btn i {
@@ -497,10 +497,10 @@
 }
 .btn--primary {
   color: #ffffff;
-  background-color: #f57c00;
+  background-color: #ca5010;
 }
 .btn--primary:hover {
-  background-color: #ff9529;
+  background-color: #ed6620;
 }
 .sidenav {
   list-style: none;
@@ -523,7 +523,7 @@
     top: 64px;
     left: 70vw;
     padding: 1px 5px 5px 4px;
-    background-color: #f52a00;
+    background-color: #ca1210;
     box-shadow: 3px 1px 10px -4px #000000;
     z-index: -1;
     line-height: 1em;
@@ -540,7 +540,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     margin: -1em -1em 1em;
-    border-bottom: 1px solid #f57c00;
+    border-bottom: 1px solid #ca5010;
     justify-content: space-around;
   }
 }
@@ -551,7 +551,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: #f52a00;
+    background-color: #ca1210;
     width: 70vw;
     margin: 0;
     display: flex;
@@ -566,7 +566,7 @@
 }
 @media only screen and (max-width: 425px) {
   .sidenav__item {
-    border-bottom: 1px solid #ffae5c;
+    border-bottom: 1px solid #f1874f;
     font-size: 1.5em;
     flex: 1;
     display: flex;
@@ -577,7 +577,7 @@
   display: block;
   padding: .5em 1em;
   text-decoration: none;
-  color: #f57c00;
+  color: #ca5010;
   border-left: 2px solid transparent;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -591,21 +591,21 @@
 }
 @media only screen and (min-width: 769px) {
   .sidenav__link.active {
-    border-left-color: #f57c00;
-    color: #f57c00;
+    border-left-color: #ca5010;
+    color: #ca5010;
   }
   .sidenav__link:not(.active):hover {
-    border-left-color: #ff9529;
-    color: #ff9529;
+    border-left-color: #ed6620;
+    color: #ed6620;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   .sidenav__link.active {
-    background-color: #f57c00;
+    background-color: #ca5010;
     color: #ffffff;
   }
   .sidenav__link:not(.active):hover {
-    background-color: #ff9529;
+    background-color: #ed6620;
     color: #ffffff;
   }
 }
@@ -688,7 +688,7 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: .25em;
-  background-color: #ffae5c;
+  background-color: #f1874f;
   text-transform: uppercase;
   display: inline-flex;
   align-items: baseline;
@@ -792,7 +792,7 @@
 }
 .lesson__link {
   text-decoration: none;
-  color: #f57c00;
+  color: #ca5010;
   font-size: 2em;
   font-weight: 700;
   line-height: 1em;
@@ -801,7 +801,7 @@
   text-decoration: underline;
 }
 .lesson__date {
-  color: #f57c00;
+  color: #ca5010;
 }
 .lesson__content {
   flex: 1;
@@ -826,8 +826,8 @@
 }
 .homework-view {
   display: flex;
-  border-top: 1px solid #f52a00;
-  border-bottom: 1px solid #f52a00;
+  border-top: 1px solid #ca1210;
+  border-bottom: 1px solid #ca1210;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -921,7 +921,7 @@ body {
   flex-direction: column;
 }
 a {
-  color: #f57c00;
+  color: #ca5010;
 }
 .main-level {
   flex: 1;
@@ -958,16 +958,16 @@ a {
   }
 }
 .global-nav {
-  background-color: #ff9529;
+  background-color: #ed6620;
 }
 .global-nav > * {
-  background-color: #f57c00;
+  background-color: #ca5010;
 }
 .main-titlebar {
-  background-color: #ffae5c;
+  background-color: #f1874f;
 }
 .main-titlebar > * {
-  background-color: #a95500;
+  background-color: #83340a;
 }
 .global-footer {
   background-color: #d9dcde;
@@ -991,8 +991,8 @@ a {
   }
 }
 code {
-  color: #f57c00;
-  background-color: #ffe8d1;
+  color: #ca5010;
+  background-color: #fad1bc;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   padding: 1px 5px;
   font-size: .9em;
