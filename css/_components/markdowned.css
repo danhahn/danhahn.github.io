@@ -12,7 +12,7 @@
 .article__primary h4 a,
 .article__primary h5 a,
 .article__primary h6 a {
-  color: #ca5010;
+  color: #c0392b;
   text-decoration: none;
 }
 .article__primary h1 a:hover,
@@ -44,7 +44,7 @@
   }
 }
 .article__primary h2 {
-  color: #ed6620;
+  color: #d65548;
   font-size: 1.8em;
   line-height: 1.8;
   font-weight: 700;
@@ -97,5 +97,5 @@
 }
 .article__primary table th {
   border-bottom-width: 2px;
-  color: #ca5010;
+  color: #c0392b;
 }

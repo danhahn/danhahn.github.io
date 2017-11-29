@@ -9,6 +9,7 @@
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Fall 2017">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" sizes="192x192" href="/images/favicon.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat">
   </head>
   <body class="article-detail">
     <nav class="container global-nav">
@@ -79,7 +80,75 @@
           <article class="article__primary">
             <h1><span class="caps">Final</span> Project
             </h1>
-<p>Details of final will be released at a later&nbsp;date.</p>
+<h2 id="getting-started">Getting&nbsp;Started</h2>
+<p>The final project is open book, meaning you can use any resource you need to finish the project including asking any questions you have.  The final is a multipage&nbsp;microsite.  </p>
+<p>The final is due at 9:30 on December 13.  Please email a zip file to&nbsp;dan@svahtml.com.</p>
+<p><strong>You are required to only code the desktop version</strong> however if you have time or want a challenge you the is a mobile&nbsp;version.  </p>
+<h3 id="psd"><span class="caps">PSD</span></h3>
+<ul class="gallery">
+<li><a href="/lessons/lesson-11/desktop.psd"><img src="/lessons/lesson-11/desktop-sm.png" alt=""></a></li>
+<li><a href="/lessons/lesson-11/mobile.psd"><img src="/lessons/lesson-11/mobile-sm.png" alt=""></a></li>
+</ul>
+<h2 id="colors">Colors</h2>
+<p>There are a limited number of colors that are used in the design you can copy the <strong>Hex</strong> color below and use in your&nbsp;css.</p>
+<ul class="color-palette">
+<li><div class="color-palette__palette" style="background-color: #c0c0c0"><p>#c0c0c0</p></div></li>
+<li><div class="color-palette__palette" style="background-color: #333333"><p>#333333</p></div></li>
+<li><div class="color-palette__palette" style="background-color: #004358"><p>#004358</p></div></li>
+<li><div class="color-palette__palette" style="background-color: #50b7f1"><p>#50b7f1</p></div></li>
+<li><div class="color-palette__palette" style="background-color: #ffe11a"><p>#ffe11a</p></div></li>
+<li><div class="color-palette__palette" style="background-color: #ff951a"><p>#ff951a</p></div></li>
+<li><div class="color-palette__palette" style="background-color: #ffffff"><p>#ffffff</p></div></li>
+<li><div class="color-palette__palette" style="background-color: #b7b7b7"><p>#b7b7b7</p></div></li>
+<li><div class="color-palette__palette" style="background-color: #7fcaf5"><p>#7fcaf5</p></div></li>
+</ul>
+<h2 id="sizes">Sizes</h2>
+<p>While I will not give you the sizes for the padding or margin they will always we defined in <code>em</code> and be a whole number value like <code>1em</code>;</p>
+<h3 id="font-sizes">Font&nbsp;Sizes</h3>
+<p>For the body&nbsp;use</p>
+<pre><code class="lang-css"><span class="selector-tag">font</span>: 16<span class="selector-tag">px</span> <span class="selector-tag">arial</span>;
+</code></pre>
+<h3 id="headline-sizes">Headline&nbsp;Sizes</h3>
+<p>Header&nbsp;Title</p>
+<pre><code class="lang-css"><span class="selector-tag">font-size</span>: 60<span class="selector-tag">px</span>;
+</code></pre>
+<p>Header&nbsp;tagline</p>
+<pre><code class="lang-css"><span class="selector-tag">font-size</span>: 20<span class="selector-tag">px</span>;
+</code></pre>
+<p>article&nbsp;h2</p>
+<pre><code class="lang-css"><span class="selector-tag">font-size</span>: 3<span class="selector-tag">em</span>;
+</code></pre>
+<p>article&nbsp;h3</p>
+<pre><code class="lang-css"><span class="selector-tag">font-size</span>: 2<span class="selector-tag">em</span>;
+</code></pre>
+<p>sidebar&nbsp;headline</p>
+<pre><code class="lang-css"><span class="selector-tag">font-size</span>: 1<span class="selector-class">.5em</span>;
+</code></pre>
+<p>sidebar&nbsp;box</p>
+<pre><code class="lang-css"><span class="selector-tag">font-size</span>: 14<span class="selector-tag">px</span>;
+</code></pre>
+<h2 id="copy">Copy</h2>
+<p>The copy for the final project can be found in the <span class="caps">PDF</span>.  Note the copy in the PDF may not match the PSD in this case the PDF is&nbsp;correct.</p>
+<ul class="gallery PDF">
+<li><a href="/lessons/lesson-11/final-content.pdf">Copy for&nbsp;final</a></li>
+</ul>
+<h2 id="images">Images</h2>
+<p>All the images for the project can be found in the zip&nbsp;file</p>
+<ul class="gallery ZIP">
+<li><a href="/lessons/lesson-11/images.zip">Images</a></li>
+</ul>
+<h2 id="google-fonts">Google&nbsp;Fonts</h2>
+<p>The project uses a few Google Fonts.  Add this code to your <span class="caps">HTML</span>&nbsp;file.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat"</span>&gt;</span>
+</code></pre>
+<h3 id="font-family">Font-family</h3>
+<pre><code class="lang-css">font-family: &#39;Montserrat&#39;, sans-serif;
+font-family: &#39;Homemade Apple&#39;, cursive;
+</code></pre>
+<h3 id="example">Example</h3>
+<h2 style="font-family: 'Montserrat', sans-serif">font-family: ‘Montserrat’,&nbsp;sans-serif;</h2>
+
+<h2 style="font-family: 'Homemade Apple', cursive">font-family: ‘Homemade Apple’,&nbsp;cursive;</h2>
 
           </article>
           <aside class="article__secondary">
@@ -87,6 +156,7 @@
               <ul class="sidenav">
                 <div class="trigger">&#8250;</div>
                 <li class="sidenav__item"><a href="index.html" class="sidenav__link">Final Project</a></li>
+                <li class="sidenav__item"><a href="pages.html" class="sidenav__link">Pages</a></li>
               </ul>
             </div>
           </aside>
