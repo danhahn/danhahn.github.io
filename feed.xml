@@ -1067,6 +1067,23 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;li&gt;#b7b7b7&lt;/li&gt;
 &lt;li&gt;#7fcaf5&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&quot;header-content&quot;&gt;Header Content&lt;/h2&gt;
+&lt;pre class=&quot;text-content&quot;&gt;
+New York State
+The Empire State
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;nav-content&quot;&gt;Nav Content&lt;/h2&gt;
+&lt;pre class=&quot;text-content&quot;&gt;
+Home =&gt; index.html
+History =&gt; history/index.html
+Geography =&gt; geography/index.html
+Major cities =&gt; cities/index.html
+Demographics =&gt; demographics/index.html
+Transportation =&gt; transportation/index.html
+Sports =&gt; sports/index.html
+&lt;/pre&gt;
+
 &lt;h2 id=&quot;sizes&quot;&gt;Sizes&lt;/h2&gt;
 &lt;p&gt;While I will not give you the sizes for the padding or margin they will always we defined in &lt;code&gt;em&lt;/code&gt; and be a whole number value like &lt;code&gt;1em&lt;/code&gt;;&lt;/p&gt;
 &lt;h3 id=&quot;font-sizes&quot;&gt;Font Sizes&lt;/h3&gt;
