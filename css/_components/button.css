@@ -30,10 +30,15 @@
 .btn i {
   margin-left: .5em;
 }
-.btn--primary {
+.btn--primary,
+.btn.active {
   color: #ffffff;
   background-color: #c0392b;
 }
-.btn--primary:hover {
+.btn--primary:hover,
+.btn.active:hover {
   background-color: #d65548;
+}
+.btn svg {
+  margin-left: .3em;
 }

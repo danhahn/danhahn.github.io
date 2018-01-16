@@ -1,25 +1,18 @@
+.brand {
+  display: flex;
+  align-items: center;
+  margin-right: 4em;
+}
 .brand__svg {
   width: 115px;
   height: 35px;
 }
 .brand__svg .slash {
-  fill: #df7c72;
+  fill: #ffffff;
 }
 .brand__svg .tag {
-  fill: #cbd0d3;
+  fill: #ffffff;
 }
 .brand__svg .letter {
   fill: #ffffff;
-}
-.homepage .brand__svg {
-  margin-top: 5px;
-  width: 108px;
-  height: 30px;
-}
-@media only screen and (max-width: 1024px) {
-  .homepage .brand__svg {
-    margin-top: 5px;
-    width: 115px;
-    height: 35px;
-  }
 }

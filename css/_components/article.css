@@ -1,7 +1,8 @@
 .article {
   display: grid;
+  margin-top: 60px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-areas: "p p p p p p p p p s s s";
+  grid-template-areas: "p p p p p p p p . s s s";
   grid-column-gap: 1em;
 }
 .article--single {
@@ -18,7 +19,7 @@
   }
 }
 .article__primary {
-  padding: 2em 1em;
+  padding: 0 0 2em 0;
   grid-area: p;
 }
 @media only screen and (max-width: 768px) {
@@ -32,16 +33,22 @@
   }
 }
 .article__secondary {
-  padding: 2em 0;
   grid-area: s;
+}
+@media only screen and (min-width: 769px) {
+  .article__secondary .side-nav-inner {
+    padding: 2em;
+    position: fixed;
+    width: 100%;
+    top: 120px;
+    height: calc(100vh - 120px);
+    background-color: #f4f5f6;
+    border-left: 1px solid #e6e9ea;
+  }
 }
 @media only screen and (min-width: 769px) {
   .article__secondary {
     position: relative;
-  }
-  .article__secondary .side-nav-inner.fixed {
-    position: fixed;
-    top: 1em;
   }
 }
 @media only screen and (max-width: 768px) {

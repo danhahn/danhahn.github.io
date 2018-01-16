@@ -4,17 +4,17 @@
     <title>SVA HTML</title>
     <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://localhost:8080</link>
-    <description>Fall 2017</description>
-    <pubDate>Wed, 20 Sep 2017 15:00:00 -0400</pubDate>
+    <description>Spring 2018</description>
+    <pubDate>Wed, 24 Jan 2018 15:00:00 -0500</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Lesson 1</title>
       <link>http://localhost:8080/lessons/lesson-1/</link>
-      <pubDate>Wed, 20 Sep 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 24 Jan 2018 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-1/</guid>
       <author></author>
-      <description>&lt;p&gt;Introduction to HTML, Web Browsers, Standards&lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Introduction to HTML, Web Browsers, Standards&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-is-html-&quot;&gt;What is HTML?&lt;/h2&gt;
 &lt;p&gt;HTML or Hyper Text Markup Language is the building blocks of all web pages.  HTML uses tags to create element that are filled with content like text and images.  The elements are instructions to the web browser how to display the content on the screen.  &lt;/p&gt;
@@ -114,10 +114,10 @@ Examples
     <item>
       <title>Lesson 2</title>
       <link>http://localhost:8080/lessons/lesson-2/</link>
-      <pubDate>Wed, 27 Sep 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 31 Jan 2018 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-2/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about how to create links and embed images. &lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about how to create links and embed images.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;The anchor tag or the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag is most commonly used to create a link to an other file or page.  The anchor tag by default will not act as a link without the &lt;code&gt;href&lt;/code&gt; attribute.  &lt;/p&gt;
 &lt;p&gt;The anchor tag can also be used to set a point on a page where the page can be linked to.  You might see this on an FAQ page where you have a list of questions at the top and the answers at the bottom.&lt;/p&gt;
@@ -207,10 +207,10 @@ table tr td:nth-child(1){width:20%}
     <item>
       <title>Lesson 3</title>
       <link>http://localhost:8080/lessons/lesson-3/</link>
-      <pubDate>Wed, 04 Oct 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 07 Feb 2018 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-3/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we start to talk about CSS. &lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we start to talk about CSS.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1mYirjj8tdvtriYiZJl5F97xVhJFnOiWnf0cp1JKqO9M/edit?pli=1#slide=id.p&quot; class=&quot;btn&quot;&gt;View Presentation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-is-css&quot;&gt;What is CSS&lt;/h2&gt;
@@ -337,10 +337,10 @@ table tr td:nth-child(1){width:20%}
     <item>
       <title>Lesson 4</title>
       <link>http://localhost:8080/lessons/lesson-4/</link>
-      <pubDate>Wed, 11 Oct 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 14 Feb 2018 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-4/</guid>
       <author></author>
-      <description>&lt;p&gt;This week We will dive back into CSS and talk about text, font, borders, margin and padding. &lt;div&gt;&lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week We will dive back into CSS and talk about text, font, borders, margin and padding. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;When styling fonts with CSS they are broken into two types.  &lt;strong&gt;Font&lt;/strong&gt; properties and &lt;strong&gt;Text&lt;/strong&gt; properties. The two are very similar, the &lt;strong&gt;Font&lt;/strong&gt; deals more with the character set and the &lt;strong&gt;Text&lt;/strong&gt; is more about changing the way the font looks.&lt;/p&gt;
 &lt;h2 id=&quot;font-properties&quot;&gt;Font Properties&lt;/h2&gt;
@@ -494,10 +494,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 5</title>
       <link>http://localhost:8080/lessons/lesson-5/</link>
-      <pubDate>Wed, 18 Oct 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 21 Feb 2018 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-5/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;div&gt;&lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Since Everything on in web design is a rectangular box we need to know how to size that box.  The way that CSS calculates the size of a box is not what you expect.  Rather than set the size of the box based on the outer most elements &lt;code&gt;border&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; the width is set baed on the content.&lt;/p&gt;
 &lt;h3 id=&quot;setting-a-width&quot;&gt;Setting a width&lt;/h3&gt;
@@ -533,10 +533,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 6</title>
       <link>http://localhost:8080/lessons/lesson-6/</link>
-      <pubDate>Wed, 25 Oct 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 28 Feb 2018 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about the new CSS3 flex box layout. &lt;div&gt;&lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about the new CSS3 flex box layout. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;iframe height='589' scrolling='no' title='Float Layout' src='//codepen.io/danhahn/embed/owGKdY/?height=589&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'&gt;See the Pen &lt;a href='https://codepen.io/danhahn/pen/owGKdY/'&gt;Float Layout&lt;/a&gt; by Dan Hahn (&lt;a href='https://codepen.io/danhahn'&gt;@danhahn&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.
 &lt;/iframe&gt;
@@ -590,10 +590,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 7</title>
       <link>http://localhost:8080/lessons/lesson-7/</link>
-      <pubDate>Wed, 01 Nov 2017 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 14 Mar 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about CSS backgrounds and how to build and style an HTML table. &lt;div&gt; &lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about CSS backgrounds and how to build and style an HTML table. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
 &lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
@@ -685,10 +685,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 8</title>
       <link>http://localhost:8080/lessons/lesson-8/</link>
-      <pubDate>Wed, 08 Nov 2017 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 21 Mar 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about adding Google Fonts, responsive and the &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; tag. &lt;div&gt;&lt;span class=&quot;badge badge--html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about adding Google Fonts, responsive and the &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; tag. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;font-families-recap&quot;&gt;Font families recap&lt;/h2&gt;
 &lt;p&gt;As we looked at in Fundamental text and font styling, the fonts applied to your HTML can be controlled using the font-family property. This takes one or more font family names, and the browser travels down the list until it finds a font it has available on the system it is running on:&lt;/p&gt;
@@ -796,10 +796,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 9</title>
       <link>http://localhost:8080/lessons/lesson-9/</link>
-      <pubDate>Wed, 15 Nov 2017 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 28 Mar 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will be talking about forms and JavaScript. &lt;div&gt;&lt;span class=&quot;badge badge--css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we will be talking about forms and JavaScript. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;form&quot;&gt;form&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag is used to create an HTML form for user input.&lt;/p&gt;
@@ -974,10 +974,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 10</title>
       <link>http://localhost:8080/lessons/lesson-10/</link>
-      <pubDate>Wed, 29 Nov 2017 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 04 Apr 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-10/</guid>
       <author></author>
-      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;classwork/&quot; target=&quot;_blank&quot; class=&quot;btn&quot;&gt;View Classwork&lt;/a&gt;&lt;/p&gt;
@@ -1039,10 +1039,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 11</title>
       <link>http://localhost:8080/lessons/lesson-11/</link>
-      <pubDate>Wed, 06 Dec 2017 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 11 Apr 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-11/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we work on the in class final.  &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we work on the in class final.  &lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
 &lt;p&gt;The final project is open book, meaning you can use any resource you need to finish the project including asking any questions you have.  The final is a multipage microsite.  &lt;/p&gt;
@@ -1138,10 +1138,10 @@ font-family: &amp;#39;Homemade Apple&amp;#39;, cursive;
     <item>
       <title>Lesson 12</title>
       <link>http://localhost:8080/lessons/lesson-12/</link>
-      <pubDate>Wed, 13 Dec 2017 15:00:00 -0500</pubDate>
+      <pubDate>Wed, 18 Apr 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we work on the in class final.  &lt;div&gt;&lt;span class=&quot;label label-default html&quot;&gt;&lt;i class=&quot;fa fa-html5&quot;&gt;&lt;/i&gt;HTML&lt;/span&gt; &lt;span class=&quot;label label-default css&quot;&gt;&lt;i class=&quot;fa fa-css3&quot;&gt;&lt;/i&gt;css&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;
+      <description>&lt;p&gt;This week we work on the in class final.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Details of final will be released at a later date.&lt;/p&gt;
 </description>

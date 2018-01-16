@@ -10,10 +10,10 @@
   border-radius: .25em;
   background-color: #df7c72;
   text-transform: uppercase;
-  display: inline-flex;
+  display: inline-block;
   align-items: baseline;
 }
-.badge i {
+.badge svg {
   margin-right: .5em;
 }
 .badge--html {
@@ -22,6 +22,19 @@
 .badge--css {
   background-color: #1572B6;
 }
+.badge--js {
+  background-color: #f7df1e;
+  color: black;
+}
 .badge--attribute {
   background-color: #008080;
+}
+.badge__list {
+  display: flex;
+  margin: 0 0 .5em;
+  padding: 0;
+  list-style: none;
+}
+.badge__list--item:not(:last-of-type) {
+  margin-right: .2em;
 }
