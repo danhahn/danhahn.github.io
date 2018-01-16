@@ -51,6 +51,8 @@
                   <li><a href="/lessons/lesson-12/index.html">Lesson 12<span class="date">April 18, 2018</span></a></li>
                 </ul>
               </li>
+              <li class="header-nav__item--class-files header-nav__item"><a href="https://drive.google.com/drive/folders/1DkcIlszobtg-b2JgCEkxxPfDYY-0Vcri?usp=sharing" target="_blank" class="header-nav__link">Class Files</a>
+              </li>
               <li class="header-nav__item--syllabus header-nav__item"><a href="/syllabus.html" class="header-nav__link">Syllabus</a>
               </li>
               <li class="header-nav__item--tag header-nav__item"><a href="/notes/tags/" class="header-nav__link">Tag List</a>
@@ -85,31 +87,34 @@
         <section class="article">
           <article class="article__primary">
             <h1><span class="caps">Homework</span> 
-            </h1><p>The point of this homework is to work with floats and the box model to create example of what a homepage of a site might look&nbsp;like.</p>
+            </h1><p>This week we are working using floats to display images and have the text wrap around&nbsp;it. </p>
 <h2 id="getting-started">Getting&nbsp;started</h2>
-<p>Download the starer file and be sure to rename both the folder and file&nbsp;name.</p>
-<p>In this folder you will&nbsp;find</p>
+<p>Download and unzip the starter&nbsp;file.  </p>
+<p>This file will&nbsp;have </p>
 <ul>
-<li>1 html&nbsp;page</li>
-<li>1 css&nbsp;file</li>
-<li>1 folder of&nbsp;images</li>
+<li><span class="caps">HTML</span>&nbsp;file</li>
+<li><span class="caps">CSS</span>&nbsp;file</li>
+<li>Images folder with 3&nbsp;images. </li>
 </ul>
-<h2 id="global-nav">global&nbsp;nav</h2>
-<p>For the global nav we need to turn a vertical nav in to a horizontal&nbsp;nav.</p>
-<h2 id="promos">promos</h2>
-<p>In this section we need to “stack” the promo boxes next to each other.  Here there is a small 10px gap between each&nbsp;box.  </p>
-<p>Here you will need to put a margin right on all but the last box.  Keep in mind that we can use <code>:last-child</code> to target the last&nbsp;element.</p>
-<p><strong>Note:</strong> you may need to define a width to get the boxes to align&nbsp;correct.</p>
-<h2 id="more-content">more&nbsp;content</h2>
-<p>Here we need to use the box model get the correct size of each&nbsp;box.  </p>
-<p>So lets figure out the size for each box in this&nbsp;section.  </p>
+<h2 id="adding-images">Adding&nbsp;images</h2>
+<p>The page is missing the images needed to display the content to the&nbsp;user.  </p>
 <ul>
-<li>total width&nbsp;1000px</li>
-<li>4&nbsp;boxes</li>
-<li>10px of space between each box (not after the&nbsp;last)</li>
-<li>10px of padding on each&nbsp;box</li>
-<li>1px&nbsp;border</li>
+<li>Add image to the header (header.jpg) - add to header tag before the <code>h1</code> tag.</li>
 </ul>
+<p>Each section of the article is missing the image related to the content.  Use the <code>figure</code> tag to add the an image (<code>img</code>). </p>
+<p>Add missing styles to the figure.  You will need to create two classes one for the image on the right and one for the image on the&nbsp;left.  </p>
+<h3 id="on-both-classes-add-these-styles">On both classes add these&nbsp;styles</h3>
+<pre><code class="lang-css"><span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-tag">ligthgray</span>;
+<span class="selector-tag">padding</span>: 1<span class="selector-tag">em</span>;
+</code></pre>
+<h3 id="floating-the-images">Floating the&nbsp;images</h3>
+<p>While we are floating the images we will be applying all the styles to class on the <code>figure</code>.  </p>
+<ul>
+<li>Add <code>float</code> (right or left based on how you want to display the&nbsp;“image”</li>
+<li>Add <code>margin-right</code> or <code>margin-left</code>.  If you float right add <code>margin-left</code> so the text will not push right up against the <code>figure</code></li>
+</ul>
+<h3 id="style-the-footer">Style the&nbsp;footer</h3>
+<p>The text in the footer needs to be displayed on the right side of the footer.   Try to use <code>float</code> and notice that the display breaks.  <code>text-align</code> will move the text within the contain to the&nbsp;right. </p>
 
             <div class="homework-view">
               <div><a href="images/lesson5-homework.png" target="_blank"><img src="images/lesson5-homework-sm.png" class="img-circle"></a></div>
@@ -131,7 +136,7 @@
               </ul>
               <h3>Downloads</h3>
               <ul class="downloads">
-                <li class="downloads__item"><a href="homework6_yourname.zip" class="btn--primary btn">Starter File<i class="fas fa-download"></i></a></li>
+                <li class="downloads__item"><a href="homework-5.zip" class="btn--primary btn">Starter File<i class="fas fa-download"></i></a></li>
               </ul>
             </div>
           </aside>
