@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lesson 5 - SVA HTML
+    <title>Lesson 6 - SVA HTML
     </title>
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="Spring 2018">
     <link rel="stylesheet" href="/css/main.css">
@@ -71,12 +71,12 @@
     <header class="main-titlebar container">
       <div class="container__center">
         <div class="titlebar">
-          <h1 class="titlebar__main"><span class="caps">Lesson</span> 5
+          <h1 class="titlebar__main"><span class="caps">Lesson</span> 6
           </h1>
           <div class="titlebar__date">
             <ul class="layout layout--date">
               <li class="layout__item"><i class="fas fa-calendar-alt"></i></li>
-              <li class="layout__item"><span class="date">February 21, 2018</span></li>
+              <li class="layout__item"><span class="date">February 28, 2018</span></li>
             </ul>
           </div>
         </div>
@@ -87,31 +87,48 @@
         <section class="article">
           <article class="article__primary">
             <h1><span class="caps">Homework</span> 
-            </h1><p>The point of this homework is to work with floats and the box model to create example of what a homepage of a site might look&nbsp;like.</p>
-<h2 id="getting-started">Getting&nbsp;started</h2>
-<p>Download the starer file and be sure to rename both the folder and file&nbsp;name.</p>
-<p>In this folder you will&nbsp;find</p>
+            </h1><p>The point of this homework is to work with flexbox and how to layout columns using&nbsp;it. </p>
+<h2 id="getting-started">Getting&nbsp;Started</h2>
+<p>Download the starter file.  In the zipfile you will&nbsp;find </p>
 <ul>
-<li>1 html&nbsp;page</li>
+<li>1 html&nbsp;file</li>
 <li>1 css&nbsp;file</li>
-<li>1 folder of&nbsp;images</li>
+<li>images folder with all the images needed for the&nbsp;design. </li>
 </ul>
-<h2 id="global-nav">global&nbsp;nav</h2>
-<p>For the global nav we need to turn a vertical nav in to a horizontal&nbsp;nav.</p>
-<h2 id="promos">promos</h2>
-<p>In this section we need to “stack” the promo boxes next to each other.  Here there is a small 10px gap between each&nbsp;box.  </p>
-<p>Here you will need to put a margin right on all but the last box.  Keep in mind that we can use <code>:last-child</code> to target the last&nbsp;element.</p>
-<p><strong>Note:</strong> you may need to define a width to get the boxes to align&nbsp;correct.</p>
-<h2 id="more-content">more&nbsp;content</h2>
-<p>Here we need to use the box model get the correct size of each&nbsp;box.  </p>
-<p>So lets figure out the size for each box in this&nbsp;section.  </p>
-<ul>
-<li>total width&nbsp;1000px</li>
-<li>4&nbsp;boxes</li>
-<li>10px of space between each box (not after the&nbsp;last)</li>
-<li>10px of padding on each&nbsp;box</li>
-<li>1px&nbsp;border</li>
-</ul>
+<p>After unzipping the file please rename the folder and files with your name. In the <code>html</code> file also update the <code>title</code> tag with your&nbsp;name.  </p>
+<h2 id="updating-styles">Updating&nbsp;styles</h2>
+<p>Within <code>style.css</code> we need to update a bunch of&nbsp;styles.</p>
+<h3 id="container-width">Container&nbsp;width</h3>
+<p><code>.wrapper</code> needs to have a max with of <code>1000px</code> we can this by adding a <code>max-width</code> property.</p>
+<h3 id="making-flexible-width-images">Making flexible width&nbsp;images</h3>
+<p>All images (except <code>.logo</code>) need to have a variable width.  Again we will use <code>max-width</code> but the value will be <code>100%</code>. This property will allow the image to get smaller in size but grow larger than the original size of the image.  We also add <code>display: block;</code> to the images to remove a small space that is added due <code>img</code> being inline by&nbsp;default.</p>
+<pre><code class="lang-css"><span class="selector-class">.hero</span> <span class="selector-tag">img</span> {
+  <span class="attribute">max-width</span>: <span class="number">100%</span>;
+  <span class="attribute">display</span>: block;
+}
+</code></pre>
+<p>Update the rest of the images to ensure they can resize if&nbsp;needed. </p>
+<h3 id="adding-flex">Adding&nbsp;Flex</h3>
+<p>Next we need get the content that is vertically aligned to be horizontally aligned.  There are two ways we can do&nbsp;this.  </p>
+<ol>
+<li>float</li>
+<li>flexbox</li>
+</ol>
+<p>Because flexbox is much more flexible we will use it for this homework but you could to the same with float (but will take 10 times more&nbsp;work).</p>
+<p>Lets start with the <code>.global-nav</code>.  In the provided css file you will find this&nbsp;selector </p>
+<pre><code class="lang-css"><span class="selector-class">.global-nav</span> <span class="selector-tag">ul</span> {
+
+}
+</code></pre>
+<p>To get the content to align horizontally we just need to add <code>display: flex;</code> to the&nbsp;selector.</p>
+<hr>
+<p>The “promo” and “more content” section will use the same idea but its a little more&nbsp;complex. </p>
+<p>Again we will use <code>display: flex;</code> to align the&nbsp;content.</p>
+<p>In the styles that are provided for this example there is a <code>margin-right: 1em;</code> that will add the “gap” between the columns.  Notice there is a also a “gap” on the column all the way to the right (last column).  We need to remove that since we want the columns to full up the full&nbsp;space.  </p>
+<p>We have a selector that will select just the “last” item in a element.  <code>:last-child</code> If we set the margin right on just this element to <code>0</code> it will remove the extra&nbsp;space.</p>
+<p>Now that extra space on the right is gone notice how all the columns are not the same with.   The <code>flex</code> property will fix this for us.  We need to add <code>flex: 1;</code> to the flex&nbsp;child.  </p>
+<p>Repeat this for the “more&nbsp;content”</p>
+<p>Align the <code>.global-footer</code> as&nbsp;well. </p>
 
             <div class="homework-view">
               <div><a href="images/lesson6-homework.png" target="_blank"><img src="images/lesson6-homework-sm.png" class="img-circle"></a></div>
@@ -125,10 +142,9 @@
             <div class="side-nav-inner">
               <ul class="sidenav">
                 <div class="trigger">&#8250;</div>
-                <li class="sidenav__item"><a href="index.html" class="sidenav__link">Box Model</a></li>
-                <li class="sidenav__item"><a href="pseudo.html" class="sidenav__link">Pseudo Class</a></li>
-                <li class="sidenav__item"><a href="floats.html" class="sidenav__link">Floats</a></li>
-                <li class="sidenav__item"><a href="clear-fix.html" class="sidenav__link">Clear Fix</a></li>
+                <li class="sidenav__item"><a href="index.html" class="sidenav__link">Float Layout</a></li>
+                <li class="sidenav__item"><a href="flex.html" class="sidenav__link">Flex Box</a></li>
+                <li class="sidenav__item"><a href="flex-layout.html" class="sidenav__link">Flex Layout</a></li>
                 <li class="sidenav__item"><a href="homework.html" class="sidenav__link">Homework</a></li>
               </ul>
               <h3>Downloads</h3>

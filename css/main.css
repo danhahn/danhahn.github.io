@@ -154,7 +154,7 @@
 .brand__svg .letter {
   fill: #ffffff;
 }
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 767px) {
   .nav-content {
     height: 60px;
   }
@@ -172,6 +172,7 @@
     overflow: hidden;
     max-height: 0;
     transition: all .2s linear;
+    margin: 0 -1em;
   }
 }
 .header-nav__list {
@@ -180,7 +181,7 @@
   margin: 0;
   display: flex;
 }
-@media only screen and (min-width: 424px) {
+@media only screen and (min-width: 769px) {
   .header-nav__list {
     height: 60px;
   }
@@ -190,7 +191,7 @@
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 424px) {
+@media only screen and (min-width: 768px) {
   .header-nav__item {
     display: flex;
     align-items: center;
@@ -223,7 +224,7 @@
     border-bottom: 1px solid #c0392b;
   }
 }
-@media only screen and (min-width: 424px) {
+@media only screen and (min-width: 768px) {
   .header-nav__item:hover .header-nav__subNav {
     display: block;
   }
@@ -294,40 +295,41 @@
   background-color: #f4f5f6;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-@media only screen and (min-width: 424px) {
+@media only screen and (min-width: 769px) {
   .header-nav__subNav {
     position: absolute;
     display: none;
     top: 60px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .header-nav__subNav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.header-nav__subNav li {
+.header-nav__subNav a {
+  display: block;
   padding: .5em 1em;
+  text-decoration: none;
 }
-@media only screen and (min-width: 424px) {
-  .header-nav__subNav li:not(:last-of-type) {
+@media only screen and (min-width: 768px) {
+  .header-nav__subNav a:not(:last-of-type) {
     border-bottom: 1px solid #20232a;
   }
 }
-.header-nav__subNav li:hover {
+.header-nav__subNav a:hover {
   background-color: #df7c72;
-}
-.header-nav__subNav li:hover a {
   color: #ffffff;
 }
-.header-nav__subNav a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  white-space: nowrap;
-  text-decoration: none;
+@media only screen and (min-width: 768px) {
+  .header-nav__subNav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
 }
 .header-nav__subNav .date {
   white-space: nowrap;
@@ -335,7 +337,7 @@
   margin-left: 1em;
   color: #20232a;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 769px) {
   .header-nav__subNav .date {
     display: none;
   }
@@ -352,7 +354,7 @@
   align-items: center;
 }
 @media only screen and (max-width: 425px) {
-  .titlebar {
+  .titlebar:not(.homepage) {
     padding-left: 30px;
   }
 }
@@ -388,6 +390,7 @@
 }
 @media only screen and (max-width: 768px) {
   .article {
+    margin-top: 0;
     grid-template-areas: "s s s s s s s s s s s s" "p p p p p p p p p p p p";
   }
 }
@@ -399,16 +402,6 @@
 .article__primary {
   padding: 0 0 2em 0;
   grid-area: p;
-}
-@media only screen and (max-width: 768px) {
-  .article__primary {
-    padding: 1em;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .article__primary {
-    padding: 1em 1em 1em 30px;
-  }
 }
 .article__secondary {
   grid-area: s;
@@ -431,7 +424,7 @@
 }
 @media only screen and (max-width: 768px) {
   .article__secondary {
-    padding: 1em 1em 0;
+    padding: 1em 0 0;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -810,12 +803,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px;
     grid-auto-rows: 300px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .grid--homepage {
-    grid-template-rows: 230px;
-    grid-auto-rows: 230px;
   }
 }
 .burger {
@@ -1222,6 +1209,11 @@ a {
   max-width: 1170px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1170px) {
+  .container__center {
+    padding: 0 1em;
+  }
+}
 .simple-row {
   display: flex;
 }
@@ -1238,12 +1230,12 @@ a {
   .simple-row--brandbar {
     align-items: center;
     justify-content: space-between;
-    padding: .5em 1em;
+    padding: 13px 0;
   }
 }
 @media only screen and (max-width: 424px) {
   .simple-row--brandbar {
-    padding: 13px 1em;
+    padding: 13px 0;
   }
 }
 .simple-row--brandbar.active::after {
