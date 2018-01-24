@@ -19,26 +19,24 @@
   border: 1px solid transparent;
   border-radius: 4px;
   text-decoration: none;
-  color: #c0392b;
-  border: 1px solid #c0392b;
+  color: $primary;
+  border: 1px solid $primary;
   transition: all .1s;
-}
-.btn:hover {
-  background-color: #d14233;
-  color: #ffffff;
-}
-.btn i {
-  margin-left: .5em;
-}
-.btn--primary,
-.btn.active {
-  color: #ffffff;
-  background-color: #c0392b;
-}
-.btn--primary:hover,
-.btn.active:hover {
-  background-color: #d65548;
-}
-.btn svg {
-  margin-left: .3em;
+  &:hover {
+    background-color: $primary5;
+    color: $white;
+  }
+  i {
+    margin-left: .5em;
+  }
+  &--primary, &.active {
+    color: $white;
+    background-color: $primary;
+    &:hover {
+      background-color: $primary10;
+    }
+  }
+  svg {
+    margin-left: .3em;
+  }
 }
