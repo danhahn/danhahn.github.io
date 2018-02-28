@@ -536,7 +536,7 @@ td .label {margin-right: 4px;cursor: pointer;}
       <pubDate>Wed, 28 Feb 2018 15:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about the new CSS3 flex box layout. &lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about the new CSS3 flex box layout.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;iframe height='589' scrolling='no' title='Float Layout' src='//codepen.io/danhahn/embed/owGKdY/?height=589&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'&gt;See the Pen &lt;a href='https://codepen.io/danhahn/pen/owGKdY/'&gt;Float Layout&lt;/a&gt; by Dan Hahn (&lt;a href='https://codepen.io/danhahn'&gt;@danhahn&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.
 &lt;/iframe&gt;

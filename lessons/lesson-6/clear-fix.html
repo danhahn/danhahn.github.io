@@ -86,84 +86,147 @@
       <div class="container__center">
         <section class="article">
           <article class="article__primary">
-            <h1><span class="caps">Flex</span> Layout
-            </h1><iframe height='528' scrolling='no' title='Flex Layout (Week 6)' src='//codepen.io/danhahn/embed/owmERe/?height=528&theme-id=light&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/danhahn/pen/owmERe/'>Flex Layout (Week 6)</a> by Dan Hahn (<a href='https://codepen.io/danhahn'>@danhahn</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+            <h1><span class="caps">Clear</span> fix
+            </h1><p>There are a number of way to fix the issue when all the content within a element are&nbsp;floated.</p>
+<h2 id="adding-height">Adding&nbsp;Height</h2>
+<p>The most basic way to fix the issue is to add a height to the parent&nbsp;element.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css">
+  <span class="selector-tag">ul</span> {
+    <span class="attribute">height</span>: <span class="number">25px</span>;
+  }
+  <span class="selector-tag">li</span> {
+    <span class="attribute">float</span>: left;
+    <span class="attribute">list-style</span>:none;
+  }
+</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
+<span class="tag">&lt;<span class="name">ul</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 3<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 4<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Good</th>
+<th>Bad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>it works</td>
+<td>not flexaable</td>
+</tr>
+<tr>
+<td></td>
+<td>hard to know what he correct height is.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="overflow">Overflow</h2>
+<p>Adding <code>overflow: hidden</code> or <code>overflow: auto</code> will a adjust the way the content is displayed.  This will force a&nbsp;height.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css">
+  <span class="selector-tag">ul</span> {
+    <span class="attribute">overflow</span>: hidden;
+  }
+  <span class="selector-tag">li</span> {
+    <span class="attribute">float</span>: left;
+    <span class="attribute">list-style</span>:none;
+  }
+</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
+<span class="tag">&lt;<span class="name">ul</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 3<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 4<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Good</th>
+<th>Bad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>it works</td>
+<td>No logical connection between overflow and float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="extra-div">Extra&nbsp;Div</h2>
+<p>Since we know that adding a <code>clear: both;</code> to an element will stop to clear. We can add a new element after the last floated element and add a clear to it. Since the element is after and cleared it will “pin” the background&nbsp;down.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css">
+  <span class="selector-tag">li</span> {
+    <span class="attribute">float</span>: left;
+    <span class="attribute">list-style</span>:none;
+  }
+  <span class="selector-class">.clear</span> {
+    <span class="attribute">clear</span>: both;
+  }
+</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
+<span class="tag">&lt;<span class="name">nav</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">ul</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 3<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 4<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"clear"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">nav</span>&gt;</span>
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Good</th>
+<th>Bad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>it works</td>
+<td>Bad to add element that has not content purpose</td>
+</tr>
+</tbody>
+</table>
+<h2 id="clear-fix">Clear&nbsp;Fix</h2>
+<p>The idea of the extra <code>&lt;div&gt;&lt;/div&gt;</code> is a good one the only problem is we do not like to add extra markup that has no content need. <span class="caps">CSS3</span> gives all elements an extra element before and after. By using the <code>:after</code> pseudo element you can add an “element” can clear&nbsp;that.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css">
+<span class="selector-tag">ul</span><span class="selector-pseudo">:after</span> {
+  <span class="attribute">content</span>: <span class="string">""</span>;
+  <span class="attribute">display</span>: block;
+  <span class="attribute">clear</span>: both;
+}
+<span class="selector-tag">li</span> {
+  <span class="attribute">float</span>: left;
+  <span class="attribute">list-style</span>:none;
+}
+</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
 
-<h2 id="set-up">Set&nbsp;Up</h2>
-<p>We have the same markup as the <code>Float</code> layout.</p>
-<p>But rather than using the brittle <code>float</code> we can use a more modern <code>display: flex</code>.</p>
-<pre><code class="lang-markup">&lt;div class=&quot;wrapper&quot;&gt;
-  &lt;header&gt;Header&lt;/header&gt;
-  &lt;section&gt;
-    &lt;nav&gt;Nav&lt;/nav&gt;
-    &lt;article&gt;Content&lt;/article&gt;
-    &lt;aside&gt;Side Content&lt;/aside&gt;
-  &lt;/section&gt;
-  &lt;footer&gt;Footer&lt;/footer&gt;
-&lt;/div&gt;
+<span class="tag">&lt;<span class="name">ul</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 3<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 4<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
 </code></pre>
-<p>In this example we have two <code>display: flex;</code> Going on at the same time. The design is to have a “sticky” footer, a footer that is at the bottom of the page regardless of the content on the page this is our first <code>flex</code>;  The other is the <code>&lt;section&gt;</code>, we use this to create a “row” that contains our <code>&lt;nav&gt;</code> <code>&lt;article&gt;</code> and <code>&lt;aside&gt;</code>.</p>
-<p>If you are comfortable using <code>flex</code> the “row” style should straight forward.  We define <code>display: flex;</code> on <code>&lt;section&gt;</code> to define a row.  To define the “columns” we need define a <code>flex-basis</code> on the <code>&lt;nav&gt;</code> and <code>&lt;aside&gt;</code> which are basically the “width” of the columns.  To give the remainder of the space to the <code>&lt;article&gt;</code> we define <code>flex: 1</code>.</p>
-<p>Getting the “sticky” footer to work is a little more complex.  First we need to ensure that page is as tall as the viewport we need to set <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> to have a height of <code>100%</code>.  This will allow us to set the height of the <code>.wrapper</code> to <code>100vh</code>.  The <code>vh</code> is a view height, it gets is size form the viewport.  In our case it it taking up the full screen so we have it set to <code>100vh</code>.  We also use <code>min-height</code> to ensure it takes the full screen size but can grow inf the content needs it&nbsp;to.</p>
-<p>Next we need to add a <code>display: flex;</code> to the <code>.wrapper</code>. Since the default for a <em>“flexbox”</em> is <code>flex-direction: row;</code> it will stack the content next to each other.  Since we want the content to stack on top of one another we need to set the <code>flex-direction: column</code>;  It may seem like there is no change but it is now a “flexbox” and this will allow us to take the remainder of the space in the column and give it our <code>&lt;section&gt;</code>.  We need to add <code>flex: 1</code> to the <code>&lt;section&gt;</code>, it is now a <em>flex parent</em> and <em>flex child</em> at the same&nbsp;time.</p>
-<pre><code class="lang-css"><span class="selector-tag">html</span>, <span class="selector-tag">body</span> {
-  <span class="attribute">height</span>: <span class="number">100%</span>;
-}
-<span class="selector-tag">body</span> {
-  <span class="attribute">font</span>: <span class="number">16px</span> arial;
-  <span class="attribute">margin</span>: <span class="number">0</span>;
-}
-<span class="selector-class">.wrapper</span> {
-  <span class="attribute">background-color</span>: lightgray;
-  <span class="attribute">min-height</span>: <span class="number">100vh</span>;
-  <span class="attribute">display</span>: flex;
-  <span class="attribute">flex-direction</span>: column;
-  <span class="attribute">max-width</span>: <span class="number">1000px</span>;
-  <span class="attribute">margin</span>: <span class="number">0</span> auto;
-}
-<span class="selector-tag">header</span> {
-  <span class="attribute">background-color</span>: slategray;
-  <span class="attribute">padding</span>: <span class="number">20px</span>;
-  <span class="attribute">color</span>: white;
-}
-<span class="selector-tag">section</span> {
-  <span class="attribute">display</span>: flex;
-  <span class="attribute">flex</span>: <span class="number">1</span>;
-}
-<span class="selector-tag">nav</span> {
-  <span class="attribute">background-color</span>: plum;
-  <span class="attribute">padding</span>: <span class="number">1em</span>;
-  <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">100px</span>;
-}
-<span class="selector-tag">article</span> {
-  <span class="attribute">background-color</span>: white;
-  <span class="attribute">flex</span>: <span class="number">1</span>;
-  <span class="attribute">padding</span>: <span class="number">2em</span>;
-}
-<span class="selector-tag">aside</span> {
-  <span class="attribute">background-color</span>: pink;
-  <span class="attribute">padding</span>: <span class="number">1em</span>;
-  <span class="attribute">flex</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">100px</span>;
-}
-<span class="selector-tag">footer</span> {
-  <span class="attribute">background-color</span>: black;
-  <span class="attribute">padding</span>: <span class="number">20px</span>;
-  <span class="attribute">color</span>: white;
-}
-</code></pre>
-<h2 id="responsive">Responsive</h2>
-<p><code>@media</code> is a conditional styles that can be applied only when the conditions are meet.  In this example it is looking at the <code>max-width</code>.  So if the screen width is <code>600px</code> or less these additional style are added to the file. It is important to understand that the selectors in the media query have no more weight than any other selector.  To ensure the styles at in the <code>@media</code> query are applied they need to be defined after the <em>“default”</em>&nbsp;styles.</p>
-<pre><code class="lang-css">@<span class="keyword">media</span> (max-width: <span class="number">600px</span>) {
-  <span class="selector-tag">section</span> {
-    <span class="attribute">flex-direction</span>: column;
-  }
-  <span class="selector-tag">nav</span>, <span class="selector-tag">aside</span> {
-    <span class="attribute">flex-basis</span>: auto;
-  }
-}
-</code></pre>
-<p><code>@media</code> queries are different in that they wrap the selector.  When working with media queries ensure that all <code>{}</code> have a pair.  Failing to properly close a media query could have adverse affects on any style after the missing <code>}</code>.</p>
+<p><strong>Note:</strong> when working with the pseudo element you need to add <code>content: &quot;&quot;;</code> and it is an <strong>inline</strong> element by&nbsp;default.</p>
+<table>
+<thead>
+<tr>
+<th>Good</th>
+<th>Bad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>it works</td>
+<td>Lack of older browser support. <span class="caps">IE8</span> and below</td>
+</tr>
+</tbody>
+</table>
 
           </article>
           <aside class="article__secondary">
