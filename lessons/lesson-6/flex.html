@@ -87,139 +87,139 @@
         <section class="article">
           <article class="article__primary">
             <h1><span class="caps">Intro</span> to Flex box
-            </h1><h2 id="history-of-flex-box">History of Flex&nbsp;Box</h2>
-<p>The Flex box Layout (Flexible Box) module (currently a <span class="caps">W3C</span> Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word&nbsp;“flex”).</p>
-<p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent&nbsp;overflow.</p>
-<p>Most importantly, the flex box layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking,&nbsp;etc.).</p>
-<p><strong>Note:</strong> Flex box layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale&nbsp;layouts.</p>
-<h2 id="properties-for-the-parent-flex-container-">Properties for the Parent (flex&nbsp;container)</h2>
+            </h1><h2 id="history-of-flex-box">History of Flex<span class="widont">&nbsp;</span>Box</h2>
+<p>The Flex box Layout (Flexible Box) module (currently a <span class="caps">W3C</span> Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word<span class="widont">&nbsp;</span>“flex”).</p>
+<p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent<span class="widont">&nbsp;</span>overflow.</p>
+<p>Most importantly, the flex box layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking,<span class="widont">&nbsp;</span>etc.).</p>
+<p><strong>Note:</strong> Flex box layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale<span class="widont">&nbsp;</span>layouts.</p>
+<h2 id="properties-for-the-parent-flex-container-">Properties for the Parent (flex<span class="widont">&nbsp;</span>container)</h2>
 <h3 id="display">display</h3>
-<p>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct&nbsp;children.</p>
+<p>This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct<span class="widont">&nbsp;</span>children.</p>
 <pre><code>.container {
   display: flex; /* or inline-flex */
 }
-</code></pre><p>Note that <span class="caps">CSS</span> columns have no effect on a flex&nbsp;container.</p>
+</code></pre><p>Note that <span class="caps">CSS</span> columns have no effect on a flex<span class="widont">&nbsp;</span>container.</p>
 <iframe height='400' scrolling='no' title='Flex Intro - flex' src='//codepen.io/danhahn/embed/VvzQwP/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/VvzQwP/'>Flex Intro - flex</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 <h3 id="flex-direction">flex-direction</h3>
-<p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flex box is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical&nbsp;columns.</p>
+<p>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flex box is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical<span class="widont">&nbsp;</span>columns.</p>
 <pre><code>.container {
   flex-direction: row | row-reverse | column | column-reverse;
 }
 </code></pre><ul>
-<li>row (default): left to right in ltr; right to left in&nbsp;rtl</li>
-<li>row-reverse: right to left in ltr; left to right in&nbsp;rtl</li>
-<li>column: same as row but top to&nbsp;bottom</li>
-<li>column-reverse: same as row-reverse but bottom to&nbsp;top</li>
+<li>row (default): left to right in ltr; right to left in<span class="widont">&nbsp;</span>rtl</li>
+<li>row-reverse: right to left in ltr; left to right in<span class="widont">&nbsp;</span>rtl</li>
+<li>column: same as row but top to<span class="widont">&nbsp;</span>bottom</li>
+<li>column-reverse: same as row-reverse but bottom to<span class="widont">&nbsp;</span>top</li>
 </ul>
 <iframe height='400' scrolling='no' title='Flex Intro- flex-direction' src='//codepen.io/danhahn/embed/rOzJNX/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/rOzJNX/'>Flex Intro- flex-direction</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 <h3 id="flex-wrap">flex-wrap</h3>
-<p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property. Direction also plays a role here, determining the direction new lines are stacked&nbsp;in.</p>
+<p>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property. Direction also plays a role here, determining the direction new lines are stacked<span class="widont">&nbsp;</span>in.</p>
 <pre><code>.container{
   flex-wrap: nowrap | wrap | wrap-reverse;
 }
 </code></pre><ul>
-<li>nowrap (default): single-line / left to right in ltr; right to left in&nbsp;rtl</li>
-<li>wrap: multi-line / left to right in ltr; right to left in&nbsp;rtl</li>
-<li>wrap-reverse: multi-line / right to left in ltr; left to right in&nbsp;rtl</li>
-<li>flex-flow (Applies to: parent flex container&nbsp;element)</li>
-<li>This is a shorthand flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. Default is row&nbsp;nowrap.</li>
+<li>nowrap (default): single-line / left to right in ltr; right to left in<span class="widont">&nbsp;</span>rtl</li>
+<li>wrap: multi-line / left to right in ltr; right to left in<span class="widont">&nbsp;</span>rtl</li>
+<li>wrap-reverse: multi-line / right to left in ltr; left to right in<span class="widont">&nbsp;</span>rtl</li>
+<li>flex-flow (Applies to: parent flex container<span class="widont">&nbsp;</span>element)</li>
+<li>This is a shorthand flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. Default is row<span class="widont">&nbsp;</span>nowrap.</li>
 </ul>
 <iframe height='400' scrolling='no' title='Flex Intro - flex-wrap' src='//codepen.io/danhahn/embed/YyxePZ/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/YyxePZ/'>Flex Intro - flex-wrap</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 <pre><code>flex-flow: &lt;‘flex-direction’&gt; || &lt;‘flex-wrap’&gt;
 </code></pre><h3 id="justify-content">justify-content</h3>
-<p>This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the&nbsp;line.</p>
+<p>This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the<span class="widont">&nbsp;</span>line.</p>
 <pre><code>.container {
   justify-content: flex-start | flex-end | center | space-between | space-around;
 }
 </code></pre><ul>
-<li>flex-start (default): items are packed toward the start&nbsp;line</li>
-<li>flex-end: items are packed toward to end&nbsp;line</li>
-<li>center: items are centered along the&nbsp;line</li>
-<li>space-between: items are evenly distributed in the line; first item is on the start line, last item on the end&nbsp;line</li>
-<li>space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that&nbsp;applies.</li>
+<li>flex-start (default): items are packed toward the start<span class="widont">&nbsp;</span>line</li>
+<li>flex-end: items are packed toward to end<span class="widont">&nbsp;</span>line</li>
+<li>center: items are centered along the<span class="widont">&nbsp;</span>line</li>
+<li>space-between: items are evenly distributed in the line; first item is on the start line, last item on the end<span class="widont">&nbsp;</span>line</li>
+<li>space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that<span class="widont">&nbsp;</span>applies.</li>
 </ul>
 <iframe height='400' scrolling='no' title='Flex Intro - justify-content' src='//codepen.io/danhahn/embed/vNJdOZ/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/vNJdOZ/'>Flex Intro - justify-content</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 <h3 id="align-items">align-items</h3>
-<p>This defines the default behaviour for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the&nbsp;main-axis).</p>
+<p>This defines the default behaviour for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the<span class="widont">&nbsp;</span>main-axis).</p>
 <pre><code>.container {
   align-items: flex-start | flex-end | center | baseline | stretch;
 }
 </code></pre><ul>
-<li>flex-start: cross-start margin edge of the items is placed on the cross-start&nbsp;line</li>
-<li>flex-end: cross-end margin edge of the items is placed on the cross-end&nbsp;line</li>
-<li>center: items are centered in the&nbsp;cross-axis</li>
-<li>baseline: items are aligned such as their baselines&nbsp;align</li>
-<li>stretch (default): stretch to fill the container (still respect&nbsp;min-width/max-width)</li>
+<li>flex-start: cross-start margin edge of the items is placed on the cross-start<span class="widont">&nbsp;</span>line</li>
+<li>flex-end: cross-end margin edge of the items is placed on the cross-end<span class="widont">&nbsp;</span>line</li>
+<li>center: items are centered in the<span class="widont">&nbsp;</span>cross-axis</li>
+<li>baseline: items are aligned such as their baselines<span class="widont">&nbsp;</span>align</li>
+<li>stretch (default): stretch to fill the container (still respect<span class="widont">&nbsp;</span>min-width/max-width)</li>
 </ul>
 <iframe height='400' scrolling='no' title='Flex Intro - align-items' src='//codepen.io/danhahn/embed/MavQwd/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/MavQwd/'>Flex Intro - align-items</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 <h3 id="align-content">align-content</h3>
-<p>This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the&nbsp;main-axis.</p>
-<p><strong>Note:</strong> this property has no effect when there is only one line of flex&nbsp;items.</p>
+<p>This aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the<span class="widont">&nbsp;</span>main-axis.</p>
+<p><strong>Note:</strong> this property has no effect when there is only one line of flex<span class="widont">&nbsp;</span>items.</p>
 <pre><code>.container {
   align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 }
 </code></pre><ul>
-<li>flex-start: lines packed to the start of the&nbsp;container</li>
-<li>flex-end: lines packed to the end of the&nbsp;container</li>
-<li>center: lines packed to the center of the&nbsp;container</li>
-<li>space-between: lines evenly distributed; the first line is at the start of the container while the last one is at the&nbsp;end</li>
-<li>space-around: lines evenly distributed with equal space around each&nbsp;line</li>
-<li>stretch (default): lines stretch to take up the remaining&nbsp;space</li>
+<li>flex-start: lines packed to the start of the<span class="widont">&nbsp;</span>container</li>
+<li>flex-end: lines packed to the end of the<span class="widont">&nbsp;</span>container</li>
+<li>center: lines packed to the center of the<span class="widont">&nbsp;</span>container</li>
+<li>space-between: lines evenly distributed; the first line is at the start of the container while the last one is at the<span class="widont">&nbsp;</span>end</li>
+<li>space-around: lines evenly distributed with equal space around each<span class="widont">&nbsp;</span>line</li>
+<li>stretch (default): lines stretch to take up the remaining<span class="widont">&nbsp;</span>space</li>
 </ul>
-<h2 id="properties-for-the-children-flex-items-">Properties for the Children (flex&nbsp;items)</h2>
+<h2 id="properties-for-the-children-flex-items-">Properties for the Children (flex<span class="widont">&nbsp;</span>items)</h2>
 <h3 id="order">order</h3>
-<p>By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex&nbsp;container.</p>
+<p>By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex<span class="widont">&nbsp;</span>container.</p>
 <pre><code>.item {
   order: &lt;integer&gt;;
 }
 </code></pre><h3 id="flex-grow">flex-grow</h3>
-<p>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take&nbsp;up.</p>
-<p>If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at&nbsp;least).</p>
+<p>This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take<span class="widont">&nbsp;</span>up.</p>
+<p>If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at<span class="widont">&nbsp;</span>least).</p>
 <pre><code>.item {
   flex-grow: &lt;number&gt;; /* default 0 */
 }
-</code></pre><p>Negative numbers are&nbsp;invalid.</p>
+</code></pre><p>Negative numbers are<span class="widont">&nbsp;</span>invalid.</p>
 <iframe height='400' scrolling='no' title='Flex Intro - flex-grow' src='//codepen.io/danhahn/embed/gaxvge/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/gaxvge/'>Flex Intro - flex-grow</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 <h3 id="flex-shrink">flex-shrink</h3>
-<p>This defines the ability for a flex item to shrink if&nbsp;necessary.</p>
+<p>This defines the ability for a flex item to shrink if<span class="widont">&nbsp;</span>necessary.</p>
 <pre><code>.item {
   flex-shrink: &lt;number&gt;; /* default 1 */
 }
-</code></pre><p>Negative numbers are&nbsp;invalid.</p>
+</code></pre><p>Negative numbers are<span class="widont">&nbsp;</span>invalid.</p>
 <h3 id="flex-basis">flex-basis</h3>
-<p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property” (which was temporarily done by the main-size keyword until deprecated). The content keyword means “size it based on the item’s content” - this keyword isn’t well supported yet, so it’s hard to test and harder to know what its brethren max-content, min-content, and fit-content&nbsp;do.</p>
+<p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property” (which was temporarily done by the main-size keyword until deprecated). The content keyword means “size it based on the item’s content” - this keyword isn’t well supported yet, so it’s hard to test and harder to know what its brethren max-content, min-content, and fit-content<span class="widont">&nbsp;</span>do.</p>
 <pre><code>.item {
   flex-basis: &lt;length&gt; | auto; /* default auto */
 }
-</code></pre><p>If set to 0, the extra space around content isn’t factored in. If set to auto, the extra space is distributed based on its flex-grow value. See this&nbsp;graphic.</p>
+</code></pre><p>If set to 0, the extra space around content isn’t factored in. If set to auto, the extra space is distributed based on its flex-grow value. See this<span class="widont">&nbsp;</span>graphic.</p>
 <iframe height='400' scrolling='no' title='Flex Intro - Flex Basis' src='//codepen.io/danhahn/embed/NGvydE/?height=300&theme-id=16874&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/danhahn/pen/NGvydE/'>Flex Intro - Flex Basis</a> by Dan Hahn (<a href='http://codepen.io/danhahn'>@danhahn</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
 <h3 id="flex">flex</h3>
-<p>This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1&nbsp;auto.</p>
+<p>This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1<span class="widont">&nbsp;</span>auto.</p>
 <pre><code>.item {
   flex: none | [ &lt;&#39;flex-grow&#39;&gt; &lt;&#39;flex-shrink&#39;&gt;? || &lt;&#39;flex-basis&#39;&gt; ]
 }
-</code></pre><p>It is recommended that you use this shorthand property rather than set the individual properties. The short hand sets the other values&nbsp;intelligently.</p>
+</code></pre><p>It is recommended that you use this shorthand property rather than set the individual properties. The short hand sets the other values<span class="widont">&nbsp;</span>intelligently.</p>
 <h3 id="align-self">align-self</h3>
-<p>This allows the default alignment (or the one specified by align-items) to be overridden for individual flex&nbsp;items.</p>
-<p>Please see the align-items explanation to understand the available&nbsp;values.</p>
+<p>This allows the default alignment (or the one specified by align-items) to be overridden for individual flex<span class="widont">&nbsp;</span>items.</p>
+<p>Please see the align-items explanation to understand the available<span class="widont">&nbsp;</span>values.</p>
 <pre><code>.item {
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
-</code></pre><p>Note that float, clear and vertical-align have no effect on a flex&nbsp;item.</p>
+</code></pre><p>Note that float, clear and vertical-align have no effect on a flex<span class="widont">&nbsp;</span>item.</p>
 
           </article>
           <aside class="article__secondary">

@@ -89,8 +89,8 @@
           <article class="article__primary">
             <h1><span class="caps">Google</span> Fonts
             </h1><h2 id="introduction">Introduction</h2>
-<p>One of the advantages of using Google Fonts is it is free to use and offers a wide range of fonts.  You will need just add a little code to your html and css to get the fonts to display.  Since we are using a 3<span class="ord">rd</span> party to load the fonts there could be a performance hit.  When you use a Google Font and load your page the browser will need to go and download any resource to your local cache while this is happening the fonts you want to use can not&nbsp;display.  </p>
-<p>What they will send&nbsp;you.</p>
+<p>One of the advantages of using Google Fonts is it is free to use and offers a wide range of fonts.  You will need just add a little code to your html and css to get the fonts to display.  Since we are using a 3<span class="ord">rd</span> party to load the fonts there could be a performance hit.  When you use a Google Font and load your page the browser will need to go and download any resource to your local cache while this is happening the fonts you want to use can not<span class="widont">&nbsp;</span>display.  </p>
+<p>What they will send<span class="widont">&nbsp;</span>you.</p>
 <pre><code class="lang-css">@<span class="keyword">font-face</span> {
   <span class="attribute">font-family</span>: <span class="string">'Awesome Font'</span>;
   <span class="attribute">font-style</span>: normal;
@@ -113,55 +113,55 @@
        <span class="built_in">url</span>(<span class="string">'/fonts/awesome-i.eot'</span>) <span class="built_in">format</span>(<span class="string">'embedded-opentype'</span>);
 }
 </code></pre>
-<p>Since each case of a font is its own file the more variations of the file you use will need to loaded.  This can add up and slow down the loading of your site. Try to limit the number of web fonts because of&nbsp;this.</p>
-<h2 id="getting-started">Getting&nbsp;started</h2>
+<p>Since each case of a font is its own file the more variations of the file you use will need to loaded.  This can add up and slow down the loading of your site. Try to limit the number of web fonts because of<span class="widont">&nbsp;</span>this.</p>
+<h2 id="getting-started">Getting started</h2>
 <ol>
-<li>Load the <a href="https://fonts.google.com">Google Fonts</a>&nbsp;site.</li>
-<li>Select the font(s) you want to&nbsp;use.</li>
-<li>Add fonts to your&nbsp;site</li>
-<li>Add <code>font-family</code> to the element(s) you want&nbsp;style.</li>
+<li>Load the <a href="https://fonts.google.com">Google Fonts</a><span class="widont">&nbsp;</span>site.</li>
+<li>Select the font(s) you want to<span class="widont">&nbsp;</span>use.</li>
+<li>Add fonts to your<span class="widont">&nbsp;</span>site</li>
+<li>Add <code>font-family</code> to the element(s) you want<span class="widont">&nbsp;</span>style.</li>
 </ol>
-<h3 id="load-site">Load&nbsp;site</h3>
+<h3 id="load-site">Load site</h3>
 <p><img src="/lessons/lesson-8/images/gf6.png" alt=""></p>
-<h3 id="select-font-family">Select Font&nbsp;Family</h3>
-<p>You can select as many as your want but make sure what ever font you select you use.  You don’t want to download a file that is not&nbsp;used.</p>
+<h3 id="select-font-family">Select Font Family</h3>
+<p>You can select as many as your want but make sure what ever font you select you use.  You don’t want to download a file that is not<span class="widont">&nbsp;</span>used.</p>
 <p><img src="/lessons/lesson-8/images/gf1.png" alt=""></p>
-<h3 id="click-the-family-selected-black-bar-at-the-bottom">Click the Family Selected Black Bar at the&nbsp;bottom</h3>
-<p>This will bring up a dialog that you can use to customize your&nbsp;fonts.   </p>
+<h3 id="click-the-family-selected-black-bar-at-the-bottom">Click the Family Selected Black Bar at the<span class="widont">&nbsp;</span>bottom</h3>
+<p>This will bring up a dialog that you can use to customize your<span class="widont">&nbsp;</span>fonts.   </p>
 <p><img src="/lessons/lesson-8/images/gf5.png" alt=""></p>
 <p><img src="/lessons/lesson-8/images/gf4.png" alt=""></p>
-<p>Notice the “Load Time Fast/Slow” in the top right of the dialog. It warns you if you changes will take a long time to load.  You want this to be green.  Remove any font that you will not&nbsp;use.  </p>
+<p>Notice the “Load Time Fast/Slow” in the top right of the dialog. It warns you if you changes will take a long time to load.  You want this to be green.  Remove any font that you will not<span class="widont">&nbsp;</span>use.  </p>
 <p><img src="/lessons/lesson-8/images/gf3.png" alt=""></p>
-<h3 id="add-font-to-your-project">Add font to your&nbsp;project</h3>
-<p>Once you have it customize the way you want you will now need to add the code to your project.  This is done in two&nbsp;parts.</p>
+<h3 id="add-font-to-your-project">Add font to your<span class="widont">&nbsp;</span>project</h3>
+<p>Once you have it customize the way you want you will now need to add the code to your project.  This is done in two<span class="widont">&nbsp;</span>parts.</p>
 <ol>
 <li>Add the <span class="caps">CSS</span> to your site. (<code>&lt;link&gt;</code> or <code>@import</code>)</li>
-<li>Add the <code>font-family</code> to your&nbsp;selector</li>
+<li>Add the <code>font-family</code> to your<span class="widont">&nbsp;</span>selector</li>
 </ol>
 <p><img src="/lessons/lesson-8/images/gf2.png" alt=""></p>
-<h4 id="link-tag">Link&nbsp;Tag</h4>
+<h4 id="link-tag">Link Tag</h4>
 <pre><code class="lang-html">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>project title<span class="tag">&lt;/<span class="name">title</span>&gt;</span>
   <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"https://fonts.googleapis.com/css?family=Rozha+One"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span>
   <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"site.css"</span>&gt;</span>
 </code></pre>
 <h4 id="-import">@import</h4>
-<p>If you want to add the font to a css file you can use <code>@import</code> as the first line of your css&nbsp;file.</p>
+<p>If you want to add the font to a css file you can use <code>@import</code> as the first line of your css<span class="widont">&nbsp;</span>file.</p>
 <pre><code class="lang-css">@<span class="keyword">import</span> url(<span class="string">'https://fonts.googleapis.com/css?family=Rozha+One'</span>);
 <span class="selector-tag">body</span> {
   <span class="attribute">margin</span>: <span class="number">0</span>;
   <span class="attribute">font</span>: <span class="number">16px</span> arial;
 }
 </code></pre>
-<h3 class="example">Add fonts to your&nbsp;styles</h3>
+<h3 class="example">Add fonts to your<span class="widont">&nbsp;</span>styles</h3>
 
-<p>Once you have the fonts added to your project you still need to add them to the styles that you want to use them.  Any Selector an use a Google&nbsp;Font.</p>
+<p>Once you have the fonts added to your project you still need to add them to the styles that you want to use them.  Any Selector an use a Google<span class="widont">&nbsp;</span>Font.</p>
 <pre><code class="lang-css"><span class="selector-tag">h2</span> {
   <span class="attribute">font-family</span>: <span class="string">'Rozha One'</span>, serif;
   <span class="attribute">color</span>: <span class="number">#663399</span>;
   <span class="attribute">text-transform</span>: uppercase;
 }
 </code></pre>
-<p>At this point the <code>font-family</code> is just like using <code>arial</code> or any other font-family. You can use any other styles you need for your&nbsp;designs.</p>
+<p>At this point the <code>font-family</code> is just like using <code>arial</code> or any other font-family. You can use any other styles you need for your<span class="widont">&nbsp;</span>designs.</p>
 
           </article>
           <aside class="article__secondary">

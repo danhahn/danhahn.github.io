@@ -88,30 +88,30 @@
           <article class="article__primary">
             <h1><span class="caps">CSS</span> Box Model
             </h1>
-<p>Since Everything on in web design is a rectangular box we need to know how to size that box.  The way that <span class="caps">CSS</span> calculates the size of a box is not what you expect.  Rather than set the size of the box based on the outer most elements <code>border</code> or <code>padding</code> the width is set baed on the&nbsp;content.</p>
-<h3 id="setting-a-width">Setting a&nbsp;width</h3>
+<p>Since Everything on in web design is a rectangular box we need to know how to size that box.  The way that <span class="caps">CSS</span> calculates the size of a box is not what you expect.  Rather than set the size of the box based on the outer most elements <code>border</code> or <code>padding</code> the width is set baed on the<span class="widont">&nbsp;</span>content.</p>
+<h3 id="setting-a-width">Setting a width</h3>
 <p>To set the width of an element you take the desired width and subtract the <code>padding-left</code>, <code>padding-right</code>, <code>border-left-width</code> and <code>border-right-width</code>.  If you need to maintain the <code>margin</code> you will need to subtract the <code>margin-left</code> and <code>margin-right</code>.</p>
 <h3 id="example">Example</h3>
-<p>If we have an element that needs to fit in to a space that is <code>400px</code> and it has <code>padding: 20px</code> and <code>border: 5px solid black</code> the calculation to find the size would look like&nbsp;this.</p>
+<p>If we have an element that needs to fit in to a space that is <code>400px</code> and it has <code>padding: 20px</code> and <code>border: 5px solid black</code> the calculation to find the size would look like<span class="widont">&nbsp;</span>this.</p>
 <pre><code class="lang-html">400px - 20px -20px - 5px - 5px = 350px
 </code></pre>
 <h3 id="example">Example</h3>
 <iframe height='800' scrolling='no' title='Box Model' src='//codepen.io/danhahn/embed/MoQNbO/?height=734&theme-id=light&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/danhahn/pen/MoQNbO/'>Box Model</a> by Dan Hahn (<a href='https://codepen.io/danhahn'>@danhahn</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-<h2 id="box-sizing">Box&nbsp;Sizing</h2>
-<p>In <span class="caps">CSS</span>, by default, the width and height you assign to an element is applied only to the element’s content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that’s rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is especially tricky when implementing a responsive&nbsp;design.</p>
-<p>The <code>box-sizing</code>property can be used to adjust this&nbsp;behavior:</p>
+<h2 id="box-sizing">Box Sizing</h2>
+<p>In <span class="caps">CSS</span>, by default, the width and height you assign to an element is applied only to the element’s content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that’s rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is especially tricky when implementing a responsive<span class="widont">&nbsp;</span>design.</p>
+<p>The <code>box-sizing</code>property can be used to adjust this<span class="widont">&nbsp;</span>behavior:</p>
 <pre><code class="lang-css"><span class="selector-class">.example</span> {
   <span class="attribute">box-sizing</span>: border-box;
 }
 </code></pre>
 <ul>
-<li><code>content-box</code> is the default, and gives you the default <span class="caps">CSS</span> box-sizing behavior. If you set an element’s width to 100 pixels, then the element’s content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered&nbsp;width.</li>
-<li><code>border-box</code> tells the browser to account for any border and padding in the value you specify for width and height. If you set an element’s width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size&nbsp;elements.</li>
+<li><code>content-box</code> is the default, and gives you the default <span class="caps">CSS</span> box-sizing behavior. If you set an element’s width to 100 pixels, then the element’s content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered<span class="widont">&nbsp;</span>width.</li>
+<li><code>border-box</code> tells the browser to account for any border and padding in the value you specify for width and height. If you set an element’s width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size<span class="widont">&nbsp;</span>elements.</li>
 </ul>
-<h2 id="apply-to-all-elements">Apply to all&nbsp;elements</h2>
-<p>The <code>*</code> selector will apply a style to all elements. <code>box-sizing</code> is a great example of time to use&nbsp;it.</p>
+<h2 id="apply-to-all-elements">Apply to all<span class="widont">&nbsp;</span>elements</h2>
+<p>The <code>*</code> selector will apply a style to all elements. <code>box-sizing</code> is a great example of time to use<span class="widont">&nbsp;</span>it.</p>
 <pre><code class="lang-css">* {
   <span class="attribute">box-sizing</span>: border-box;
 }

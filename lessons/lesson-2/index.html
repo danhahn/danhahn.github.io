@@ -89,8 +89,8 @@
             <h1><span class="caps">Anchor</span> Tag
             </h1>
 <p>The anchor tag or the <code>&lt;a&gt;</code> tag is most commonly used to create a link to an other file or page.  The anchor tag by default will not act as a link without the <code>href</code> attribute.  </p>
-<p>The anchor tag can also be used to set a point on a page where the page can be linked to.  You might see this on an <span class="caps">FAQ</span> page where you have a list of questions at the top and the answers at the&nbsp;bottom.</p>
-<p>Please note there is not a link tag.  If someone askes you to create a link they are talking about the anchor&nbsp;tag.</p>
+<p>The anchor tag can also be used to set a point on a page where the page can be linked to.  You might see this on an <span class="caps">FAQ</span> page where you have a list of questions at the top and the answers at the<span class="widont">&nbsp;</span>bottom.</p>
+<p>Please note there is not a link tag.  If someone askes you to create a link they are talking about the anchor<span class="widont">&nbsp;</span>tag.</p>
 <h2 id="example">Example</h2>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”http://www.sva.edu”</span>&gt;</span>http://www.sva.edu<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
@@ -120,53 +120,53 @@
 </tbody>
 </table>
 <hr>
-<h2 id="parts-of-a-link">Parts of a&nbsp;link</h2>
-<p>There are two parts to create a&nbsp;link</p>
+<h2 id="parts-of-a-link">Parts of a<span class="widont">&nbsp;</span>link</h2>
+<p>There are two parts to create a<span class="widont">&nbsp;</span>link</p>
 <ol>
-<li>The text or content the user can click&nbsp;on</li>
-<li>The location of the page the user will have the page&nbsp;replace.</li>
+<li>The text or content the user can click<span class="widont">&nbsp;</span>on</li>
+<li>The location of the page the user will have the page<span class="widont">&nbsp;</span>replace.</li>
 </ol>
 <h3 id="example">Example</h3>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"location/of/file.html"</span>&gt;</span>Clickable text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
-<h4 id="breaking-it-down">Breaking it&nbsp;down</h4>
-<p>Lets start with the <code>&lt;a&gt;</code> which is added to create the anchor.  Next we need to add the <code>href</code> <strong>attribute</strong> to make the anchor act as a <em>link</em>. Then we wrap the text we want the user to click on with the <code>&lt;a&gt;</code>. Last we add the location of the page we want to link&nbsp;to.</p>
-<p>If we had the text <strong><span class="caps">HTML</span> at SVA</strong> and wanted to link to the web page <em><a href="http://www.svahtml.com">http://www.svahtml.com</a></em> the link would look like&nbsp;this.</p>
-<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.svahtml.com"</span>&gt;</span><span class="caps">HTML</span> at SVA<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+<h4 id="breaking-it-down">Breaking it down</h4>
+<p>Lets start with the <code>&lt;a&gt;</code> which is added to create the anchor.  Next we need to add the <code>href</code> <strong>attribute</strong> to make the anchor act as a <em>link</em>. Then we wrap the text we want the user to click on with the <code>&lt;a&gt;</code>. Last we add the location of the page we want to link<span class="widont">&nbsp;</span>to.</p>
+<p>If we had the text <strong><span class="caps">HTML</span> at <span class="caps">SVA</span></strong> and wanted to link to the web page <em><a href="http://www.svahtml.com">http://www.svahtml.com</a></em> the link would look like<span class="widont">&nbsp;</span>this.</p>
+<pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.svahtml.com"</span>&gt;</span><span class="caps">HTML</span> at <span class="caps">SVA</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
-<p>Keep in mind that the <code>&lt;a&gt;</code> is an inline element so it can be placed next to other&nbsp;text.</p>
+<p>Keep in mind that the <code>&lt;a&gt;</code> is an inline element so it can be placed next to other<span class="widont">&nbsp;</span>text.</p>
 <p>If you want a link to be on its own line it would need to wrapped with a Block-Level element like a <code>&lt;p&gt;</code>.</p>
 <hr>
-<h2 id="linking-to-a-file-in-the-same-folder">Linking to a file in the same&nbsp;folder</h2>
-<p>When you link to a file that is in the same folder just add the file name to the <span class="caps">HREF</span>&nbsp;attribute.</p>
+<h2 id="linking-to-a-file-in-the-same-folder">Linking to a file in the same<span class="widont">&nbsp;</span>folder</h2>
+<p>When you link to a file that is in the same folder just add the file name to the <span class="caps">HREF</span><span class="widont">&nbsp;</span>attribute.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"filename.html"</span>&gt;</span>Link Text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
-<h2 id="linking-to-a-file-in-a-sub-folder">Linking to a file in a sub&nbsp;folder</h2>
-<p>When linking to a file in a sub folder you need to declare what folder you are navigating to then add the&nbsp;file.</p>
+<h2 id="linking-to-a-file-in-a-sub-folder">Linking to a file in a sub<span class="widont">&nbsp;</span>folder</h2>
+<p>When linking to a file in a sub folder you need to declare what folder you are navigating to then add the<span class="widont">&nbsp;</span>file.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"folder/filename.html"</span>&gt;</span>Link Text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
-<h2 id="linking-to-a-file-in-a-parent-folder">Linking to a file in a parent&nbsp;folder</h2>
-<p>When linking a file in a parent folder you need to add <code>&quot;../&quot;</code> for each folder you want to navigate up.  You do not need the folder name when navigating&nbsp;up.</p>
+<h2 id="linking-to-a-file-in-a-parent-folder">Linking to a file in a parent<span class="widont">&nbsp;</span>folder</h2>
+<p>When linking a file in a parent folder you need to add <code>&quot;../&quot;</code> for each folder you want to navigate up.  You do not need the folder name when navigating<span class="widont">&nbsp;</span>up.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"../filename.html"</span>&gt;</span>Link Text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
-<h2 id="linking-to-an-outside-site">Linking to an outside&nbsp;site</h2>
+<h2 id="linking-to-an-outside-site">Linking to an outside<span class="widont">&nbsp;</span>site</h2>
 <p>When linking to an outside site you need to add the full <span class="caps">URL</span> including the <code>http://</code>.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.svahtml.com"</span>&gt;</span>Link Text<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
-<h2 id="linking-to-a-point-with-a-page-">Linking to a point with a&nbsp;page.</h2>
-<p>The link add the “#” that says look on the page for a A tag with a name that matches the text after the&nbsp;#.</p>
+<h2 id="linking-to-a-point-with-a-page-">Linking to a point with a<span class="widont">&nbsp;</span>page.</h2>
+<p>The link add the “#” that says look on the page for a A tag with a name that matches the text after the<span class="widont">&nbsp;</span>#.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#sectionName"</span>&gt;</span>Link to section<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
-<p>The point on the page you are linking&nbsp;to.</p>
+<p>The point on the page you are linking<span class="widont">&nbsp;</span>to.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"sectionName"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
-<h2 id="images-as-a-link">Images as a&nbsp;link</h2>
+<h2 id="images-as-a-link">Images as a<span class="widont">&nbsp;</span>link</h2>
 <h3 id="example">Example</h3>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”http://www.cnn.com”</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">”/images/cnnlogo.png”</span> <span class="attr">alt</span>=<span class="string">”link</span> <span class="attr">to</span> <span class="attr">cnn</span>” <span class="attr">border</span>=<span class="string">”0”/</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
 </code></pre>
-<h2 id="adding-target">Adding&nbsp;Target</h2>
-<p>There will be time what you want open a page in a new window. By adding the <code>target=&quot;_blank&quot;</code> attribute it will force that page to open in a new window or&nbsp;tab.</p>
-<p><strong>Note:</strong> How the page open can not be controlled it is a setting of the browser.  In most cases it will open in a new&nbsp;tab.</p>
+<h2 id="adding-target">Adding Target</h2>
+<p>There will be time what you want open a page in a new window. By adding the <code>target=&quot;_blank&quot;</code> attribute it will force that page to open in a new window or<span class="widont">&nbsp;</span>tab.</p>
+<p><strong>Note:</strong> How the page open can not be controlled it is a setting of the browser.  In most cases it will open in a new<span class="widont">&nbsp;</span>tab.</p>
 <p><a href="http://css-tricks.com/use-target_blank/">Read More</a> about when you should use <code>target</code></p>
 <style>
 table tr td:nth-child(1){width:20%}

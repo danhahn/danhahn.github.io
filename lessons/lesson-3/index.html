@@ -88,81 +88,81 @@
           <article class="article__primary">
             <h1><span class="caps">Introduction</span> to CSS
             </h1>
-<p><a href="https://docs.google.com/presentation/d/1mYirjj8tdvtriYiZJl5F97xVhJFnOiWnf0cp1JKqO9M/edit?pli=1#slide=id.p" class="btn">View&nbsp;Presentation</a></p>
-<h2 id="what-is-css">What is&nbsp;<span class="caps">CSS</span></h2>
+<p><a href="https://docs.google.com/presentation/d/1mYirjj8tdvtriYiZJl5F97xVhJFnOiWnf0cp1JKqO9M/edit?pli=1#slide=id.p" class="btn">View Presentation</a></p>
+<h2 id="what-is-css">What is <span class="caps">CSS</span></h2>
 <ul>
-<li><span class="caps">CSS</span> stands for <em>Cascading Style&nbsp;Sheets</em></li>
-<li>Styles define how to display <span class="caps">HTML</span>&nbsp;elements</li>
-<li>Styles are normally stored in Style&nbsp;Sheets</li>
-<li>External Style Sheets can save you a lot of&nbsp;work</li>
-<li>External Style Sheets are stored in <span class="caps">CSS</span>&nbsp;files</li>
-<li>Multiple style definitions will cascade into&nbsp;one</li>
+<li><span class="caps">CSS</span> stands for <em>Cascading Style<span class="widont">&nbsp;</span>Sheets</em></li>
+<li>Styles define how to display <span class="caps">HTML</span><span class="widont">&nbsp;</span>elements</li>
+<li>Styles are normally stored in Style<span class="widont">&nbsp;</span>Sheets</li>
+<li>External Style Sheets can save you a lot of<span class="widont">&nbsp;</span>work</li>
+<li>External Style Sheets are stored in <span class="caps">CSS</span><span class="widont">&nbsp;</span>files</li>
+<li>Multiple style definitions will cascade into<span class="widont">&nbsp;</span>one</li>
 </ul>
-<h2 id="locations-of-styles">Locations of&nbsp;Styles</h2>
-<p>Styles can be written in 3 different location.  Where they style is defined will impact how an element will be&nbsp;displayed.</p>
+<h2 id="locations-of-styles">Locations of Styles</h2>
+<p>Styles can be written in 3 different location.  Where they style is defined will impact how an element will be<span class="widont">&nbsp;</span>displayed.</p>
 <ol>
-<li>External file include within the <span class="caps">HTML</span>&nbsp;file</li>
-<li>Embedded or Internal style sheet local to <span class="caps">HTML</span>&nbsp;file</li>
-<li>Inline style that is added directly to an <span class="caps">HTML</span>&nbsp;element</li>
+<li>External file include within the <span class="caps">HTML</span><span class="widont">&nbsp;</span>file</li>
+<li>Embedded or Internal style sheet local to <span class="caps">HTML</span><span class="widont">&nbsp;</span>file</li>
+<li>Inline style that is added directly to an <span class="caps">HTML</span><span class="widont">&nbsp;</span>element</li>
 </ol>
-<h2 id="weight-of-locations">Weight of&nbsp;locations</h2>
-<p>The location impacts the presentation of the <span class="caps">HTML</span>&nbsp;element.</p>
+<h2 id="weight-of-locations">Weight of locations</h2>
+<p>The location impacts the presentation of the <span class="caps">HTML</span><span class="widont">&nbsp;</span>element.</p>
 <ol>
-<li>Default browser&nbsp;setting</li>
-<li>External style sheet.  Last one included on the page has most&nbsp;weight</li>
-<li>Embedded on the page - Last style defended will be&nbsp;displayed.</li>
-<li>Inline&nbsp;Style</li>
+<li>Default browser setting</li>
+<li>External style sheet.  Last one included on the page has most<span class="widont">&nbsp;</span>weight</li>
+<li>Embedded on the page - Last style defended will be<span class="widont">&nbsp;</span>displayed.</li>
+<li>Inline Style</li>
 </ol>
-<p>In the case where two elements have the same style applied the more specific the style the more weight it has.  An inline style has the most weight because it is applied directly to an element. In internal style sheet has more weight than an external because it applied only to that on&nbsp;page.</p>
-<p>The efficiency of a style often time is the opposed of how specific it is.  This is because you often want to reuse a style across may elements or page with in your&nbsp;site.</p>
+<p>In the case where two elements have the same style applied the more specific the style the more weight it has.  An inline style has the most weight because it is applied directly to an element. In internal style sheet has more weight than an external because it applied only to that on<span class="widont">&nbsp;</span>page.</p>
+<p>The efficiency of a style often time is the opposed of how specific it is.  This is because you often want to reuse a style across may elements or page with in your<span class="widont">&nbsp;</span>site.</p>
 <h2 id="selectors">Selectors</h2>
-<p>In <span class="caps">CSS</span>, selectors are used to declare which of the markup elements a style applies to, a kind of match expression.  In other words it is the instruction to the CSS on what HTML elements should be styled but not how they should be&nbsp;styled.  </p>
-<p>There are 3 basic selectors each has its own weight that defines how an element will look when there are conflicting&nbsp;styles.</p>
+<p>In <span class="caps">CSS</span>, selectors are used to declare which of the markup elements a style applies to, a kind of match expression.  In other words it is the instruction to the <span class="caps">CSS</span> on what <span class="caps">HTML</span> elements should be styled but not how they should be<span class="widont">&nbsp;</span>styled.  </p>
+<p>There are 3 basic selectors each has its own weight that defines how an element will look when there are conflicting<span class="widont">&nbsp;</span>styles.</p>
 <ol>
-<li>Tag Name&nbsp;Selector</li>
-<li>Class Name&nbsp;Selector</li>
-<li><span class="caps">ID</span> Name&nbsp;Selector</li>
+<li>Tag Name Selector</li>
+<li>Class Name Selector</li>
+<li><span class="caps">ID</span> Name Selector</li>
 </ol>
-<h2 id="tag-name-selector">Tag Name&nbsp;Selector</h2>
-<p>Because <span class="caps">HTML</span> has a standard set of tags use CSS can use there names to connect the HTML and CSS.  A tag name selector will apply the style to all elements on a page that match that tag&nbsp;name.  </p>
-<p>For example if a html page use the paragraph tag <span class="caps">CSS</span> can style all P tags on the page to look the same way.  This is very efficient to style a large number of elements at one time.  Because the HTML tag is the reference there is no need to add any addiction mark&nbsp;up.</p>
-<h2 id="class-name-selectors">Class Name&nbsp;Selectors</h2>
-<p>Often times a style will need to be applied to one or more elements on a page but not all elements.  To allow of a style to be applied to one more more elements on a page a class is created and added to the <span class="caps">HTML</span>&nbsp;element.  </p>
+<h2 id="tag-name-selector">Tag Name Selector</h2>
+<p>Because <span class="caps">HTML</span> has a standard set of tags use <span class="caps">CSS</span> can use there names to connect the <span class="caps">HTML</span> and <span class="caps">CSS</span>.  A tag name selector will apply the style to all elements on a page that match that tag<span class="widont">&nbsp;</span>name.  </p>
+<p>For example if a html page use the paragraph tag <span class="caps">CSS</span> can style all P tags on the page to look the same way.  This is very efficient to style a large number of elements at one time.  Because the <span class="caps">HTML</span> tag is the reference there is no need to add any addiction mark<span class="widont">&nbsp;</span>up.</p>
+<h2 id="class-name-selectors">Class Name Selectors</h2>
+<p>Often times a style will need to be applied to one or more elements on a page but not all elements.  To allow of a style to be applied to one more more elements on a page a class is created and added to the <span class="caps">HTML</span><span class="widont">&nbsp;</span>element.  </p>
 <ul>
-<li>A class selectors must have a name given to&nbsp;it.</li>
-<li>A class name can be applied to one or more elements with in a&nbsp;document.  </li>
+<li>A class selectors must have a name given to<span class="widont">&nbsp;</span>it.</li>
+<li>A class name can be applied to one or more elements with in a<span class="widont">&nbsp;</span>document.  </li>
 <li>A class attribute must be added to an <span class="caps">HTML</span> element.  <code>class=”className”</code></li>
-<li>Class names are case&nbsp;sensitive</li>
+<li>Class names are case<span class="widont">&nbsp;</span>sensitive</li>
 </ul>
-<h2 id="id-name-selectors"><span class="caps">ID</span> Name&nbsp;Selectors</h2>
-<p>Like the class selectors <span class="caps">ID</span> selector are applied to an element within the document but unlike a class an ID name can only be used&nbsp;once.</p>
+<h2 id="id-name-selectors"><span class="caps">ID</span> Name Selectors</h2>
+<p>Like the class selectors <span class="caps">ID</span> selector are applied to an element within the document but unlike a class an <span class="caps">ID</span> name can only be used<span class="widont">&nbsp;</span>once.</p>
 <ul>
-<li>An <span class="caps">ID</span> selector must have a name given to&nbsp;it.</li>
-<li>An <span class="caps">ID</span> name can be used only once per&nbsp;document.</li>
-<li>An <span class="caps">ID</span> attribute must be added to an HTML element <code>id=”idName”</code></li>
-<li><span class="caps">ID</span> names are case&nbsp;sensitive</li>
+<li>An <span class="caps">ID</span> selector must have a name given to<span class="widont">&nbsp;</span>it.</li>
+<li>An <span class="caps">ID</span> name can be used only once per<span class="widont">&nbsp;</span>document.</li>
+<li>An <span class="caps">ID</span> attribute must be added to an <span class="caps">HTML</span> element <code>id=”idName”</code></li>
+<li><span class="caps">ID</span> names are case<span class="widont">&nbsp;</span>sensitive</li>
 </ul>
-<h2 id="weight-of-selectors">Weight of&nbsp;selectors</h2>
-<p>The more specific a selector is the more weight it has.  An <span class="caps">ID</span> has the the most weight because it is used on a page only once.  A class has more weight than a tag selector because it defines what elements it is applied&nbsp;to.</p>
-<p>Any time you put effort in to connecting the <span class="caps">HTML</span> and the CSS it will have more weight than if you do nothing to the&nbsp;HTML.</p>
-<h3 id="order-of-weight">Order of&nbsp;weight</h3>
+<h2 id="weight-of-selectors">Weight of selectors</h2>
+<p>The more specific a selector is the more weight it has.  An <span class="caps">ID</span> has the the most weight because it is used on a page only once.  A class has more weight than a tag selector because it defines what elements it is applied<span class="widont">&nbsp;</span>to.</p>
+<p>Any time you put effort in to connecting the <span class="caps">HTML</span> and the <span class="caps">CSS</span> it will have more weight than if you do nothing to the<span class="widont">&nbsp;</span><span class="caps">HTML</span>.</p>
+<h3 id="order-of-weight">Order of weight</h3>
 <ol>
-<li><span class="caps">ID</span>&nbsp;Name</li>
-<li>Class&nbsp;Name</li>
-<li>Tag&nbsp;Name</li>
+<li><span class="caps">ID</span> Name</li>
+<li>Class Name</li>
+<li>Tag Name</li>
 </ol>
-<h3 id="inline-styles">Inline&nbsp;Styles</h3>
-<p>Inline style are effect way of applying a style to one element.  The down side is that it is not reusable.  If you where apply that style a second time you would need to create that style a second&nbsp;time.  </p>
-<h3 id="how-to-use">How to&nbsp;use</h3>
-<p>Inline styles are applied to an <span class="caps">HTML</span> element with an attribute of style.  The attribute is HTML but the value is&nbsp;CSS.</p>
+<h3 id="inline-styles">Inline Styles</h3>
+<p>Inline style are effect way of applying a style to one element.  The down side is that it is not reusable.  If you where apply that style a second time you would need to create that style a second<span class="widont">&nbsp;</span>time.  </p>
+<h3 id="how-to-use">How to use</h3>
+<p>Inline styles are applied to an <span class="caps">HTML</span> element with an attribute of style.  The attribute is <span class="caps">HTML</span> but the value is<span class="widont">&nbsp;</span><span class="caps">CSS</span>.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">”property:value;”</span>&gt;</span><span class="caps">HTML</span> Text<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>
 </code></pre>
-<h2 id="internal-and-external-styles">Internal and External&nbsp;Styles</h2>
-<p>The more common way to use <span class="caps">CSS</span> is to add the style to an external file or internal style block.  This creates a clear separation between the HTML and the CSS.  If the CSS is written in an external file that file can used on many pages with in your site and if a change needs to be made it is made in once place an applied to all pages at the same&nbsp;time.  </p>
-<h3 id="how-to-use">How to&nbsp;use</h3>
+<h2 id="internal-and-external-styles">Internal and External<span class="widont">&nbsp;</span>Styles</h2>
+<p>The more common way to use <span class="caps">CSS</span> is to add the style to an external file or internal style block.  This creates a clear separation between the <span class="caps">HTML</span> and the <span class="caps">CSS</span>.  If the <span class="caps">CSS</span> is written in an external file that file can used on many pages with in your site and if a change needs to be made it is made in once place an applied to all pages at the same<span class="widont">&nbsp;</span>time.  </p>
+<h3 id="how-to-use">How to use</h3>
 <h4 id="html"><span class="caps">HTML</span></h4>
-<p>On each element that a class is applied you need to add the class attribute with a value of the class&nbsp;name.  </p>
-<p><strong>Note:</strong> that class name can be anything you want it it be.  The example below use a generic className but it could be almost anything.  The same thing goes for the <span class="caps">ID</span>&nbsp;name.</p>
+<p>On each element that a class is applied you need to add the class attribute with a value of the class<span class="widont">&nbsp;</span>name.  </p>
+<p><strong>Note:</strong> that class name can be anything you want it it be.  The example below use a generic className but it could be almost anything.  The same thing goes for the <span class="caps">ID</span><span class="widont">&nbsp;</span>name.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">”className”</span>&gt;</span><span class="caps">HTML</span> Text<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>
 <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">”className”</span>&gt;</span><span class="caps">HTML</span> Text<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
 </code></pre>
@@ -171,10 +171,10 @@
     <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="caps">HTML</span> Text<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
 <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
 </code></pre>
-<h4 id="css-internal-style-sheet"><span class="caps">CSS</span> - internal style&nbsp;sheet</h4>
-<p>The style block will be added with the <span class="caps">HEAD</span> tag.  Adding a style&nbsp;tag.</p>
-<p>To define a class use the class name defined in the <span class="caps">HTML</span> and add a period (.) in front of it.&nbsp;.className</p>
-<p>To define an id use the id name defined in the <span class="caps">HTML</span> and add a number symbol (#) in front of it.&nbsp;#idName</p>
+<h4 id="css-internal-style-sheet"><span class="caps">CSS</span> - internal style<span class="widont">&nbsp;</span>sheet</h4>
+<p>The style block will be added with the <span class="caps">HEAD</span> tag.  Adding a style<span class="widont">&nbsp;</span>tag.</p>
+<p>To define a class use the class name defined in the <span class="caps">HTML</span> and add a period (.) in front of it.<span class="widont">&nbsp;</span>.className</p>
+<p>To define an id use the id name defined in the <span class="caps">HTML</span> and add a number symbol (#) in front of it.<span class="widont">&nbsp;</span>#idName</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">”text/css”</span>&gt;</span><span class="css">
 <span class="selector-class">.className</span> {
     <span class="attribute">property</span>: value;
@@ -185,24 +185,24 @@
 }
 </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span>
 </code></pre>
-<h2 id="css-syntax"><span class="caps">CSS</span>&nbsp;Syntax</h2>
-<p>The syntax for css is very different than <span class="caps">HTML</span>&nbsp;syntax.  </p>
-<h3 id="basic-format">Basic&nbsp;format</h3>
+<h2 id="css-syntax"><span class="caps">CSS</span> Syntax</h2>
+<p>The syntax for css is very different than <span class="caps">HTML</span><span class="widont">&nbsp;</span>syntax.  </p>
+<h3 id="basic-format">Basic format</h3>
 <ul>
-<li>Declaration - The whole style including the selector and properties and&nbsp;values.</li>
-<li>Selector - How the <span class="caps">HTML</span> and CSS are&nbsp;connected</li>
-<li>Property - predefined options used to change the look and feel of an&nbsp;element.</li>
-<li>Value - predefined value based on selected&nbsp;property.</li>
-<li>Colon <code>:</code> - indicates the end of the&nbsp;property.</li>
-<li>Semicolon <code>;</code> - indicates the end of a value.  Semicolons are&nbsp;required.</li>
+<li>Declaration - The whole style including the selector and properties and<span class="widont">&nbsp;</span>values.</li>
+<li>Selector - How the <span class="caps">HTML</span> and <span class="caps">CSS</span> are<span class="widont">&nbsp;</span>connected</li>
+<li>Property - predefined options used to change the look and feel of an<span class="widont">&nbsp;</span>element.</li>
+<li>Value - predefined value based on selected<span class="widont">&nbsp;</span>property.</li>
+<li>Colon <code>:</code> - indicates the end of the<span class="widont">&nbsp;</span>property.</li>
+<li>Semicolon <code>;</code> - indicates the end of a value.  Semicolons are<span class="widont">&nbsp;</span>required.</li>
 </ul>
-<p><strong>Note:</strong> Inline style - when using an inline style you will only use the property and&nbsp;value.</p>
-<h3 id="basic-format">Basic&nbsp;format</h3>
+<p><strong>Note:</strong> Inline style - when using an inline style you will only use the property and<span class="widont">&nbsp;</span>value.</p>
+<h3 id="basic-format">Basic format</h3>
 <pre><code class="lang-css"><span class="selector-tag">selector</span> {
     <span class="attribute">property</span>: value;
 }
 </code></pre>
-<p>More than one property - declarations can have many properties&nbsp;defined</p>
+<p>More than one property - declarations can have many properties<span class="widont">&nbsp;</span>defined</p>
 <pre><code class="lang-css">selector {
     property1: value;
     property2: value2;

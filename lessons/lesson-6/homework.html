@@ -87,48 +87,48 @@
         <section class="article">
           <article class="article__primary">
             <h1><span class="caps">Homework</span> 
-            </h1><p>The point of this homework is to work with flexbox and how to layout columns using&nbsp;it.</p>
-<h2 id="getting-started">Getting&nbsp;Started</h2>
-<p>Download the starter file.  In the zipfile you will&nbsp;find</p>
+            </h1><p>The point of this homework is to work with flexbox and how to layout columns using<span class="widont">&nbsp;</span>it.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>Download the starter file.  In the zipfile you will<span class="widont">&nbsp;</span>find</p>
 <ul>
-<li>1 html&nbsp;file</li>
-<li>1 css&nbsp;file</li>
-<li>images folder with all the images needed for the&nbsp;design.</li>
+<li>1 html file</li>
+<li>1 css file</li>
+<li>images folder with all the images needed for the<span class="widont">&nbsp;</span>design.</li>
 </ul>
-<p>After unzipping the file please rename the folder and files with your name. In the <code>html</code> file also update the <code>title</code> tag with your&nbsp;name.  </p>
-<h2 id="updating-styles">Updating&nbsp;styles</h2>
-<p>Within <code>style.css</code> we need to update a bunch of&nbsp;styles.</p>
-<h3 id="container-width">Container&nbsp;width</h3>
+<p>After unzipping the file please rename the folder and files with your name. In the <code>html</code> file also update the <code>title</code> tag with your<span class="widont">&nbsp;</span>name.  </p>
+<h2 id="updating-styles">Updating styles</h2>
+<p>Within <code>style.css</code> we need to update a bunch of<span class="widont">&nbsp;</span>styles.</p>
+<h3 id="container-width">Container width</h3>
 <p><code>.wrapper</code> needs to have a max with of <code>1000px</code> we can this by adding a <code>max-width</code> property.</p>
-<h3 id="making-flexible-width-images">Making flexible width&nbsp;images</h3>
-<p>All images (except <code>.logo</code>) need to have a variable width.  Again we will use <code>max-width</code> but the value will be <code>100%</code>. This property will allow the image to get smaller in size but grow larger than the original size of the image.  We also add <code>display: block;</code> to the images to remove a small space that is added due <code>img</code> being inline by&nbsp;default.</p>
+<h3 id="making-flexible-width-images">Making flexible width<span class="widont">&nbsp;</span>images</h3>
+<p>All images (except <code>.logo</code>) need to have a variable width.  Again we will use <code>max-width</code> but the value will be <code>100%</code>. This property will allow the image to get smaller in size but grow larger than the original size of the image.  We also add <code>display: block;</code> to the images to remove a small space that is added due <code>img</code> being inline by<span class="widont">&nbsp;</span>default.</p>
 <pre><code class="lang-css"><span class="selector-class">.hero</span> <span class="selector-tag">img</span> {
   <span class="attribute">max-width</span>: <span class="number">100%</span>;
   <span class="attribute">display</span>: block;
 }
 </code></pre>
-<p>Update the rest of the images to ensure they can resize if&nbsp;needed.</p>
-<h3 id="adding-flex">Adding&nbsp;Flex</h3>
-<p>Next we need get the content that is vertically aligned to be horizontally aligned.  There are two ways we can do&nbsp;this.  </p>
+<p>Update the rest of the images to ensure they can resize if<span class="widont">&nbsp;</span>needed.</p>
+<h3 id="adding-flex">Adding Flex</h3>
+<p>Next we need get the content that is vertically aligned to be horizontally aligned.  There are two ways we can do<span class="widont">&nbsp;</span>this.  </p>
 <ol>
 <li>float</li>
 <li>flexbox</li>
 </ol>
-<p>Because flexbox is much more flexible we will use it for this homework but you could to the same with float (but will take 10 times more&nbsp;work).</p>
-<p>Lets start with the <code>.global-nav</code>.  In the provided css file you will find this&nbsp;selector</p>
+<p>Because flexbox is much more flexible we will use it for this homework but you could to the same with float (but will take 10 times more<span class="widont">&nbsp;</span>work).</p>
+<p>Lets start with the <code>.global-nav</code>.  In the provided css file you will find this<span class="widont">&nbsp;</span>selector</p>
 <pre><code class="lang-css"><span class="selector-class">.global-nav</span> <span class="selector-tag">ul</span> {
 
 }
 </code></pre>
-<p>To get the content to align horizontally we just need to add <code>display: flex;</code> to the&nbsp;selector.</p>
+<p>To get the content to align horizontally we just need to add <code>display: flex;</code> to the<span class="widont">&nbsp;</span>selector.</p>
 <hr>
-<p>The “promo” and “more content” section will use the same idea but its a little more&nbsp;complex.</p>
-<p>Again we will use <code>display: flex;</code> to align the&nbsp;content.</p>
-<p>In the styles that are provided for this example there is a <code>margin-right: 1em;</code> that will add the “gap” between the columns.  Notice there is a also a “gap” on the column all the way to the right (last column).  We need to remove that since we want the columns to full up the full&nbsp;space.  </p>
-<p>We have a selector that will select just the “last” item in a element.  <code>:last-child</code> If we set the margin right on just this element to <code>0</code> it will remove the extra&nbsp;space.</p>
-<p>Now that extra space on the right is gone notice how all the columns are not the same with.   The <code>flex</code> property will fix this for us.  We need to add <code>flex: 1;</code> to the flex&nbsp;child.  </p>
-<p>Repeat this for the “more&nbsp;content”</p>
-<p>Align the <code>.global-footer</code> as&nbsp;well.</p>
+<p>The “promo” and “more content” section will use the same idea but its a little more<span class="widont">&nbsp;</span>complex.</p>
+<p>Again we will use <code>display: flex;</code> to align the<span class="widont">&nbsp;</span>content.</p>
+<p>In the styles that are provided for this example there is a <code>margin-right: 1em;</code> that will add the “gap” between the columns.  Notice there is a also a “gap” on the column all the way to the right (last column).  We need to remove that since we want the columns to full up the full<span class="widont">&nbsp;</span>space.  </p>
+<p>We have a selector that will select just the “last” item in a element.  <code>:last-child</code> If we set the margin right on just this element to <code>0</code> it will remove the extra<span class="widont">&nbsp;</span>space.</p>
+<p>Now that extra space on the right is gone notice how all the columns are not the same with.   The <code>flex</code> property will fix this for us.  We need to add <code>flex: 1;</code> to the flex<span class="widont">&nbsp;</span>child.  </p>
+<p>Repeat this for the “more<span class="widont">&nbsp;</span>content”</p>
+<p>Align the <code>.global-footer</code> as well.</p>
 
             <div class="homework-view">
               <div><a href="images/lesson6-homework.png" target="_blank"><img src="images/lesson6-homework-sm.png" class="img-circle"></a></div>

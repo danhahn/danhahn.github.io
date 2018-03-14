@@ -87,9 +87,9 @@
         <section class="article">
           <article class="article__primary">
             <h1><span class="caps">Clear</span> fix
-            </h1><p>There are a number of way to fix the issue when all the content within a element are&nbsp;floated.</p>
-<h2 id="adding-height">Adding&nbsp;Height</h2>
-<p>The most basic way to fix the issue is to add a height to the parent&nbsp;element.</p>
+            </h1><p>There are a number of way to fix the issue when all the content within a element are<span class="widont">&nbsp;</span>floated.</p>
+<h2 id="adding-height">Adding Height</h2>
+<p>The most basic way to fix the issue is to add a height to the parent<span class="widont">&nbsp;</span>element.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css">
   <span class="selector-tag">ul</span> {
     <span class="attribute">height</span>: <span class="number">25px</span>;
@@ -125,7 +125,7 @@
 </tbody>
 </table>
 <h2 id="overflow">Overflow</h2>
-<p>Adding <code>overflow: hidden</code> or <code>overflow: auto</code> will a adjust the way the content is displayed.  This will force a&nbsp;height.</p>
+<p>Adding <code>overflow: hidden</code> or <code>overflow: auto</code> will a adjust the way the content is displayed.  This will force a<span class="widont">&nbsp;</span>height.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css">
   <span class="selector-tag">ul</span> {
     <span class="attribute">overflow</span>: hidden;
@@ -156,8 +156,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="extra-div">Extra&nbsp;Div</h2>
-<p>Since we know that adding a <code>clear: both;</code> to an element will stop to clear. We can add a new element after the last floated element and add a clear to it. Since the element is after and cleared it will “pin” the background&nbsp;down.</p>
+<h2 id="extra-div">Extra Div</h2>
+<p>Since we know that adding a <code>clear: both;</code> to an element will stop to clear. We can add a new element after the last floated element and add a clear to it. Since the element is after and cleared it will “pin” the background<span class="widont">&nbsp;</span>down.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css">
   <span class="selector-tag">li</span> {
     <span class="attribute">float</span>: left;
@@ -191,8 +191,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="clear-fix">Clear&nbsp;Fix</h2>
-<p>The idea of the extra <code>&lt;div&gt;&lt;/div&gt;</code> is a good one the only problem is we do not like to add extra markup that has no content need. <span class="caps">CSS3</span> gives all elements an extra element before and after. By using the <code>:after</code> pseudo element you can add an “element” can clear&nbsp;that.</p>
+<h2 id="clear-fix">Clear Fix</h2>
+<p>The idea of the extra <code>&lt;div&gt;&lt;/div&gt;</code> is a good one the only problem is we do not like to add extra markup that has no content need. <span class="caps">CSS3</span> gives all elements an extra element before and after. By using the <code>:after</code> pseudo element you can add an “element” can clear<span class="widont">&nbsp;</span>that.</p>
 <pre><code class="lang-html"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css">
 <span class="selector-tag">ul</span><span class="selector-pseudo">:after</span> {
   <span class="attribute">content</span>: <span class="string">""</span>;
@@ -212,7 +212,7 @@
   <span class="tag">&lt;<span class="name">li</span>&gt;</span>Nav Item 4<span class="tag">&lt;/<span class="name">li</span>&gt;</span>
 <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
 </code></pre>
-<p><strong>Note:</strong> when working with the pseudo element you need to add <code>content: &quot;&quot;;</code> and it is an <strong>inline</strong> element by&nbsp;default.</p>
+<p><strong>Note:</strong> when working with the pseudo element you need to add <code>content: &quot;&quot;;</code> and it is an <strong>inline</strong> element by<span class="widont">&nbsp;</span>default.</p>
 <table>
 <thead>
 <tr>

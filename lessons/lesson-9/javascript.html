@@ -87,28 +87,29 @@
         <section class="article">
           <article class="article__primary">
             <h1><span class="caps">Javascript</span> 
-            </h1><h2 id="javascript-variable">JavaScript&nbsp;Variable</h2>
-<p>Variable declarations, wherever they occur, are processed before any code is executed. The scope of a variable declared with var is its current execution context, which is either the enclosing function or, for variables declared outside any function, global. If you re-declare a JavaScript variable, it will not lose its&nbsp;value.</p>
+            </h1><h2 id="javascript-variable">JavaScript Variable</h2>
+<p>Variable declarations, wherever they occur, are processed before any code is executed. The scope of a variable declared with var is its current execution context, which is either the enclosing function or, for variables declared outside any function, global. If you re-declare a JavaScript variable, it will not lose its<span class="widont">&nbsp;</span>value.</p>
 <pre><code class="lang-javascript"><span class="keyword">var</span> name = <span class="string">"Dan"</span>;
 
 <span class="comment">// write out the value of Name to the console.</span>
 <span class="built_in">console</span>.log(name); <span class="comment">// Dan</span>
+
 </code></pre>
-<p>A variable can be any of the data types listed&nbsp;below.  </p>
-<h2 id="javascript-data-types">JavaScript Data&nbsp;Types</h2>
-<p>When we create a variable in JavaScript the values that are set are the data&nbsp;types.  </p>
-<p>The latest ECMAScript standard defines seven data&nbsp;types:</p>
-<h2 id="six-data-types-that-are-primitives-">Six data types that are&nbsp;primitives:</h2>
+<p>A variable can be any of the data types listed<span class="widont">&nbsp;</span>below.  </p>
+<h2 id="javascript-data-types">JavaScript Data Types</h2>
+<p>When we create a variable in JavaScript the values that are set are the data<span class="widont">&nbsp;</span>types.  </p>
+<p>The latest ECMAScript standard defines seven data<span class="widont">&nbsp;</span>types:</p>
+<h2 id="six-data-types-that-are-primitives-">Six data types that are<span class="widont">&nbsp;</span>primitives:</h2>
 <ul>
 <li>Boolean</li>
 <li>Null</li>
 <li>Undefined</li>
 <li>Number</li>
 <li>String</li>
-<li>Symbol (new in ECMAScript&nbsp;6)</li>
+<li>Symbol (new in ECMAScript<span class="widont">&nbsp;</span>6)</li>
 </ul>
-<p>All types except objects define immutable values (values, which are incapable of being changed). For example and unlike to C, Strings are immutable. We refer to values of these types as “primitive&nbsp;values”.</p>
-<h3 id="boolean-type">Boolean&nbsp;type</h3>
+<p>All types except objects define immutable values (values, which are incapable of being changed). For example and unlike to C, Strings are immutable. We refer to values of these types as “primitive<span class="widont">&nbsp;</span>values”.</p>
+<h3 id="boolean-type">Boolean type</h3>
 <p>Boolean represents a logical entity and can have two values: <code>true</code>, and <code>false</code>.</p>
 <pre><code class="lang-javascript"><span class="keyword">var</span> isHappy = <span class="literal">true</span>;
 
@@ -124,20 +125,22 @@ isHappy = <span class="literal">false</span>;
   conosle.log(<span class="string">"☹️"</span>);
 }
  <span class="comment">// ☹️ since `isHappy` is false</span>
+
 </code></pre>
-<h3 id="null-type">Null&nbsp;type</h3>
-<p>The Null type has exactly one value: <code>null</code>.  In computer science, a null value represents a reference that points, generally intentionally, to a nonexistent or invalid object or address. In other words no value. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null" target="_blank">Read&nbsp;More</a></p>
+<h3 id="null-type">Null type</h3>
+<p>The Null type has exactly one value: <code>null</code>.  In computer science, a null value represents a reference that points, generally intentionally, to a nonexistent or invalid object or address. In other words no value. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null" target="_blank">Read<span class="widont">&nbsp;</span>More</a></p>
 <pre><code class="lang-javascript"><span class="keyword">var</span> notSet = <span class="literal">null</span>;
 
 <span class="built_in">console</span>.log(notSet); <span class="comment">// null</span>
+
 </code></pre>
-<h3 id="undefined-type">Undefined&nbsp;type</h3>
+<h3 id="undefined-type">Undefined type</h3>
 <p>A variable that has not been assigned a value has the value <code>undefined</code>.</p>
 <pre><code class="lang-javascript"><span class="keyword">var</span> x;
 
 <span class="built_in">console</span>.log(x); <span class="comment">// undefined</span>
 </code></pre>
-<h3 id="number-type">Number&nbsp;type</h3>
+<h3 id="number-type">Number type</h3>
 <p>a number is able to represent floating-point numbers, the number type has three symbolic values: +Infinity, -Infinity, and <code>NaN</code> (not-a-number).</p>
 <p>With numbers you can do math on them <code>+</code> add, <code>-</code> subtract, <code>*</code> multiply and <code>/</code> divide.</p>
 <pre><code class="lang-javascript"><span class="built_in">console</span>.log(<span class="number">2</span> + <span class="number">4</span>); <span class="comment">// 6</span>
@@ -149,9 +152,9 @@ isHappy = <span class="literal">false</span>;
 <span class="built_in">console</span>.log(<span class="number">3</span> + <span class="string">"a"</span>); <span class="comment">// "3a"</span>
 <span class="built_in">console</span>.log(<span class="number">3</span> / <span class="string">"a"</span>); <span class="comment">// NaN</span>
 </code></pre>
-<h3 id="string-type">String&nbsp;type</h3>
-<p>JavaScript’s String type is used to represent textual data. It is a set of “elements” of 16-bit unsigned integer values. Each element in the String occupies a position in the String. The first element is at index 0, the next at index 1, and so on. The length of a String is the number of elements in&nbsp;it.</p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">Learn&nbsp;More</a></p>
+<h3 id="string-type">String type</h3>
+<p>JavaScript’s String type is used to represent textual data. It is a set of “elements” of 16-bit unsigned integer values. Each element in the String occupies a position in the String. The first element is at index 0, the next at index 1, and so on. The length of a String is the number of elements in<span class="widont">&nbsp;</span>it.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">Learn More</a></p>
 <pre><code class="lang-javascript"><span class="keyword">var</span> name = <span class="string">"Dan Hahn"</span>;
 
 <span class="built_in">console</span>.log(name); <span class="comment">// "Dan Hahn"</span>
@@ -164,11 +167,12 @@ isHappy = <span class="literal">false</span>;
 <span class="built_in">console</span>.log(fullName); <span class="comment">// "DanHahn"</span>
 
 <span class="built_in">console</span>.log(<span class="string">`<span class="subst">${firstName}</span> <span class="subst">${lastName}</span>`</span>); <span class="comment">// "Dan Hahn"</span>
+
 </code></pre>
-<h2 id="javascript-array">JavaScript&nbsp;Array</h2>
-<p>The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like&nbsp;objects.</p>
+<h2 id="javascript-array">JavaScript Array</h2>
+<p>The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like<span class="widont">&nbsp;</span>objects.</p>
 <p>In other words an array is a list of strings, numbers, boolans, object or arrays.  They can be acceed by their index with is a zero base index meaning it starts counting at <code>0</code>.</p>
-<p>There are number of build in tools(methods) that can help get information about the&nbsp;array.  </p>
+<p>There are number of build in tools(methods) that can help get information about the<span class="widont">&nbsp;</span>array.  </p>
 <pre><code class="lang-javascript"><span class="keyword">var</span> fruits = [<span class="string">'Apple'</span>, <span class="string">'Banana'</span>];
 
 <span class="built_in">console</span>.log(fruits.length); <span class="comment">// 2</span>
@@ -184,9 +188,10 @@ fruits.push(<span class="string">'Grape'</span>);
 
 <span class="built_in">console</span>.log(fruits.length); <span class="comment">// 3</span>
 <span class="built_in">console</span>.log(fruits); <span class="comment">// ['Apple', 'Banana', 'Grape'];</span>
+
 </code></pre>
-<h2 id="javascript-object">JavaScript&nbsp;Object</h2>
-<p>An object is a collection of related data and/or functionality (which usually consists of several variables and functions — which are called properties and methods when they are inside&nbsp;objects.) </p>
+<h2 id="javascript-object">JavaScript Object</h2>
+<p>An object is a collection of related data and/or functionality (which usually consists of several variables and functions — which are called properties and methods when they are inside<span class="widont">&nbsp;</span>objects.) </p>
 <p>Unlike an array does not have a “order” you will need to get the value from a <code>key</code>.</p>
 <pre><code class="lang-javascript"><span class="comment">// create a object</span>
 <span class="keyword">var</span> person = {};
@@ -245,8 +250,8 @@ person.city = <span class="string">"New York"</span>;
 <span class="comment">//   city: 'New York' </span>
 <span class="comment">// }</span>
 </code></pre>
-<h2 id="javascript-function">JavaScript&nbsp;function</h2>
-<p>Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call&nbsp;it.</p>
+<h2 id="javascript-function">JavaScript function</h2>
+<p>Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call<span class="widont">&nbsp;</span>it.</p>
 <pre><code class="lang-javascript"><span class="comment">// let build a function that will say hello to the console</span>
 <span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params"></span>) </span>{
   <span class="keyword">var</span> greeting = <span class="string">"Hello World"</span>;
@@ -278,9 +283,10 @@ sayHi(<span class="string">'Dan'</span>);
 
 sayHi(<span class="string">'Larry'</span>);
 <span class="comment">// "Hello Larry!"</span>
+
 </code></pre>
-<p>We can do many things with our function.  One way to keep the code clean is to break the function up in to smaller parts.  This is called functional programing.  The idea is that each function will only do one thing.  We need to introduce a new idea <code>return</code>.  A <code>return</code> will return a calculated value from another&nbsp;function. </p>
-<p>Lets build a function that will calculate a dogs age (age times 7) and display its&nbsp;bark.</p>
+<p>We can do many things with our function.  One way to keep the code clean is to break the function up in to smaller parts.  This is called functional programing.  The idea is that each function will only do one thing.  We need to introduce a new idea <code>return</code>.  A <code>return</code> will return a calculated value from another<span class="widont">&nbsp;</span>function. </p>
+<p>Lets build a function that will calculate a dogs age (age times 7) and display its<span class="widont">&nbsp;</span>bark.</p>
 <pre><code class="lang-javascript"><span class="comment">// this will calculate the dogs age</span>
 <span class="function"><span class="keyword">function</span> <span class="title">calcDogAge</span>(<span class="params">age</span>) </span>{
   <span class="keyword">return</span> age * <span class="number">7</span>;
@@ -305,7 +311,7 @@ alert(dogGreeting(<span class="string">'Puddles'</span>, <span class="number">1<
 <span class="comment">// alert box this time.</span>
 <span class="comment">// "BarkBark Puddles is 7 years old."</span>
 </code></pre>
-<p>Here the function does not display the string but return the full string and the thing that is calling the function is responable for how to display the&nbsp;string. </p>
+<p>Here the function does not display the string but return the full string and the thing that is calling the function is responable for how to display the<span class="widont">&nbsp;</span>string. </p>
 
           </article>
           <aside class="article__secondary">
