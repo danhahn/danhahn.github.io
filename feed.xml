@@ -685,10 +685,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 8</title>
       <link>http://localhost:8080/lessons/lesson-8/</link>
-      <pubDate>Wed, 21 Mar 2018 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 28 Mar 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will talk about adding Google Fonts, responsive and the &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; tag. &lt;/p&gt;
+      <description>&lt;p&gt;This week we will talk about adding Google Fonts, responsive and the &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;font-families-recap&quot;&gt;Font families recap&lt;/h2&gt;
 &lt;p&gt;As we looked at in Fundamental text and font styling, the fonts applied to your HTML can be controlled using the font-family property. This takes one or more font family names, and the browser travels down the list until it finds a font it has available on the system it is running on:&lt;/p&gt;
@@ -796,10 +796,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 9</title>
       <link>http://localhost:8080/lessons/lesson-9/</link>
-      <pubDate>Wed, 28 Mar 2018 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 04 Apr 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we will be talking about forms and JavaScript. &lt;/p&gt;
+      <description>&lt;p&gt;This week we will be talking about forms and JavaScript.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;form&quot;&gt;form&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag is used to create an HTML form for user input.&lt;/p&gt;
@@ -926,7 +926,7 @@ td .label {margin-right: 4px;cursor: pointer;}
 &lt;h2 id=&quot;select&quot;&gt;select&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; element is used to create a drop-down list.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; tags inside the &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; element define the available options in the list.&lt;/p&gt;
-&lt;table class=&quot;w3-table-all notranslate&quot;&gt; 
+&lt;table class=&quot;w3-table-all notranslate&quot;&gt;
   &lt;tbody&gt;&lt;tr&gt;
     &lt;th style=&quot;width:20%&quot;&gt;Attribute&lt;/th&gt;
     &lt;th style=&quot;width:20%&quot;&gt;Value&lt;/th&gt;
@@ -974,10 +974,10 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 10</title>
       <link>http://localhost:8080/lessons/lesson-10/</link>
-      <pubDate>Wed, 04 Apr 2018 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 11 Apr 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-10/</guid>
       <author></author>
-      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload. &lt;/p&gt;
+      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;classwork/&quot; target=&quot;_blank&quot; class=&quot;btn&quot;&gt;View Classwork&lt;/a&gt;&lt;/p&gt;
@@ -1039,15 +1039,15 @@ td .label {margin-right: 4px;cursor: pointer;}
     <item>
       <title>Lesson 11</title>
       <link>http://localhost:8080/lessons/lesson-11/</link>
-      <pubDate>Wed, 11 Apr 2018 15:00:00 -0400</pubDate>
+      <pubDate>Wed, 18 Apr 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-11/</guid>
       <author></author>
-      <description>&lt;p&gt;This week we work on the in class final.  &lt;/p&gt;
+      <description>&lt;p&gt;This week we work on the in class final.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
-&lt;p&gt;The final project is open book, meaning you can use any resource you need to finish the project including asking any questions you have.  The final is a multipage microsite.  &lt;/p&gt;
+&lt;p&gt;The final project is open book, meaning you can use any resource you need to finish the project including asking any questions you have.  The final is a multipage microsite.&lt;/p&gt;
 &lt;p&gt;The final is due at 9:30 on December 13.  Please email a zip file to &lt;a href=&quot;mailto:dan@svahtml.com&quot;&gt;dan@svahtml.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;You are required to only code the desktop version&lt;/strong&gt; however if you have time or want a challenge you the is a mobile version.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You are required to only code the desktop version&lt;/strong&gt; however if you have time or want a challenge you the is a mobile version.&lt;/p&gt;
 &lt;h3 id=&quot;psd&quot;&gt;PSD&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;/lessons/lesson-11/desktop.psd&quot;&gt;&lt;img src=&quot;/lessons/lesson-11/desktop-sm.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
@@ -1138,7 +1138,7 @@ font-family: &amp;#39;Homemade Apple&amp;#39;, cursive;
     <item>
       <title>Lesson 12</title>
       <link>http://localhost:8080/lessons/lesson-12/</link>
-      <pubDate>Wed, 18 Apr 2018 15:00:00 -0400</pubDate>
+      <pubDate>Thu, 19 Apr 2018 15:00:00 -0400</pubDate>
       <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
       <author></author>
       <description>&lt;p&gt;This week we work on the in class final.&lt;/p&gt;
