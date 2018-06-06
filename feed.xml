@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SVA HTML</title>
+    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://localhost:8080</link>
+    <description>Spring 2018</description>
+    <pubDate>Wed, 24 Jan 2018 15:00:00 -0500</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>Lesson 1</title>
+      <link>http://localhost:8080/lessons/lesson-1/</link>
+      <pubDate>Wed, 24 Jan 2018 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-1/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will have an introduction to HTML, the HTML template and what block elements are and how to use them.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;what-is-html-&quot;&gt;What is HTML?&lt;/h2&gt;
+&lt;p&gt;HTML or Hyper Text Markup Language is the building blocks of all web pages.  HTML uses tags to create element that are filled with content like text and images.  The elements are instructions to the web browser how to display the content on the screen.  &lt;/p&gt;
+&lt;p&gt;Another way to think about it is HTML is a series of start and stop commands for the web browser.  The browser then renders that content to the specs of HTML.  &lt;/p&gt;
+&lt;h2 id=&quot;the-three-buckets&quot;&gt;The Three Buckets&lt;/h2&gt;
+&lt;p&gt;Modern web development uses the three bucket approach.  Each bucket adds another layer to the display of the page.&lt;/p&gt;
+&lt;ul class=&quot;buckets&quot;&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTML is the building blocks or scaffolding of the page.  &lt;/li&gt;
+&lt;li&gt;CSS or Cascading Style Sheets is the presentation or the look and feel of the page.&lt;/li&gt;
+&lt;li&gt;JavaScript is the action layer of the page.  We will not cover any JavaScript in this class.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;the-tag&quot;&gt;The Tag&lt;/h2&gt;
+&lt;p&gt;There are over 80 different HTML tags that can be used.  They all have the same basic format.  Most tags have an opening and a closing tag.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;content&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;All tags have brackets around them &amp;lt; and &amp;gt; that are used by the browser to know what is a tag and what is content.  Right after the opening bracket &lt;code&gt;&amp;lt;&lt;/code&gt; is the tag name like h1 or p then the closing bracket &lt;code&gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the tag has a closing tag it will match the opening tag but have an &lt;code&gt;/&lt;/code&gt; after the opening bracket.  This is the indication to the browser to close the tag that was opened.  With out it the browser would never know when to stop.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are a few number of tags that do not have a closing tag because they do not wrap any content.  Older versions of HTML required that all tags be opened and closed.  This is no longer the case although you may still see a self-closing tag &lt;code&gt;&amp;lt;tag /&amp;gt;&lt;/code&gt; in code examples.  &lt;/p&gt;
+&lt;h2 id=&quot;attributes&quot;&gt;Attributes&lt;/h2&gt;
+&lt;p&gt;Sometimes a tag will need additional information to perform correctly.  Adding an attribute to the tag allows the developer to set the correct information on each tag.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attributes will always go on the opening tag after the tag name.  There must be space between the tag name and the attribute name.&lt;/li&gt;
+&lt;li&gt;Attributes do not need to be closed.  In other words when you close a tag you close its entire attribute.  &lt;/li&gt;
+&lt;li&gt;If an attribute has a value the value must be quoted and you should use the double quote “&lt;/li&gt;
+&lt;li&gt;If an attribute has a value there must be an equal sign = between the attribute name and the value.&lt;/li&gt;
+&lt;li&gt;The order of the attribute does not matter.&lt;/li&gt;
+&lt;li&gt;The number of attributes that are used has decreased with newer versions of HTML.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;one-attribute&quot;&gt;One Attribute&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;attribute&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;value&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;content&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;two-attributes&quot;&gt;Two Attributes&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;attribute&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;value&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;attribute&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;value&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;content&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;tag&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;block-level-vs-inline&quot;&gt;Block-level vs inline&lt;/h2&gt;
+&lt;p&gt;Most all tags fall in to one of two types of tags, inline or block.  Understanding how an element displays will help you choose the correct tag to use.  &lt;/p&gt;
+&lt;p&gt;Block-level elements will&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fill the full width of the parent element&lt;/li&gt;
+&lt;li&gt;Force the content to its own line&lt;/li&gt;
+&lt;li&gt;Allows for padding and margin to be set on the top and bottom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Inline will&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only take up the space of the content&lt;/li&gt;
+&lt;li&gt;Wont force the content two its own line i.e. stay “inline”&lt;/li&gt;
+&lt;li&gt;Can’t have padding on the top and bottom&lt;/li&gt;
+&lt;li&gt;Can’t have a width or height set
+Examples
+&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;code&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The block examples are structural elements, while the inline elements are text-based. This is an easy way to remember which is which.&lt;/p&gt;
+&lt;p&gt;Generally speaking, you can put any block element inside another block element. You can also put any inline element inside a block element, as well as any inline element inside any other inline element. But you cannot put a block element inside an inline element. The paragraph tags also must be the inner most block element or in other words you cannot have a paragraph tag nested in a paragraph tag.&lt;/p&gt;
+&lt;h2 id=&quot;nesting-elements&quot;&gt;Nesting Elements&lt;/h2&gt;
+&lt;p&gt;If we think about html as the building blocks of a webpage we will have to nest elements within in each other to build the page correctly.  &lt;/p&gt;
+&lt;p&gt;Think about it this way.  If we were to build a house we might start to build the ground floor.  We might add a kitchen, bathroom and living room all with in the ground floor.  We would not finish the floor until all the rooms are done.  &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;House
+    Floor
+        Kitchen
+        Bathroom
+        Living room
+    Floor
+        Bed Room
+        Bed Room
+        Bathroom
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If this was HTML it might look something like this&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;house&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;floor&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;kitchen&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;kitchen&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bathroom&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bathroom&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;living&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;living&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;floor&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;floor&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bed&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bed&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bed&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bed&lt;/span&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bathroom&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bathroom&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;floor&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;house&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can see we open the house tag but do not close it until both floors are done.  &lt;/p&gt;
+&lt;p&gt;First in, last out. The first tag you open is the last tag you close.  &lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 2</title>
+      <link>http://localhost:8080/lessons/lesson-2/</link>
+      <pubDate>Wed, 31 Jan 2018 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-2/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will talk about how to create links and embed images.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The anchor tag or the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; tag is most commonly used to create a link to an other file or page.  The anchor tag by default will not act as a link without the &lt;code&gt;href&lt;/code&gt; attribute.  &lt;/p&gt;
+&lt;p&gt;The anchor tag can also be used to set a point on a page where the page can be linked to.  You might see this on an FAQ page where you have a list of questions at the top and the answers at the bottom.&lt;/p&gt;
+&lt;p&gt;Please note there is not a link tag.  If someone askes you to create a link they are talking about the anchor tag.&lt;/p&gt;
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”http://www.sva.edu”&lt;/span&gt;&amp;gt;&lt;/span&gt;http://www.sva.edu&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;or&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;pointname&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Page Content&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Attributes&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;href=&amp;quot;&amp;quot;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;URL&lt;/td&gt;
+&lt;td&gt;The target URL of the link&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;target&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;_blank&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Where to open the target URL. &lt;code&gt;_blank&lt;/code&gt; - the target URL will open in a new window&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;parts-of-a-link&quot;&gt;Parts of a link&lt;/h2&gt;
+&lt;p&gt;There are two parts to create a link&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The text or content the user can click on&lt;/li&gt;
+&lt;li&gt;The location of the page the user will have the page replace.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;location/of/file.html&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Clickable text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;breaking-it-down&quot;&gt;Breaking it down&lt;/h4&gt;
+&lt;p&gt;Lets start with the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; which is added to create the anchor.  Next we need to add the &lt;code&gt;href&lt;/code&gt; &lt;strong&gt;attribute&lt;/strong&gt; to make the anchor act as a &lt;em&gt;link&lt;/em&gt;. Then we wrap the text we want the user to click on with the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;. Last we add the location of the page we want to link to.&lt;/p&gt;
+&lt;p&gt;If we had the text &lt;strong&gt;HTML at SVA&lt;/strong&gt; and wanted to link to the web page &lt;em&gt;&lt;a href=&quot;http://www.svahtml.com&quot;&gt;http://www.svahtml.com&lt;/a&gt;&lt;/em&gt; the link would look like this.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;http://www.svahtml.com&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML at SVA&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Keep in mind that the &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; is an inline element so it can be placed next to other text.&lt;/p&gt;
+&lt;p&gt;If you want a link to be on its own line it would need to wrapped with a Block-Level element like a &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;linking-to-a-file-in-the-same-folder&quot;&gt;Linking to a file in the same folder&lt;/h2&gt;
+&lt;p&gt;When you link to a file that is in the same folder just add the file name to the HREF attribute.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;filename.html&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Link Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;linking-to-a-file-in-a-sub-folder&quot;&gt;Linking to a file in a sub folder&lt;/h2&gt;
+&lt;p&gt;When linking to a file in a sub folder you need to declare what folder you are navigating to then add the file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;folder/filename.html&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Link Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;linking-to-a-file-in-a-parent-folder&quot;&gt;Linking to a file in a parent folder&lt;/h2&gt;
+&lt;p&gt;When linking a file in a parent folder you need to add &lt;code&gt;&amp;quot;../&amp;quot;&lt;/code&gt; for each folder you want to navigate up.  You do not need the folder name when navigating up.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;../filename.html&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Link Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;linking-to-an-outside-site&quot;&gt;Linking to an outside site&lt;/h2&gt;
+&lt;p&gt;When linking to an outside site you need to add the full URL including the &lt;code&gt;http://&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;http://www.svahtml.com&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Link Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;linking-to-a-point-with-a-page-&quot;&gt;Linking to a point with a page.&lt;/h2&gt;
+&lt;p&gt;The link add the “#” that says look on the page for a A tag with a name that matches the text after the #.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;#sectionName&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;Link to section&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The point on the page you are linking to.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;sectionName&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;images-as-a-link&quot;&gt;Images as a link&lt;/h2&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”http://www.cnn.com”&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”/images/cnnlogo.png”&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;alt&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;cnn&lt;/span&gt;” &lt;span class=&quot;attr&quot;&gt;border&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”0”/&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;adding-target&quot;&gt;Adding Target&lt;/h2&gt;
+&lt;p&gt;There will be time what you want open a page in a new window. By adding the &lt;code&gt;target=&amp;quot;_blank&amp;quot;&lt;/code&gt; attribute it will force that page to open in a new window or tab.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; How the page open can not be controlled it is a setting of the browser.  In most cases it will open in a new tab.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://css-tricks.com/use-target_blank/&quot;&gt;Read More&lt;/a&gt; about when you should use &lt;code&gt;target&lt;/code&gt;&lt;/p&gt;
+&lt;style&gt;
+table tr td:nth-child(1){width:20%}
+&lt;/style&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 3</title>
+      <link>http://localhost:8080/lessons/lesson-3/</link>
+      <pubDate>Wed, 07 Feb 2018 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-3/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we start to talk about CSS.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1mYirjj8tdvtriYiZJl5F97xVhJFnOiWnf0cp1JKqO9M/edit?pli=1#slide=id.p&quot; class=&quot;btn&quot;&gt;View Presentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;what-is-css&quot;&gt;What is CSS&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;CSS stands for &lt;em&gt;Cascading Style Sheets&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Styles define how to display HTML elements&lt;/li&gt;
+&lt;li&gt;Styles are normally stored in Style Sheets&lt;/li&gt;
+&lt;li&gt;External Style Sheets can save you a lot of work&lt;/li&gt;
+&lt;li&gt;External Style Sheets are stored in CSS files&lt;/li&gt;
+&lt;li&gt;Multiple style definitions will cascade into one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;locations-of-styles&quot;&gt;Locations of Styles&lt;/h2&gt;
+&lt;p&gt;Styles can be written in 3 different location.  Where they style is defined will impact how an element will be displayed.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;External file include within the HTML file&lt;/li&gt;
+&lt;li&gt;Embedded or Internal style sheet local to HTML file&lt;/li&gt;
+&lt;li&gt;Inline style that is added directly to an HTML element&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;weight-of-locations&quot;&gt;Weight of locations&lt;/h2&gt;
+&lt;p&gt;The location impacts the presentation of the HTML element.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Default browser setting&lt;/li&gt;
+&lt;li&gt;External style sheet.  Last one included on the page has most weight&lt;/li&gt;
+&lt;li&gt;Embedded on the page - Last style defended will be displayed.&lt;/li&gt;
+&lt;li&gt;Inline Style&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the case where two elements have the same style applied the more specific the style the more weight it has.  An inline style has the most weight because it is applied directly to an element. In internal style sheet has more weight than an external because it applied only to that on page.&lt;/p&gt;
+&lt;p&gt;The efficiency of a style often time is the opposed of how specific it is.  This is because you often want to reuse a style across may elements or page with in your site.&lt;/p&gt;
+&lt;h2 id=&quot;selectors&quot;&gt;Selectors&lt;/h2&gt;
+&lt;p&gt;In CSS, selectors are used to declare which of the markup elements a style applies to, a kind of match expression.  In other words it is the instruction to the CSS on what HTML elements should be styled but not how they should be styled.  &lt;/p&gt;
+&lt;p&gt;There are 3 basic selectors each has its own weight that defines how an element will look when there are conflicting styles.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Tag Name Selector&lt;/li&gt;
+&lt;li&gt;Class Name Selector&lt;/li&gt;
+&lt;li&gt;ID Name Selector&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;tag-name-selector&quot;&gt;Tag Name Selector&lt;/h2&gt;
+&lt;p&gt;Because HTML has a standard set of tags use CSS can use there names to connect the HTML and CSS.  A tag name selector will apply the style to all elements on a page that match that tag name.  &lt;/p&gt;
+&lt;p&gt;For example if a html page use the paragraph tag CSS can style all P tags on the page to look the same way.  This is very efficient to style a large number of elements at one time.  Because the HTML tag is the reference there is no need to add any addiction mark up.&lt;/p&gt;
+&lt;h2 id=&quot;class-name-selectors&quot;&gt;Class Name Selectors&lt;/h2&gt;
+&lt;p&gt;Often times a style will need to be applied to one or more elements on a page but not all elements.  To allow of a style to be applied to one more more elements on a page a class is created and added to the HTML element.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A class selectors must have a name given to it.&lt;/li&gt;
+&lt;li&gt;A class name can be applied to one or more elements with in a document.  &lt;/li&gt;
+&lt;li&gt;A class attribute must be added to an HTML element.  &lt;code&gt;class=”className”&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Class names are case sensitive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;id-name-selectors&quot;&gt;ID Name Selectors&lt;/h2&gt;
+&lt;p&gt;Like the class selectors ID selector are applied to an element within the document but unlike a class an ID name can only be used once.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An ID selector must have a name given to it.&lt;/li&gt;
+&lt;li&gt;An ID name can be used only once per document.&lt;/li&gt;
+&lt;li&gt;An ID attribute must be added to an HTML element &lt;code&gt;id=”idName”&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ID names are case sensitive&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;weight-of-selectors&quot;&gt;Weight of selectors&lt;/h2&gt;
+&lt;p&gt;The more specific a selector is the more weight it has.  An ID has the the most weight because it is used on a page only once.  A class has more weight than a tag selector because it defines what elements it is applied to.&lt;/p&gt;
+&lt;p&gt;Any time you put effort in to connecting the HTML and the CSS it will have more weight than if you do nothing to the HTML.&lt;/p&gt;
+&lt;h3 id=&quot;order-of-weight&quot;&gt;Order of weight&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;ID Name&lt;/li&gt;
+&lt;li&gt;Class Name&lt;/li&gt;
+&lt;li&gt;Tag Name&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;inline-styles&quot;&gt;Inline Styles&lt;/h3&gt;
+&lt;p&gt;Inline style are effect way of applying a style to one element.  The down side is that it is not reusable.  If you where apply that style a second time you would need to create that style a second time.  &lt;/p&gt;
+&lt;h3 id=&quot;how-to-use&quot;&gt;How to use&lt;/h3&gt;
+&lt;p&gt;Inline styles are applied to an HTML element with an attribute of style.  The attribute is HTML but the value is CSS.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;style&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”property:value;”&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;internal-and-external-styles&quot;&gt;Internal and External Styles&lt;/h2&gt;
+&lt;p&gt;The more common way to use CSS is to add the style to an external file or internal style block.  This creates a clear separation between the HTML and the CSS.  If the CSS is written in an external file that file can used on many pages with in your site and if a change needs to be made it is made in once place an applied to all pages at the same time.  &lt;/p&gt;
+&lt;h3 id=&quot;how-to-use&quot;&gt;How to use&lt;/h3&gt;
+&lt;h4 id=&quot;html&quot;&gt;HTML&lt;/h4&gt;
+&lt;p&gt;On each element that a class is applied you need to add the class attribute with a value of the class name.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; that class name can be anything you want it it be.  The example below use a generic className but it could be almost anything.  The same thing goes for the ID name.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”className”&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;h1&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”className”&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”idName”&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;HTML Text&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&quot;css-internal-style-sheet&quot;&gt;CSS - internal style sheet&lt;/h4&gt;
+&lt;p&gt;The style block will be added with the HEAD tag.  Adding a style tag.&lt;/p&gt;
+&lt;p&gt;To define a class use the class name defined in the HTML and add a period (.) in front of it. .className&lt;/p&gt;
+&lt;p&gt;To define an id use the id name defined in the HTML and add a number symbol (#) in front of it. #idName&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;”text/css”&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;css&quot;&gt;
+&lt;span class=&quot;selector-class&quot;&gt;.className&lt;/span&gt; {
+    &lt;span class=&quot;attribute&quot;&gt;property&lt;/span&gt;: value;
+}
+
+&lt;span class=&quot;selector-id&quot;&gt;#idName&lt;/span&gt; {
+    &lt;span class=&quot;attribute&quot;&gt;property&lt;/span&gt;: value;
+}
+&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;style&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;css-syntax&quot;&gt;CSS Syntax&lt;/h2&gt;
+&lt;p&gt;The syntax for css is very different than HTML syntax.  &lt;/p&gt;
+&lt;h3 id=&quot;basic-format&quot;&gt;Basic format&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Declaration - The whole style including the selector and properties and values.&lt;/li&gt;
+&lt;li&gt;Selector - How the HTML and CSS are connected&lt;/li&gt;
+&lt;li&gt;Property - predefined options used to change the look and feel of an element.&lt;/li&gt;
+&lt;li&gt;Value - predefined value based on selected property.&lt;/li&gt;
+&lt;li&gt;Colon &lt;code&gt;:&lt;/code&gt; - indicates the end of the property.&lt;/li&gt;
+&lt;li&gt;Semicolon &lt;code&gt;;&lt;/code&gt; - indicates the end of a value.  Semicolons are required.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Inline style - when using an inline style you will only use the property and value.&lt;/p&gt;
+&lt;h3 id=&quot;basic-format&quot;&gt;Basic format&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;selector&lt;/span&gt; {
+    &lt;span class=&quot;attribute&quot;&gt;property&lt;/span&gt;: value;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;More than one property - declarations can have many properties defined&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;selector {
+    property1: value;
+    property2: value2;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 4</title>
+      <link>http://localhost:8080/lessons/lesson-4/</link>
+      <pubDate>Wed, 14 Feb 2018 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-4/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week We will dive back into CSS and talk about text, font, borders, margin and padding. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;When styling fonts with CSS they are broken into two types.  &lt;strong&gt;Font&lt;/strong&gt; properties and &lt;strong&gt;Text&lt;/strong&gt; properties. The two are very similar, the &lt;strong&gt;Font&lt;/strong&gt; deals more with the character set and the &lt;strong&gt;Text&lt;/strong&gt; is more about changing the way the font looks.&lt;/p&gt;
+&lt;h2 id=&quot;font-properties&quot;&gt;Font Properties&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Property&lt;/th&gt;
+&lt;th&gt;Values&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;font:* &lt;br&gt;required&lt;/td&gt;
+&lt;td&gt;style variant weight size/line-height family&lt;br&gt; example: &lt;code&gt;font:bold 12px/2 verdana, &amp;quot;Lithos Regular&amp;quot;, sans-serif;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;font-style:&lt;/td&gt;
+&lt;td&gt;normal, italic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;font-variant:&lt;/td&gt;
+&lt;td&gt;normal, small-caps&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;font-weight:&lt;/td&gt;
+&lt;td&gt;normal, bold&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;font-size:*&lt;/td&gt;
+&lt;td&gt;length, percent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;line-height:&lt;/td&gt;
+&lt;td&gt;normal, length, percent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;font-family:*&lt;/td&gt;
+&lt;td&gt;Arial ,”Arial Black”, “Courier New”, Impact, “Lucida Sans Unicode”, Tahoma, Verdana&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;*required&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When styling fonts with CSS they are broken into two types.  &lt;strong&gt;Font&lt;/strong&gt; properties and &lt;strong&gt;Text&lt;/strong&gt; properties. The two are very similar, the &lt;strong&gt;Font&lt;/strong&gt; deals more with the character set and the &lt;strong&gt;Text&lt;/strong&gt; is more about changing the way the font looks.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;font&lt;/code&gt; - is a shorthand way to express any font propertiesx on one line.  When using the shorthand the order matters.  There are two required properties, font-size and font-family.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;italic&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;small-caps&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;bold&lt;/span&gt; 12&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;arial&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;verdana&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you do not define a property within the shorthand it will be set to the default state often normal. It could be the case that in the case of &lt;code&gt;h1&lt;/code&gt; where the default is for the text to be bold that when using the shorthand and not setting the &lt;code&gt;font-weight&lt;/code&gt; it will be sent to &lt;code&gt;normal&lt;/code&gt; and the &lt;code&gt;h1&lt;/code&gt; will no longer be bold even though we did not set it.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;font-style&lt;/code&gt; will define if something will be italic.  If something is italic by default like the &lt;code&gt;em&lt;/code&gt; you can also set the &lt;code&gt;font-style&lt;/code&gt; to be &lt;code&gt;normal&lt;/code&gt; and it will remove the italics.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-style&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;italic&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;font-variant&lt;/code&gt; will set the text to be &lt;code&gt;small-caps&lt;/code&gt; where the “lowercase” letters will be displayed as small uppercase letters.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-variant&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;small-caps&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;font-weight&lt;/code&gt;will define text that is bold.  If something is bold by default like &lt;code&gt;h2&lt;/code&gt; you can remove the bold by setting the value to &lt;code&gt;normal&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-weight&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;bold&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;font-size&lt;/code&gt; - set the size of the font.&lt;/p&gt;
+&lt;p&gt;While there are a number of options to define what the size can be we use only three options.  We will use &lt;strong&gt;percent&lt;/strong&gt;, &lt;strong&gt;em&lt;/strong&gt;, or &lt;strong&gt;pixel&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Both percent and em calculate the size of the font off of another font size. For example if a font size set to &lt;code&gt;10px&lt;/code&gt; and wanted to have the text be &lt;strong&gt;twice as large&lt;/strong&gt; you could set the size to be &lt;code&gt;2em&lt;/code&gt; or &lt;code&gt;200%&lt;/code&gt;,  This will calculate size to be &lt;code&gt;20px&lt;/code&gt; but if the font size where to change to &lt;code&gt;12px&lt;/code&gt; it would then calculate the size to &lt;code&gt;24px&lt;/code&gt;.  The advantage of this is you only need to &lt;strong&gt;change the one font&lt;/strong&gt; and all the other fonts will change in relation to that size.&lt;/p&gt;
+&lt;p&gt;Since we &lt;strong&gt;can’t&lt;/strong&gt; measure what an inch is on a computer screen we can’t use it. That also means that we &lt;strong&gt;can’t&lt;/strong&gt; use point because &lt;code&gt;1 points&lt;/code&gt; is defined as &lt;code&gt;1/72 inch&lt;/code&gt;.  The fact that we do not know what an inch is it we can not calculate what a point is.  Instead you should always define &lt;strong&gt;font sizes in pixels, percent or em&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-size&lt;/span&gt;: 12&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;
+&lt;span class=&quot;selector-tag&quot;&gt;font-size&lt;/span&gt;: 2&lt;span class=&quot;selector-tag&quot;&gt;em&lt;/span&gt;;
+&lt;span class=&quot;selector-tag&quot;&gt;font-size&lt;/span&gt;: 200%;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;css-units&quot;&gt;CSS Units&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Unit&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;%&lt;/td&gt;
+&lt;td&gt;a percentage of something&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;in&lt;/td&gt;
+&lt;td&gt;*&lt;em&gt;inch&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cm&lt;/td&gt;
+&lt;td&gt;*&lt;em&gt;centimeter&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mm&lt;/td&gt;
+&lt;td&gt;*&lt;em&gt;millimeter&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;em&lt;/td&gt;
+&lt;td&gt;one em is equal to the font size of the current element&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pt&lt;/td&gt;
+&lt;td&gt;*&lt;em&gt;point (1 pt is the same as 1/72 inch)&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pc&lt;/td&gt;
+&lt;td&gt;*&lt;em&gt;pica (1 pc is the same as 12 points)&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;px&lt;/td&gt;
+&lt;td&gt;pixels (a dot on the computer screen)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;*&lt;em&gt;Should not be used when viewing on a computer screen. Should only be used when printing&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;code&gt;font-family&lt;/code&gt; - defines what font is displayed when the page is rendered.  The &lt;code&gt;font-family&lt;/code&gt; can only load a font that is installed on the &lt;strong&gt;local computer&lt;/strong&gt; viewing the page.   This means we are limited in the fonts that installed on both the Mac and Windows computers by default.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-family&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;helvetica&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;arial&lt;/span&gt;, “&lt;span class=&quot;selector-tag&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;roman&lt;/span&gt;”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; any font name that has a &lt;em&gt;space&lt;/em&gt; in needs to be quoted(“).&lt;/p&gt;
+&lt;p&gt;If you want to use a font that may not be fully supported but have a fall back you can put them in a comma separated list.  If the first item in the list is not available it will try the next font in the list.  If no font is available it will display the browser default.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Type&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Serif Fonts&lt;/td&gt;
+&lt;td&gt;Georgia, serif&lt;br&gt;“Palatino Linotype”, “Book Antiqua”, Palatino, serif&lt;br&gt;“Times New Roman”, Times, serif&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sans-Serif Fonts&lt;/td&gt;
+&lt;td&gt;Arial, Helvetica, sans-serif    &lt;br&gt;“Arial Black”, Gadget, sans-serif&lt;br&gt;“Comic Sans MS”, cursive, sans-serif&lt;br&gt;Impact, Charcoal, sans-serif&lt;br&gt;“Lucida Sans Unicode”, “Lucida Grande”, sans-serif&lt;br&gt;Tahoma, Geneva, sans-serif&lt;br&gt;“Trebuchet MS”, Helvetica, sans-serif&lt;br&gt;Verdana, Geneva, sans-serif&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Monospace Fonts&lt;/td&gt;
+&lt;td&gt;“Courier New”, Courier, monospace&lt;br&gt;“Lucida Console”, Monaco, monospace&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;style&gt;
+table tr td:nth-child(1){width:20%}
+td .label {margin-right: 4px;cursor: pointer;}
+&lt;/style&gt;
+
+
+&lt;script src=&quot;lesson5.js&quot;&gt;&lt;/script&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 5</title>
+      <link>http://localhost:8080/lessons/lesson-5/</link>
+      <pubDate>Wed, 21 Feb 2018 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-5/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will be talking about floating.  How to align images, build gallery and simple navigation. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since Everything on in web design is a rectangular box we need to know how to size that box.  The way that CSS calculates the size of a box is not what you expect.  Rather than set the size of the box based on the outer most elements &lt;code&gt;border&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; the width is set baed on the content.&lt;/p&gt;
+&lt;h3 id=&quot;setting-a-width&quot;&gt;Setting a width&lt;/h3&gt;
+&lt;p&gt;To set the width of an element you take the desired width and subtract the &lt;code&gt;padding-left&lt;/code&gt;, &lt;code&gt;padding-right&lt;/code&gt;, &lt;code&gt;border-left-width&lt;/code&gt; and &lt;code&gt;border-right-width&lt;/code&gt;.  If you need to maintain the &lt;code&gt;margin&lt;/code&gt; you will need to subtract the &lt;code&gt;margin-left&lt;/code&gt; and &lt;code&gt;margin-right&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;p&gt;If we have an element that needs to fit in to a space that is &lt;code&gt;400px&lt;/code&gt; and it has &lt;code&gt;padding: 20px&lt;/code&gt; and &lt;code&gt;border: 5px solid black&lt;/code&gt; the calculation to find the size would look like this.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;400px - 20px -20px - 5px - 5px = 350px
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;iframe height='800' scrolling='no' title='Box Model' src='//codepen.io/danhahn/embed/MoQNbO/?height=734&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'&gt;See the Pen &lt;a href='https://codepen.io/danhahn/pen/MoQNbO/'&gt;Box Model&lt;/a&gt; by Dan Hahn (&lt;a href='https://codepen.io/danhahn'&gt;@danhahn&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+
+&lt;h2 id=&quot;box-sizing&quot;&gt;Box Sizing&lt;/h2&gt;
+&lt;p&gt;In CSS, by default, the width and height you assign to an element is applied only to the element’s content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that’s rendered on the screen. This means that when you set width and height you have to adjust the value you give to allow for any border or padding that may be added. This is especially tricky when implementing a responsive design.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;box-sizing&lt;/code&gt;property can be used to adjust this behavior:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-class&quot;&gt;.example&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;box-sizing&lt;/span&gt;: border-box;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;content-box&lt;/code&gt; is the default, and gives you the default CSS box-sizing behavior. If you set an element’s width to 100 pixels, then the element’s content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered width.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;border-box&lt;/code&gt; tells the browser to account for any border and padding in the value you specify for width and height. If you set an element’s width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;apply-to-all-elements&quot;&gt;Apply to all elements&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;*&lt;/code&gt; selector will apply a style to all elements. &lt;code&gt;box-sizing&lt;/code&gt; is a great example of time to use it.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;* {
+  &lt;span class=&quot;attribute&quot;&gt;box-sizing&lt;/span&gt;: border-box;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now all elements on the page will size based on a &lt;code&gt;border-box&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 6</title>
+      <link>http://localhost:8080/lessons/lesson-6/</link>
+      <pubDate>Wed, 28 Feb 2018 15:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-6/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will talk about the new CSS3 flex box layout.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;iframe height='589' scrolling='no' title='Float Layout' src='//codepen.io/danhahn/embed/owGKdY/?height=589&amp;theme-id=light&amp;default-tab=result&amp;embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'&gt;See the Pen &lt;a href='https://codepen.io/danhahn/pen/owGKdY/'&gt;Float Layout&lt;/a&gt; by Dan Hahn (&lt;a href='https://codepen.io/danhahn'&gt;@danhahn&lt;/a&gt;) on &lt;a href='https://codepen.io'&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+
+&lt;h2 id=&quot;set-up&quot;&gt;Set Up&lt;/h2&gt;
+&lt;p&gt;You can use a &lt;code&gt;float&lt;/code&gt; to layout a page.  Because when 2 elements are floated they will create row.&lt;/p&gt;
+&lt;p&gt;Here we a have the &lt;code&gt;html&lt;/code&gt; for a three column layout.  Note how &lt;code&gt;nav&lt;/code&gt;, &lt;code&gt;article&lt;/code&gt;, and &lt;code&gt;aside&lt;/code&gt; are wrapped with a &lt;code&gt;section&lt;/code&gt; tag. We will use that to &lt;em&gt;clear fix&lt;/em&gt; the layout issue.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;wrapper&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;header&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;header&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;section&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;nav&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;nav&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;nav&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;main&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;article&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;aside&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;sidebar&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;aside&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;section&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;footer&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;footer&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;footer&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here we have the CSS.  There are a few things we need to do.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;add clear fix to &lt;code&gt;section&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;define a &lt;code&gt;width&lt;/code&gt; to all elements in the row&lt;/li&gt;
+&lt;li&gt;add &lt;code&gt;float: left;&lt;/code&gt; to all children of the &lt;code&gt;section&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;section&lt;/span&gt;&lt;span class=&quot;selector-pseudo&quot;&gt;:after&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;content&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;display&lt;/span&gt;: table;
+  &lt;span class=&quot;attribute&quot;&gt;clear&lt;/span&gt;: both;
+}
+&lt;span class=&quot;selector-class&quot;&gt;.nav&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;200px&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;float&lt;/span&gt;: left;
+  &lt;span class=&quot;attribute&quot;&gt;background-color&lt;/span&gt;: lightgreen;
+}
+
+&lt;span class=&quot;selector-class&quot;&gt;.main&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;800px&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;float&lt;/span&gt;: left;
+  &lt;span class=&quot;attribute&quot;&gt;background-color&lt;/span&gt;: white;
+}
+
+&lt;span class=&quot;selector-class&quot;&gt;.sidebar&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;number&quot;&gt;200px&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;float&lt;/span&gt;: left;
+  &lt;span class=&quot;attribute&quot;&gt;background-color&lt;/span&gt;: lightblue;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;White this will work it is not very flexible or easy to make work on a mobile device.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 7</title>
+      <link>http://localhost:8080/lessons/lesson-7/</link>
+      <pubDate>Wed, 14 Mar 2018 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-7/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will talk about CSS backgrounds and how to build and style an HTML table. &lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
+&lt;p&gt;Backgrounds are a way to add colors and images to elements on the page.&lt;/p&gt;
+&lt;h2 id=&quot;background-color&quot;&gt;Background Color&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-color: color name | RGB Value | Hex Value;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Background color can be added any element on the page including both block and inline elements. Block level elements will display the full width of the element where inline will only display in the space the content needs. You can use padding to expose more of the background.&lt;/p&gt;
+&lt;p&gt;&lt;p data-height=&quot;200&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;YWaZzb&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/YWaZzb/&quot;&gt;background-color&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;background-image&quot;&gt;Background Image&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-image&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;url&lt;/span&gt;(&amp;lt;&lt;span class=&quot;selector-tag&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;path&lt;/span&gt;&amp;gt;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Background images can be applied to any element on the page including both block and inline elements. If a background color and image are applied at the same time to the same element the image will overlay the color. By default a background image will tile in all directions starting in the top left corner.&lt;/p&gt;
+&lt;p&gt;&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;yJKvov&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/yJKvov/&quot;&gt;yJKvov&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;background-repeat&quot;&gt;Background Repeat&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-repeat: repeat | no-repeat | repeat-x | repeat-y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When applying a background image it will tile in all directions by default.&lt;/p&gt;
+&lt;p&gt;You can control the way the image will tile by using &lt;code&gt;background-repeat&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Repeat&lt;/th&gt;
+&lt;th&gt;Direction&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat (default)&lt;/td&gt;
+&lt;td&gt;tiles in all directions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;no-repeat&lt;/td&gt;
+&lt;td&gt;the image will appear one time.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat-x&lt;/td&gt;
+&lt;td&gt;repeat along the x axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;repeat-y&lt;/td&gt;
+&lt;td&gt;repeat along the x axis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;bZvLoq&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/bZvLoq/&quot;&gt;background-repeat&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;##Background Attachment&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background-attachment: scroll | fixed;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When a background image is applied to an element by default it will move with that element then the page scrolls. An image can be locked to one location by setting the value of background-attachment to fixed. When fixed is applied the element will no longer have its location set by the element but the body instead. The most common use of the is property is when applying a background to the BODY tag and that background image should not move when the page is scrolled.&lt;/p&gt;
+&lt;h2 id=&quot;background-position&quot;&gt;Background Position&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: (&lt;span class=&quot;selector-tag&quot;&gt;left&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt;) (&lt;span class=&quot;selector-tag&quot;&gt;top&lt;/span&gt;, &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;bottom&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The position of the background image can be sent by using background-position. When a value is set the image will move to the location set background-position and if a tile is applied tile out from that point.&lt;/p&gt;
+&lt;p&gt;If you want the image to be position the center both vertical and horizontal than you need only define the value of center.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;center&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Position can also be set by adding a number value, two values must be set with the first value how far from the left and the second value how far from the top. Number can be in pixels or percentages.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: 100&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; 300&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;
+&lt;span class=&quot;selector-tag&quot;&gt;background-position&lt;/span&gt;: 50% 80%;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;mExXpV&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/mExXpV/&quot;&gt;background-position&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;background-shorthand&quot;&gt;Background Shorthand&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;repeat&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;attachment&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;position&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;color&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Like many CSS properties there is a shorthand way to define a background. Like with other shorthand options not all values are required and values not set will be set to the default value.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;background: #fff url(images/side-bar.png) repeat-y right top;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;p data-height=&quot;400&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;ZOxAxr&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/ZOxAxr/&quot;&gt;background&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;In this example attachment is not defined so it will be set to the default which in this case is scroll.&lt;/p&gt;
+&lt;p&gt;In a case where you need to override a value set elsewhere and remove all background values it can be done by setting the background value to none.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;background&lt;/span&gt;: &lt;span class=&quot;selector-tag&quot;&gt;none&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You are setting the &lt;code&gt;background-image&lt;/code&gt; to none and by default setting the &lt;code&gt;background-color&lt;/code&gt; to transparent.&lt;/p&gt;
+&lt;p&gt;&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;jAzkjx&quot; data-default-tab=&quot;result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/danhahn/pen/jAzkjx/&quot;&gt;background: none&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;http://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 8</title>
+      <link>http://localhost:8080/lessons/lesson-8/</link>
+      <pubDate>Wed, 28 Mar 2018 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-8/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will talk about adding Google Fonts, responsive and the &lt;code&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;font-families-recap&quot;&gt;Font families recap&lt;/h2&gt;
+&lt;p&gt;As we looked at in Fundamental text and font styling, the fonts applied to your HTML can be controlled using the font-family property. This takes one or more font family names, and the browser travels down the list until it finds a font it has available on the system it is running on:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;p&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;font-family&lt;/span&gt;: Helvetica, &lt;span class=&quot;string&quot;&gt;&quot;Trebuchet MS&quot;&lt;/span&gt;, Verdana, sans-serif;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This system works well, but traditionally web developers font choices were limited. There are only a handful of fonts that you can guarantee to be available across all common systems — the so-called Web-safe fonts. You can use the font stack to specify preferrable fonts, followed by web-safe alternatives, followed by the default system font, but this adds overhead in terms of testing to make sure that your designs look ok with each font, etc.&lt;/p&gt;
+&lt;h2 id=&quot;web-fonts&quot;&gt;Web fonts&lt;/h2&gt;
+&lt;p&gt;But there is an alternative, which works very well, right back to IE version 6. Web fonts are a CSS feature that allows you to specify font files to be downloaded along with your website as it is accessed, meaning that any browser that supports web fonts can have exactly the fonts you specify available to it. Amazing! The syntax required looks something like this:&lt;/p&gt;
+&lt;p&gt;First of all, you have a &lt;code&gt;@font-face&lt;/code&gt; block at the start of the CSS, which specifies the font file(s) to download:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;@&lt;span class=&quot;keyword&quot;&gt;font-face&lt;/span&gt; {
+  &lt;span class=&quot;attribute&quot;&gt;font-family&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;myFont&quot;&lt;/span&gt;;
+  &lt;span class=&quot;attribute&quot;&gt;src&lt;/span&gt;: &lt;span class=&quot;built_in&quot;&gt;url&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;myFont.ttf&quot;&lt;/span&gt;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Below this you can then use the font family name specified inside &lt;code&gt;@font-face&lt;/code&gt; to apply your custom font to anything you like, as normal:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;html {
+  font-family: &amp;quot;myFont&amp;quot;, &amp;quot;Bitstream Vera Serif&amp;quot;, serif;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;There are two important things to bear in mind about web fonts:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Browsers support different font formats, so you’ll need multiple font formats for decent cross browser support. For example, most modern browsers support WOFF/WOFF2 (Web Open Font Format versions 1 and 2), the most efficient format around, but older versions of IE only support EOT (Embedded Open Type) fonts, and you might need to include an SVG version of the font to support older versions of iPhone and Android browsers. We’ll show you below how to generate the required code.&lt;/li&gt;
+&lt;li&gt;Fonts generally aren’t free to use. You have to pay for them, and/or follow other license conditions such as crediting the font creator in the code (or on your site.) You shouldn’t steal fonts and use them without giving proper credit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below are all the supported non web fonts.  If the font you want to use is not listed below you will need to use a web font.  While you can set up your own hosted fonts there are &lt;a href=&quot;https://www.smashingmagazine.com/2010/10/review-of-popular-web-font-embedding-services/&quot;&gt;services that will host and serve your fonts for you&lt;/a&gt;.  Many of them are free.  In our next section we we will talk about how to use &lt;a href=&quot;http://localhost:8080/lessons/lesson-8/google-fonts.html&quot;&gt;Google Fonts&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;serif-fonts&quot;&gt;Serif Fonts&lt;/h3&gt;
+&lt;table class=&quot;w3-table-all notranslate&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th style=&quot;width:55%&quot;&gt;font-family&lt;/th&gt;
+&lt;th&gt;Example text&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Georgia, serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Georgia, serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Georgia, serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;“Palatino Linotype”, “Book Antiqua”, Palatino, serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;“Times New Roman”, Times, serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Times New Roman', Times, serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Times New Roman', Times, serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;sans-serif-fonts&quot;&gt;Sans-Serif Fonts&lt;/h3&gt;
+&lt;table class=&quot;w3-table-all notranslate&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th style=&quot;width:55%&quot;&gt;font-family&lt;/th&gt;
+&lt;th&gt;Example text&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Arial, Helvetica, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Arial, Helvetica, sans-serif;&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Arial, Helvetica, sans-serif;&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;“Arial Black”, Gadget, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Arial Black, Gadget, sans-serif;font-weight:normal;&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Arial Black, Gadget, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;“Comic Sans MS”, cursive, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Comic Sans MS', cursive, sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Comic Sans MS', cursive, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Impact, Charcoal, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Impact, Charcoal, sans-serif;font-weight:normal&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Impact, Charcoal, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;“Lucida Sans Unicode”, “Lucida Grande”, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tahoma, Geneva, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Tahoma, Geneva, sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Tahoma, Geneva, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;“Trebuchet MS”, Helvetica, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Trebuchet MS', Helvetica, sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Trebuchet MS', Helvetica, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Verdana, Geneva, sans-serif&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: Verdana, Geneva, sans-serif&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: Verdana, Geneva, sans-serif&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;monospace-fonts&quot;&gt;Monospace Fonts&lt;/h3&gt;
+&lt;table class=&quot;w3-table-all notranslate&quot;&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;th style=&quot;width:55%&quot;&gt;font-family&lt;/th&gt;
+&lt;th&gt;Example text&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;“Courier New”, Courier, monospace&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Courier New', Courier, monospace&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Courier New', Courier, monospace&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;“Lucida Console”, Monaco, monospace&lt;/td&gt;
+&lt;td&gt;&lt;h2 style=&quot;margin-top:0px;font-family: 'Lucida Console', Monaco, monospace&quot;&gt;This is a heading&lt;/h2&gt;&lt;p style=&quot;margin-bottom:0px;font-family: 'Lucida Console', Monaco, monospace&quot;&gt;This is a paragraph&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 9</title>
+      <link>http://localhost:8080/lessons/lesson-9/</link>
+      <pubDate>Wed, 04 Apr 2018 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-9/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we will be talking about forms and JavaScript.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;form&quot;&gt;form&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; tag is used to create an HTML form for user input.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element can contain one or more of the following form elements:&lt;/p&gt;
+&lt;table class=&quot;w3-table-all notranslate&quot; id=&quot;table1&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+    &lt;th style=&quot;width:20%&quot;&gt;Attribute&lt;/th&gt;
+    &lt;th style=&quot;width:37%&quot;&gt;Value&lt;/th&gt;
+    &lt;th style=&quot;width:43%&quot;&gt;Description&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;action&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;URL&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Specifies where to send the form-data when a form is submitted&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;method&lt;/td&gt;
+    &lt;td&gt;get&lt;br&gt;
+      post&lt;/td&gt;
+    &lt;td&gt;Specifies the HTTP method to use when sending form-data&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;name&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;text&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Specifies the name of a form&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;target&lt;/td&gt;
+    &lt;td&gt;_blank&lt;br&gt;
+      _self&lt;br&gt;
+      _parent&lt;br&gt;
+      _top&lt;/td&gt;
+    &lt;td&gt;Specifies where to display the response that is received after submitting the form&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;action&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;/action_page.php&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;method&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;get&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  First name: &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;fname&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;br&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  Last name: &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;lname&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;br&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;submit&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;Submit&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;form&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;input&quot;&gt;input&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; tag specifies an input field where the user can enter data.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; elements are used within a &lt;code&gt;&amp;lt;form&amp;gt;&lt;/code&gt; element to declare input controls that allow users to input data.&lt;/p&gt;
+&lt;p&gt;An input field can vary in many ways, depending on the type attribute.&lt;/p&gt;
+&lt;table class=&quot;w3-table-all notranslate&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+    &lt;th style=&quot;width:22%&quot;&gt;Attribute&lt;/th&gt;
+    &lt;th style=&quot;width:37%&quot;&gt;Value&lt;/th&gt;
+    &lt;th style=&quot;width:41%&quot;&gt;Description&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;checked&lt;/td&gt;
+    &lt;td&gt;checked&lt;/td&gt;
+    &lt;td&gt;Specifies that an &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element should be pre-selected when the page loads (for &lt;code&gt;type=&amp;quot;checkbox&amp;quot;&lt;/code&gt; or &lt;code&gt;type=&amp;quot;radio&amp;quot;&lt;/code&gt;)&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;disabled&lt;/td&gt;
+    &lt;td&gt;disabled&lt;/td&gt;
+    &lt;td&gt;Specifies that an &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element should be disabled&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;maxlength&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;number&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Specifies the maximum number of characters allowed in an &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;name&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;text&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Specifies the name of an &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;placeholder&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;text&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Specifies a short hint that describes the expected value of an &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;readonly&lt;/td&gt;
+    &lt;td&gt;readonly&lt;/td&gt;
+    &lt;td&gt;Specifies that an input field is &lt;code&gt;read-only&lt;/code&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;required&lt;/td&gt;
+    &lt;td&gt;required&lt;/td&gt;
+    &lt;td&gt;Specifies that an input field must be filled out before submitting the form&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;size&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;number&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Specifies the width, in characters, of an &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;type&lt;/td&gt;
+    &lt;td&gt;button&lt;br&gt;
+      checkbox&lt;br&gt;
+ color&lt;br&gt;
+      date &lt;br&gt;
+ email &lt;br&gt;
+      file&lt;br&gt;
+      hidden&lt;br&gt;
+      image&lt;br&gt;
+      password&lt;br&gt;
+      radio&lt;br&gt;
+      range &lt;br&gt;
+      reset&lt;br&gt;
+      submit&lt;br&gt;
+      text&lt;br&gt;
+    &lt;/td&gt;
+    &lt;td&gt;Specifies the type &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element to display&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;value&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;text&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Specifies the value of an &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; element&lt;b&gt;&lt;br&gt;
+ &amp;nbsp;&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;p data-height=&quot;650&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;vWJXgj&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Form Elements&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/danhahn/pen/vWJXgj/&quot;&gt;Form Elements&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;https://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;select&quot;&gt;select&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; element is used to create a drop-down list.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; tags inside the &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; element define the available options in the list.&lt;/p&gt;
+&lt;table class=&quot;w3-table-all notranslate&quot;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+    &lt;th style=&quot;width:20%&quot;&gt;Attribute&lt;/th&gt;
+    &lt;th style=&quot;width:20%&quot;&gt;Value&lt;/th&gt;
+    &lt;th style=&quot;width:60%&quot;&gt;Description&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;disabled&lt;/td&gt;
+    &lt;td&gt;disabled&lt;/td&gt;
+    &lt;td&gt;Specifies that a drop-down list should be disabled&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&quot;html5badge&quot;&gt;form&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;form_id&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Defines one or more forms the select field belongs to&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;multiple&lt;/td&gt;
+    &lt;td&gt;multiple&lt;/td&gt;
+    &lt;td&gt;Specifies that multiple options can be selected at once&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;name&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;name&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Defines a name for the drop-down list&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td class=&quot;html5badge&quot;&gt;required&lt;/td&gt;
+    &lt;td&gt;required&lt;/td&gt;
+    &lt;td&gt;Specifies that the user is required to select a value before submitting the form&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;size&lt;/td&gt;
+    &lt;td&gt;&lt;i&gt;number&lt;/i&gt;&lt;/td&gt;
+    &lt;td&gt;Defines the number of visible options in a drop-down list&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h2 id=&quot;textarea&quot;&gt;textarea&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;textarea&amp;gt;&lt;/code&gt; tag defines a multi-line text input control.&lt;/p&gt;
+&lt;p&gt;A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).&lt;/p&gt;
+&lt;p&gt;The size of a text area can be specified by the cols and rows attributes, or even better; through CSS’ height and width properties.&lt;/p&gt;
+&lt;p&gt;&lt;p data-height=&quot;450&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;LOjbGg&quot; data-default-tab=&quot;html,result&quot; data-user=&quot;danhahn&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Form Elements select, textarea&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/danhahn/pen/LOjbGg/&quot;&gt;Form Elements select, textarea&lt;/a&gt; by Dan Hahn (&lt;a href=&quot;https://codepen.io/danhahn&quot;&gt;@danhahn&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Lesson 10</title>
+      <link>http://localhost:8080/lessons/lesson-10/</link>
+      <pubDate>Wed, 11 Apr 2018 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-10/</guid>
+      <author></author>
+      <description>&lt;p&gt;How to set up your own HTML website including how to choose where to host and how to upload.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;building-a-full-site&quot;&gt;Building a full site&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;classwork/&quot; target=&quot;_blank&quot; class=&quot;btn&quot;&gt;View Classwork&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The magic of the index.html&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When building a site that is hosted on a web server there needs to be a default file to serve. In most cases this is  &lt;strong&gt;index.html&lt;/strong&gt;. When you have a folder and put only one file in that folder it should be index.html since it will be served by just requesting the site or any subfolder of that site.&lt;/p&gt;
+&lt;p&gt;For example you may go to a site named &lt;a href=&quot;http://www.svahtml.com&quot;&gt;http://www.svahtml.com&lt;/a&gt; but you just ask for the site you never say what file you want. The server knows to give you the default file, index.html. to make life easy it just gives you it and the file is never displayed in the URL. But what happens when you go to a sub folder like? Again you are not saying what file you want so the server needs to give you the default file which is index.html.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;36&quot; src=&quot;images/image04.png&quot; width=&quot;624&quot;&gt;&lt;/p&gt;
+&lt;p&gt;So far we have two files in two folders each named &lt;strong&gt;index.html&lt;/strong&gt;. For every folder that we have on the site it will have it&amp;#39;s own index.html. As you might imagine there could be a lot of index.htmls.&lt;/p&gt;
+&lt;p&gt;Because of this we need to be very careful about the file we are working on. One way to help keep track of the file that you are editing it is very useful to update the for each page on your site. It might be something like this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For you homepage - Site Name | Home&lt;/li&gt;
+&lt;li&gt;A sub folder for your gallery might be - Site Name | Gallery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This way you can look at the markup to know what page you are on.&lt;/p&gt;
+&lt;p&gt;It should also be noted that you can not replace one index with an other since all the links where set for that page and the content would be wrong.&lt;/p&gt;
+&lt;h2 id=&quot;your-site-might-be-something-like-this&quot;&gt;Your site might be something like this&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;Homepage
+- News
+- Sport
+- Weather
+- Gallery
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Every subsection on your site should be broken into its own folder.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/index.html
+/news/index.html
+/sports/index.html
+/weather/index.html
+/gallery/index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We have 5 index.html files.&lt;/p&gt;
+&lt;h2 id=&quot;but-what-if-we-have-to-have-more-than-one-file-in-a-folder-&quot;&gt;But what if we have to have more than one file In a folder?&lt;/h2&gt;
+&lt;p&gt;In that case any other file can be named whatever you want. It would be linked to from the index.html using the link tag &lt;strong&gt;(href=&amp;rdquo;filename.html&amp;rdquo;)&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;for-example&quot;&gt;For example&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;/news/index.html
+/news/yesterday.html
+/news/breakingnews.html
+/news/fun-stories.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this example we have four files all in the &lt;strong&gt;/news/&lt;/strong&gt; folder.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;354&quot; src=&quot;images/image00.png&quot; width=&quot;624&quot;&gt;&lt;/p&gt;
+&lt;p&gt;When you have your files on a web server you are able to use absolute paths to make the paths from one section or folder to another.&lt;/p&gt;
+&lt;p&gt;If you wanted to link from the news page to the weather page there are two ways to do this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use a relative path. &lt;strong&gt;../weather/&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Use an absolute path &lt;strong&gt;/weather/&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The reason option 2 is better is because it will be the same path for all files on the site regardless of where you are.&lt;/p&gt;
+&lt;h2 id=&quot;dev-local&quot;&gt;Dev Local&lt;/h2&gt;
+&lt;p&gt;The big problem with this way is it will not work when viewing your files from a local directory.&lt;/p&gt;
+&lt;p&gt;If you want to still develop locally you will need to set up a local server. One great one is MAMP. it is very easy to setup and use and will allow you to have the same setup as your web server.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;345&quot; src=&quot;images/image01.png&quot; width=&quot;427&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You just need to set the &amp;ldquo;Document Root&amp;rdquo; by clicking the Preferences button then clicking Apache.&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;349&quot; src=&quot;images/image05.png&quot; width=&quot;432&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Then set the folder of your project and click OK.&lt;/p&gt;
+&lt;p&gt;Once that is done you need to click Start Servers. It may ask you to enter your username and password. In almost all cases this will be the same as when you logged in to the computer.&lt;/p&gt;
+&lt;p&gt;if everything works your app will have two green lights&lt;/p&gt;
+&lt;p&gt;&lt;img height=&quot;348&quot; src=&quot;images/image03.png&quot; width=&quot;430&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Then you need to go to &lt;a href=&quot;http://localhost:8888/&quot;&gt;http://localhost:8888/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This will act as a real web server but you can continue to develop locally.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 11</title>
+      <link>http://localhost:8080/lessons/lesson-11/</link>
+      <pubDate>Wed, 18 Apr 2018 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-11/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we work on the in class final.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;The final project is open book, meaning you can use any resource you need to finish the project including asking any questions you have.  The final is a multipage microsite.&lt;/p&gt;
+&lt;p&gt;The final is due at 9:30 on December 13.  Please email a zip file to &lt;a href=&quot;mailto:dan@svahtml.com&quot;&gt;dan@svahtml.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You are required to only code the desktop version&lt;/strong&gt; however if you have time or want a challenge you the is a mobile version.&lt;/p&gt;
+&lt;h3 id=&quot;psd&quot;&gt;PSD&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/lessons/lesson-11/desktop.psd&quot;&gt;&lt;img src=&quot;/lessons/lesson-11/desktop-sm.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/lessons/lesson-11/mobile.psd&quot;&gt;&lt;img src=&quot;/lessons/lesson-11/mobile-sm.png&quot; alt=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;colors&quot;&gt;Colors&lt;/h2&gt;
+&lt;p&gt;There are a limited number of colors that are used in the design you can copy the &lt;strong&gt;Hex&lt;/strong&gt; color below and use in your css.&lt;/p&gt;
+&lt;h3 id=&quot;color&quot;&gt;COLOR&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;#c0c0c0&lt;/li&gt;
+&lt;li&gt;#333333&lt;/li&gt;
+&lt;li&gt;#004358&lt;/li&gt;
+&lt;li&gt;#50b7f1&lt;/li&gt;
+&lt;li&gt;#ffe11a&lt;/li&gt;
+&lt;li&gt;#ff951a&lt;/li&gt;
+&lt;li&gt;#ffffff&lt;/li&gt;
+&lt;li&gt;#b7b7b7&lt;/li&gt;
+&lt;li&gt;#7fcaf5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;header-content&quot;&gt;Header Content&lt;/h2&gt;
+&lt;pre class=&quot;text-content&quot;&gt;
+New York State
+The Empire State
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;nav-content&quot;&gt;Nav Content&lt;/h2&gt;
+&lt;pre class=&quot;text-content&quot;&gt;
+Home =&gt; index.html
+History =&gt; history/index.html
+Geography =&gt; geography/index.html
+Major cities =&gt; cities/index.html
+Demographics =&gt; demographics/index.html
+Transportation =&gt; transportation/index.html
+Sports =&gt; sports/index.html
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;sizes&quot;&gt;Sizes&lt;/h2&gt;
+&lt;p&gt;While I will not give you the sizes for the padding or margin they will always we defined in &lt;code&gt;em&lt;/code&gt; and be a whole number value like &lt;code&gt;1em&lt;/code&gt;;&lt;/p&gt;
+&lt;h3 id=&quot;font-sizes&quot;&gt;Font Sizes&lt;/h3&gt;
+&lt;p&gt;For the body use&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font&lt;/span&gt;: 16&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;arial&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;headline-sizes&quot;&gt;Headline Sizes&lt;/h3&gt;
+&lt;p&gt;Header Title&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-size&lt;/span&gt;: 60&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Header tagline&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-size&lt;/span&gt;: 20&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;article h2&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-size&lt;/span&gt;: 3&lt;span class=&quot;selector-tag&quot;&gt;em&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;article h3&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-size&lt;/span&gt;: 2&lt;span class=&quot;selector-tag&quot;&gt;em&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;sidebar headline&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-size&lt;/span&gt;: 1&lt;span class=&quot;selector-class&quot;&gt;.5em&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;sidebar box&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;font-size&lt;/span&gt;: 14&lt;span class=&quot;selector-tag&quot;&gt;px&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;copy&quot;&gt;Copy&lt;/h2&gt;
+&lt;p&gt;The copy for the final project can be found in the PDF.  Note the copy in the PDF may not match the PSD in this case the PDF is correct.&lt;/p&gt;
+&lt;h3 id=&quot;pdf&quot;&gt;PDF&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/lessons/lesson-11/final-content.pdf&quot;&gt;Copy for final&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+&lt;p&gt;All the images for the project can be found in the zip file&lt;/p&gt;
+&lt;h3 id=&quot;zip&quot;&gt;ZIP&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/lessons/lesson-11/images.zip&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;google-fonts&quot;&gt;Google Fonts&lt;/h2&gt;
+&lt;p&gt;The project uses a few Google Fonts.  Add this code to your HTML file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;http://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;font-family&quot;&gt;Font-family&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;font-family: &amp;#39;Montserrat&amp;#39;, sans-serif;
+font-family: &amp;#39;Homemade Apple&amp;#39;, cursive;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+&lt;h2 style=&quot;font-family: 'Montserrat', sans-serif&quot;&gt;font-family: ‘Montserrat’, sans-serif;&lt;/h2&gt;
+
+&lt;h2 style=&quot;font-family: 'Homemade Apple', cursive&quot;&gt;font-family: ‘Homemade Apple’, cursive;&lt;/h2&gt;
+</description>
+    </item>
+    <item>
+      <title>Lesson 12</title>
+      <link>http://localhost:8080/lessons/lesson-12/</link>
+      <pubDate>Wed, 25 Apr 2018 15:00:00 -0400</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/lessons/lesson-12/</guid>
+      <author></author>
+      <description>&lt;p&gt;This week we work on the in class final.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Details of final will be released at a later date.&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>

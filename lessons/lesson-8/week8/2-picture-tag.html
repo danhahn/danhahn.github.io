@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Picture Tag</title>
+  <link rel="stylesheet" href="css/2-picture.css">
+</head>
+<body>
+
+<main class="wrapper">
+  <h1>Picture Tag</h1>
+  <p>The HTML <code>&lt;picture&gt;</code> element serves as a container for zero or more <code>&lt;source&gt;</code> elements and one <code>&lt;img&gt;</code> element to provide versions of an image for different display device scenarios. The browser will consider each of the child <code>&lt;source&gt;</code> elements and select one corresponding to the best match found; if no matches are found among the <code>&lt;source&gt;</code>  elements, the file specified by the <code>&lt;img&gt;</code> element's src attribute is selected. The selected image is then presented in the space occupied by the <code>&lt;img&gt;</code> element.</p>
+  <p>To select the optimal image, the user agent examines each source's srcset, media, and type attributes to select a compatible image that best matches the current layout of the page, the characteristics of the display device, and so forth.</p>
+  <p>Common use cases for this are to provide a HiDPI (<em>Retina</em>) version of an image when using a high-DPI display, and to offer fallback image formats when a modern format is not supported by an older browser.</p>
+  <h2>Example Code</h2>
+<pre><code class="html">&lt;picture&gt;
+ &lt;source srcset=&quot;mdn-logo-wide.png&quot; media=&quot;(min-width: 600px)&quot;&gt;
+ &lt;img src=&quot;mdn-logo-narrow.png&quot; alt=&quot;MDN&quot;&gt;
+&lt;/picture&gt;
+</code></pre>
+
+  <h2>Using the Picture Tag</h2>
+
+  <p>Remember to open the dev tools by right clicking and selecting 'Inspect'</p>
+
+    <!-- <div>
+      <img src="images/small.jpg" alt=""> 360
+      <img src="images/medium.jpg" alt=""> 800
+      <img src="images/large.jpg" alt=""> 1600
+    </div> -->
+
+</main>
+
+
+</body>
+</html>
